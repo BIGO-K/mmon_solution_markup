@@ -1,0 +1,44 @@
+{
+    "goods_list": [
+        {
+            "id": 1,
+            "name": "홀터넥 폴리스 히든 밴딩 토트백",
+            "brand_name": "엠몬스타",
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/16/1.jpg",
+            "option_list": [
+                {
+                    "id": 1,
+                    "name": "화이트 FREE"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "[매긴나잇브릿지]플리츠 디테일 드레스_MJM1OP3140드레스_MJM1OP3140",
+            "brand_name": "엠몬스타",
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/86/15/1.jpg",
+            "option_list": [
+                {
+                    "id": 1,
+                    "name": "화이트 FREE"
+                },
+                {
+                    "id": 2,
+                    "name": "블랙 FREE"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "시스루스트라이프셔츠",
+            "brand_name": "엠몬스타",
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/86/15/2.jpg",
+            "option_list": [
+                {
+                    "id": 1,
+                    "name": "화이트 FREE"
+                }
+            ]
+        }
+    ]
+}

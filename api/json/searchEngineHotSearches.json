@@ -1,0 +1,47 @@
+{
+    "indexed_at": "2023.01.25 12:56",
+    "hot_search_words": [
+		{
+			"rank": 1,
+			"previous_rank": 1,
+			"keyword": "로라로라",
+			"change_type": "S",
+			"change_rank": 0
+		},
+		{
+			"rank": 2,
+			"previous_rank": 2,
+			"keyword": "KITTY WOOL KINT TOP",
+			"change_type": "U",
+			"change_rank": 3
+		},
+		{
+			"rank": 3,
+			"previous_rank": 3,
+			"keyword": "스니커즈",
+			"change_type": "S",
+			"change_rank": 0
+		},
+		{
+			"rank": 4,
+			"previous_rank": 4,
+			"keyword": "트랙세트",
+			"change_type": "D",
+			"change_rank": 2
+		},
+		{
+			"rank": 5,
+			"previous_rank": 5,
+			"keyword": "코닥",
+			"change_type": "N",
+			"change_rank": 0
+		},
+		{
+			"rank": 6,
+			"previous_rank": 6,
+			"keyword": "스와치",
+			"change_type": "S",
+			"change_rank": 0
+		}
+	]
+}

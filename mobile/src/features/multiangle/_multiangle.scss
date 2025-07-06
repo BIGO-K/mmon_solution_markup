@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../assets/scss/common/helper/function' as *;
+@use '../../assets/scss/common/helper/mixin';
+@use '../../assets/scss/common/setting/const';
+@use '../../assets/scss/style/setting/var';
+
+/**
+ * 360도 뷰
+ */
+
+// *---------- 팝업 ----------*
+
+/** 360도 보기 */
+.m_popup-multiangle {
+	position: relative;
+
+	&-note {
+		padding: 28px 0;
+		width: 100%;
+		height: 140px;
+		@include mixin.font(v_600 '1.5rem/2.1rem' center);
+
+		.ico_multiangle-drag {
+			display: block;
+			margin-bottom: 8px;
+
+			&::before {
+				width: 70px;
+				height: 56px;
+				@include mixin.background(url('/public/images/content/ico_multiangle_drag.svg') 'center center/cover' no-repeat);
+			}
+		}
+	}
+
+	&-image {
+		.image_product {
+			display: none;
+			padding-top: 100%;
+			width: 100%;
+
+			&#{escape('.S=on')} {
+				display: block;
+			}
+		}
+	}
+}

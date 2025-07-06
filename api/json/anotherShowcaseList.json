@@ -1,0 +1,39 @@
+{
+    "list_by_sort": [
+        {
+            "id": 1,
+            "title": "TREND 브랜드",
+            "thumbnail_url": "https://image.stylecrew.co.kr/mall/dev/goods/000/000/000/004/1.jpg?updated_at=20220504163716",
+            "sort_id": 2,
+            "sort_name": "2023.01.25"
+        },
+		{
+            "id": 2,
+            "title": "일상속의 감각적인 룩을 제안하는 브랜드 LENINA(르니나)",
+            "thumbnail_url": "https://image.stylecrew.co.kr/mall/dev/goods/000/000/000/004/1.jpg?updated_at=20220504163716",
+            "sort_id": 3,
+            "sort_name": "STORY"
+        },
+		{
+            "id": 3,
+            "title": "좋은 작품이 주는 감동의 순간 다꼬르피스(DACCORD PIECE)",
+            "thumbnail_url": "https://image.stylecrew.co.kr/mall/dev/goods/000/000/000/004/1.jpg?updated_at=20220504163716",
+            "sort_id": 4,
+            "sort_name": "TREND 브랜드"
+        },
+		{
+            "id": 4,
+            "title": "행복한 식탁을 꿈꾸는 아내들의 이야기 아내의 식탁",
+            "thumbnail_url": "https://image.stylecrew.co.kr/mall/dev/goods/000/000/000/004/1.jpg?updated_at=20220504163716",
+            "sort_id": 5,
+            "sort_name": "LIFE"
+        },
+		{
+            "id": 5,
+            "title": "일상속의 감각적인 룩을 제안하는 브랜드 LENINA(르니나)",
+            "thumbnail_url": "https://image.stylecrew.co.kr/mall/dev/goods/000/000/000/004/1.jpg?updated_at=20220504163716",
+            "sort_id": 6,
+            "sort_name": "CULTURE"
+        }
+    ]
+}

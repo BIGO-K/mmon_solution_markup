@@ -1,0 +1,15 @@
+{
+    "find_results": [
+        {
+            "masking_login_id": "abc****@naver.com",
+            "regist_type": "naver"
+        },
+		{
+            "masking_login_id": "abc****@kakao.com",
+            "regist_type": "kakao"
+        }
+    ],
+    "user_name": "MMON",
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIxMjM0NTY3ODkwIiwiZXhwIjoiMjAyMjEyMTIiLCJpYXQiOjE2NTE1NTc4NzMwMDB9.DyABXL5qGeUAPedmR1O3mAz5pGSdb3Jvts6lrini3sI",
+    "expire_at": "2022-05-09T02:01:12.609545Z"
+}

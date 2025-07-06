@@ -1,0 +1,24 @@
+{
+	"refund_info": {
+		"total_paid_price": 621,
+		"refund_price": -3379,
+		"refund_point": 0,
+		"calculate_details": [
+			{
+				"label": "면제 배송비",
+				"amount": 0,
+				"is_substracted": false
+			},
+			{
+				"label": "반품 배송비",
+				"amount": 4000,
+				"is_substracted": true
+			},
+			{
+				"label": "도서산간 배송비",
+				"amount": 0,
+				"is_substracted": false
+			}
+		]
+	}
+}

@@ -1,0 +1,119 @@
+{
+    "group_goods": [
+		{
+			"id": 58778,
+			"name": "커스텀핏 캐시 올스타 슬랙스",
+			"price": 46000,
+			"headline": null,
+			"base_discounted_price": 23000,
+			"sale_rate": 50,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/78/1.jpg?ut=1661220855",
+			"mouse_over_image_url": "",
+			"stock": 120,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 29,
+			"brand_name": "MintCream",
+			"icon": null,
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 41,
+			"review_count": 50,
+			"review_score_average": 3,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 58777,
+			"name": "윈터 반팔 백",
+			"price": 154400,
+			"headline": null,
+			"base_discounted_price": 58600,
+			"sale_rate": 62,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/77/1.jpg?ut=1666108804",
+			"mouse_over_image_url": "",
+			"stock": 30,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 14,
+			"brand_name": "(주)은형식품",
+			"icon": null,
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 12,
+			"review_count": 1,
+			"review_score_average": 5,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 58776,
+			"name": "슈퍼스타 슬리브 오블룽 원피스",
+			"price": 166800,
+			"headline": null,
+			"base_discounted_price": 38300,
+			"sale_rate": 77,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/76/1.jpg?ut=1661220855",
+			"mouse_over_image_url": "",
+			"stock": 240,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 47,
+			"brand_name": "(주)성은그룹",
+			"icon": null,
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 1,
+			"review_count": 0,
+			"review_score_average": 0,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 58775,
+			"name": "스터드 롱 아이보리 맨투맨",
+			"price": 162200,
+			"headline": null,
+			"base_discounted_price": 38900,
+			"sale_rate": 76,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/75/1.jpg?ut=1661220855",
+			"mouse_over_image_url": "",
+			"stock": 180,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 41,
+			"brand_name": "(주)지은기획",
+			"icon": null,
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 0,
+			"review_count": 5,
+			"review_score_average": 1,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 18775,
+			"name": "스터드 롱 아이보리 맨투맨",
+			"price": 162200,
+			"headline": null,
+			"base_discounted_price": 38900,
+			"sale_rate": 76,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/75/1.jpg?ut=1661220855",
+			"mouse_over_image_url": "",
+			"stock": 180,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 41,
+			"brand_name": "(주)지은기획",
+			"icon": null,
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 0,
+			"review_count": 4,
+			"review_score_average": 5,
+			"is_use_stock_notify": false
+		}
+	]
+}

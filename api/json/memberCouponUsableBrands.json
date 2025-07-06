@@ -1,0 +1,13 @@
+{
+    "paginator": {
+        "total": 2,
+        "per_page": 20,
+        "current_page": 1,
+        "data": [
+            {
+                "id": 1,
+                "name": "슬로우무브"
+            }
+        ]
+    }
+}

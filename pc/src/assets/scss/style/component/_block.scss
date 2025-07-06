@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+@use '../../common/helper/mixin';
+
+/**
+ * 컴포넌트
+ * 섹션, 영역, 스크롤러, 라인, 싱커, 플렉스 등 기본 공통영역
+ */
+
+/** 섹션 */
+.mm_section {
+	> h6.mm_strapline {
+		margin-top: 25px;
+	}
+}
+
+/** 이너 */
+.mm_inner {
+	position: relative;
+	margin: 0 auto;
+	width: 1360px;
+	@include mixin.clearfix;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko" class="L=main">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- 소셜태그 -->
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<!--// 소셜태그 -->
+
+	<title>M.Mon solution</title>
+
+	<!-- 공통 css -->
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 공통 css 변수 -->
+	<style>
+		:root {
+			/* 클라이언트 컬러 */
+			--color_main: #1f1f1f;
+			--color_sub: #f84f34;
+
+			/* 블랙 버전 */
+			--color_variable: var(--color_sub);
+			--color_support: #4457a7;
+
+			/* 유색 버전 */
+			/* --color_variable: var(--color_main);
+			--color_support: #ff8800; */
+
+			/* 등급 컬러 */
+			--color_level5: #9b3da1;
+			--color_level4: #e19c03;
+			--color_level3: #7cbacb;
+			--color_level2: #e68362;
+			--color_level1: #4e8e71;
+
+			/* 상품 비율 */
+			--prod_ratio_base: 1;
+		}
+	</style>
+
+	<!-- (D) 폴리필/라이브러리는 요청을 줄이기 위해 combind + minify를 적용해주세요. -->
+	<!-- 폴리필/라이브러리 스크립트 -->
+	<script src="../js/lib/lodash-4.17.21.min.js"></script>
+	<script src="../js/lib/gsap-3.6.1/gsap.min.js"></script>
+	<script src="../js/lib/axios-0.21.1.min.js"></script>
+	<script src="../js/lib/load-image.all-5.14.0.min.js"></script>
+	<script src="../js/lib/sortable-1.13.0.min.js"></script>
+
+	<!-- 공통 스크립트 -->
+	<script src="../js/app_common.js"></script>
+	<script src="../js/app_page-common.js"></script>
+
+	<!-- (D) 페이지 전용 스크립트는 .mm_page-content 하단에 넣어주세요. -->
+</head>
+<body>
+	<div id="mm_app" class="mm_app">
+		<!-- 스킵 -->
+		<nav class="mm_skip">
+			<ul>
+				<li><a href="#mm_body" data-href="{ '_type': 'anchor' }">본문바로가기</a></li>
+			</ul>
+		</nav>
+		<!-- 스킵 -->
+
+		<!-- 화면 -->
+		<div class="mm_view L=main">
+			<!-- 앱으로 보기 상단 배너 -->
+			<div class="m_main-app-view">
+				<a href="#" target="blank"><b>앱으로 더 편리하게 쇼핑해보세요</b><i>앱으로 보기</i></a>
+			</div>
+			<!--// 앱으로 보기 상단 배너 -->
+
+			<!-- 헤더 -->
+			<!-- (D) 텍스트 흰색을 선택한다면 mm_header에 T=text-white 클래스를 추가합니다. -->
+			<header class="mm_header T=ha">
+				<style>
+					:root {
+						--header_height_main: 56px;
+						--color_header: #fff; /* 배경 흰색 버전 */
+						/* --color_header: var(--color_main); /* 배경 컬러 버전 */
+					}
+				</style>
+				<h1><a href="#"><i class="image_logo"></i><b class="mm_ir-blind">M.Mon solution</b></a></h1>
+				<div class="mm_rside">
+					<a href="_popup_search.html"><b class="mm_ir-blind">검색하기</b><i class="ico_search"></i></a>
+					<a href="cart.html"><i class="ico_cart"></i><strong class="text_badge">2</strong><b class="mm_ir-blind">장바구니</b></a>
+				</div>
+			</header>
+			<!--// 헤더 -->
+
+			<!-- 내용 -->
+			<div id="mm_body" class="mm_page">
+				<!-- (D) 실제 내용을 추가하는 부분입니다. -->
+
+				<div class="mm_scroller">
+					<div class="mm_page-inner">
+						<!-- 본문 -->
+						<div class="mm_page-content">
+							<!-- GNB -->
+							<div class="mm_gnb">
+								<!-- (D) 메뉴가 모바일 가로 사이즈보다 적으면 mm_gnb에 'S=flex' 클래스가 추가됩니다. -->
+								<div class="mm_gnb-inner">
+									<div class="mm_scroller T=x">
+										<!-- (D) 현재페이지의 a 요소에 "S=gnb-on" 클래스와 "선택됨" 타이틀을 추가합니다. -->
+										<ul>
+											<li><a href="main.html" class="S=gnb-on" title="선택됨"><b>홈</b></a></li>
+											<li><a href="#"><b>베스트</b></a></li>
+											<li><a href="#"><b>신상품</b></a></li>
+											<li><a href="#"><b>추가메뉴1</b></a></li>
+											<li><a href="#"><b>추가메뉴2</b></a></li>
+											<li><a href="#"><b>추가메뉴3</b></a></li>
+											<li><a href="#"><b>추가메뉴4</b></a></li>
+											<li><a href="#"><b>추가메뉴5</b></a></li>
+											<li><a href="#"><b>스팟성 테마관</b></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--// GNB -->
+
+							<!-- 홈 -->
+							<!-- <div class="m_main">
+							</div> -->
+							<!--// 홈 -->
+						</div>
+						<!--// 본문 -->
+
+						<!-- 푸터 -->
+						<footer id="mm_footer" class="mm_footer T=fa">
+							<!-- 푸터-메뉴 -->
+							<div class="mm_footer-menu">
+								<ul class="mm_flex T=equal">
+									<li><a href="company.html"><b>회사소개</b></a></li>
+									<li><a href="csMain.html"><b>고객센터</b></a></li>
+									<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+									<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+								</ul>
+							</div>
+							<!--// 푸터-메뉴 -->
+
+							<!-- 푸터-정보 -->
+							<div class="mm_footer-info">
+								<div class="mm_dropdown" data-dropdown>
+									<b>(주)엠몬스타</b>
+									<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+									<div class="mm_dropdown-item">
+										<div class="mm_dropdown-item-inner">
+											<address>
+												<p>대표: 장한필</p>
+												<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+												<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+												<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+												<p>개인정보관리자: 이희승</p>
+												<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+												<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+												<p>팩스번호: 031-8023-9667</p>
+												<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+											</address>
+										</div>
+									</div>
+								</div>
+								<ul class="mm_footer-info-terms">
+									<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+									<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+									<li><a href="#"><b>이용안내</b></a></li>
+									<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+								</ul>
+								<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+							</div>
+							<!--// 푸터-정보 -->
+						</footer>
+						<!--// 푸터 -->
+					</div>
+				</div>
+
+				<a class="btn_topmost" href="#mm_app" data-href="{ '_type': 'anchor' }" title="페이지 처음으로"><i class="ico_topmost"></i><b>TOP</b></a>
+
+				<!-- 현재 페이지 스크립트 -->
+				<!-- <script src="../js/.js"></script> -->
+			</div>
+			<!--// 내용 -->
+
+			<!-- 툴바 -->
+			<div class="mm_toolbar T=ta">
+				<style>
+					:root {
+						--toolbar_height_base: 51px;
+					}
+				</style>
+				<ul class="mm_flex T=equal">
+					<li>
+						<a href="main.html">
+							<i class="ico_home"></i>
+							<b>홈</b>
+						</a>
+					</li>
+					<li>
+						<a href="sidebar_level5.html" onclick="mm.side.open(this.href);return false;">
+							<i class="ico_menu"></i>
+							<b>카테고리</b>
+						</a>
+					</li>
+					<li>
+						<a href="_popup_search.html">
+							<i class="ico_search"></i>
+							<b class="mm_ir-blind">검색</b>
+						</a>
+					</li>
+					<li>
+						<a href="myMain_level5.html">
+							<i class="ico_mypage"></i>
+							<b>마이페이지</b>
+						</a>
+					</li>
+					<li>
+						<a href="_popup_recent.html">
+							<!-- (D) 최근본상품이 있을 때 노출합니다. -->
+							<!-- <i class="mm_bg-cover image_recent" data-lazyload="{ '_src': '../image/_sample/prod_x1_3.png' }"></i> -->
+							<i class="ico_recent"></i>
+							<b>최근본상품</b>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--// 툴바 -->
+		</div>
+		<!--// 화면 -->
+
+		<!-- 앱전용화면 -->
+		<div class="m_main-app">
+			<div class="m_main-app-dim"></div>
+			<!-- 앱이용권한안내 -->
+			<!-- (D) 해당하는 앱 전용화면 노출 시 'm_main-app-item' 요소에 'S=on' 클래스를 추가합니다 -->
+			<div class="m_main-app-item m_main-app-access S=on">
+				<div class="mm_scroller">
+					<h3><b>엠몬스타 쇼핑몰<br>접근 권한이 필요합니다</b></h3>
+					<ul>
+						<li><i class="ico_phone T=bold"></i><p>기기 및 앱 기록<small>앱 오류 확인 및 사용성 개선</small></p></li>
+						<li><i class="ico_call"></i><p>전화(선택)<small>고객센터 전화연결</small></p></li>
+						<li><i class="ico_photo"></i><p>저장공간·사진(선택)<small>포토 상품평 작성</small></p></li>
+					</ul>
+					<div class="mm_btn_box">
+						<button type="button" class="mm_btn T=lg T=primary"><b>확인</b></button>
+					</div>
+				</div>
+			</div>
+			<!--// 앱이용권한안내 -->
+
+			<!-- 푸시알림 -->
+			<div class="m_main-app-item m_main-app-push">
+				<div class="mm_scroller">
+					<h3><b>푸시 알림을<br>설정하시겠습니까?</b></h3>
+					<ul>
+						<li><i class="ico_noti"></i><p>쇼핑 정보를 알려드립니다.</p></li>
+						<li><i class="ico_phone T=bold"></i><p>알림 수신 동의는 해당 기기에서만 설정됩니다.</p></li>
+						<li><i class="ico_setup"></i><p>전체메뉴 &#62; 설정에서 변경이 가능합니다.</p></li>
+					</ul>
+					<div class="mm_btn_box">
+						<button type="button" class="mm_btn T=lg T=primary"><b>알림 ON</b></button>
+						<button type="button" class="btn_cancel"><b>아니요. 괜찮습니다</b></button>
+					</div>
+				</div>
+			</div>
+			<!--// 푸시알림 -->
+		</div>
+		<!--// 앱전용화면 -->
+
+		<!-- 메인 팝업 -->
+		<!-- (D) 메인 팝업 노출 시 'm_main-popup' 요소에 'S=on' 클래스를 추가합니다. -->
+		<div class="m_main-popup T=popup-toast T=pa">
+			<div class="m_main-popup-dim"></div>
+			<div class="m_main-popup-item">
+				<div class="mm_carousel" data-carousel="{ '_autoDelay': 4 }">
+					<div class="mm_carousel-inner">
+						<ul class="mm_carousel-list">
+							<li class="mm_carousel-item">
+								<a href="#">
+									<i class="mm_bg-cover image_banner" data-lazyload="{ '_src': '../image/_sample/main_popup_toast_a_01.png' }"></i>
+									<b class="mm_ir-blind">사진과 함께하는 신나는 일상 MYSTERY FLASH SALE</b>
+								</a>
+							</li>
+							<li class="mm_carousel-item">
+								<a href="#">
+									<i class="mm_bg-cover image_banner" data-lazyload="{ '_src': '../image/_sample/main_popup_toast_a_02.png' }"></i>
+									<b class="mm_ir-blind">사진과 함께하는 신나는 일상 MYSTERY FLASH SALE</b>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mm_carousel-count">
+						<strong class="text_carousel-index"></strong><i>/</i><span class="text_carousel-total"></span>
+					</div>
+				</div>
+				<div class="mm_btnbox">
+					<button type="button" class="btn_today"><b>오늘 하루 그만보기</b></button>
+					<button type="button" class="btn_close"><b>닫기</b></button>
+				</div>
+			</div>
+		</div>
+		<!--// 메인 팝업 -->
+		<script>
+			(function () {
+
+				// 앱전용화면(앱 최초실행)
+				var $appPopup = mm.find('.m_main-app')[0];
+				var $appItem = mm.find('.m_main-app-item', $appPopup);
+
+				if (mm.is.mobile('app_first') && mm.cookie.get('IS_APP_FIRST_HIDE') !== 'true') {
+					$appItem[0].classList.add('S=on');
+
+					mm.event.on(mm.find('button', $appPopup), 'click', function (__e) {
+
+						var $item = this.closest('.m_main-app-item');
+						if ($item.nextElementSibling && $item.nextElementSibling.classList.contains('m_main-app-item')) {
+							$item.nextElementSibling.classList.add('S=on');
+							$item.remove();
+						}
+						else {
+							mm.cookie.set('IS_APP_FIRST_HIDE', true);// 쿠키설정
+							$appPopup.remove();// 앱 전용화면 닫기
+
+							mainPopupBanner();// 메인 팝업배너 노출
+						}
+
+					});
+				}
+				else $appPopup.remove();
+
+				// 메인 팝업배너
+				function mainPopupBanner() {
+
+					if (mm.find('.m_main-app')[0]) return;// 앱 최초실행이 있을 경우
+					var $mainPopup = mm.find('.m_main-popup')[0];
+
+					// 팝업 열기
+					if (mm.cookie.get('IS_MAIN_POPUP_HIDE') !== 'true') {
+
+						mm.class.add($mainPopup,  'S=on');
+						mm.scroll.off();
+
+						// 팝업 닫기
+						mm.event.on(mm.find('button', $mainPopup), 'click', function (__e) {
+
+							// 오늘하루 그만보기
+							if (this.classList.contains('btn_today')) mm.cookie.set('IS_MAIN_POPUP_HIDE', true, 1, true);// 1일 자정 리셋
+
+							$mainPopup.remove();
+							mm.scroll.on();
+
+						});
+					}
+
+				}
+				mainPopupBanner();
+
+			})();
+		</script>
+	</div>
+</body>
+</html>

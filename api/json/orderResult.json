@@ -1,0 +1,80 @@
+{
+	"packs": [
+		{
+			"shipping_price": 0,
+			"items": [
+				{
+					"brand_name": "까스텔바작",
+					"goods_id": 58580,
+					"goods_name": "슈퍼스타 미니 집업1",
+					"goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/85/80/1.jpg?",
+					"option_id": 826851,
+					"option_name": "LightSteelBlue / L",
+					"option_extra_amount": 0,
+					"goods_list_price": 68900,
+					"goods_sell_price": 63300,
+					"goods_base_discounted_price": 63300,
+					"night_sale_amount": 0,
+					"coupon_amount": 2500,
+					"immediately_sale_amount": 0,
+					"used_point_amount": 0,
+					"goods_headline": null,
+					"seller_name": "진유리"
+				}
+			]
+		},
+		{
+			"shipping_price": 5000,
+			"items": [
+				{
+					"brand_name": "비트로",
+					"goods_id": 58861,
+					"goods_name": "LEVELO 핑크 화물용 캐리어",
+					"goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/61/1.jpg?",
+					"option_id": 830686,
+					"option_name": "lemon / 66",
+					"option_extra_amount": 0,
+					"goods_list_price": 50000,
+					"goods_sell_price": 40000,
+					"goods_base_discounted_price": 40000,
+					"night_sale_amount": 0,
+					"coupon_amount": 2500,
+					"immediately_sale_amount": 0,
+					"used_point_amount": 0,
+					"goods_headline": null,
+					"seller_name": "설동윤"
+				}
+			]
+		}
+	],
+	"receive_address": {
+		"shipping_name": "배송지",
+		"name": "김엠몬",
+		"phone": "01012341234",
+		"zip_code": "06616",
+		"base_address": "경기도 남양주시 진접읍 해밀마을 5단지 반도유보라메이플타운",
+		"detail_adress": "102동 1121호",
+		"message": null
+	},
+	"payment_info": {
+		"label": "무통장입금",
+		"eng_label": "virtual_account",
+		"card_label": null,
+		"card_masking_number": null,
+		"approve_at": "2023-07-19T05:02:03.000000Z",
+		"bank_label": "기업은행",
+		"bank_account_number": "T0309260001463",
+		"bank_input_expire_date": "2023-07-20T14:59:59.000000Z",
+		"buy_point": 1216,
+		"bank_depositor_name": "김개똥"
+	},
+	"giveaways": [
+		{
+			"id": 0,
+			"name": null,
+			"condition_label": null,
+			"image_url": null,
+			"image_alt": null
+		}
+	]
+}

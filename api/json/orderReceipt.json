@@ -1,0 +1,87 @@
+{
+	"receipt": {
+		"all": {
+			"pay_method_name": "신용카드",
+			"status": "부분취소",
+			"paid_at": "2022-05-16 14:02:28",
+			"card": {
+				"name": "하나카드",
+				"masked_number": "408966******8936",
+				"installment": "일시불|2개월",
+				"tid": "20220516977701"
+			},
+			"virtual_bank": {
+				"bank_name": "하나은행",
+				"virtual_account_number": "T0409260000019"
+			},
+			"payment_price": 9630,
+			"canceled_price": 9630,
+			"balance_price": 0
+		},
+		"approve": {
+			"pay_method_name": "가상계좌",
+			"status": "입금",
+			"paid_at": "2022-05-16 14:02:28",
+			"card": {
+				"name": "하나카드",
+				"masked_number": "408966******8936",
+				"installment": "일시불",
+				"tid": "20220516977701"
+			},
+			"virtual_bank": {
+				"bank_name": "하나은행",
+				"virtual_account_number": "T0409260000019"
+			},
+			"payment_price": 9630,
+			"tax_pice": 8755,
+			"surtax_pice": 875,
+			"tax_free_price": 0,
+			"cash_receipt": {
+				"status": "승인",
+				"use_type": "소득공제",
+				"masked_request_number": "0101234****",
+				"auth_code": "987987987987"
+			}
+		},
+		"cancels": [
+			{
+				"pay_method_name": "신용카드",
+				"status": "부분취소",
+				"paid_at": "2022-05-16 14:02:28",
+				"card": {
+					"name": "롯데카드",
+					"masked_number": "408966******8936",
+					"installment": "일시불",
+					"tid": "20220516977701"
+				},
+				"virtual_bank": {
+					"bank_name": "하나은행",
+					"virtual_account_number": "T0409260000019"
+				},
+				"payment_price": 54500,
+				"cancel_price": 4900,
+				"tax_pice": 4455,
+				"surtax_pice": 445,
+				"tax_free_price": 0,
+				"balance_price": 49600,
+				"canceled_price": 0,
+				"cash_receipt": {
+					"status": "취소",
+					"use_type": "소득공제",
+					"masked_request_number": "0101234****",
+					"auth_code": "987987987987"
+				},
+				"canceled_at": null,
+				"refund_id": "123412341234"
+			}
+		],
+		"payment_company_info": {
+			"name": "NHN한국사이버결제 주식회사",
+			"business_number": "113-85-21083",
+			"ceo": "박준석",
+			"phone": "1544-8667",
+			"address": "08393 서울특별시 구로구 디지털로26길 72 (구로동, NHN한국사이버결제)",
+			"homepage_url": "https://www.kcp.co.kr"
+		}
+	}
+}

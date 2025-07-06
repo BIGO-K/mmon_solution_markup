@@ -1,0 +1,54 @@
+{
+	"paginator": {
+		"total": 5,
+		"current_page": 1,
+		"per_page": 10,
+		"data": [
+			{
+				"id": 1,
+				"name": "버닝카포테 SS20 LOGO T-SHIRT 화이트",
+				"brand_name": "4XR",
+				"thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x1_2.png",
+				"base_discounted_price": 66000,
+				"sale_rate": 35,
+				"is_soldout": false
+			},
+			{
+				"id": 2,
+				"name": "슈퍼스타 릴렉스 스몰 백",
+				"brand_name": "꼼빠니아",
+				"thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x1_1.png",
+				"base_discounted_price": 66000,
+				"sale_rate": 35,
+				"is_soldout": false
+			},
+			{
+				"id": 3,
+				"name": "아크 미니 클래식 가디건",
+				"brand_name": "빌트모아",
+				"thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x1_3.png",
+				"base_discounted_price": 66000,
+				"sale_rate": 35,
+				"is_soldout": false
+			},
+			{
+				"id": 4,
+				"name": "스터드 슬리브 WASHED 더블니트",
+				"brand_name": "BYC",
+				"thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x1_4.png",
+				"base_discounted_price": 66000,
+				"sale_rate": 35,
+				"is_soldout": false
+			},
+			{
+				"id": 5,
+				"name": "아크 폴리스 가디건",
+				"brand_name": "율미아스탭",
+				"thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x1_5.png",
+				"base_discounted_price": 66000,
+				"sale_rate": 35,
+				"is_soldout": false
+			}
+		]
+	}
+}

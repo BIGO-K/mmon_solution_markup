@@ -1,0 +1,293 @@
+{
+	"exchange_orders": [
+		{
+			"exchange_id": "2302211449349099605",
+			"order_id": "2302211128154602492",
+			"ordered_at": "2023-02-21T02:28:43.000000Z",
+			"packs": [
+				{
+					"shipping_rule_id": 28,
+					"paid_shipping_price": 0,
+					"sellers": [
+						{
+							"id": 28,
+							"name": "노승민",
+							"tel": null,
+							"order_items": [
+								{
+									"id": 9557,
+									"order_status_label": "교환 완료",
+									"paid_price": 8600,
+									"exchanged_option_name": "CadetBlue / M",
+									"exchange_cancelable": false,
+									"to_return_switchable": false,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 54844,
+										"name": "윈터 에스파 WASHED 가디건",
+										"brand_name": "Azure",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+										"option_name": "CadetBlue / S"
+									},
+									"exchange_target_id": 185,
+									"point_used": 0
+								},
+								{
+									"id": 9561,
+									"order_status_label": "상품 도착",
+									"paid_price": 8600,
+									"exchanged_option_name": "CadetBlue / M",
+									"exchange_cancelable": false,
+									"to_return_switchable": true,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 54844,
+										"name": "윈터 에스파 WASHED 가디건",
+										"brand_name": "Azure",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+										"option_name": "DarkGray / L"
+									},
+									"exchange_target_id": 187,
+									"point_used": 0
+								},
+								{
+									"id": 9562,
+									"order_status_label": "상품 도착",
+									"paid_price": 8600,
+									"exchanged_option_name": "CadetBlue / S",
+									"exchange_cancelable": false,
+									"to_return_switchable": true,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 54844,
+										"name": "윈터 에스파 WASHED 가디건",
+										"brand_name": "Azure",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+										"option_name": "CadetBlue / M"
+									},
+									"exchange_target_id": 188,
+									"point_used": 0
+								},
+								{
+									"id": 9563,
+									"order_status_label": "상품 도착",
+									"paid_price": 8600,
+									"exchanged_option_name": "CadetBlue / L",
+									"exchange_cancelable": false,
+									"to_return_switchable": true,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 54844,
+										"name": "윈터 에스파 WASHED 가디건",
+										"brand_name": "Azure",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+										"option_name": "CadetBlue / M"
+									},
+									"exchange_target_id": 189,
+									"point_used": 0
+								},
+								{
+									"id": 9564,
+									"order_status_label": "상품 도착",
+									"paid_price": 8600,
+									"exchanged_option_name": "DimGrey / M",
+									"exchange_cancelable": false,
+									"to_return_switchable": true,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 54844,
+										"name": "윈터 에스파 WASHED 가디건",
+										"brand_name": "Azure",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+										"option_name": "CadetBlue / M"
+									},
+									"exchange_target_id": 190,
+									"point_used": 0
+								},
+								{
+									"id": 9565,
+									"order_status_label": "상품 도착",
+									"paid_price": 8600,
+									"exchanged_option_name": "DarkGray / L",
+									"exchange_cancelable": false,
+									"to_return_switchable": true,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 54844,
+										"name": "윈터 에스파 WASHED 가디건",
+										"brand_name": "Azure",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+										"option_name": "CadetBlue / M"
+									},
+									"exchange_target_id": 191,
+									"point_used": 0
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"exchange_id": "2210311707291242295",
+			"order_id": "2210311647374035632",
+			"ordered_at": "2022-10-31T16:48:08.000000Z",
+			"packs": [
+				{
+					"shipping_rule_id": 51,
+					"paid_shipping_price": 0,
+					"sellers": [
+						{
+							"id": 50,
+							"name": "김민정",
+							"tel": null,
+							"order_items": [
+								{
+									"id": 7922,
+									"order_status_label": "상품 도착",
+									"paid_price": 17385,
+									"exchanged_option_name": "LightYellow / S",
+									"exchange_cancelable": false,
+									"to_return_switchable": true,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 58789,
+										"name": "[대박세일] 인트레치아토 캐시 에바 블랙",
+										"brand_name": "Cyan",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/89/1.jpg?",
+										"option_name": "Teal / L"
+									},
+									"exchange_target_id": 165,
+									"point_used": 0
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"exchange_id": "2210201930522085215",
+			"order_id": "2210201434567250252",
+			"ordered_at": "2022-10-20T14:35:43.000000Z",
+			"packs": [
+				{
+					"shipping_rule_id": 36,
+					"paid_shipping_price": 0,
+					"sellers": [
+						{
+							"id": 36,
+							"name": "유준호",
+							"tel": null,
+							"order_items": [
+								{
+									"id": 7495,
+									"order_status_label": "상품 도착",
+									"paid_price": 2821,
+									"exchanged_option_name": "free / 235",
+									"exchange_cancelable": false,
+									"to_return_switchable": true,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 58745,
+										"name": "스터드 에스파 HOT 백팩1스터드 에스파 HOT 백팩스터드 에스파 HOT 백팩스터드 에스파",
+										"brand_name": "Azure",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?",
+										"option_name": "Aqua / L"
+									},
+									"exchange_target_id": 161,
+									"point_used": 9120
+								},
+								{
+									"id": 7496,
+									"order_status_label": "상품 도착",
+									"paid_price": 2821,
+									"exchanged_option_name": "Aqua / L",
+									"exchange_cancelable": false,
+									"to_return_switchable": true,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 58745,
+										"name": "스터드 에스파 HOT 백팩1스터드 에스파 HOT 백팩스터드 에스파 HOT 백팩스터드 에스파",
+										"brand_name": "Azure",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?",
+										"option_name": "Aqua / L"
+									},
+									"exchange_target_id": 162,
+									"point_used": 9120
+								},
+								{
+									"id": 7497,
+									"order_status_label": "상품 도착",
+									"paid_price": 2821,
+									"exchanged_option_name": "DarkKhaki / S",
+									"exchange_cancelable": false,
+									"to_return_switchable": true,
+									"return_delivery_trackable": false,
+									"return_delivery_tracking_url": null,
+									"goods": {
+										"id": 58745,
+										"name": "스터드 에스파 HOT 백팩1스터드 에스파 HOT 백팩스터드 에스파 HOT 백팩스터드 에스파",
+										"brand_name": "Azure",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?",
+										"option_name": "Aqua / L"
+									},
+									"exchange_target_id": 163,
+									"point_used": 9120
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"exchange_id": "2210121610265900165",
+			"order_id": "2210121430356743282",
+			"ordered_at": "2022-10-12T14:31:05.000000Z",
+			"packs": [
+				{
+					"shipping_rule_id": 61,
+					"paid_shipping_price": 3000,
+					"sellers": [
+						{
+							"id": 50,
+							"name": "김민정",
+							"tel": null,
+							"order_items": [
+								{
+									"id": 7192,
+									"order_status_label": "교환 완료",
+									"paid_price": 1200,
+									"exchanged_option_name": "Cornsilk / M",
+									"exchange_cancelable": false,
+									"to_return_switchable": false,
+									"return_delivery_trackable": true,
+									"return_delivery_tracking_url": "https://mmon-v2-backend.mmonstar.co.kr/delivery-trackers/goodsflow/trackings/9432923422?retrieve_id=275",
+									"goods": {
+										"id": 47517,
+										"name": "리앤 펠트 릴렉스 유틸리티 더블니트",
+										"brand_name": "나루스튜디오",
+										"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/04/75/17/1.jpg?",
+										"option_name": "RosyBrown / L"
+									},
+									"exchange_target_id": 141,
+									"point_used": 0
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

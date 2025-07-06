@@ -1,0 +1,100 @@
+@charset 'utf-8';
+
+@use '../../common/helper/function';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 레이아웃
+ * 사이드
+ */
+
+/** 사이드 */
+.mm_sidebar {
+	position: relative;
+	z-index: const.$zindex_sidebar;
+	height: 0;
+
+	&#{function.escape('.S=sidebar-sm')} {
+		.mm_sidebar-rside-inner {
+			transform: scale(0.8);
+		}
+
+		.btn_direct {
+			font-size: 1.5rem;
+
+			span {
+				margin-top: 6px;
+			}
+		}
+
+		[class*='btn_anchor'] {
+			font-size: 2rem;
+		}
+	}
+
+	// 상품상세 페이지 하단에 닫혀진 옵션창이 노출될 때
+	// 75px (닫힌 옵션창) + 36px (옵션선택 버튼) = 111px
+	&#{function.escape('.S=sidebar-up')} {
+		.mm_sidebar-rside {
+			transform: translate(-50%, -111px);
+		}
+	}
+
+	// 상품상세 페이지 하단에 열린 옵션창이 노출될 때
+	// 262px (열린 옵션창 최대높이) + 36px (옵션선택 버튼) = 298px
+	&#{function.escape('.S=sidebar-upper')} {
+		.mm_sidebar-rside {
+			transform: translate(-50%, -298px);
+		}
+	}
+
+	&-rside {
+		position: fixed;
+		bottom: 20px;
+		left: 50%;
+		width: 100%;
+		max-width: var.$min_width_extend;
+		height: 0;
+		transform: translateX(-50%);
+
+		&-inner {
+			overflow: hidden;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transform-origin: 100% 100%;
+			transition: transform const.$time_fast;
+
+			> a {
+				display: block;
+				text-align: center;
+			}
+		}
+
+		.btn_direct {
+			font-size: 1.3rem;
+
+			span {
+				display: block;
+				margin-top: 7px;
+				white-space: nowrap;
+			}
+
+			+ [class*='btn_anchor'] {
+				margin-top: 20px;
+			}
+		}
+
+		[class*='btn_anchor'] {
+			margin-top: 6px;
+			padding-top: 19px;
+			width: var.$sidebar_content_base;
+			height: var.$sidebar_content_base;
+			border: 1px solid #dcdcdc;
+			border-radius: 100%;
+			background-color: #fff;
+			opacity: 0;
+		}
+	}
+}

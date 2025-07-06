@@ -1,0 +1,24 @@
+{
+	"recent_view_plannings": [
+		{
+			"id": 1,
+			"title": "특가! 봄 신상 핫 세일",
+			"is_ended": false
+		},
+		{
+			"id": 2,
+			"title": "꾸안꾸를 위해 티셔츠를 모았어요",
+			"is_ended": false
+		},
+		{
+			"id": 3,
+			"title": "단 하나의 ONE-PIECE!",
+			"is_ended": false
+		},
+		{
+			"id": 4,
+			"title": "Gift List For Dear People",
+			"is_ended": true
+		}
+	]
+}

@@ -1,0 +1,109 @@
+{
+	"paginator": {
+		"total": 8,
+		"per_page": 20,
+		"current_page": 1,
+		"data": [
+			{
+				"id": 230,
+				"title": "상품평",
+				"contents": "상품평\n상품평\n쓸까말까",
+				"goods": null,
+				"answer": {
+					"contents": "이 편지는 영국에서 최초로 시작되어 일년에 한 바퀴 돌면서 받는 사람에게\r\n\r\n행운을 주었고 지금은 당신에게로 옮겨진 이 편지는 4일 안에 당신 곁을 떠나야 합니다.\r\n\r\n이 편지를 포함해서 7통을 행운이 필요한 사람에게 보내 주셔야 합니다.\r\n\r\n복사를 해도 좋습니다. 혹 미신이라 하실지 모르지만 사실입니다.\r\n\r\n영국에서 HGXWCH이라는 사람은 1930년에 이 편지를 받았습니다. 그는 비서에게 복사해서 보내라고 했습니다.\r\n\r\n며칠 뒤에 복권이 당첨되어 20억을 받았습니다. 어떤 이는 이 편지를 받았으나\r\n\r\n96시간 이내 자신의 손에서 떠나야 한다는 사실을 잊었습니다. 그는 곧 사직되었습니다.\r\n\r\n나중에야 이 사실을 알고 7통의 편지를 보냈는데 다시 좋은 직장을 얻었습니다.\r\n\r\n미국의 케네디 대통령은 이 편지를 받았지만 그냥 버렸습니다. 결국 9일 후 그는 암살 당했습니다.\r\n\r\n기억해 주세요. 이 편지를 보내면 7년의 행운이 있을 것이고 그렇지 않으면 3년의 불행이 있을 것입니다.\r\n\r\n그리고 이 편지를 버리거나 낙서를 해서는 절대로 안됩니다. 7통입니다.\r\n\r\n이 편지를 받은 사람은 행운이 깃들 것입니다. 힘들겠지만 좋은게 좋다고 생각하세요. 7년의 행운을 빌면서...",
+					"created_at": "2023-03-02T01:10:14.000000Z"
+				},
+				"created_at": "2023-03-02T00:51:55.000000Z"
+			},
+			{
+				"id": 195,
+				"title": "내 이름은 1:1문의 ^~^",
+				"contents": "오류를 수정해주세요 \n오류잼잼\n오늘은 왜 목요일인가\n금요일이었으면 좋겠따",
+				"goods": null,
+				"answer": {
+					"contents": "내일이 금요일이니까 참으세요\r\n금요일 조하 ^~^\r\nㅎㅎㅎㅎ",
+					"created_at": "2022-12-01T05:51:35.000000Z"
+				},
+				"created_at": "2022-12-01T05:46:24.000000Z"
+			},
+			{
+				"id": 148,
+				"title": "수정 테스트",
+				"contents": "10test44\n10test11224444",
+				"goods": {
+					"id": 10110,
+					"name": "정책확인테스트상품_01",
+					"brand_name": "BNX",
+					"option_name": "블루 / 3",
+					"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/01/01/10/1.jpg?ut=1667142003"
+				},
+				"answer": null,
+				"created_at": "2022-09-21T01:53:34.000000Z"
+			},
+			{
+				"id": 67,
+				"title": "ㅎㅎㅎ",
+				"contents": "ㅎㅎㅎㅎㅎㅎㅎㅎㅎㄴㅇㄻㄴㅇㄹ",
+				"goods": {
+					"id": 1,
+					"name": "R의 말이Gold temporibus eum",
+					"brand_name": "PBG골프",
+					"option_name": null,
+					"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/01/1.jpg?ut=1672897616"
+				},
+				"answer": null,
+				"created_at": "2022-08-05T07:27:32.000000Z"
+			},
+			{
+				"id": 66,
+				"title": "취소",
+				"contents": "취소123434aa12ㅁㅁr",
+				"goods": {
+					"id": 371,
+					"name": "K간호부를SeaGreen laudantium quam",
+					"brand_name": "인베스트",
+					"option_name": "LightSlateGray / M",
+					"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/03/71/1.jpg?ut=1664948786"
+				},
+				"answer": null,
+				"created_at": "2022-08-05T03:08:49.000000Z"
+			},
+			{
+				"id": 65,
+				"title": "1234",
+				"contents": "123123123ar1",
+				"goods": {
+					"id": 371,
+					"name": "K간호부를SeaGreen laudantium quam",
+					"brand_name": "인베스트",
+					"option_name": "LightSlateGray / M",
+					"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/03/71/1.jpg?ut=1664948786"
+				},
+				"answer": null,
+				"created_at": "2022-08-05T03:04:04.000000Z"
+			},
+			{
+				"id": 64,
+				"title": "123",
+				"contents": "sdfasdv243rewfdv32wefrvdf gervdf",
+				"goods": null,
+				"answer": null,
+				"created_at": "2022-08-04T07:04:45.000000Z"
+			},
+			{
+				"id": 51,
+				"title": "배송이 오지 않는다",
+				"contents": "배송이 오지 않는다배송이 오지 않는다\n배송이 오지 않는다\n배송이 오지 않는다배송이 오지 않는다배송이 오지 않는다배송이 오지 않는다배송이 오지 않는다\n배송이 오지 않는다배송이 오지 않는다\n배송이 오지 않는다",
+				"goods": {
+					"id": 1765,
+					"name": "R가 말을LightBlue aut saepe",
+					"brand_name": "샤트렌",
+					"option_name": "Chocolate / M",
+					"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/17/65/1.jpg?ut=1671292803"
+				},
+				"answer": null,
+				"created_at": "2022-06-14T04:58:22.000000Z"
+			}
+		]
+	}
+}

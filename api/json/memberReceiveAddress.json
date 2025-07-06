@@ -1,0 +1,34 @@
+{
+	"receive_addresses": [
+		{
+			"id": 259,
+			"shipping_name": "test",
+			"name": "test",
+			"tel": "01022332233",
+			"zip_code": "06096",
+			"base_address": "서울특별시 강남구 삼성로115길 37-4(삼성동, 힐스테이트5차)",
+			"detail_address": "z",
+			"is_recent": true
+		},
+		{
+			"id": 270,
+			"shipping_name": "독도",
+			"name": "김독도",
+			"tel": "01033321323",
+			"zip_code": "40240",
+			"base_address": "경상북도 울릉군 울릉읍 독도이사부길 63",
+			"detail_address": "3123",
+			"is_recent": false
+		},
+		{
+			"id": 255,
+			"shipping_name": "배송지",
+			"name": "배송지",
+			"tel": "01022223333",
+			"zip_code": "06096",
+			"base_address": "서울특별시 강남구 삼성로115길 37-4(삼성동, 힐스테이트5차)",
+			"detail_address": "123",
+			"is_recent": false
+		}
+	]
+}

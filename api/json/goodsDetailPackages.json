@@ -1,0 +1,70 @@
+{
+    "goods_packages": [
+        {
+            "goods_id": 4556,
+            "base_discounted_price": 16200,
+            "name": "BEST 특가 패딩/다운/코트/가디건 추가쿠폰864",
+            "is_only_adult": false,
+            "thumbnail_url": "https://image.stylecrew.co.kr/mall/dev/goods/000/000/000/004/1.jpg?updated_at=20220504163716",
+            "is_soldout": false,
+            "brand_name": "엠몬스타",
+            "stock": 1,
+            "sale_rate": 20
+        },
+		{
+			"goods_id": 52625,
+			"base_discounted_price": 162400,
+			"name": "윈터 롱 토트백",
+			"is_only_adult": false,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/26/25/1.jpg?ut=1661220921",
+			"is_soldout": false,
+			"brand_name": "리틀그라운드",
+			"stock": 90,
+			"sale_rate": 13
+		},
+		{
+			"goods_id": 52532,
+			"base_discounted_price": 8400,
+			"name": "홀터넥 런닝 올스타 가디건",
+			"is_only_adult": false,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/25/32/1.jpg?ut=1661220922",
+			"is_soldout": false,
+			"brand_name": "꼼빠니아",
+			"stock": 240,
+			"sale_rate": 2
+		},
+		{
+			"goods_id": 52578,
+			"base_discounted_price": 7800,
+			"name": "커스텀핏 런닝 슬라이드 원피스",
+			"is_only_adult": false,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/25/78/1.jpg?ut=1668787203",
+			"is_soldout": false,
+			"brand_name": "블루독",
+			"stock": 137,
+			"sale_rate": 84
+		},
+		{
+			"goods_id": 53410,
+			"base_discounted_price": 160000,
+			"name": "인트레치아토 릴렉스 집업",
+			"is_only_adult": false,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/34/10/1.jpg?ut=1661220914",
+			"is_soldout": false,
+			"brand_name": "크레송",
+			"stock": 100,
+			"sale_rate": 3
+		},
+		{
+			"goods_id": 52984,
+			"base_discounted_price": 48200,
+			"name": "커스텀핏 롱 커브 티셔츠",
+			"is_only_adult": false,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/29/84/1.jpg?ut=1661220918",
+			"is_soldout": false,
+			"brand_name": "알로봇",
+			"stock": 180,
+			"sale_rate": 9
+		}
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "login_id": "test@mmonstar.co.kr",
+    "name": "테스터",
+    "email": "test@mmonstar.co.krrr",
+    "phone": "01012341234",
+    "birthday": "19990419",
+    "is_email_receive": false,
+    "is_sms_receive": true
+}

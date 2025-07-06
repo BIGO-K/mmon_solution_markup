@@ -1,0 +1,14 @@
+{
+	"refund_info": {
+		"total_paid_price": 30000,
+		"refund_price": 28000,
+		"refund_point": 2000,
+		"calculate_details": [
+			{
+				"label": "배송비",
+				"amount": 2000,
+				"is_substracted": false
+			}
+		]
+	}
+}

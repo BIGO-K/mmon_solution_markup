@@ -1,0 +1,787 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../assets/scss/common/helper/function' as *;
+@use '../../assets/scss/common/helper/mixin';
+@use '../../assets/scss/common/setting/const';
+@use '../../assets/scss/style/setting/var';
+
+/**
+ * 공동구매
+ * 공동구매, 상품상세
+ */
+
+/** 상품상세 */
+.m_prodetail {
+	&-head {
+		&-product {
+			#{escape('.m...product-coopbuy')} {
+				margin: 22px 14px 0;
+				border-bottom: 1px solid #e6e6e6;
+
+				// 공동구매 목표 달성
+				&#{escape('.S=coopbuy-complete')} {
+					.text_state > strong {
+						color: #46d8c9;
+					}
+
+					#{escape('.m...progress-bar')} {
+						> i {
+							background-color: #11b7a6;
+						}
+
+						&::after {
+							background-image: url('/public/images/content/coopbuy_goal_complete.svg');
+						}
+					}
+				}
+
+				// 공동구매 목표 미달성
+				&#{escape('.S=coopbuy-fail')} {
+					.text_state > strong {
+						color: #fff;
+					}
+
+					#{escape('.m...progress-bar')} {
+						> i {
+							background-color: #888;
+						}
+					}
+				}
+
+				.text_state {
+					font-size: 0;
+
+					> strong {
+						display: inline-block;
+						padding: 0 12px;
+						width: 96px;
+						background-color: #3d3d3d;
+						@include mixin.font(#87e50c '1.5rem/3.4rem' center);
+					}
+
+					> b {
+						flex: 1;
+						padding: 0 15px;
+						min-width: 0;
+						height: 34px;
+						border: 1px solid #d5d5d5;
+						border-width: 1px 1px 1px 0;
+						@include mixin.font(v_300 '2rem/3rem');
+
+						> span {
+							display: inline-block;
+							margin: 0 1px 0 2px;
+							vertical-align: 0;
+						}
+
+						strong {
+							margin-left: 12px;
+							font-variation-settings: 'wght' 600;
+
+							span {
+								margin: 0 3px;
+								vertical-align: 2px;
+								font-size: 1.7rem;
+							}
+						}
+					}
+
+					// 종료된 공동구매
+					&-off {
+						padding: 12px 0 10px;
+						border-top: 1px solid #e6e6e6;
+						background-color: #fafafa;
+						@include mixin.font('1.5rem/2.4rem' center);
+
+						span {
+							display: inline-block;
+							margin: 0 12px;
+							@include mixin.font(#d5d5d5 v_400);
+						}
+
+						strong {
+							@include mixin.font(var.$color_support v_600 '1.7rem');
+						}
+					}
+				}
+
+				&-progress {
+					margin: 23px 0 22px;
+					padding: 0 10px;
+
+					.text_goal {
+						font-size: 1.3rem;
+
+						> b {
+							display: block;
+							margin-top: 5px;
+							vertical-align: 0;
+							@include mixin.font('1.5rem/2rem');
+
+							strong {
+								vertical-align: -1px;
+								@include mixin.font(v_700 '2rem');
+
+								sub {
+									vertical-align: 1px;
+									font-size: 1.7rem;
+								}
+							}
+
+							> span {
+								display: inline-block;
+								margin: 0 7px;
+								font-size: 1.7rem;
+							}
+						}
+					}
+
+					#{escape('.m...progress-bar')} {
+						position: relative;
+						margin-top: 13px;
+						width: 100%;
+						height: 10px;
+
+						i {
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							height: 100%;
+							background-color: #86ce29;
+						}
+
+						&::before {
+							position: absolute;
+							inset: 0;
+							border: 1px solid #b8b8b9;
+							content: '';
+						}
+
+						&::after {
+							position: absolute;
+							top: -39px;
+							right: 0;
+							width: 64px;
+							height: 40px;
+							@include mixin.background(url('/public/images/content/coopbuy_goal.svg') '0 0/cover' no-repeat);
+
+							content: '';
+						}
+					}
+				}
+
+				+ #{escape('.m...product-info')} {
+					margin-top: 20px;
+				}
+			}
+		}
+
+		&-info {
+			#{escape('.m...info-coopbuy')} {
+				dd {
+					+ dd {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	// 공동구매 진행 단계
+	&-coopbuy-process {
+		margin-top: 44px;
+		padding: 32px 30px 36px;
+		background-color: #f5f5f5;
+
+		h3 {
+			@include mixin.font('2rem' center);
+
+			strong {
+				margin-right: 5px;
+				@include mixin.font(#11b7a6 v_700);
+			}
+		}
+
+		ol {
+			margin-top: 22px;
+
+			li {
+				position: relative;
+				padding-left: 90px;
+				height: 86px;
+				border-radius: 5px;
+				background-color: #fff;
+
+				.ico_coopbuy {
+					// 시작, 참여, 달성, 발급, 구매
+					$icons: (join, 48px, 34px, 32px, 21px), (goal, 36px, 45px, 18px, 27px), (coupon, 46px, 28px, 32px, 22px), (buy, 42px, 42px, 22px, 24px);
+					@each $icon, $width, $height, $top, $left in $icons {
+						&-#{$icon} {
+							position: absolute;
+							top: $top;
+							left: $left;
+
+							&::before {
+								width: $width;
+								height: $height;
+								@include mixin.background(url('/public/images/content/coopbuy_process_#{$icon}.svg') '0 0/contain' no-repeat);
+							}
+						}
+					}
+				}
+
+				dl {
+					position: absolute;
+					top: 50%;
+					left: 90px;
+					@include mixin.font('1.3rem/1.8rem');
+
+					transform: translateY(-50%);
+
+					dt {
+						padding-bottom: 6px;
+						@include mixin.font(v_700 '1.7rem');
+					}
+				}
+
+				&:not(:last-child){
+					margin-bottom: 28px;
+
+					&::after {
+						position: absolute;
+						bottom: -18px;
+						left: 50%;
+						margin-left: -5px;
+						@include mixin.triangle(#5c5c5c, bottom, 5px, 8px);
+
+						content: '';
+					}
+				}
+			}
+		}
+
+		+ .m_prodetail-tab {
+			margin-top: 0;
+		}
+	}
+}
+
+// 옵션 선택 영역
+.m_product-option {
+	&-foot {
+		> .mm_note {
+			margin: -16px 0 20px;
+		}
+	}
+}
+
+// 하단 고정 버튼
+.mm_btn_box#{escape('.T=fixed')} {
+	.btn_product-detail {
+		&:not(:only-child) {
+			width: 160px;
+			border: 1px solid #101010;
+			background-color: #fdfdfd;
+			color: #101010;
+		}
+
+		&:only-child {
+			flex: 1;
+			min-width: 0;
+			background-color: #101010;
+			color: #fff;
+		}
+
+		+ .btn_product-buy {
+			margin-left: 0;
+		}
+	}
+}
+
+/** 공동구매 메인 */
+.m_coopbuy {
+	&-head {
+		padding: 62px 0 61px;
+		background-color: #f5f5f5;
+		@include mixin.font('1.7rem' center);
+
+		> h3 {
+			@include mixin.font(v_600 '2.6rem/3.4rem');
+
+			strong {
+				color: #11b7a6;
+			}
+
+			+ strong {
+				display: block;
+				margin-top: 10px;
+			}
+		}
+
+		> p {
+			margin-top: 34px;
+			@include mixin.font('1.3rem/2.2rem');
+		}
+
+		> ol {
+			margin-top: 34px;
+			font-size: 0;
+
+			> li {
+				display: inline-block;
+				position: relative;
+				padding-bottom: 26px;
+
+				&:nth-child(n+2) {
+					margin-left: 22px;
+
+					&::before {
+						position: absolute;
+						top: 27px;
+						left: -14px;
+						@include mixin.triangle(#5c5c5c, right, 3px, 6px);
+
+						content: '';
+					}
+				}
+
+				i[class*='ico_coopbuy'] {
+					width: 60px;
+					height: 60px;
+					border: 1px solid #cdcdcd;
+					border-radius: 100%;
+					background-color: #fff;
+					text-align: center;
+				}
+
+				.ico_coopbuy {
+					// 참여, 달성, 발급, 구매
+					$icons: (join, 34px, 25px, 22px 0 0), (goal, 25px, 32px, 13px 0 0), (coupon, 33px, 20px, 21px 0 0 5px), (buy, 32px, 33px, 11px 0 0 2px);
+					@each $icon, $width, $height, $margin in $icons {
+						&-#{$icon}::before {
+							margin: $margin;
+							width: $width;
+							height: $height;
+							@include mixin.background(url('/public/images/content/coopbuy_process_#{$icon}.svg') '0 0/contain' no-repeat);
+						}
+					}
+				}
+
+				b {
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					@include mixin.font('1.3rem/2.1rem', nowrap);
+
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+
+	&-list {
+		li {
+			> a {
+				display: block;
+				position: relative;
+			}
+
+			.image_product {
+				display: block;
+				position: relative;
+				padding-top: calc(var(--prod_ratio_base) * 100%);
+			}
+
+			.text_adult {
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				right: 0;
+				left: 0;
+				background-color: #eee;
+
+				.ico_adult {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+
+				&::after {
+					padding-top: calc(var(--prod_ratio_base) * 100%);
+					width: 100%;
+					content: '';
+				}
+			}
+
+			figcaption {
+				.text_brand {
+					@include mixin.text-ellipsis(1);
+					@include mixin.font(#767676 '1.4rem');
+				}
+
+				.text_product {
+					@include mixin.text-ellipsis(2);
+
+					margin-top: 1px;
+					height: 42px;
+					@include mixin.font(#2b2b2b '1.4rem/2.1rem');
+				}
+
+				.text_price {
+					margin-top: 17px;
+					@include mixin.font('1.5rem');
+
+					del {
+						margin-right: 23px;
+						vertical-align: -1px;
+						@include mixin.font(#5c5c5c v_400 '1.7rem');
+
+						> span {
+							display: inline-block;
+							position: relative;
+							vertical-align: 0;
+
+							&::before {
+								position: absolute;
+								top: 4px;
+								right: -25px;
+								@include mixin.triangle(#767676, right, 4px, 8px);
+
+								content: '';
+							}
+
+							&::after {
+								position: absolute;
+								top: 50%;
+								right: -18px;
+								left: -1px;
+								margin-top: -1px;
+								border-bottom: 1px solid #767676;
+								content: '';
+							}
+						}
+
+						&::after {
+							font-size: 1.5rem;
+						}
+					}
+
+					strong {
+						margin-left: 7px;
+						vertical-align: -2px;
+						font-size: 2rem;
+
+						&::after {
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+
+			&:nth-child(n+2) {
+				margin-top: 55px;
+			}
+		}
+
+		&#{escape('.T=skeleton')} {
+			.image_product {
+				background-color: var.$skeleton_color_base;
+			}
+
+			.text_brand {
+				margin-top: 20px;
+				width: 45%;
+				height: 16px;
+				background-color: var.$skeleton_color_base;
+			}
+
+			.text_product {
+				position: relative;
+				margin-top: 10px;
+				height: 38px;
+				background-color: transparent;
+
+				&::before,
+				&::after {
+					position: absolute;
+					top: 0;
+					right: 0;
+					left: 0;
+					height: 16px;
+					background-color: var.$skeleton_color_base;
+					content: '';
+				}
+
+				&::after {
+					top: 22px;
+				}
+			}
+
+			.text_price {
+				margin-top: 16px;
+				width: 60%;
+				height: 23px;
+				background-color: var.$skeleton_color_base;
+			}
+		}
+	}
+
+	.mm_tab {
+		padding-top: 24px;
+
+		.mm_tab_menu {
+			.btn_tab {
+				font-size: 1.5rem;
+
+				&#{escape('.S=tab-on')} {
+					font-variation-settings: 'wght' 700;
+
+					&::after {
+						border-width: 2px;
+					}
+				}
+			}
+		}
+
+		&-item {
+			padding-top: 24px;
+
+			.mm_foot {
+				margin-top: 64px;
+
+				.btn_more {
+					.ico_more {
+						margin: 15px 0 0 9px;
+
+						&::before {
+							width: 10px;
+							height: 12px;
+							background-color: #2b2b2b;
+						}
+					}
+				}
+			}
+
+			.mm_text-none {
+				padding: 60px 0 59px;
+			}
+		}
+	}
+
+	// 진행중
+	&-on {
+		.m_coopbuy-list {
+			li {
+				// 목표 달성
+				&#{escape('.S=coopbuy-complete')} {
+					.m_coopbuy-on-progress {
+						.text_state > strong {
+							color: #46d8c9;
+						}
+
+						#{escape('.m...progress-bar')} {
+							> i {
+								background-color: #11b7a6;
+							}
+
+							&::after {
+								background-image: url('/public/images/content/coopbuy_goal_complete.svg');
+							}
+						}
+					}
+
+					.mm_btn_box {
+						.btn_coopbuy-entry {
+							color: #46d8c9;
+						}
+					}
+				}
+
+				figcaption {
+					> p {
+						padding: 0 2px;
+					}
+				}
+
+				.mm_btn_box {
+					margin-top: 26px;
+
+					.btn_sns-share {
+						padding: 0;
+
+						.ico_share {
+							margin: 14px 5px 0 0;
+
+							&::after {
+								background-color: #2b2b2b;
+							}
+						}
+					}
+
+					.mm_sns {
+						display: none;
+					}
+
+					.btn_coopbuy-entry {
+						padding: 0;
+						background-color: #101010;
+						color: #87e50c;
+					}
+				}
+			}
+		}
+
+		&-progress {
+			position: relative;
+			z-index: 0;
+			padding: 0 18px 26px;
+
+			&::before {
+				position: absolute;
+				z-index: -1;
+				inset: 0;
+				border: 1px solid #dcdcdc;
+				content: '';
+			}
+
+			.text_state {
+				margin: 0 -18px;
+				padding: 0 18px;
+				height: 46px;
+				background-color: #3d3d3d;
+				@include mixin.font(#fff '2.4rem/4.2rem', nowrap);
+
+				> b {
+					font-variation-settings: 'wght' 300;
+
+					span {
+						margin: 0 1px;
+						vertical-align: 1px;
+					}
+
+					strong {
+						margin-left: 16px;
+						font-variation-settings: 'wght' 600;
+
+						span {
+							margin: 0 3px;
+							vertical-align: 2px;
+						}
+					}
+				}
+
+				> strong {
+					margin-left: 11px;
+					vertical-align: 1px;
+					@include mixin.font(#87e50c v_400 '1.4rem');
+				}
+			}
+
+			.text_goal {
+				margin-top: 25px;
+				font-size: 1.3rem;
+
+				> b {
+					display: block;
+					margin-top: 3px;
+					@include mixin.font(v_400 '1.5rem/2.4rem');
+
+					strong {
+						vertical-align: -1px;
+						@include mixin.font(v_700 '2rem');
+
+						sub {
+							vertical-align: 1px;
+							@include mixin.font(v_600 '1.7rem');
+						}
+					}
+
+					span {
+						margin: 0 6px 0 7px;
+						vertical-align: 0;
+						font-size: 1.7rem;
+					}
+				}
+			}
+
+			#{escape('.m...progress-bar')} {
+				position: relative;
+				z-index: 0;
+				margin-top: 10px;
+				width: 100%;
+				height: 10px;
+
+				> i {
+					height: 100%;
+					background-color: #86ce29;
+				}
+
+				&::before {
+					position: absolute;
+					z-index: -1;
+					inset: 0;
+					border: 1px solid #b8b8b9;
+					content: '';
+				}
+
+				&::after {
+					position: absolute;
+					z-index: -1;
+					top: -39px;
+					right: 0;
+					width: 64px;
+					height: 40px;
+					@include mixin.background(url('/public/images/content/coopbuy_goal.svg') '0 0/cover' no-repeat);
+
+					content: '';
+				}
+			}
+
+			+ .text_brand {
+				margin-top: 21px;
+			}
+		}
+	}
+
+	// 마감
+	&-off {
+		.m_coopbuy-list {
+			li {
+				figcaption {
+					padding: 0 17px 23px;
+					border: 1px solid #d5d5d5;
+					border-width: 0 1px 1px;
+
+					.text_state {
+						margin: 0 -17px;
+						height: 47px;
+						border-bottom: 1px solid #eee;
+						@include mixin.font('1.5rem/4.6rem' center);
+
+						span {
+							margin: 0 12px;
+							vertical-align: 1px;
+							@include mixin.font(#d5d5d5 v_400 '1.4rem');
+						}
+
+						strong {
+							vertical-align: -1px;
+							@include mixin.font(var.$color_support v_600 '1.7rem');
+						}
+					}
+
+					.text_brand {
+						margin-top: 21px;
+					}
+
+					.text_price {
+						margin-top: 16px;
+					}
+				}
+			}
+		}
+	}
+}

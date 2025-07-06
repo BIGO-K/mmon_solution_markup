@@ -1,0 +1,185 @@
+{
+    "raffle_list": [
+		{
+			"id": 8,
+			"available_device_list": [
+				"PC",
+				"M_WEB",
+				"M_APP"
+			],
+			"winner_limit_count": 3,
+			"start_at": "2022-12-12 00:00:00",
+			"end_at": "2050-01-31 00:00:59",
+			"notice_at": "2050-02-06 00:00:00",
+			"buy_start_at": "2050-02-07 00:00:00",
+			"buy_end_at": "2050-02-10 00:00:59",
+			"total_entry_count": 5,
+			"goods": {
+				"id": 750,
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/50/1.jpg?ut=1676518091",
+				"name": "Sophie Argyle Transform Knit",
+				"brand_name": "VOCAVACA",
+				"price": 155600,
+				"base_discounted_price": 155600,
+				"sale_rate": 0,
+				"is_only_adult": false
+			},
+			"is_entry": false,
+			"is_confirmed_winner": false
+		},
+		{
+			"id": 9,
+			"available_device_list": [
+				"M_WEB",
+				"M_APP"
+			],
+			"winner_limit_count": 1,
+			"start_at": "2022-12-12 00:00:00",
+			"end_at": "2023-12-31 00:00:59",
+			"notice_at": "2024-01-01 00:00:00",
+			"buy_start_at": "2024-01-02 00:00:00",
+			"buy_end_at": "2024-01-05 00:00:59",
+			"total_entry_count": 5,
+			"goods": {
+				"id": 751,
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/51/1.jpg?ut=1670831793",
+				"name": "코닥 디지털 즉석카메라 PRINTOMATIC_Raffle",
+				"brand_name": "코닥",
+				"price": 200000,
+				"base_discounted_price": 94500,
+				"sale_rate": 53,
+				"is_only_adult": false
+			},
+			"is_entry": false,
+			"is_confirmed_winner": false
+		},
+		{
+			"id": 5,
+			"available_device_list": [
+				"M_APP"
+			],
+			"winner_limit_count": 2,
+			"start_at": "2022-12-06 14:10:00",
+			"end_at": "2022-12-06 14:53:59",
+			"notice_at": "2022-12-06 14:54:00",
+			"buy_start_at": "2022-12-06 14:55:00",
+			"buy_end_at": "2025-12-26 16:00:59",
+			"total_entry_count": 2,
+			"goods": {
+				"id": 709,
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/09/1.jpg?ut=1670428819",
+				"name": "[단독세일] KITTY WOOL KINT TOP_Raffle event",
+				"brand_name": "로라로라",
+				"price": 120000,
+				"base_discounted_price": 105000,
+				"sale_rate": 13,
+				"is_only_adult": false
+			},
+			"is_entry": false,
+			"is_confirmed_winner": false
+		},
+		{
+			"id": 4,
+			"available_device_list": [
+				"PC",
+				"M_WEB",
+				"M_APP"
+			],
+			"winner_limit_count": 1,
+			"start_at": "2022-12-06 14:01:00",
+			"end_at": "2022-12-06 14:15:59",
+			"notice_at": "2022-12-06 14:16:00",
+			"buy_start_at": "2022-12-06 14:20:00",
+			"buy_end_at": "2024-12-20 00:50:59",
+			"total_entry_count": 2,
+			"goods": {
+				"id": 710,
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/10/1.jpg?ut=1670305602",
+				"name": "뮬리 에코 퍼 자켓 3 COLORS__Raffle event",
+				"brand_name": "NERDY",
+				"price": 300000,
+				"base_discounted_price": 250000,
+				"sale_rate": 17,
+				"is_only_adult": false
+			},
+			"is_entry": false,
+			"is_confirmed_winner": true
+		},
+		{
+			"id": 5,
+			"available_device_list": [
+				"M_APP"
+			],
+			"winner_limit_count": 1,
+			"start_at": "2022-12-06 14:01:00",
+			"end_at": "2022-12-06 14:15:59",
+			"notice_at": "2022-12-06 14:16:00",
+			"buy_start_at": "2022-12-06 14:20:00",
+			"buy_end_at": "2023-01-20 00:50:59",
+			"total_entry_count": 2,
+			"goods": {
+				"id": 710,
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/10/1.jpg?ut=1670305602",
+				"name": "뮬리 에코 퍼 자켓 3 COLORS__Raffle event",
+				"brand_name": "NERDY",
+				"price": 300000,
+				"base_discounted_price": 250000,
+				"sale_rate": 17,
+				"is_only_adult": true
+			},
+			"is_entry": true,
+			"is_confirmed_winner": false
+		},
+		{
+			"id": 6,
+			"available_device_list": [
+				"PC",
+				"M_APP"
+			],
+			"winner_limit_count": 1,
+			"start_at": "2023-12-06 14:01:00",
+			"end_at": "2023-12-06 14:15:59",
+			"notice_at": "2022-12-06 14:16:00",
+			"buy_start_at": "2022-12-06 14:20:00",
+			"buy_end_at": "2024-01-20 00:50:59",
+			"total_entry_count": 2,
+			"goods": {
+				"id": 710,
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/10/1.jpg?ut=1670305602",
+				"name": "SWEATSHIRT FLOWERMARDI_OATMEAL GREEN",
+				"brand_name": "마르디메크리디",
+				"price": 71250,
+				"base_discounted_price": 75000,
+				"sale_rate": 5,
+				"is_only_adult": false
+			},
+			"is_entry": false,
+			"is_confirmed_winner": false
+		},
+		{
+			"id": 7,
+			"available_device_list": [
+				"PC"
+			],
+			"winner_limit_count": 1256,
+			"start_at": "2023-03-01 14:00:00",
+			"end_at": "2023-12-06 14:15:59",
+			"notice_at": "2022-12-06 14:16:00",
+			"buy_start_at": "2022-12-06 14:20:00",
+			"buy_end_at": "2024-01-20 00:50:59",
+			"total_entry_count": 2,
+			"goods": {
+				"id": 710,
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/10/1.jpg?ut=1670305602",
+				"name": "볼레로 니트 가디건_아이보리",
+				"brand_name": "이스트쿤스트",
+				"price": 69000,
+				"base_discounted_price": 125000,
+				"sale_rate": 56,
+				"is_only_adult": false
+			},
+			"is_entry": true,
+			"is_confirmed_winner": false
+		}
+	]
+}

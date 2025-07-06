@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<!-- 소셜태그 -->
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="">
+		<meta property="og:url" content="">
+		<meta property="og:site_name" content="">
+		<!--// 소셜태그 -->
+
+		<title>M.Mon solution</title>
+
+		<link rel="stylesheet" lang="sass" href="/src/assets/scss/app.scss">
+		<style>
+			:root {
+				/* 클라이언트 컬러 */
+				--color_main: #1f1f1f;
+				--color_sub: #f84f34;
+
+				/* 블랙 버전 */
+				--color_variable: var(--color_sub);
+				--color_support: #4457a7;
+
+				/* 유색 버전 */
+				/* --color_variable: var(--color_main);
+				--color_support: #ff8800; */
+
+				/* 등급 컬러 */
+				--color_level5: #9b3da1;
+				--color_level4: #e19c03;
+				--color_level3: #7cbacb;
+				--color_level2: #e68362;
+				--color_level1: #4e8e71;
+
+				/* 상품 비율 */
+				--prod_ratio_base: 1;
+			}
+		</style>
+
+		<script type="module" src="/src/assets/script/app.ts"></script>
+	</head>
+	<body>
+		<div id="app" class="mm_app"></div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>

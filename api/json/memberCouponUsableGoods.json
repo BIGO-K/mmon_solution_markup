@@ -1,0 +1,15 @@
+{
+    "paginator": {
+        "total": 2,
+        "per_page": 20,
+        "current_page": 1,
+        "data": [
+            {
+                "id": 1,
+                "name": "COLLEGE 스웻셔츠Univ(상품명) / 슬로우 무브(브랜드명)",
+                "brand_name": "슬로우무브",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x1_2.png"
+            }
+        ]
+    }
+}

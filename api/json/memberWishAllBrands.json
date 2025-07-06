@@ -1,0 +1,94 @@
+{
+	"wish_brands": [
+		{
+			"id": 17,
+			"name": "올리비아하슬러",
+			"logo_image_url": ""
+		},
+		{
+			"id": 8,
+			"name": "까스텔바작",
+			"logo_image_url": ""
+		},
+		{
+			"id": 7,
+			"name": "디씨",
+			"logo_image_url": ""
+		},
+		{
+			"id": 4,
+			"name": "퀵실버",
+			"logo_image_url": ""
+		},
+		{
+			"id": 5,
+			"name": "반스",
+			"logo_image_url": ""
+		},
+		{
+			"id": 61,
+			"name": "NII",
+			"logo_image_url": ""
+		},
+		{
+			"id": 50,
+			"name": "BNX",
+			"logo_image_url": ""
+		},
+		{
+			"id": 40,
+			"name": "포커스",
+			"logo_image_url": ""
+		},
+		{
+			"id": 22,
+			"name": "블루독",
+			"logo_image_url": ""
+		},
+		{
+			"id": 12,
+			"name": "빌트모아",
+			"logo_image_url": ""
+		},
+		{
+			"id": 2,
+			"name": "조이너스",
+			"logo_image_url": ""
+		},
+		{
+			"id": 44,
+			"name": "인베스트",
+			"logo_image_url": ""
+		},
+		{
+			"id": 51,
+			"name": "BYC",
+			"logo_image_url": ""
+		},
+		{
+			"id": 45,
+			"name": "탑걸",
+			"logo_image_url": ""
+		},
+		{
+			"id": 53,
+			"name": "DAN",
+			"logo_image_url": ""
+		},
+		{
+			"id": 46,
+			"name": "제이폴락",
+			"logo_image_url": ""
+		},
+		{
+			"id": 37,
+			"name": "비트로",
+			"logo_image_url": ""
+		},
+		{
+			"id": 18,
+			"name": "꼼빠니아",
+			"logo_image_url": ""
+		}
+	]
+}

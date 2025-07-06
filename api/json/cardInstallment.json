@@ -1,0 +1,53 @@
+{
+    "interest_info": {
+		"title": "3월 무이자 할부",
+		"interest_free_list": [
+			{
+				"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/installments/1/1.png?ut=1660300680",
+				"image_alt": "삼성카드",
+				"info": "5만원 이상 결제 시 / 2~6개월",
+				"card_code": 700
+			},
+			{
+				"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/installments/1/2.png?ut=1660300681",
+				"image_alt": "신한카드",
+				"info": "5만원 이상 결제 시 / 2~7개월",
+				"card_code": 702
+			},
+			{
+				"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/installments/1/3.png?ut=1660300681",
+				"image_alt": "하나카드",
+				"info": "5만원 이상 결제 시 / 2~8개월",
+				"card_code": 1400
+			},
+			{
+				"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/installments/1/4.png?ut=1660300681",
+				"image_alt": "현대카드",
+				"info": "1만원 이상 결제 시 / 2~7개월",
+				"card_code": 1401
+			}
+		],
+		"partial_interest_list": [
+			{
+				"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/installments/1/1.png?ut=1660300680",
+				"image_alt": "삼성카드",
+				"info": "10, 12 개월 부분 무이자할부",
+				"card_code": 700
+			},
+			{
+				"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/installments/1/2.png?ut=1660300681",
+				"image_alt": "신한카드",
+				"info": "10, 12 개월 부분 무이자할부\r\n및 ARS(1899-5772) 신청 시\r\n8, 9, 10, 11, 12 개월 부분 무이자할부",
+				"card_code": 702
+			},
+			{
+				"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/installments/1/3.png?ut=1660300681",
+				"image_alt": "하나카드",
+				"info": "10, 12 개월 부분 무이자할부",
+				"card_code": 1400
+			}
+		],
+		"display_start_at": "2023-03-05T15:00:00.000000Z",
+		"display_end_at": "2024-03-01T14:59:59.000000Z"
+	}
+}

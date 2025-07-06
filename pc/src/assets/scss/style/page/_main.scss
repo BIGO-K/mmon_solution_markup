@@ -1,0 +1,502 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 메인, 메인팝업, 메인상단앱설치
+ */
+
+// *---------- 팝업 ----------*
+
+// *---------- 모달 ----------*
+
+// *---------- 레이어 ----------*
+
+/** 메인 팝업 */
+.m_main-popup {
+	position: fixed;
+	z-index: -1;
+	inset: 0;
+	opacity: 0;
+	transition: opacity const.$time_fast;
+
+	&#{function.escape('.S=on')} {
+		z-index: const.$zindex_popup;
+		opacity: 1;
+	}
+
+	&-dim {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(#000, 0.7);
+	}
+
+	&-item {
+		overflow: hidden;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 400px;
+		background-color: #fff;
+		transform: translate(-50%, -50%);
+
+		.mm_carousel {
+			&-item {
+				.mm_image-none {
+					padding-top: 100%;
+					height: 0;
+
+					&::after {
+						position: absolute;
+						top: 50%;
+						right: 8px;
+						left: 8px;
+						transform: translateY(-50%);
+						content: attr(data-ir);
+						@include mixin.font(#a3a3a3 '1.4rem/2rem' center);
+					}
+
+					> .ico_image {
+						display: none;
+					}
+				}
+			}
+
+			&-pagination {
+				bottom: 14px;
+
+				li:nth-child(n+2) {
+					margin-left: 6px;
+				}
+
+				.btn_carousel-page {
+					width: 6px;
+					height: 6px;
+					border-radius: 3px;
+					background-color: #000;
+					opacity: 0.5;
+					transition: width const.$time_fast, opacity const.$time_fast;
+
+					&#{function.escape('.S=on')} {
+						width: 29px;
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		#{function.escape('.m...item-foot')} {
+			padding: 12px 0 0 14px;
+			height: 45px;
+			border-top: 1px solid #b8b8b9;
+
+			.btn_popup-close {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				padding: 15px 17px;
+				font-size: 1.4rem;
+
+				.ico_close {
+					margin: 2px 0 0 4px;
+
+					&::before {
+						width: 10px;
+						height: 11px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/** 타임특가 */
+.mm_timedeal {
+	// A타입
+	&#{function.escape('.T=ta')} {
+		position: fixed;
+		z-index: -1;
+		opacity: 0;
+
+		&#{function.escape('.S=on')} {
+			z-index: const.$zindex_sidebar;
+			right: 30px;
+			bottom: 30px;
+			opacity: 1;
+		}
+
+		.mm_timedeal-content {
+			position: relative;
+			width: 530px;
+
+			.mm_carousel {
+				&:hover {
+					.mm_carousel-control {
+						button {
+							opacity: 1;
+						}
+					}
+				}
+
+				&-list {
+					height: 354px;
+				}
+
+				&-item {
+					height: 100%;
+
+					> a {
+						display: block;
+					}
+
+					.text_state {
+						position: absolute;
+						z-index: 3;
+						top: -107px;
+						left: -7px;
+
+						strong {
+							display: inline-block;
+							margin: 0 0 -14px 7px;
+							padding: 0 9px;
+							height: 19px;
+							border-radius: 19px;
+							background-color: #f86363;
+							@include mixin.font(#fff '1.2rem/2rem');
+
+							&#{function.escape('.T=timedeal-schedule')} {
+								background-color: #5c5c5c;
+							}
+						}
+
+						b {
+							display: block;
+							margin-top: 15px;
+							@include mixin.font(v_300 '3.8rem/4.5rem');
+
+							span {
+								padding: 0 7px;
+								@include mixin.font(v_400 '/5rem');
+							}
+						}
+					}
+
+					.text_adult {
+						position: absolute;
+						z-index: 2;
+						inset: 0;
+						background-color: #eee;
+
+						.ico_adult {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							width: 60px;
+							height: 60px;
+							transform: translate(-50%, -50%);
+
+							&::before {
+								@include mixin.font('3.2rem/5.3rem');
+							}
+						}
+
+						+ figure {
+							color: const.$color_text_base;
+						}
+					}
+
+					figure {
+						position: relative;
+
+						.image_banner {
+							display: block;
+							height: 354px;
+						}
+
+						figcaption {
+							position: absolute;
+							bottom: 52px;
+							left: 30px;
+							width: 260px;
+							color: #fff;
+
+							&#{function.escape('.T=text-black')} {
+								color: const.$color_text_base;
+							}
+
+							> [class*='text_banner'] {
+								@include mixin.text-ellipsis(1);
+							}
+
+							.text_banner1 {
+								@include mixin.font('3rem/4.1rem');
+
+								+ .text_banner3,
+								+ .text_banner4 {
+									margin-top: 11px;
+								}
+							}
+
+							.text_banner2 {
+								@include mixin.font('3rem/4.1rem');
+
+								+ .text_banner3,
+								+ .text_banner4 {
+									margin-top: 11px;
+								}
+							}
+
+							.text_banner3 {
+								@include mixin.font(v_400 '1.6rem/2.4rem');
+							}
+
+							.text_banner4 {
+								@include mixin.font(v_400 '1.6rem/2.4rem');
+							}
+						}
+					}
+				}
+
+				&-control {
+					width: 100%;
+
+					> button {
+						opacity: 0;
+						transition: opacity const.$time_fast;
+
+						&.btn_carousel-prev {
+							left: 6px;
+						}
+
+						&.btn_carousel-next {
+							right: 6px;
+						}
+
+						i::before {
+							width: 18px;
+							height: 34px;
+							background-color: rgba(#fff, 0.5);
+						}
+					}
+				}
+
+				&-count {
+					position: absolute;
+					right: 30px;
+					bottom: 20px;
+					padding: 0 11px;
+					height: 19px;
+					border-radius: 19px;
+					background-color: rgba(#000, 0.4);
+					@include mixin.font(#fff '1.2rem/2rem' center);
+
+					> .text_carousel-total,
+					> i {
+						opacity: 0.7;
+					}
+
+					> i {
+						margin: 0 2px;
+					}
+				}
+			}
+		}
+
+		.mm_timedeal-foot {
+			height: 46px;
+			background-color: #f5f5f5;
+			@include mixin.font(#4a4a4a '1.4rem/4.6rem');
+
+			> button,
+			> a {
+				padding: 0 30px;
+			}
+
+			.btn_today {
+				color: #767676;
+			}
+
+			.btn_close {
+				float: right;
+			}
+		}
+	}
+
+	// B타입
+	&#{function.escape('.T=tb')} {
+		position: relative;
+		z-index: const.$zindex_floating;
+		height: 0;
+
+		&#{function.escape('.S=switch-on')} {
+			.mm_timedeal-content {
+				visibility: inherit;
+				opacity: 1;
+				transform: translateX(0) scale(1);
+				transition: visibility 0s, opacity const.$time_fast, transform const.$time_fast;
+			}
+		}
+
+		&#{function.escape('.S=sticky-on')} {
+			.mm_timedeal-inner {
+				position: fixed;
+				top: calc(var.$header_height_sm + 46px);
+			}
+
+			.mm_timedeal-content {
+				top: 2px;
+				bottom: auto;
+				transform-origin: 0 0;
+			}
+		}
+
+		.mm_timedeal-inner {
+			position: fixed;
+			bottom: 224px;
+			left: 50%;
+			width: 100%;
+			max-width: 1660px;
+			height: 0;
+			transform: translateX(-50%);
+
+			.btn_timedeal {
+				.image_badge {
+					width: 130px;
+					height: 130px;
+					border-radius: 130px;
+					box-shadow: 3px 4px 3px rgba(#000, 0.2);
+				}
+			}
+		}
+
+		.mm_timedeal-content {
+			visibility: hidden;
+			position: absolute;
+			bottom: -130px;
+			left: 150px;
+			width: 508px;
+			height: 271px;
+			border: 1px solid #b8b8b9;
+			background-color: #fff;
+			opacity: 0;
+			transform: translateX(-70px) scale(0.5), 0 100%;
+			transition: visibility 0s const.$time_fast, opacity const.$time_fast, transform const.$time_fast;
+
+			> p {
+				padding: 22px 11px 0;
+				height: 64px;
+				@include mixin.font('2.4rem/3rem' center, 0);
+
+				b {
+					margin: 3px 7px 0 0;
+					padding: 0 11px 0 12px;
+					height: 25px;
+					border-radius: 13px;
+					background-color: #f86363;
+					@include mixin.font(#fff '1.5rem/2.6rem');
+
+					.ico_clock {
+						margin: 6px 5px 0 0;
+
+						&::before {
+							width: 15px;
+							height: 14px;
+							background-color: #fff;
+						}
+					}
+
+					&#{function.escape('.T=timedeal-schedule')} {
+						background-color: #5c5c5c;
+					}
+				}
+
+				span {
+					padding: 0 2px;
+					@include mixin.font(v_600 '2.8rem/3.4rem');
+				}
+			}
+
+			.mm_carousel {
+				&-list {
+					margin: 0 auto 19px;
+					width: 456px !important;
+					height: 158px;
+				}
+
+				&-item {
+					padding: 0 6px;
+
+					a {
+						overflow: hidden;
+						position: relative;
+						border-radius: 10px;
+					}
+
+					.image_banner {
+						width: 444px;
+						height: 158px;
+					}
+
+					.text_adult {
+						position: absolute;
+						z-index: 2;
+						inset: 0;
+						background-color: #eee;
+
+						.ico_adult {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							width: 60px;
+							height: 60px;
+							transform: translate(-50%, -50%);
+
+							&::before {
+								@include mixin.font('3.2rem/5.3rem');
+							}
+						}
+
+						&::after {
+							padding-top: calc(var(--prod_ratio_base) * 100%);
+							width: 100%;
+							content: '';
+						}
+					}
+				}
+
+				&-pagination {
+					li:nth-child(n+2) {
+						margin-left: 7px;
+					}
+
+					.btn_carousel-page {
+						width: 7px;
+						height: 7px;
+					}
+				}
+			}
+
+			.btn_close {
+				position: absolute;
+				right: 2px;
+				bottom: 0;
+				padding: 12px;
+				@include mixin.font(#767676 '1.3rem');
+
+				.ico_close {
+					margin: 2px 0 0 8px;
+
+					&::before {
+						width: 8px;
+						height: 8px;
+						background-color: #767676;
+					}
+				}
+			}
+		}
+	}
+}

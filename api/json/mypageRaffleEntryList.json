@@ -1,0 +1,19 @@
+{
+	"raffle_list": [
+		{
+			"id": 59,
+			"progress_status": "진행중",
+			"announce_at": "2024-04-19T09:00:00.000000Z",
+			"purchase_start_at": "2024-04-19T15:00:00.000000Z",
+			"purchase_end_at": "2024-04-29T15:00:59.000000Z",
+			"is_winner": false,
+			"is_purchase": false,
+			"goods": {
+				"id": 58929,
+				"name": "와이드 롱 자켓 - 래플4",
+				"brand_name": "BNS",
+				"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/89/29/1.jpg?ut=1666922394"
+			}
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"paginator": {
+		"total": 1,
+		"per_page": 2,
+		"current_page": 1,
+		"data": [
+			{
+				"order_id": "2206141341058520082",
+				"paid_at": "2022-03-22T14:25:11.000000Z",
+				"payment_method_label": "에스크로",
+				"packs": [
+					{
+						"sellers": [
+							{
+								"id": 15,
+								"name": "셀러 15",
+								"order_items": [
+									{
+										"id": 2113,
+										"order_status_label": "결제완료",
+										"paid_price": 20000,
+										"point_used": "1200",
+										"goods": {
+											"id": 1234,
+											"name": "N212UTS510 유니 타이다이 그래픽 반팔 티셔츠 GRAPE",
+											"thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x1_1.png",
+											"brand_name": "엠몬",
+											"option_name": "WHITE^@^S"
+										}
+									}
+								]
+							}
+						],
+						"shipping_rule_id": 11,
+						"paid_shipping_price": 2500
+					}
+				]
+			}
+		]
+	}
+}

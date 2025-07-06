@@ -1,0 +1,56 @@
+{
+    "best_goods": [
+        {
+            "id": 59235,
+            "name": "MMONTOPARTNER_007",
+            "price": 1000,
+            "headline": null,
+            "base_discounted_price": 900,
+            "sale_rate": 10,
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/35/1.jpg?ut=1678287604",
+            "mouse_over_image_url": null,
+            "stock": 6983,
+            "is_only_adult": false,
+            "is_soldout": false,
+            "brand_id": 53,
+            "brand_name": "ROME",
+            "icon": {
+                "label": "CUSTOM",
+                "background_color_code": "#4DD0E2",
+                "font_color_code": "#FFFFFF"
+            },
+            "badges": [
+                "쿠폰할인"
+            ],
+            "wish_count": 2,
+            "review_count": 2,
+            "review_score_average": 1
+        },
+		{
+            "id": 50235,
+            "name": "남녀공용 블랙 숏 라이너 리버시블 점퍼 블랙 숏 라이너 리버시블 점퍼",
+            "price": 1000,
+            "headline": null,
+            "base_discounted_price": 900,
+            "sale_rate": 10,
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/35/1.jpg?ut=1678287604",
+            "mouse_over_image_url": null,
+            "stock": 6983,
+            "is_only_adult": false,
+            "is_soldout": false,
+            "brand_id": 53,
+            "brand_name": "ROME",
+            "icon": {
+                "label": "CUSTOM",
+                "background_color_code": "#4DD0E2",
+                "font_color_code": "#FFFFFF"
+            },
+            "badges": [
+                "쿠폰할인"
+            ],
+            "wish_count": 2,
+            "review_count": 0,
+            "review_score_average": 0
+        }
+    ]
+}

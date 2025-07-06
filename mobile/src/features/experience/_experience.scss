@@ -1,0 +1,358 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../assets/scss/common/helper/function' as *;
+@use '../../assets/scss/common/helper/mixin';
+@use '../../assets/scss/style/helper/extend';
+@use '../../assets/scss/common/setting/const';
+@use '../../assets/scss/style/setting/var';
+
+/**
+ * 체험단
+ * 상품상세, 이벤트
+ */
+
+/** 공통 (이벤트 - 체험단 리뷰 / 체험단 리뷰 상세) */
+[class*='m_experience-'],
+[class*='m_popup-experience-'] {
+	// 별점
+	.text_star {
+		@include mixin.font('1.5rem/1.9rem');
+
+		.ico_star-fill {
+			margin-right: 2px;
+
+			&::before {
+				width: 16px;
+				height: 16px;
+				background-color: #f2953a;
+			}
+		}
+	}
+
+	// 리뷰 추천 버튼
+	.btn_thumb {
+		border: 1px solid #dcdcdc;
+		border-radius: 4px;
+
+		.ico_thumb::before {
+			@include mixin.svg(#888 url('/public/images/common/ico_thumb.svg'));
+		}
+
+		&#{escape('.S=switch-on')} {
+			border-color: var.$color_sub;
+			color: var.$color_sub;
+
+			.ico_thumb::before {
+				background-color: var.$color_sub;
+			}
+		}
+	}
+}
+
+/** 이벤트 - 체험단 후기 */
+.m_experience {
+	&-list {
+		position: relative;
+		padding-top: 22px;
+
+		// 체험단 리뷰 등록
+		.btn_register {
+			position: absolute;
+			top: 20px;
+			right: 0;
+
+			.ico_review-write {
+				margin: 6px 4px 0 0;
+
+				&::before {
+					width: 11px;
+					height: 11px;
+					background-color: #2b2b2b;
+				}
+			}
+
+			+ * {
+				margin-top: 35px;
+			}
+		}
+
+		ul {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 40px 12px;
+
+			&::after {
+				content: none;
+			}
+
+			li {
+				a {
+					display: block;
+					margin-bottom: 13px;
+
+					.image_banner {
+						position: relative;
+						padding-top: 100%;
+						width: 100%;
+					}
+
+					figcaption {
+						margin-top: 11px;
+						padding: 0 2px;
+						@include mixin.font('1.3rem/1.9rem');
+					}
+
+					.text_title {
+						@include mixin.text-ellipsis(2);
+
+						margin: 8px 0;
+						height: 36px;
+					}
+
+					.text_date {
+						margin-left: 13px;
+						color: #888;
+					}
+				}
+
+				.btn_thumb {
+					float: left;
+					margin-right: 10px;
+					padding: 0 7px 0 6px;
+					@include mixin.font(#2b2b2b '1.2rem/2rem');
+
+					.ico_thumb {
+						margin: 3px 4px 0 0;
+
+						&::before {
+							width: 10px;
+							height: 12px;
+							background-color: #888;
+						}
+					}
+				}
+
+				.text_view {
+					@include mixin.font('1.2rem/2.2rem');
+				}
+			}
+		}
+
+		// 스켈레톤
+		&#{escape('.T=skeleton')} {
+			p {
+				background-color: var.$skeleton_color_base;
+				font-size: 0;
+			}
+
+			.image_banner {
+				padding-top: 100%;
+				width: 100%;
+				background-color: var.$skeleton_color_base;
+			}
+
+			.text_user {
+				margin-top: 13px;
+				width: 40%;
+				height: 14px;
+			}
+
+			.text_title {
+				position: relative;
+				margin-top: 13px;
+				height: 34px;
+				background-color: transparent;
+
+				&::before,
+				&::after {
+					position: absolute;
+					top: 0;
+					right: 0;
+					left: 0;
+					height: 15px;
+					background-color: var.$skeleton_color_base;
+					content: '';
+				}
+
+				&::after {
+					top: 19px;
+				}
+			}
+
+			.text_date {
+				margin-top: 10px;
+				width: 50%;
+				height: 15px;
+			}
+
+			.text_view {
+				margin-top: 15px;
+				width: 70%;
+				height: 18px;
+			}
+		}
+
+		+ .mm_pagination {
+			margin-top: 40px;
+		}
+	}
+}
+
+/** 상품상세 */
+.m_prodetail-tab-review {
+	.mm_review {
+		.text_user {
+			.mm_tag {
+				margin: -2px 10px 0 0;
+				padding: 0 4px;
+				font-size: 1.1rem;
+
+				.ico_experience {
+					margin: 2px 4px 0 0;
+				}
+			}
+		}
+	}
+}
+
+
+// *---------- 팝업 ----------*
+
+/** 체험단 후기 작성 */
+.m_popup-experience {
+	@extend %reviewWrite !optional;
+
+	> .mm_inner {
+		.mm_form-text + .mm_text-label {
+			margin-top: 0;
+		}
+	}
+}
+
+/** 체험단 후기 상세 */
+.m_popup-experience-detail {
+	// 리뷰 상단
+	#{escape('.m...detail-head')} {
+		padding: 18px 14px 17px;
+		@include mixin.font('1.3rem/1.8rem');
+
+		.text_title {
+			padding: 0 50px 14px 0;
+			font-size: 1.4rem;
+		}
+
+		.text_date {
+			margin-left: 14px;
+			color: #888;
+		}
+
+		.text_view {
+			float: right;
+			margin-right: 14px;
+			@include mixin.font(#888 '1.2rem');
+
+			strong {
+				margin-left: 5px;
+				@include mixin.font(var.$color_text_base v_600);
+			}
+		}
+	}
+
+	// 리뷰 상품
+	> .mm_product-item {
+		border: 1px solid #eee;
+
+		> a {
+			padding: 20px 14px 17px;
+		}
+	}
+
+	// 리뷰내용
+	#{escape('.m...detail-content')} {
+		margin-top: 20px;
+		font-size: 0;
+
+		.text_size {
+			margin-left: 20px;
+			@include mixin.font(#4a4a4a '1.4rem/1.9rem');
+		}
+
+		.text_review {
+			margin-top: 11px;
+			@include mixin.font(#3d3d3d '1.4rem/2.1rem');
+		}
+	}
+
+	// 리뷰사진
+	#{escape('.m...detail-photo')} {
+		margin-top: 23px;
+
+		ul > li:nth-child(n+2) {
+			margin-top: 8px;
+		}
+	}
+
+	.mm_satisfy {
+		margin-top: 26px;
+	}
+
+	.text_thumb {
+		margin-top: 40px;
+		padding-bottom: 13px;
+		@include mixin.font('1.5rem' center);
+
+		strong {
+			font-variation-settings: 'wght' 700;
+		}
+	}
+
+	.btn_thumb {
+		display: block;
+		margin: 0 auto;
+		padding: 0 12px;
+		height: 32px;
+		border-color: #cdcdcd;
+		@include mixin.font(#2b2b2b '1.3rem/3.1rem');
+
+		.ico_thumb {
+			margin: 6px 5px 0 0;
+
+			&::before {
+				width: 14px;
+				height: 16px;
+				background-color: #3d3d3d;
+			}
+		}
+	}
+
+	.mm_foot {
+		margin-top: 34px;
+		padding: 28px 14px 0;
+		border-top: 1px solid #eee;
+	}
+}
+
+/** 리뷰 상세 */
+.m_popup-review-detail {
+	.mm_review-head {
+		.text_user {
+			.mm_tag {
+				margin: -2px 10px 0 0;
+				padding: 0 4px;
+				font-size: 1.1rem;
+
+				.ico_experience {
+					margin: 2px 4px 0 0;
+				}
+			}
+		}
+	}
+}
+
+
+// *---------- 모달 ----------*
+
+
+
+// *---------- 레이어 ----------*

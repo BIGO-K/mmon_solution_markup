@@ -1,0 +1,13 @@
+{
+    "regist_events": [
+        {
+            "type": "적립금, 쿠폰",
+            "coupon": {
+                "name": "회원 가입 쿠폰",
+                "amount_type": "rate | krw",
+                "amount": 200
+            },
+            "point": 2000
+        }
+    ]
+}

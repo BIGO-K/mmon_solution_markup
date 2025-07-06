@@ -1,0 +1,8 @@
+{
+    "recommendation_relation_reviews": [
+        {
+            "review_id": 1,
+            "is_recommendation": false
+        }
+    ]
+}

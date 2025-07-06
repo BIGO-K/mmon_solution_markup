@@ -1,0 +1,467 @@
+{
+	"paginator": {
+		"total": 50,
+		"per_page": 20,
+		"current_page": 1,
+		"data": [
+			{
+				"id": 4784,
+				"is_usable": true,
+				"expire_at": "2023-05-14T00:39:35.000000Z",
+				"use_start_at": "2023-04-14T00:39:35.000000Z",
+				"registed_at": "2023-04-14T00:39:35.000000Z",
+				"coupon": {
+					"id": 148,
+					"title": "오랜만 자동발행쿠폰",
+					"discount_amount": 2500,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 10000,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "자동발행 쿠폰"
+				}
+			},
+			{
+				"id": 4780,
+				"is_usable": true,
+				"expire_at": "2023-05-13T00:06:58.000000Z",
+				"use_start_at": "2023-04-13T00:06:58.000000Z",
+				"registed_at": "2023-04-13T00:06:58.000000Z",
+				"coupon": {
+					"id": 148,
+					"title": "오랜만 자동발행쿠폰",
+					"discount_amount": 2500,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 10000,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "자동발행 쿠폰"
+				}
+			},
+			{
+				"id": 4768,
+				"is_usable": true,
+				"expire_at": "2023-05-12T00:52:42.000000Z",
+				"use_start_at": "2023-04-12T00:52:42.000000Z",
+				"registed_at": "2023-04-12T00:52:42.000000Z",
+				"coupon": {
+					"id": 148,
+					"title": "오랜만 자동발행쿠폰",
+					"discount_amount": 2500,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 10000,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "자동발행 쿠폰"
+				}
+			},
+			{
+				"id": 4764,
+				"is_usable": true,
+				"expire_at": "2023-05-01T05:10:24.000000Z",
+				"use_start_at": "2023-04-11T05:10:24.000000Z",
+				"registed_at": "2023-04-11T05:10:24.000000Z",
+				"coupon": {
+					"id": 169,
+					"title": "test2",
+					"discount_amount": 21,
+					"discount_type": "rate",
+					"apply_range_type": "all",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "일반 상품 쿠폰"
+				}
+			},
+			{
+				"id": 4762,
+				"is_usable": true,
+				"expire_at": "2023-05-11T03:30:21.000000Z",
+				"use_start_at": "2023-04-11T03:30:21.000000Z",
+				"registed_at": "2023-04-11T03:30:21.000000Z",
+				"coupon": {
+					"id": 148,
+					"title": "오랜만 자동발행쿠폰",
+					"discount_amount": 2500,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 10000,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "자동발행 쿠폰"
+				}
+			},
+			{
+				"id": 4757,
+				"is_usable": true,
+				"expire_at": "2023-05-09T23:57:33.000000Z",
+				"use_start_at": "2023-04-09T23:57:33.000000Z",
+				"registed_at": "2023-04-09T23:57:33.000000Z",
+				"coupon": {
+					"id": 148,
+					"title": "오랜만 자동발행쿠폰",
+					"discount_amount": 2500,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 10000,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "자동발행 쿠폰"
+				}
+			},
+			{
+				"id": 4746,
+				"is_usable": true,
+				"expire_at": "2023-04-14T13:38:23.000000Z",
+				"use_start_at": "2023-04-09T13:38:23.000000Z",
+				"registed_at": "2023-04-09T13:38:23.000000Z",
+				"coupon": {
+					"id": 171,
+					"title": "생일 쿠폰",
+					"discount_amount": 3,
+					"discount_type": "rate",
+					"apply_range_type": "all",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "자동발행 쿠폰"
+				}
+			},
+			{
+				"id": 4744,
+				"is_usable": true,
+				"expire_at": "2023-07-16T09:14:27.000000Z",
+				"use_start_at": "2023-04-07T09:14:27.000000Z",
+				"registed_at": "2023-04-07T09:14:27.000000Z",
+				"coupon": {
+					"id": 91,
+					"title": "md 등록 테스트",
+					"discount_amount": 2000,
+					"discount_type": "KRW",
+					"apply_range_type": "goods",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "타임딜 전용 쿠폰"
+				}
+			},
+			{
+				"id": 4742,
+				"is_usable": true,
+				"expire_at": "2023-05-07T05:54:03.000000Z",
+				"use_start_at": "2023-04-07T05:54:03.000000Z",
+				"registed_at": "2023-04-07T05:54:03.000000Z",
+				"coupon": {
+					"id": 148,
+					"title": "오랜만 자동발행쿠폰",
+					"discount_amount": 2500,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 10000,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "자동발행 쿠폰"
+				}
+			},
+			{
+				"id": 4735,
+				"is_usable": true,
+				"expire_at": "2023-05-06T02:35:25.000000Z",
+				"use_start_at": "2023-04-06T02:35:25.000000Z",
+				"registed_at": "2023-04-06T02:35:25.000000Z",
+				"coupon": {
+					"id": 148,
+					"title": "오랜만 자동발행쿠폰",
+					"discount_amount": 2500,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 10000,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "자동발행 쿠폰"
+				}
+			},
+			{
+				"id": 4731,
+				"is_usable": true,
+				"expire_at": "2023-05-25T06:40:31.000000Z",
+				"use_start_at": "2023-04-05T06:40:31.000000Z",
+				"registed_at": "2023-04-05T06:40:31.000000Z",
+				"coupon": {
+					"id": 167,
+					"title": "네이버 ep쿠폰",
+					"discount_amount": 20,
+					"discount_type": "rate",
+					"apply_range_type": "goods",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹"
+					],
+					"type_label": "제휴(EP) 쿠폰"
+				}
+			},
+			{
+				"id": 4730,
+				"is_usable": true,
+				"expire_at": "2023-05-25T06:38:52.000000Z",
+				"use_start_at": "2023-04-05T06:38:52.000000Z",
+				"registed_at": "2023-04-05T06:38:52.000000Z",
+				"coupon": {
+					"id": 166,
+					"title": "공동구매 테스트",
+					"discount_amount": 20,
+					"discount_type": "rate",
+					"apply_range_type": "goods",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "공동구매 전용 쿠폰"
+				}
+			},
+			{
+				"id": 4729,
+				"is_usable": true,
+				"expire_at": "2023-07-14T06:36:56.000000Z",
+				"use_start_at": "2023-04-05T06:36:56.000000Z",
+				"registed_at": "2023-04-05T06:36:56.000000Z",
+				"coupon": {
+					"id": 91,
+					"title": "md 등록 테스트",
+					"discount_amount": 2000,
+					"discount_type": "KRW",
+					"apply_range_type": "goods",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "타임딜 전용 쿠폰"
+				}
+			},
+			{
+				"id": 4728,
+				"is_usable": true,
+				"expire_at": "2023-07-14T06:36:08.000000Z",
+				"use_start_at": "2023-04-05T06:36:08.000000Z",
+				"registed_at": "2023-04-05T06:36:08.000000Z",
+				"coupon": {
+					"id": 91,
+					"title": "md 등록 테스트",
+					"discount_amount": 2000,
+					"discount_type": "KRW",
+					"apply_range_type": "goods",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "타임딜 전용 쿠폰"
+				}
+			},
+			{
+				"id": 4727,
+				"is_usable": true,
+				"expire_at": "2023-07-14T06:31:30.000000Z",
+				"use_start_at": "2023-04-05T06:31:30.000000Z",
+				"registed_at": "2023-04-05T06:31:30.000000Z",
+				"coupon": {
+					"id": 91,
+					"title": "md 등록 테스트",
+					"discount_amount": 2000,
+					"discount_type": "KRW",
+					"apply_range_type": "goods",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "타임딜 전용 쿠폰"
+				}
+			},
+			{
+				"id": 4726,
+				"is_usable": true,
+				"expire_at": "2023-04-30T14:59:59.000000Z",
+				"use_start_at": "2023-03-31T15:00:00.000000Z",
+				"registed_at": "2023-04-05T05:16:49.000000Z",
+				"coupon": {
+					"id": 5,
+					"title": "🥷 BurlyWood Test EXTRA Coupon 😛",
+					"discount_amount": 5179,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "등급 할인 쿠폰"
+				}
+			},
+			{
+				"id": 4725,
+				"is_usable": true,
+				"expire_at": "2023-04-30T14:59:59.000000Z",
+				"use_start_at": "2023-03-31T15:00:00.000000Z",
+				"registed_at": "2023-04-05T05:16:49.000000Z",
+				"coupon": {
+					"id": 5,
+					"title": "🥷 BurlyWood Test EXTRA Coupon 😛",
+					"discount_amount": 5179,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "등급 할인 쿠폰"
+				}
+			},
+			{
+				"id": 4724,
+				"is_usable": true,
+				"expire_at": "2023-04-30T14:59:59.000000Z",
+				"use_start_at": "2023-03-31T15:00:00.000000Z",
+				"registed_at": "2023-04-05T05:16:49.000000Z",
+				"coupon": {
+					"id": 5,
+					"title": "🥷 BurlyWood Test EXTRA Coupon 😛",
+					"discount_amount": 5179,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "등급 할인 쿠폰"
+				}
+			},
+			{
+				"id": 4723,
+				"is_usable": true,
+				"expire_at": "2023-04-30T14:59:59.000000Z",
+				"use_start_at": "2023-03-31T15:00:00.000000Z",
+				"registed_at": "2023-04-05T05:16:49.000000Z",
+				"coupon": {
+					"id": 5,
+					"title": "🥷 BurlyWood Test EXTRA Coupon 😛",
+					"discount_amount": 5179,
+					"discount_type": "KRW",
+					"apply_range_type": "all",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹",
+						"모바일앱"
+					],
+					"type_label": "등급 할인 쿠폰"
+				}
+			},
+			{
+				"id": 4721,
+				"is_usable": true,
+				"expire_at": "2023-04-30T14:59:59.000000Z",
+				"use_start_at": "2023-03-31T15:00:00.000000Z",
+				"registed_at": "2023-04-05T05:15:26.000000Z",
+				"coupon": {
+					"id": 3,
+					"title": "🥷 DarkSeaGreen Test EXTRA Coupon 😫",
+					"discount_amount": 2691,
+					"discount_type": "KRW",
+					"apply_range_type": "seller",
+					"min_sell_price": 0,
+					"is_unlimited": false,
+					"maximum_discount_amount": 0,
+					"usable_device_labels": [
+						"PC",
+						"모바일웹"
+					],
+					"type_label": "등급 할인 쿠폰"
+				}
+			}
+		]
+	}
+}

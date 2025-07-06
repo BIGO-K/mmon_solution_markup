@@ -1,0 +1,22 @@
+{
+    "banners": [
+        {
+            "goods_id": 0,
+            "image_url": null,
+            "image_alt": null,
+            "sell_start_at": null,
+            "sell_end_at": null,
+            "id": 1,
+            "title": "모자 특가 타임딜",
+            "display_start_at": null,
+            "is_only_adult": false,
+            "is_use_banner_text": false,
+            "banner_text_1": "24H 타임특가!",
+            "banner_text_2": "게릴라 세일",
+            "banner_text_3": "럭키슈에뜨 50% OFF",
+            "banner_text_4": "자켓/원피스/니트/스커트",
+            "banner_text_color": "#000000"
+        }
+    ],
+    "type": "A, B"
+}

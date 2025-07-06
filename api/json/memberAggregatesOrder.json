@@ -1,0 +1,32 @@
+{
+    "orders": {
+        "pay_ready": {
+            "count": 3,
+            "status_code": 200
+        },
+        "paid": {
+            "count": 4,
+            "status_code": 210
+        },
+        "delivery_ready": {
+            "count": 0,
+            "status_code": 230
+        },
+        "delivery_ing": {
+            "count": 24,
+            "status_code": 240
+        },
+        "delivery_complete": {
+            "count": 0,
+            "status_code": 280
+        },
+        "purchase_confirmed": {
+            "count": 2,
+            "status_code": 900
+        },
+        "cancel_count": 3,
+        "return_count": 0,
+        "exchange_count": 2,
+        "refund_count": 0
+    }
+}

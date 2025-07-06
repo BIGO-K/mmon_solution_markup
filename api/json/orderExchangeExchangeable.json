@@ -1,0 +1,136 @@
+{
+	"exchangeable_order": {
+		"order_id": "2304281019587515302",
+		"ordered_at": "2023-04-28T01:20:22.000000Z",
+		"payment_method_label": "토스페이",
+		"shipping_address": {
+			"name": "test",
+			"tel": "01022332233",
+			"zip_code": "06096",
+			"base_address": "서울특별시 강남구 삼성로115길 37-4(삼성동, 힐스테이트5차)",
+			"detail_address": "z"
+		},
+		"packs": [
+			{
+				"shipping_rule_id": 36,
+				"paid_shipping_price": 4000,
+				"order_items": [
+					{
+						"id": 10331,
+						"order_status_label": "배송 완료",
+						"order_status_code": 280,
+						"paid_price": 621,
+						"point_used": 0,
+						"used_coupon_title": "🥷 BurlyWood Test EXTRA Coupon 😛",
+						"seller_name": "유준호",
+						"goods": {
+							"id": 58848,
+							"name": "인트레치아토 에스파 베스트1",
+							"brand_name": "올리비아하슬러",
+							"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/48/1.jpg?",
+							"option_id": 830582,
+							"option_name": "MediumSeaGreen / FREE",
+							"is_soldout": false
+						},
+						"exchangeable_options": [
+							{
+								"id": 830582,
+								"label1": "MediumSeaGreen",
+								"label2": "FREE",
+								"stock": 9
+							},
+							{
+								"id": 830583,
+								"label1": "DarkOliveGreen",
+								"label2": "FREE",
+								"stock": 9
+							},
+							{
+								"id": 830584,
+								"label1": "DimGray",
+								"label2": "FREE",
+								"stock": 10
+							},
+							{
+								"id": 830585,
+								"label1": "DarkSeaGreen",
+								"label2": "FREE",
+								"stock": 10
+							},
+							{
+								"id": 830586,
+								"label1": "Sienna",
+								"label2": "FREE",
+								"stock": 10
+							}
+						]
+					},
+					{
+						"id": 10332,
+						"order_status_label": "배송 완료",
+						"order_status_code": 280,
+						"paid_price": 621,
+						"point_used": 0,
+						"used_coupon_title": "🥷 BurlyWood Test EXTRA Coupon 😛",
+						"seller_name": "유준호",
+						"goods": {
+							"id": 58848,
+							"name": "인트레치아토 에스파 베스트1",
+							"brand_name": "올리비아하슬러",
+							"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/48/1.jpg?",
+							"option_id": 830583,
+							"option_name": "DarkOliveGreen / FREE",
+							"is_soldout": false
+						},
+						"exchangeable_options": [
+							{
+								"id": 830582,
+								"label1": "MediumSeaGreen",
+								"label2": "FREE",
+								"stock": 9
+							},
+							{
+								"id": 830583,
+								"label1": "DarkOliveGreen",
+								"label2": "FREE",
+								"stock": 9
+							},
+							{
+								"id": 830584,
+								"label1": "DimGray",
+								"label2": "FREE",
+								"stock": 10
+							},
+							{
+								"id": 830585,
+								"label1": "DarkSeaGreen",
+								"label2": "FREE",
+								"stock": 10
+							},
+							{
+								"id": 830586,
+								"label1": "Sienna",
+								"label2": "FREE",
+								"stock": 10
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"available_retrieve_methods": [
+		{
+			"code": 10,
+			"label": "고객 직접 회수",
+			"is_retrieve_by_orderer": true,
+			"is_auto_retrieve": false
+		},
+		{
+			"code": 30,
+			"label": "업체 회수",
+			"is_retrieve_by_orderer": false,
+			"is_auto_retrieve": false
+		}
+	]
+}

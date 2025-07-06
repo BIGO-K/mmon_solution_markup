@@ -1,0 +1,14 @@
+{
+    "paginator": {
+        "total": 11,
+        "current_page": 1,
+        "per_page": 28,
+        "data": [
+            {
+                "id": 1,
+                "name": "내셔널지오그래픽",
+                "logo_image_url": "https://publish.mmonstar.co.kr/thenature/shop_2021/pc/image/_sample/brand_logo_1.jpg"
+            }
+        ]
+    }
+}

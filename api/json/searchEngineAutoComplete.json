@@ -1,0 +1,37 @@
+{
+    "auto_completed": {
+		"from": "니트",
+		"categories": [
+			{
+				"depth": 3,
+				"code": "001001002",
+				"name": "베스트",
+				"full_path": "남성 > 아우터 > 베스트",
+				"image_url": "",
+				"mobile_top_image_url": "",
+				"pc_top_image_url": ""
+			},
+			{
+				"depth": 3,
+				"code": "001001003",
+				"name": "자켓",
+				"full_path": "남성 > 아우터 > 자켓",
+				"image_url": "",
+				"mobile_top_image_url": "",
+				"pc_top_image_url": ""
+			},
+			{
+				"depth": 3,
+				"code": "001002001",
+				"name": "맨투맨",
+				"full_path": "남성 > 티셔츠 > 맨투맨",
+				"image_url": "",
+				"mobile_top_image_url": "",
+				"pc_top_image_url": ""
+			}
+		],
+		"keywords": [
+			"니트"
+		]
+	}
+}

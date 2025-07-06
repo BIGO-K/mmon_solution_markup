@@ -1,0 +1,75 @@
+{
+    "category_best_goods": [
+        {
+            "brand_name": "엠몬스타",
+            "id": 4556,
+            "name": "BEST 특가 패딩/다운/코트/가디건 추가쿠폰864",
+            "thumbnail_url": "https://image.stylecrew.co.kr/mall/dev/goods/000/000/000/004/1.jpg?updated_at=20220504163716",
+            "base_discounted_price": 16200,
+            "is_soldout": false,
+            "sale_rate": 10,
+            "stock": 99,
+            "is_only_adult": false
+        },
+		{
+			"id": 57772,
+			"name": "리앤 펠트 에스파 베스트",
+			"brand_name": "밤비노",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/77/72/1.jpg?ut=1680483521",
+			"base_discounted_price": 6200,
+			"sell_price": 6200,
+			"sale_rate": 81,
+			"stock": 120,
+			"is_soldout": false,
+			"is_only_adult": false
+		},
+		{
+			"id": 58582,
+			"name": "애프터 미니 아이보리 더블니트",
+			"brand_name": "캘빈클라인 언더웨어",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/85/82/1.jpg?ut=1681698559",
+			"base_discounted_price": 2600,
+			"sell_price": 2600,
+			"sale_rate": 87,
+			"stock": 106,
+			"is_soldout": false,
+			"is_only_adult": false
+		},
+		{
+			"id": 58093,
+			"name": "슈퍼스타 런닝 셔츠1",
+			"brand_name": "디씨",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/80/93/1.jpg?ut=1680149872",
+			"base_discounted_price": 56600,
+			"sell_price": 56600,
+			"sale_rate": 43,
+			"stock": 68,
+			"is_soldout": false,
+			"is_only_adult": false
+		},
+		{
+			"id": 58753,
+			"name": "윈터 옥스포드 백1",
+			"brand_name": "제이폴락",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/53/1.jpg?ut=1680706805",
+			"base_discounted_price": 41800,
+			"sell_price": 41800,
+			"sale_rate": 65,
+			"stock": 0,
+			"is_soldout": true,
+			"is_only_adult": false
+		},
+		{
+			"id": 57898,
+			"name": "애프터 바게트 레이어드 슬랙스",
+			"brand_name": "빌트모아",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/78/98/1.jpg?ut=1681262105",
+			"base_discounted_price": 22000,
+			"sell_price": 22000,
+			"sale_rate": 86,
+			"stock": 66,
+			"is_soldout": false,
+			"is_only_adult": false
+		}
+    ]
+}

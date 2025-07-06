@@ -1,0 +1,19 @@
+{
+	"refund_info": {
+		"total_paid_price": 8600,
+		"refund_price": 8600,
+		"refund_point": 0,
+		"calculate_details": [
+			{
+				"label": "면제 배송비",
+				"amount": 0,
+				"is_substracted": true
+			},
+			{
+				"label": "반품 배송비",
+				"amount": 0,
+				"is_substracted": true
+			}
+		]
+	}
+}

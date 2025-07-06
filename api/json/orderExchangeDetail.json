@@ -1,0 +1,50 @@
+{
+	"exchange_detail": {
+		"pack": {
+			"shipping_rule_id": 51,
+			"paid_shipping_price": 0,
+			"order_items": [
+				{
+					"id": 7922,
+					"point_used": 0,
+					"paid_price": 17385,
+					"exchanged_option_name": "LightYellow / S",
+					"seller_name": "김민정",
+					"goods": {
+						"id": 58789,
+						"name": "[대박세일] 인트레치아토 캐시 에바 블랙",
+						"brand_name": "Cyan",
+						"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/89/1.jpg?",
+						"option_name": "Teal / L",
+						"option_id": 829903
+					}
+				}
+			]
+		},
+		"reason": {
+			"label": "상품에 하자가 있어요",
+			"detail": "ㅁㅁㅁ"
+		},
+		"retrieve_invoice": null,
+		"retrieve_address": {
+			"name": "1222",
+			"tel": "01012341234",
+			"zip_code": "13487",
+			"base_address": "경기도 성남시 분당구 판교로 242(삼평동)",
+			"detail_address": "43434344"
+		},
+		"exchange_address": {
+			"name": "1222",
+			"tel": "01012341234",
+			"zip_code": "13487",
+			"base_address": "경기도 성남시 분당구 판교로 242(삼평동)",
+			"detail_address": "43434344"
+		},
+		"additional_payment_price": {
+			"total_price": 0,
+			"calculate_details": [],
+			"pay_type_label": "판매자와 협의 후 결제"
+		},
+		"payment_info": null
+	}
+}

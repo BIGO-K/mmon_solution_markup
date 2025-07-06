@@ -1,0 +1,47 @@
+@charset 'utf-8';
+
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+
+/**
+ * 간편 로그인(유료)
+ * 로그인, 회원가입, 마이페이지
+ */
+
+/** 페이코 아이콘 공통 */
+.ico_sns-payco::before {
+	width: 16px;
+	height: 20px;
+	@include mixin.svg(#fff url('/public/images/common/ico_payco_sm.svg'));
+}
+
+[class*='m_sign'] {
+	// sns 아이콘
+	[class*='ico_sns-'] {
+		&.ico_sns-payco {
+			background-color: #e1292f;
+		}
+	}
+}
+
+// 간편 로그인 (로그인, 마이페이지 공통 사용)
+.m_login-sns {
+	li {
+		[class*='ico_sns-'] {
+			&.ico_sns-payco::before {
+				margin: 13px 0 0 4px;
+			}
+		}
+	}
+}
+
+// 아이디 찾기 완료, 중복 가입 완료
+.m_sign-find-fin {
+	#{function.escape('.m...fin-id')} {
+		i.ico_sns-payco::before {
+			margin-top: 16px;
+			width: 18px;
+			height: 23px;
+		}
+	}
+}

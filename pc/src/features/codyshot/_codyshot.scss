@@ -1,0 +1,244 @@
+@charset 'utf-8';
+
+@use '../../assets/scss/common/helper/function';
+@use '../../assets/scss/common/helper/mixin';
+@use '../../assets/scss/common/setting/const';
+@use '../../assets/scss/style/setting/var';
+
+/**
+ * 코디샷
+ */
+
+/** 코디샷 */
+.m_codyshot {
+	// 신규 코디샷
+	&-new {
+		overflow: hidden;
+
+		.mm_heading {
+			padding: 0 0 23px;
+			border-bottom: 0;
+		}
+
+		.mm_slider {
+			&-inner {
+				margin: 0 -10px;
+			}
+
+			&-item {
+				padding: 0 10px;
+
+				> .m_codyshot-item {
+					width: 256px;
+				}
+			}
+
+			&-control {
+				button {
+					top: 101px;
+					width: 28px;
+					height: 54px;
+					background-color: #fff;
+
+					&:disabled {
+						background-color: rgba(#fff, 0.54);
+					}
+				}
+
+				.btn_slider-prev {
+					left: 0;
+					padding-right: 10px;
+					border-radius: 0 30px 30px 0;
+				}
+
+				.btn_slider-next {
+					right: 0;
+					padding-left: 10px;
+					border-radius: 30px 0 0 30px;
+				}
+			}
+		}
+
+		+ .mm_tab_menu {
+			margin-top: 79px;
+		}
+	}
+
+	&-list {
+		margin-top: 19px;
+
+		ul {
+			display: grid;
+			grid-template-columns: repeat(4, 325px);
+			grid-gap: 41px 20px;
+
+			&::after {
+				content: none;
+			}
+		}
+
+		&#{function.escape('.T=skeleton')} {
+			ul {
+				li {
+					> .image_banner {
+						padding-top: const.$prod_height_base;
+						width: 100%;
+						background-color: var.$skeleton_color_base;
+						background-image: none;
+					}
+
+					> p {
+						margin-top: 10px;
+						width: 90%;
+						height: 18px;
+						background-color: var.$skeleton_color_base;
+						font-size: 0;
+					}
+
+					.text_brand {
+						margin-top: 15px;
+						width: 30%;
+					}
+				}
+			}
+		}
+
+		+ .mm_pagination {
+			margin-top: 68px;
+		}
+	}
+
+	&-item {
+		> a {
+			display: block;
+		}
+
+		figure {
+			.image_banner {
+				position: relative;
+				padding-top: 100%;
+				width: 100%;
+			}
+
+			figcaption {
+				margin-top: 18px;
+				padding: 0 4px;
+
+				.text_brand {
+					@include mixin.text-ellipsis(1);
+					@include mixin.font(var.$color_main v_700 '1.3rem');
+				}
+
+				.text_title {
+					@include mixin.text-ellipsis(1);
+
+					margin-top: 7px;
+					@include mixin.font(var.$color_main '1.4rem');
+				}
+			}
+		}
+	}
+
+	// 코디샷 상세
+	&-detail {
+		font-size: 0;
+
+		> figure {
+			display: inline-block;
+			width: 650px;
+
+			.m_codyshot-detail-banner {
+				position: relative;
+
+				> .btn_product-pointer {
+					position: absolute;
+					width: 30px;
+					height: 30px;
+					border: 5px solid #fff;
+					border-radius: 100%;
+				}
+			}
+
+			figcaption {
+				position: relative;
+				margin-top: 29px;
+				text-align: center;
+
+				> * {
+					@include mixin.text-ellipsis(1);
+				}
+
+				.text_brand {
+					@include mixin.font('3rem');
+				}
+
+				.text_title {
+					margin-top: 17px;
+					@include mixin.font(#2b2b2b v_600 '1.7rem');
+				}
+
+				.text_sub {
+					margin-top: 2px;
+					@include mixin.font(#5c5c5c '1.7rem');
+				}
+
+				.text_date {
+					margin-top: 14px;
+					@include mixin.font(#767676 v_400 '1.5rem');
+				}
+
+				.btn_share {
+					position: absolute;
+					top: -23px;
+					right: 7px;
+					padding: 8px;
+
+					.ico_share::before {
+						width: 18px;
+						height: 20px;
+						background-color: #aeaeae;
+					}
+				}
+			}
+		}
+
+		.mm_product-list {
+			display: inline-block;
+			margin-left: 40px;
+
+			ul {
+				display: block;
+				margin: -10px -10px 0;
+				width: 690px;
+
+				li {
+					display: inline-block;
+					position: relative;
+					margin-top: 15px;
+					padding: 10px 10px 29px;
+
+					&::before {
+						position: absolute;
+						inset: 0;
+						border: 1px solid rgba(#d5d5d5, 0);
+						transition: border-color, const.$time_fast;
+						content: '';
+					}
+
+					&#{function.escape('.S=pointer-on')}::before {
+						border: 1px solid rgba(#d5d5d5, 1);
+						box-shadow: 0 1px 10px rgba(#000, 0.16);
+					}
+
+					&:nth-child(-n+3) {
+						margin-top: 0;
+					}
+				}
+			}
+
+			.mm_product-item {
+				width: 210px;
+			}
+		}
+	}
+}

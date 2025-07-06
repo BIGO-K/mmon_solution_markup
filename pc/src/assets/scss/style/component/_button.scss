@@ -1,0 +1,204 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 컴포넌트
+ * 버튼, 버튼그룹 등 버튼의 기본 단위
+ */
+
+/** 기본형 */
+.mm_btn {
+	position: relative;
+	padding: 0 60px;
+	width: auto;
+	height: 46px;
+	border-radius: 46px;
+	background-color: #6a6a6a;
+	@include mixin.font(#fff '1.5rem/4.6rem' center);
+
+	&::after {
+		position: absolute;
+		inset: 0;
+		border: 1px solid transparent;
+		border-radius: 46px;
+		content: '';
+	}
+
+	// 사이즈 - base 제외 / 없음 null (type, padding, height, font-size)
+	$sizes: (sm, 12px, 32px, 1.4rem), (xs, 12px, 24px, 1.2rem), (2xs, 6px, 19px, 1.1rem),
+		(lg, 104px, 54px, 1.7rem);
+	@each $type, $padding, $height, $font_size in $sizes {
+		&#{function.escape('.T=#{$type}')} {
+			@if $height {
+				padding: 0 $padding;
+				height: $height;
+				border-radius: $height;
+				@include mixin.font('#{$font_size}/#{math.div($height, const.$font_size_base) * 1rem}');
+
+				// @include mixin.font('#{$font_size}/#{if($type == lg, $height, $height - 2px)}');
+			}
+
+			&::after {
+				border-radius: $height;
+			}
+		}
+	}
+
+	// 색상 - base 제외 / 없음 null (type, background-color, color, border-color)
+	$colors: (light, #eee, #4a4a4a), (dark, #5c5c5c, #fff),
+		(primary, var.$color_main, #fff);
+	@each $type, $bg_color, $font_color in $colors {
+		&#{function.escape('.T=#{$type}')}:not(#{function.escape('.T=line')}) {
+			@if $bg_color {
+				background-color: $bg_color;
+				color: $font_color;
+			}
+		}
+	}
+
+	// 라인 - base 제외 / 없음 null (type, background-color, color, border-color)
+	&#{function.escape('.T=line')} {
+		background-color: #fff;
+		color: #5c5c5c;
+
+		&::after {
+			border-color: #6a6a6a;
+		}
+
+		$lines: (light, #767676, #767676), (lighter, #888, #888), (lightest, #aeaeae, #888), (dark, #2b2b2b, #2b2b2b),
+			(primary, var.$color_main, var.$color_main), (secondary, var.$color_sub, var.$color_sub), (variable, var.$color_variable, var.$color_variable);
+		@each $type, $border_color, $font_color in $lines {
+			&#{function.escape('.T=#{$type}')} {
+				@if $border_color {
+					color: $font_color;
+
+					&::after {
+						border-color: $border_color;
+					}
+				}
+			}
+		}
+	}
+
+	// 스퀘어
+	&#{function.escape('.T=square')} {
+		border-radius: 3px;
+
+		&::after {
+			border-radius: 3px;
+		}
+	}
+
+	// button 비활성
+	&:disabled,
+	&#{function.escape('.T=disabled')} {
+		background-color: #dcdcdc !important;
+		color: #767676 !important;
+
+		&::after {
+			border: 0;
+		}
+	}
+
+	// a태그 href가 없을 때 비활성
+	@include mixin.context-unify(a) {
+		&:not([href]) {
+			background-color: #dcdcdc !important;
+			color: #767676 !important;
+
+			> i[class*='ico_']::before {
+				background-color: #767676;
+			}
+
+			&::after {
+				border: 0;
+			}
+		}
+	}
+
+	// 삭제
+	&.btn_delete {
+		width: 72px;
+	}
+
+	// 링크
+	&.btn_link {
+		.ico_link {
+			margin: 19px 0 0 11px;
+
+			&::before {
+				width: 5px;
+				height: 9px;
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+/** 최하단버튼 */
+.mm_foot {
+	margin-top: 30px;
+}
+
+/** 버튼그룹 */
+.mm_btn_box {
+	@include mixin.font('0' center);
+	@include mixin.clearfix;
+
+	> * {
+		&:nth-child(n+2) {
+			margin: 0 0 0 8px;
+		}
+	}
+
+	// 가운데 (일렬)
+	.mm_block {
+		> .mm_btn {
+			padding: 0;
+			width: 100%;
+
+			&:nth-child(n+2) {
+				margin: 9px 0 0;
+			}
+		}
+	}
+
+	// 플렉스
+	.mm_flex {
+		> * {
+			padding: 0;
+
+			&:nth-child(n+2) {
+				margin: 0 0 0 6px;
+			}
+		}
+	}
+
+	// mm_btn 사이즈 226 고정
+	&#{function.escape('.T=equal')} {
+		> * {
+			padding: 0;
+			width: 226px;
+		}
+	}
+}
+
+// 찜하기
+.btn_like {
+	padding: 10px;
+
+	&#{function.escape('.S=switch-on')} {
+		.ico_like::before {
+			@include mixin.svg(#f84f34 url('/public/images/common/ico_heart_fill.svg'));
+		}
+
+		.uico_like::before {
+			@include mixin.svg(#f84f34 url('/public/images/block/common/ico_heart_fill.svg'));
+		}
+	}
+}

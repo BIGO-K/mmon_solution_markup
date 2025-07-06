@@ -1,0 +1,211 @@
+{
+	"wish_goods": [
+		{
+			"id": 58820,
+			"name": "아크 폴리스 가디건",
+			"brand_name": "율미아스탭",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/20/1.jpg?ut=1661220855",
+			"base_discounted_price": 11200,
+			"sale_rate": 73,
+			"is_soldout": false
+		},
+		{
+			"id": 58778,
+			"name": "커스텀핏 캐시 올스타 슬랙스",
+			"brand_name": "엘르 골프",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/78/1.jpg?ut=1661220855",
+			"base_discounted_price": 23000,
+			"sale_rate": 50,
+			"is_soldout": false
+		},
+		{
+			"id": 58808,
+			"name": "로고 미니 오블룽 집업",
+			"brand_name": "에스콰이아",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/08/1.jpg?ut=1661220855",
+			"base_discounted_price": 54700,
+			"sale_rate": 68,
+			"is_soldout": false
+		},
+		{
+			"id": 57050,
+			"name": "인트레치아토 폴리스 유틸리티 베스트",
+			"brand_name": "울시골프",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/70/50/1.jpg?ut=1661220874",
+			"base_discounted_price": 13200,
+			"sale_rate": 88,
+			"is_soldout": false
+		},
+		{
+			"id": 53116,
+			"name": "애프터 미니 토트백",
+			"brand_name": "캘빈클라인 언더웨어",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/31/16/1.jpg?ut=1661220917",
+			"base_discounted_price": 20600,
+			"sale_rate": 75,
+			"is_soldout": false
+		},
+		{
+			"id": 32563,
+			"name": "자수 런닝 토트백",
+			"brand_name": "캘빈클라인 언더웨어",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/03/25/63/1.jpg?ut=1680534003",
+			"base_discounted_price": 78600,
+			"sale_rate": 25,
+			"is_soldout": false
+		},
+		{
+			"id": 54221,
+			"name": "아크 캐시 라이트 백팩",
+			"brand_name": "BYC",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/42/21/1.jpg?ut=1680482625",
+			"base_discounted_price": 27600,
+			"sale_rate": 68,
+			"is_soldout": false
+		},
+		{
+			"id": 56870,
+			"name": "슈퍼스타 바게트 백",
+			"brand_name": "3L",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/68/70/1.jpg?ut=1661698803",
+			"base_discounted_price": 40000,
+			"sale_rate": 34,
+			"is_soldout": false
+		},
+		{
+			"id": 58795,
+			"name": "홀터넥 릴렉스 레더 셔츠",
+			"brand_name": "디씨",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/95/1.jpg?ut=1661220855",
+			"base_discounted_price": 10900,
+			"sale_rate": 66,
+			"is_soldout": false
+		},
+		{
+			"id": 52787,
+			"name": "홀터넥 슬리브 더블니트",
+			"brand_name": "블루레이스",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/27/87/1.jpg?ut=1661220920",
+			"base_discounted_price": 14700,
+			"sale_rate": 28,
+			"is_soldout": false
+		},
+		{
+			"id": 58751,
+			"name": "아크 옥스포드 클래식 토트백",
+			"brand_name": "울시골프",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/51/1.jpg?ut=1662358441",
+			"base_discounted_price": 64200,
+			"sale_rate": 7,
+			"is_soldout": false
+		},
+		{
+			"id": 58794,
+			"name": "애프터 미니 아이보리 가디건",
+			"brand_name": "인베스트",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/94/1.jpg?ut=1661220855",
+			"base_discounted_price": 18300,
+			"sale_rate": 32,
+			"is_soldout": false
+		},
+		{
+			"id": 58600,
+			"name": "리앤 펠트 폴리스 미디엄 자켓",
+			"brand_name": "퀵실버",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/86/00/1.jpg?ut=1661220857",
+			"base_discounted_price": 31900,
+			"sale_rate": 69,
+			"is_soldout": false
+		},
+		{
+			"id": 58779,
+			"name": "슈퍼스타 캐시 유틸리티 후드 집업",
+			"brand_name": "엘르 스포츠",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/79/1.jpg?ut=1663858804",
+			"base_discounted_price": 48700,
+			"sale_rate": 73,
+			"is_soldout": false
+		},
+		{
+			"id": 58725,
+			"name": "커스텀핏 에스파 백",
+			"brand_name": "3L",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/25/1.jpg?ut=1668700803",
+			"base_discounted_price": 38900,
+			"sale_rate": 38,
+			"is_soldout": false
+		},
+		{
+			"id": 58119,
+			"name": "인트레치아토 릴렉스 아이보리 후드 집업",
+			"brand_name": "페슈라",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/81/19/1.jpg?ut=1662011921",
+			"base_discounted_price": 28200,
+			"sale_rate": 67,
+			"is_soldout": false
+		},
+		{
+			"id": 57960,
+			"name": "홀터넥 캐시 마그넷 슬랙스",
+			"brand_name": "BNX",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/79/60/1.jpg?ut=1678287605",
+			"base_discounted_price": 72700,
+			"sale_rate": 40,
+			"is_soldout": false
+		},
+		{
+			"id": 58843,
+			"name": "자수 릴렉스 더블니트1",
+			"brand_name": "라코스테 키즈",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/43/1.jpg?ut=1680482642",
+			"base_discounted_price": 31400,
+			"sale_rate": 45,
+			"is_soldout": false
+		},
+		{
+			"id": 47517,
+			"name": "리앤 펠트 릴렉스 유틸리티 더블니트",
+			"brand_name": "올리비아하슬러",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/04/75/17/1.jpg?ut=1680655290",
+			"base_discounted_price": 1200,
+			"sale_rate": 79,
+			"is_soldout": false
+		},
+		{
+			"id": 58826,
+			"name": "제작상품 테스트 상품 진열명",
+			"brand_name": "포커스",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/26/1.jpg?ut=1667870405",
+			"base_discounted_price": 10000,
+			"sale_rate": 92,
+			"is_soldout": false
+		},
+		{
+			"id": 3,
+			"name": "Y박사는.SlateBlue necessitat ullam",
+			"brand_name": "탑걸",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/03/1.jpg?ut=1680149872",
+			"base_discounted_price": 71500,
+			"sale_rate": 22,
+			"is_soldout": false
+		},
+		{
+			"id": 57446,
+			"name": "애프터 롱 더블니트",
+			"brand_name": "반스",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/74/46/1.jpg?ut=1666763223",
+			"base_discounted_price": 47300,
+			"sale_rate": 64,
+			"is_soldout": false
+		},
+		{
+			"id": 1765,
+			"name": "R가 말을LightBlue aut saepe",
+			"brand_name": "샤트렌",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/17/65/1.jpg?ut=1671292803",
+			"base_discounted_price": 79600,
+			"sale_rate": 51,
+			"is_soldout": false
+		}
+	]
+}

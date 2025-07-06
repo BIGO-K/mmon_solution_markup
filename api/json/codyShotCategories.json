@@ -1,0 +1,20 @@
+{
+    "cody_shot_categories": [
+        {
+            "id": 1,
+            "name": "트레이닝"
+        },
+		{
+			"id": 2,
+			"name": "하객룩"
+		},
+		{
+			"id": 3,
+			"name": "FASHION"
+		},
+		{
+			"id": 4,
+			"name": "OUTLET"
+		}
+    ]
+}

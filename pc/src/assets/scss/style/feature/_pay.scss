@@ -1,0 +1,523 @@
+@charset 'utf-8';
+
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+@use '../../style/setting/var';
+
+/**
+ * 자체페이(유료)
+ * 주문결제
+ */
+
+/** 주문결제 */
+.m_order-payment-method {
+	> ul {
+		> li {
+			position: relative;
+			border-bottom: 1px solid #eee;
+
+			> .mm_form-radio {
+				padding: 24px 0 24px 30px;
+
+				.ico_form-radio {
+					top: 24px;
+					left: 10px;
+				}
+			}
+		}
+	}
+
+	// 자체페이(카드/계좌) 슬라이더
+	.mm_slider {
+		margin: 0 auto;
+		width: 750px;
+
+		&-inner {
+			padding: 0 250px;
+		}
+
+		&-item {
+			position: relative;
+			padding: 12px;
+			width: 250px;
+
+			&#{function.escape('.S=on')} {
+				figure {
+					@include mixin.prefix(box-shadow, 0 3px 6px 0 rgba(#000, 0.1), webkit);
+				}
+
+				> figure,
+				> a {
+					background-color: #fff;
+					opacity: 1;
+
+					&:not(.btn_register) {
+						border-color: #101010;
+					}
+
+					&::after {
+						display: none;
+					}
+
+					+ .btn_remove {
+						display: block;
+					}
+				}
+			}
+
+			figure {
+				position: relative;
+				padding: 19px 19px 0;
+				height: 100%;
+				border: 1px solid #888;
+				border-radius: 8px;
+				background-color: #f5f5f5;
+				opacity: 0.25;
+			}
+
+			.btn_remove {
+				display: none;
+				position: absolute;
+				top: 13px;
+				right: 13px;
+				padding: 9px;
+
+				.ico_remove::before {
+					width: 12px;
+					height: 12px;
+					background-color: #888;
+				}
+			}
+		}
+
+		&-control {
+			[class*='btn_slider-'] {
+				top: 50%;
+				margin-top: -5px;
+				transform: translateY(-50%);
+
+				i::before {
+					width: 14px;
+					height: 31px;
+					background-color: #767676;
+				}
+			}
+
+			.btn_slider-prev {
+				left: -50px;
+			}
+
+			.btn_slider-next {
+				right: -50px;
+			}
+		}
+
+		&-pagination {
+			position: relative;
+			text-align: center;
+
+			li:nth-child(n+2) {
+				margin-left: 6px;
+			}
+
+			.btn_slider-page {
+				margin: 11px 0 12px;
+				width: 7px;
+				height: 7px;
+				border-radius: 4px;
+
+				&#{function.escape('.S=on')} {
+					margin-top: 10px;
+					width: 9px;
+					height: 9px;
+					background-color: #101010;
+				}
+			}
+		}
+	}
+
+	// 간편 카드결제
+	.mm_syncer-pay-card {
+		margin-top: -2px;
+		padding: 0 0 42px;
+
+		.mm_slider {
+			&-item {
+				height: 164px;
+
+				figure {
+					.image_logo {
+						width: 110px;
+						height: 18px;
+
+						> img {
+							width: auto;
+							height: 100%;
+						}
+					}
+
+					.mm_image-none {
+						&::before {
+							@include mixin.font(#101010 v_700 '1.5rem');
+
+							content: attr(data-ir);
+						}
+
+						.ico_none {
+							display: none;
+						}
+					}
+
+					figcaption {
+						position: absolute;
+						bottom: 14px;
+
+						.text_title {
+							@include mixin.font(#5c5c5c v_600 '1.3rem');
+						}
+
+						.text_num {
+							margin-top: 5px;
+							@include mixin.font('1.5rem/1.8rem');
+
+							span {
+								margin-right: 7px;
+							}
+						}
+					}
+				}
+
+				// 카드등록
+				.btn_register {
+					padding-top: 41px;
+					height: 100%;
+					border: 1px dashed #cdcdcd;
+					border-radius: 8px;
+					background-color: #fff;
+					text-align: center;
+
+					.ico_add {
+						width: 34px;
+						height: 34px;
+						border-radius: 100%;
+						background-color: #f5f5f5;
+
+						&::before {
+							margin-top: 10px;
+							width: 14px;
+							height: 14px;
+							background-color: #b8b8b9;
+						}
+					}
+
+					b {
+						display: block;
+						margin-top: 9px;
+						@include mixin.font('1.3rem/1.8rem');
+					}
+				}
+			}
+
+			.mm_form-select {
+				margin: 10px auto 0;
+				width: 226px;
+
+				~ .mm_slider-control {
+					[class*='btn_slider-'] {
+						margin-top: -47px;
+					}
+				}
+
+				~ .mm_slider-pagination {
+					margin-top: 8px;
+				}
+			}
+		}
+	}
+
+	// 간편 계좌결제
+	.mm_syncer-pay-account {
+		margin-top: -2px;
+		padding: 0 0 42px;
+
+		.mm_slider {
+			&-item {
+				height: 106px;
+
+				&:only-child {
+					.btn_register {
+						b {
+							line-height: 1.8rem;
+						}
+					}
+				}
+
+				figure {
+					padding-top: 18px;
+
+					.image_logo {
+						width: 110px;
+						height: 17px;
+
+						> img {
+							width: auto;
+							height: 100%;
+						}
+					}
+
+					.mm_image-none {
+						&::before {
+							@include mixin.font(#101010 v_700 '1.5rem');
+
+							content: attr(data-ir);
+						}
+
+						.ico_none {
+							display: none;
+						}
+					}
+
+					figcaption {
+						margin-top: 8px;
+
+						.text_num {
+							@include mixin.font('1.5rem/1.8rem');
+
+							span {
+								margin-right: 7px;
+							}
+						}
+					}
+				}
+
+				// 카드등록
+				.btn_register {
+					padding: 23px 0 0 13px;
+					height: 100%;
+					border: 1px dashed #cdcdcd;
+					border-radius: 8px;
+					background-color: #fff;
+
+					.ico_add {
+						margin-right: 14px;
+						width: 34px;
+						height: 34px;
+						border-radius: 100%;
+						background-color: #f5f5f5;
+						text-align: center;
+
+						&::before {
+							margin-top: 10px;
+							width: 14px;
+							height: 14px;
+							background-color: #b8b8b9;
+						}
+					}
+
+					b {
+						@include mixin.font('1.3rem/3.4rem' left);
+					}
+				}
+			}
+		}
+	}
+
+	// 다른 결제수단
+	.mm_syncer-payment-other {
+		padding-bottom: 36px;
+	}
+}
+
+// *---------- 모달 ----------*
+
+/** 휴대폰 인증 */
+.m_modal-pay-certify {
+	padding-top: 7px;
+
+	> .mm_form_mix-linked {
+		.mm_btn {
+			padding: 0;
+			width: 140px;
+		}
+	}
+
+	// 약관자세히보기
+	table {
+		display: none;
+		margin-top: 9px;
+		border: 1px solid #e6e6e6;
+
+		tr:first-child > * {
+			border: 0;
+		}
+
+		th,
+		td {
+			border-top: 1px solid #eee;
+			@include mixin.font('1.3rem/1.8rem' left);
+		}
+
+		th {
+			padding: 10px 10px 9px 8px;
+			width: 107px;
+			border-right: 1px solid #eee;
+			background-color: #f5f5f5;
+			color: #5c5c5c;
+		}
+
+		td {
+			padding: 10px 10px 9px 9px;
+			background-color: #fff;
+			color: #4a4a4a;
+
+			p {
+				position: relative;
+				padding-left: 8px;
+
+				&::before {
+					position: absolute;
+					left: 0;
+					content: '-';
+				}
+			}
+		}
+	}
+
+	.mm_flex#{function.escape('.S=switch-on')} {
+		+ table {
+			display: table;
+		}
+	}
+}
+
+/** 간편결제 비밀번호 */
+.m_modal-pay-password {
+	.mm_modal-item-inner {
+		width: var.$modal_width_sm;
+	}
+
+	section {
+		position: relative;
+		padding: 106px 0 381px;
+
+		h3 {
+			@include mixin.font('2rem' center);
+		}
+	}
+
+	#{function.escape('.m...password-number')} {
+		margin-top: 27px;
+
+		ul {
+			@include mixin.font('0' center);
+
+			li {
+				display: inline-block;
+				margin-left: 16px;
+				width: 17px;
+				height: 17px;
+				border-radius: 100%;
+				background-color: #e6e6e6;
+
+				&#{function.escape('.S=on')} {
+					background-color: var.$color_sub;
+				}
+			}
+		}
+	}
+
+	// 비밀번호 재설정
+	#{function.escape('.m...password-find')} {
+		position: absolute;
+		right: 0;
+		bottom: 251px;
+		left: 0;
+		text-align: center;
+
+		p {
+			@include mixin.font(#4a4a4a '1.5rem');
+		}
+
+		.btn_password-set {
+			padding: 13px 10px;
+			@include mixin.font(#767676 '1.4rem');
+
+			.ico_link {
+				margin: 3px 0 0 7px;
+
+				&::before {
+					width: 4px;
+					height: 9px;
+					background-color: #767676;
+				}
+			}
+		}
+	}
+
+	// 키패드
+	#{function.escape('.m...password-key')} {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: #2b2b2b;
+
+		ul {
+			li {
+				float: left;
+				width: 25%;
+				border: 1px solid #3d3d3d;
+				border-width: 0 1px 1px 0;
+
+				&:nth-child(4n) {
+					border-right: 0;
+				}
+
+				button {
+					font-size: 2rem;
+				}
+			}
+		}
+
+		button {
+			width: 100%;
+			height: 58px;
+			@include mixin.font(#fff v_400 '1.4rem/5.9rem' center);
+
+			&.btn_remove {
+				position: relative;
+
+				&::before {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: -1px;
+					border-left: 1px solid #393939;
+					content: '';
+				}
+
+				.ico_remove {
+					position: relative;
+					margin: 19px 0 0 7px;
+					padding: 0 6px;
+					height: 20px;
+					border-radius: 0 2px 2px 0;
+					background-color: #5c5c5c;
+
+					&::before {
+						margin-top: 6px;
+					}
+
+					&::after {
+						position: absolute;
+						top: 0;
+						left: -9px;
+						@include mixin.triangle(#5c5c5c, left, 10px, 9px);
+
+						content: '';
+					}
+				}
+			}
+		}
+	}
+}

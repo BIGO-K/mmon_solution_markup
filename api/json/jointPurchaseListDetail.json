@@ -1,0 +1,12 @@
+{
+    "goods_id": 735,
+    "target_count": 2,
+    "participant_count": 2,
+    "start_at": "2022-11-30T15:00:00.000000Z",
+    "end_at": "2099-12-29T15:00:59.000000Z",
+    "expiration_date_message": "발행일로부터 10일간 사용 가능",
+    "target_achieve_rate": 100,
+    "joint_purchase_amount": 99000,
+    "joint_purchase_sale_rate": 97,
+    "is_purchasable": false
+}

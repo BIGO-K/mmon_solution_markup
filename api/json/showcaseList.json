@@ -1,0 +1,141 @@
+{
+	"paginator": {
+		"total": 50,
+		"current_page": 1,
+		"per_page": 10,
+		"data": [
+			{
+				"id": 3,
+				"first_words": "내추럴하면서도 시대의 핫한 감성을",
+				"second_words": "제안하는 아티스틱 디자이너 브랜드",
+				"thumbnail_url": "https://image.stylecrew.co.kr/mall/dev/goods/000/000/000/004/1.jpg?updated_at=20220504163716",
+				"brand_id": 7,
+				"brand_name": "엠몬스타",
+				"sort_id": 2,
+				"sort_name": "탭2",
+				"title": "TREND 브랜드"
+			},
+			{
+				"id": 17,
+				"first_words": "Holiday Beauty",
+				"second_words": "홀리데이 뷰티 기프트샵",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/17/pc.jpg?ut=1670905860",
+				"brand_id": 7,
+				"brand_name": "베네피트",
+				"sort_id": 2,
+				"sort_name": "TREND",
+				"title": "Holiday"
+			},
+			{
+				"id": 16,
+				"first_words": "GENTLE MONSTER",
+				"second_words": "Jentle Garden",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/16/pc.jpg?ut=1670832308",
+				"brand_id": 8,
+				"brand_name": "FIBRENO",
+				"sort_id": 1,
+				"sort_name": "BRAND",
+				"title": "GENTLE"
+			},
+			{
+				"id": 15,
+				"first_words": "자연과 공존하는 감성",
+				"second_words": "윈터 컬렉션 단독 선발매",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/15/pc.jpg?ut=1670829826",
+				"brand_id": 11,
+				"brand_name": "마리떼 프랑소와 저버",
+				"sort_id": 2,
+				"sort_name": "TREND",
+				"title": "LE ABONNE"
+			},
+			{
+				"id": 14,
+				"first_words": "스트릿 감성 가득한",
+				"second_words": "엠엘비 키즈 청키라이너",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/14/pc.jpg?ut=1670889733",
+				"brand_id": 2,
+				"brand_name": "아디다스",
+				"sort_id": 2,
+				"sort_name": "TREND",
+				"title": "MLB Kids"
+			},
+			{
+				"id": 13,
+				"first_words": "HOLIDAY GIFT",
+				"second_words": "따뜻한 연말을 위한 준비",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/13/pc.jpg?ut=1670891016",
+				"brand_id": 18,
+				"brand_name": "에스티듀퐁",
+				"sort_id": 1,
+				"sort_name": "BRAND",
+				"title": "Rouge＆Lounge"
+			},
+			{
+				"id": 12,
+				"first_words": "#타미 클래식 스웨터",
+				"second_words": "인플루언서 PICK 만나보기",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/12/pc.jpg?ut=1670892052",
+				"brand_id": 22,
+				"brand_name": "마틸라",
+				"sort_id": 3,
+				"sort_name": "ISSUE",
+				"title": "TOMMY"
+			},
+			{
+				"id": 11,
+				"first_words": "인싸되는 스타일링 가이드",
+				"second_words": "이번 시즌 핫 스포츠룩!",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/11/pc.jpg?ut=1670894462",
+				"brand_id": 3,
+				"brand_name": "뉴발란스",
+				"sort_id": 3,
+				"sort_name": "ISSUE",
+				"title": "SJYP SPORTS"
+			},
+			{
+				"id": 10,
+				"first_words": "Soft Knit Dress",
+				"second_words": "띠어리만의 색감과 실루엣",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/10/pc.jpg?ut=1670897986",
+				"brand_id": 24,
+				"brand_name": "루미르",
+				"sort_id": 1,
+				"sort_name": "BRAND",
+				"title": "Theory"
+			},
+			{
+				"id": 9,
+				"first_words": "The Holidays",
+				"second_words": "반짝이는 연말 스타일 가이드",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/9/pc.jpg?ut=1670898849",
+				"brand_id": 10,
+				"brand_name": "로라로라",
+				"sort_id": 2,
+				"sort_name": "TREND",
+				"title": "kotelo"
+			},
+			{
+				"id": 8,
+				"first_words": "Yerin Baek",
+				"second_words": "Collaboration",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/8/pc.jpg?ut=1670982231",
+				"brand_id": 15,
+				"brand_name": "아로마티카",
+				"sort_id": 1,
+				"sort_name": "BRAND",
+				"title": "BEAKER"
+			},
+			{
+				"id": 7,
+				"first_words": "10 Corso Como",
+				"second_words": "재입고 & 신상품 출시!",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/exhibit/brand-contents/100/7/pc.jpg?ut=1670825407",
+				"brand_id": 25,
+				"brand_name": "에포크",
+				"sort_id": 1,
+				"sort_name": "BRAND",
+				"title": "CRYSTAL HAZE"
+			}
+		]
+	}
+}

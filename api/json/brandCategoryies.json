@@ -1,0 +1,24 @@
+{
+    "brand_categories": [
+        {
+            "id": 5,
+            "name": "남성"
+        },
+		{
+		  "id": 4,
+		  "name": "LIFE"
+		},
+		{
+		  "id": 3,
+		  "name": "ACC"
+		},
+		{
+		  "id": 2,
+		  "name": "LIVING"
+		},
+		{
+		  "id": 1,
+		  "name": "FASHION"
+		}
+    ]
+}

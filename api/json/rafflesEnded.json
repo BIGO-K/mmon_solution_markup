@@ -1,0 +1,79 @@
+{
+    "paginator": {
+        "total": 5,
+        "current_page": 1,
+        "per_page": 12,
+        "data": [
+            {
+                "id": 1,
+                "total_entry_count": 3,
+                "goods": {
+                    "id": 5230,
+                    "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/85/26/1.jpg",
+                    "name": "인트레치아토 롱 가디건",
+                    "brand_name": "엠몬스타",
+                    "price": 30000,
+                    "base_discounted_price": 27000,
+                    "sale_rate": 10
+                },
+                "is_confirmed_winner": false
+            },
+			{
+				"id": 49,
+				"total_entry_count": 8,
+				"goods": {
+					"id": 58942,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/89/42/1.jpg?ut=1672646174",
+					"name": "와이드 롱 자켓 - 래플11",
+					"brand_name": "BNS",
+					"price": 52000,
+					"base_discounted_price": 48500,
+					"sale_rate": 7
+				},
+				"is_confirmed_winner": true
+			},
+			{
+				"id": 56,
+				"total_entry_count": 4,
+				"goods": {
+					"id": 59225,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/25/1.jpg?ut=1675846022",
+					"name": "래플_test6",
+					"brand_name": "힐크릭",
+					"price": 60000,
+					"base_discounted_price": 30000,
+					"sale_rate": 50
+				},
+				"is_confirmed_winner": false
+			},
+			{
+				"id": 46,
+				"total_entry_count": 1,
+				"goods": {
+					"id": 894,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/08/94/1.jpg?ut=1669362241",
+					"name": "T대학 병SaddleBrown id inventore",
+					"brand_name": "3L",
+					"price": 49900,
+					"base_discounted_price": 9900,
+					"sale_rate": 80
+				},
+				"is_confirmed_winner": false
+			},
+			{
+				"id": 59,
+				"total_entry_count": 3,
+				"goods": {
+					"id": 58929,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/89/29/1.jpg?ut=1666922394",
+					"name": "와이드 롱 자켓 - 래플4",
+					"brand_name": "BNS",
+					"price": 69300,
+					"base_discounted_price": 48500,
+					"sale_rate": 30
+				},
+				"is_confirmed_winner": true
+			}
+        ]
+    }
+}

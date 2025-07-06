@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 컴포넌트
+ * 섹션, 영역, 스크롤러, 라인, 싱커, 플렉스 등 기본 공통영역
+ */
+
+/** 섹션 */
+.mm_section {
+	> h6.mm_strapline {
+		margin-top: 25px;
+	}
+}
+
+/** 이너 */
+.mm_inner {
+	position: relative;
+	padding: 0 14px;
+	@include mixin.clearfix;
+}
+
+/** 라인 */
+.mm_line {
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 5px solid #eee;
+	@include mixin.context-unify('hr') {
+		height: 0;
+		@include mixin.font('0/1');
+	}
+}

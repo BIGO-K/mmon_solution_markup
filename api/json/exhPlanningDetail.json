@@ -1,0 +1,273 @@
+{
+    "planning": {
+        "id": 13,
+        "title": "EXOPLORE OCEANIA!",
+        "is_use_comment": true,
+        "sections": [
+            {
+                "id": 1,
+                "pc_html": "<div class=\"section1 w1200\"><img src=\"https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/event_detail_1.png\" alt=\"\"></div><style> .mm_editor .w1200 {max-width: 1200px;} </style>",
+                "mobile_html": null,
+                "goods_list": [
+					{
+						"id": 57677,
+						"name": "윈터 옥스포드 미디엄 맨투맨",
+						"price": 79100,
+						"headline": null,
+						"base_discounted_price": 17400,
+						"sale_rate": 78,
+						"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/76/77/1.jpg?ut=1668092404",
+						"mouse_over_image_url": "",
+						"stock": 73,
+						"is_only_adult": false,
+						"is_soldout": false,
+						"brand_id": 4,
+						"brand_name": "민희연구소",
+						"icon": null,
+						"badges": [
+							"쿠폰할인"
+						],
+						"wish_count": 0,
+						"review_count": 1,
+						"review_score_average": 4,
+						"is_use_stock_notify": false
+					},
+					{
+						"id": 57594,
+						"name": "와이드 런닝 슬라이드 가디건",
+						"price": 63800,
+						"headline": null,
+						"base_discounted_price": 44600,
+						"sale_rate": 30,
+						"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/75/94/1.jpg?ut=1661220868",
+						"mouse_over_image_url": "",
+						"stock": 210,
+						"is_only_adult": true,
+						"is_soldout": false,
+						"brand_id": 41,
+						"brand_name": "(주)지은기획",
+						"icon": null,
+						"badges": [
+							"쿠폰할인"
+						],
+						"wish_count": 1,
+						"review_count": 0,
+						"review_score_average": 0,
+						"is_use_stock_notify": false
+					},
+					{
+						"id": 57436,
+						"name": "애프터 슬리브 숏패딩",
+						"price": 167700,
+						"headline": null,
+						"base_discounted_price": 150900,
+						"sale_rate": 10,
+						"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/74/36/1.jpg?ut=1661220870",
+						"mouse_over_image_url": "",
+						"stock": 60,
+						"is_only_adult": false,
+						"is_soldout": false,
+						"brand_id": 11,
+						"brand_name": "LawnGreen",
+						"icon": null,
+						"badges": [
+							"무료배송",
+							"쿠폰할인"
+						],
+						"wish_count": 1,
+						"review_count": 0,
+						"review_score_average": 0,
+						"is_use_stock_notify": false
+					},
+					{
+						"id": 57406,
+						"name": "윈터 에스파 슬라이드 백팩",
+						"price": 20900,
+						"headline": null,
+						"base_discounted_price": 2000,
+						"sale_rate": 90,
+						"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/74/06/1.jpg?ut=1661220870",
+						"mouse_over_image_url": "",
+						"stock": 20,
+						"is_only_adult": false,
+						"is_soldout": false,
+						"brand_id": 5,
+						"brand_name": "LightGray",
+						"icon": null,
+						"badges": [
+							"무료배송",
+							"쿠폰할인"
+						],
+						"wish_count": 0,
+						"review_count": 0,
+						"review_score_average": 0,
+						"is_use_stock_notify": false
+					},
+					{
+						"id": 57320,
+						"name": "로고 릴렉스 미디엄 맨투맨",
+						"price": 136800,
+						"headline": null,
+						"base_discounted_price": 87500,
+						"sale_rate": 36,
+						"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/73/20/1.jpg?ut=1661220871",
+						"mouse_over_image_url": "",
+						"stock": 50,
+						"is_only_adult": false,
+						"is_soldout": false,
+						"brand_id": 19,
+						"brand_name": "현영캐피탈",
+						"icon": null,
+						"badges": [
+							"무료배송",
+							"쿠폰할인"
+						],
+						"wish_count": 0,
+						"review_count": 0,
+						"review_score_average": 0,
+						"is_use_stock_notify": false
+					},
+					{
+						"id": 57185,
+						"name": "자수 미니 집업",
+						"price": 46700,
+						"headline": null,
+						"base_discounted_price": 17200,
+						"sale_rate": 63,
+						"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/71/85/1.jpg?ut=1661483091",
+						"mouse_over_image_url": "",
+						"stock": 185,
+						"is_only_adult": false,
+						"is_soldout": false,
+						"brand_id": 42,
+						"brand_name": "WhiteSmoke",
+						"icon": null,
+						"badges": [
+							"쿠폰할인"
+						],
+						"wish_count": 0,
+						"review_count": 0,
+						"review_score_average": 0,
+						"is_use_stock_notify": false
+					},
+					{
+						"id": 57165,
+						"name": "스터드 롱 마그넷 맨투맨",
+						"price": 89100,
+						"headline": null,
+						"base_discounted_price": 82800,
+						"sale_rate": 7,
+						"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/71/65/1.jpg?ut=1661220873",
+						"mouse_over_image_url": "",
+						"stock": 240,
+						"is_only_adult": false,
+						"is_soldout": false,
+						"brand_id": 4,
+						"brand_name": "민희연구소",
+						"icon": null,
+						"badges": [
+							"무료배송",
+							"쿠폰할인"
+						],
+						"wish_count": 0,
+						"review_count": 0,
+						"review_score_average": 0,
+						"is_use_stock_notify": false
+					}
+				]
+            },
+			{
+                "id": 1,
+                "pc_html": "<div class=\"section1 w1200\"><img src=\"https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/event_detail_1.png\" alt=\"\"></div><style> .mm_editor .w1200 {max-width: 1200px;} </style>",
+                "mobile_html": null,
+                "goods_list": [
+					{
+						"id": 57677,
+						"name": "윈터 옥스포드 미디엄 맨투맨",
+						"price": 79100,
+						"headline": null,
+						"base_discounted_price": 17400,
+						"sale_rate": 78,
+						"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/76/77/1.jpg?ut=1668092404",
+						"mouse_over_image_url": "",
+						"stock": 73,
+						"is_only_adult": false,
+						"is_soldout": false,
+						"brand_id": 4,
+						"brand_name": "민희연구소",
+						"icon": null,
+						"badges": [
+							"쿠폰할인"
+						],
+						"wish_count": 0,
+						"review_count": 1,
+						"review_score_average": 4,
+						"is_use_stock_notify": false
+					}
+				]
+            }
+        ],
+        "groups": [
+            {
+                "id": 1,
+                "title": "mmon BEST items",
+                "has_pc_image": false,
+                "pc_link": null,
+                "pc_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/event_detail_title.png",
+                "pc_alt": "mmon best items",
+                "has_mobile_image": false,
+                "mobile_link": null,
+                "mobile_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/event_detail_title.png",
+                "mobile_alt": "mmon best items"
+            },
+			{
+                "id": 2,
+                "title": "CALIFONIA DREAM",
+                "has_pc_image": true,
+                "pc_link": null,
+                "pc_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/event_detail_title.png",
+                "pc_alt": "CALIFONIA DREAM",
+                "has_mobile_image": false,
+                "mobile_link": null,
+                "mobile_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/event_detail_title.png",
+                "mobile_alt": "CALIFONIA DREAM"
+            },
+			{
+				"id": 100,
+				"title": "NEXT LEVEL",
+				"has_pc_image": false,
+				"pc_link": "",
+				"pc_image_url": null,
+				"pc_alt": "",
+				"has_mobile_image": false,
+				"mobile_link": "",
+				"mobile_image_url": null,
+				"mobile_alt": ""
+			},
+			{
+				"id": 101,
+				"title": "MMON BEST",
+				"has_pc_image": true,
+				"pc_link": "",
+				"pc_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/exhibit/planning-events/100/11/101/pc_group_image.jpg?ut=1660544005?",
+				"pc_alt": "타이틀",
+				"has_mobile_image": true,
+				"mobile_link": "",
+				"mobile_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/exhibit/planning-events/100/11/101/mobile_group_image.jpg?ut=1660544005?",
+				"mobile_alt": "타이틀"
+			},
+			{
+				"id": 102,
+				"title": "ALL FOR ONE",
+				"has_pc_image": false,
+				"pc_link": "",
+				"pc_image_url": null,
+				"pc_alt": "",
+				"has_mobile_image": false,
+				"mobile_link": "",
+				"mobile_image_url": null,
+				"mobile_alt": ""
+			}
+        ]
+    }
+}

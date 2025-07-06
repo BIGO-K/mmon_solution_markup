@@ -1,0 +1,50 @@
+{
+	"cancel_detail": {
+		"packs": [
+			{
+				"shipping_rule_id": 125,
+				"paid_shipping_price": 0,
+				"order_items": [
+					{
+						"id": 10205,
+						"point_used": 0,
+						"paid_price": 2000,
+						"seller_name": "제휴테스터6",
+						"goods": {
+							"id": 59262,
+							"name": "MMONTOPARTNER_024",
+							"brand_name": "NII",
+							"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/62/1.jpg?",
+							"option_name": "블랙 / 66",
+							"option_id": 831413,
+							"is_soldout": false
+						}
+					}
+				]
+			}
+		],
+		"reason": {
+			"label": "상품품절",
+			"detail": null
+		},
+		"refund_account": {
+			"owner_name": "엠모니2",
+			"account_number": "123412341234",
+			"bank_name": "기업은행",
+			"bank_code": 101
+		},
+		"refund_info": {
+			"total_paid_price": 2000,
+			"refund_price": 1000,
+			"refund_point": 0,
+			"calculate_details": [
+				{
+					"label": "면제배송비",
+					"amount": 1000,
+					"is_substracted": true
+				}
+			]
+		},
+		"is_cancel_before_paid": false
+	}
+}

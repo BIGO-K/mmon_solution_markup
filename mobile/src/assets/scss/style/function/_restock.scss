@@ -1,0 +1,67 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 재입고 알림
+ * 상품상세
+ */
+
+/** 상품상세(옵션 선택 영역) */
+.m_product-option {
+	&-select {
+		.btn_restock {
+			margin-top: 16px;
+			color: #4457a7;
+
+			&::after {
+				border-color: #4457a7;
+				border-radius: 3px;
+			}
+
+			.ico_alarm {
+				margin: 4px 4px 0 0;
+
+				&::before {
+					background-color: #4457a7;
+				}
+			}
+		}
+	}
+}
+
+
+// *---------- 팝업 ----------*
+
+
+
+// *---------- 모달 ----------*
+
+/** 재입고 알림 신청 */
+.m_modal-restock {
+	#{escape('.mm_modal...content')} {
+		> .mm_scroller {
+			padding: 17px 16px 23px;
+		}
+	}
+
+	.m_product-option-select {
+		.mm_strapline {
+			text-align: left;
+		}
+
+		.mm_dropdown-item-inner {
+			> .mm_scroller {
+				max-height: 145px;
+			}
+		}
+
+		+ .mm_foot {
+			margin-top: 102px;
+		}
+	}
+}

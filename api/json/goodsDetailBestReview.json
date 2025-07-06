@@ -1,0 +1,50 @@
+{
+    "best_review": [
+		{
+			"id": 132,
+			"contents": "리뷰 작성해서 테스트 해보겠슴다",
+			"rate": 5,
+			"is_photo_review": true,
+			"option_name": "DarkKhaki / M",
+			"image_urls": [
+				"https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/board/goods-reviews/000/000/058/745/132/image_1.jpg?ut=1670567815"
+			],
+			"writer_grade_label": "BRONZE",
+			"writer_grade_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/2.png?ut=1679296172",
+			"writer_masking_id": "tes***",
+			"created_at": "2022.10.27"
+		},
+		{
+			"id": 116,
+			"contents": "상품이 상태가 좋아요",
+			"rate": 5,
+			"is_photo_review": true,
+			"option_name": "PaleVioletRed / M",
+			"image_urls": [
+				"https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/board/goods-reviews/000/000/058/745/116/image_1.jpg?ut=1666338083",
+				"https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/board/goods-reviews/000/000/058/745/116/image_2.jpg?ut=1666338083"
+			],
+			"writer_grade_label": "BRONZE",
+			"writer_grade_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/2.png?ut=1679296172",
+			"writer_masking_id": "tes***",
+			"created_at": "2022.10.19"
+		},
+		{
+			"id": 115,
+			"contents": "테스트 리뷰\r\n입니다 테스트 리뷰",
+			"rate": 5,
+			"is_photo_review": true,
+			"option_name": "Aqua / L",
+			"image_urls": [
+				"https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/board/goods-reviews/000/000/058/745/115/image_1.jpg?ut=1666228178",
+				"https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/board/goods-reviews/000/000/058/745/115/image_2.jpg?ut=1666228178"
+			],
+			"writer_grade_label": "BRONZE",
+			"writer_grade_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/2.png?ut=1679296172",
+			"writer_masking_id": "tes***",
+			"created_at": "2022.10.19"
+		}
+	],
+    "next_best_review_id": 3,
+    "prev_best_review_id": 1
+}

@@ -1,0 +1,387 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 이벤트 리스트
+ * 이벤트/기획전 상세보기 공통
+ * 스팟성 테마관, 쇼케이스, 래플, 카카오 플러스친구
+ */
+
+/** 이벤트/기획전 상세보기 공통 */
+.mm_event {
+	// 타이틀
+	&-head {
+		padding-bottom: 44px;
+
+		h4 {
+			padding: 0 90px;
+			height: 62px;
+			border: 1px solid #4a4a4a;
+			border-width: 1px 0;
+			@include mixin.font('2rem/6rem' center, nowrap);
+		}
+
+		.btn_home {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 24px 14px;
+			@include mixin.font(#6a6a6a '1.4rem');
+
+			i {
+				margin: -1px 10px 0 0;
+			}
+		}
+
+		// SNS 공유
+		.btn_sns-share {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 20px 15px;
+
+			i::before {
+				width: 20px;
+				height: 22px;
+				background-color: #aeaeae;
+			}
+		}
+	}
+
+	// 컨텐츠
+	&-content {
+		.mm_editor {
+			text-align: center;
+
+			> * {
+				margin: 0 auto;
+			}
+		}
+
+		.mm_product-list {
+			margin-top: 60px;
+
+			#{function.escape('.mm_slider.T=list-full')} {
+				.mm_slider-item {
+					width: 276px;
+				}
+
+				.mm_slider-control {
+					button {
+						top: 101px;
+						background-color: rgba(#000, 0.27);
+
+						i::before {
+							background-color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		+ .mm_event-content {
+			margin-top: 60px;
+		}
+	}
+
+	// 상품 그룹 앵커
+	&-anchor {
+		margin-top: 44px;
+
+		&#{function.escape('.S=anchor-sticky')} {
+			.mm_event-anchor-inner {
+				position: fixed;
+				z-index: const.$zindex_floating;
+				top: var.$header_height_sm;
+			}
+
+			ul {
+				width: var.$min_width_base;
+				background-color: #fff;
+			}
+		}
+
+		ul {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+			position: relative;
+			padding-top: 1px;
+
+			&::before {
+				position: absolute;
+				inset: 0;
+				border: 1px solid #dcdcdc;
+				content: '';
+			}
+
+			li {
+				margin: -1px 0 0 -1px;
+
+				&:nth-child(5n+1) {
+					margin-left: 0;
+				}
+
+				a {
+					display: block;
+					@include mixin.text-ellipsis(1);
+
+					position: relative;
+					padding: 0 10px;
+					height: 46px;
+					border: 1px solid #dcdcdc;
+					@include mixin.font(#767676 '1.5rem/4.5rem' center);
+
+					&#{function.escape('.S=anchor-on')} {
+						z-index: 1;
+						border-color: var.$color_main;
+						color: var.$color_main;
+					}
+
+					> b {
+						display: inline;
+					}
+				}
+			}
+		}
+
+		+ .mm_event-list {
+			padding-top: 94px;
+		}
+	}
+
+	// 이벤트 상품 그룹 목록
+	&-list {
+		padding-top: 90px;
+
+		h5 {
+			padding-bottom: 28px;
+
+			> a {
+				display: block;
+			}
+
+			> b {
+				padding: 0 2px;
+				font-size: 2.6rem;
+			}
+
+			.mm_image-none {
+				width: 100%;
+				height: 30px;
+				@include mixin.font('2.6rem' left);
+
+				&::before {
+					padding: 0 2px;
+					content: attr(data-ir);
+				}
+
+				.ico_image::before {
+					content: none;
+				}
+			}
+		}
+
+		+ .mm_event-reply {
+			margin-top: 100px;
+		}
+	}
+
+	// 이벤트 댓글
+	&-reply {
+		margin-top: 45px;
+
+		.mm_form-check {
+			.ico_form-check {
+				width: 24px;
+				height: 24px;
+
+				&::before {
+					top: 1px;
+					width: 14px;
+					height: 20px;
+				}
+			}
+
+			.text_label {
+				@include mixin.font('1.5rem/2.4rem');
+			}
+		}
+
+		.mm_form-textarea {
+			margin-top: 10px;
+		}
+
+		// 댓글 작성영역
+		&-write {
+			padding: 26px 40px 31px;
+			border-top: 1px solid #dcdcdc;
+			background-color: #fafafa;
+
+			.mm_btn_box {
+				margin-top: 12px;
+
+				.btn_write {
+					width: 108px;
+				}
+			}
+
+			> p {
+				padding-top: 18px;
+				@include mixin.font('1.5rem' center);
+
+				+ .mm_btn_box {
+					margin: 21px 0 11px;
+				}
+			}
+		}
+
+		// 댓글 리스트
+		&-list {
+			margin-top: 39px;
+
+			.text_state {
+				padding: 0 14px 14px;
+				border-bottom: 1px solid #dcdcdc;
+				font-size: 1.3rem;
+			}
+
+			ul {
+				li {
+					border-bottom: 1px solid #dcdcdc;
+				}
+			}
+		}
+
+		// 댓글 아이템
+		&-item {
+			position: relative;
+			padding: 26px 180px 27px 160px;
+			font-size: 0;
+
+			// 내 댓글
+			&#{function.escape('.T=item-my')} {
+				padding-top: 29px;
+				background-color: #fafafa;
+
+				.text_user {
+					top: 63px;
+				}
+
+				.text_tag {
+					width: 54px;
+					border: 1px solid transparent;
+					border-radius: 3px;
+					@include mixin.font('1.2rem/1.8rem' center);
+
+					// 등급별 색상
+					$grades: ('level1', const.$color_level1), ('level2', const.$color_level2), ('level3', const.$color_level3), ('level4', const.$color_level4), ('level5', const.$color_level5);
+					@each $grade, $color in $grades {
+						// 회원 정보
+						@include mixin.context-first(#{function.escape('.T=#{$grade}')}) {
+							border-color: $color;
+							color: $color;
+						}
+					}
+				}
+
+				.text_secret {
+					margin-left: 10px;
+					@include mixin.font(#3d3d3d '1.3rem/2.1rem');
+
+					.ico_lock {
+						margin: 4px 0 0 4px;
+					}
+				}
+
+				.mm_form-textarea {
+					margin-bottom: 8px;
+
+					+ .mm_btn_box {
+						bottom: 35px;
+					}
+				}
+
+				.text_reply {
+					margin-top: 6px;
+				}
+			}
+
+			.text_user {
+				@include mixin.text-ellipsis(1);
+
+				position: absolute;
+				top: 29px;
+				left: 14px;
+				max-width: 120px;
+				@include mixin.font(#7b7b7b '1.2rem/1.4rem');
+
+				.image_grade {
+					margin-right: 6px;
+					width: 14px;
+					height: 14px;
+				}
+			}
+
+			.text_reply {
+				padding-right: 90px;
+				@include mixin.font(#3d3d3d '1.4rem/2.2rem');
+
+				.ico_lock {
+					margin: 5px 0 0 5px;
+				}
+			}
+
+			.text_date {
+				margin-top: 10px;
+				@include mixin.font(#888 '1.2rem/1.7rem');
+
+				span {
+					margin-left: 6px;
+				}
+			}
+
+			.mm_btn_box {
+				position: absolute;
+				right: 50px;
+				bottom: 29px;
+
+				.btn_modify {
+					.ico_reply-write {
+						margin: 8px 4px 0 0;
+					}
+				}
+
+				.btn_remove {
+					width: 43px;
+					height: 24px;
+					@include mixin.font(#888 '1.3rem/2.5rem');
+				}
+
+				.btn_complete {
+					.ico_reply-complete {
+						margin: 7px 4px 0 0;
+
+						&::before {
+							background-color: var.$color_main;
+						}
+					}
+				}
+			}
+		}
+
+		+ .mm_pagination {
+			margin-top: 50px;
+		}
+	}
+}
+
+// *---------- 팝업 ----------*
+
+// *---------- 모달 ----------*
+
+// *---------- 레이어 ----------*

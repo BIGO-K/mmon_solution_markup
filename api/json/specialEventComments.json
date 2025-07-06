@@ -1,0 +1,69 @@
+{
+	"paginator": {
+		"total": 5,
+		"current_page": 1,
+		"per_page": 15,
+		"data": [
+			{
+				"id": 211,
+				"contents": "@@@지속가능성에 대해 고민하다가 엠몬스타를 찾아보게 되었습니다.<br>평소 미술활동과 운동때문에 편한 옷을 좋아해서 여름 티셔츠를 둘러 보기위해 홈페이지에 들어왔다가,<br>봄에 입기좋은 트레이닝복이 눈에 띄어 이렇게 기획전에 참여합니다. 곧 한국입국 예정이라 날짜도 딱 좋네요:) 소재도 흥미롭고요. 이 기획전를 통해 제가 앞으로 엠몬스타 다큐뿐만이 아니라 의류에도 지속적인 관심을 이어나갈 수 있으면 좋겠습니다.",
+				"is_private": false,
+				"is_editable": false,
+				"writer_grade_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/common/level5.png",
+				"writer_masking_login_id": "c******",
+				"created_at": "2022-04-21T07:25:11.000000Z",
+				"writer_grade_level": 5
+			},
+			{
+				"id": 211,
+				"contents": "@@@지속가능성에 대해 고민하다가 엠몬스타를 찾아보게 되었습니다.<br>평소 미술활동과 운동때문에 편한 옷을 좋아해서 여름 티셔츠를 둘러 보기위해 홈페이지에 들어왔다가,<br>봄에 입기좋은 트레이닝복이 눈에 띄어 이렇게 기획전에 참여합니다. 곧 한국입국 예정이라 날짜도 딱 좋네요:) 소재도 흥미롭고요. 이 기획전를 통해 제가 앞으로 엠몬스타 다큐뿐만이 아니라 의류에도 지속적인 관심을 이어나갈 수 있으면 좋겠습니다.",
+				"is_private": true,
+				"is_editable": false,
+				"writer_grade_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/common/level5.png",
+				"writer_masking_login_id": "c******",
+				"created_at": "2022-04-21T07:25:11.000000Z",
+				"writer_grade_level": 5
+			},
+			{
+				"id": 111,
+				"contents": "저는 2년째 엠몬스타 찐덕후인데 아직 학생이라 옷들을 많이 사기엔 힘들었어요..근데 이번 기회에 이 옷 한번 입어보고 싶어요! 이제 신학기도 시작했는데 이쁜옷으로 체육수업하고 싶어요ㅠㅠ 심지어 저희 학년은 일주일에 체육이 4번이나 있기때문에 거의 똑같은 옷만 입어서 이 옷 꼭!!받고 싶어요 후기 제 영혼을 갈아서 적어볼게요",
+				"is_private": false,
+				"is_editable": false,
+				"writer_grade_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/common/level4.png",
+				"writer_masking_login_id": "r******",
+				"created_at": "2022-05-06T09:12:56.000000Z",
+				"writer_grade_level": 4
+			},
+			{
+				"id": 221,
+				"contents": "원마일웨어 꼭 체험하고 싶어요! 운동과 산행을 좋아해서 레푸스 트레이닝 세트 풀 집업을 입고 여기저기 다니고 싶어요! 환경까지 생각한 렌징에코베로 원사로 만들어진 제품이라 그런지 더 애정이 가네용! 자연과 환경을 생각하는 내셔널 지오그래픽의 트레이닝복을 주위사람들에게 홍보하고 싶어요!",
+				"is_private": false,
+				"is_editable": false,
+				"writer_grade_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/common/level3.png",
+				"writer_masking_login_id": "g******",
+				"created_at": "2022-05-26T11:40:12.000000Z",
+				"writer_grade_level": 3
+			},
+			{
+				"id": 211,
+				"contents": "평제가 옷을 진짜 좋아하는데 이제 고등학교에 올라와서 편한 옷이 필요하겠더라고요! 찾아보던 도중에 트레이닝 세트 체험단을 모집하길래 참여하게 되었습니당 제가 요즘 체력을 늘리려고 운동도 꾸준히 하고 있는데 운동 할 때 옷이 넘 편해서 이것도 꼭 입어보고 싶어용",
+				"is_private": true,
+				"is_editable": true,
+				"writer_grade_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/common/level5.png",
+				"writer_masking_login_id": "c******",
+				"created_at": "2022-04-21T07:25:11.000000Z",
+				"writer_grade_level": 5
+			},
+			{
+				"id": 211,
+				"contents": "평제가 옷을 진짜 좋아하는데 이제 고등학교에 올라와서 편한 옷이 필요하겠더라고요! 찾아보던 도중에 트레이닝 세트 체험단을 모집하길래 참여하게 되었습니당 제가 요즘 체력을 늘리려고 운동도 꾸준히 하고 있는데 운동 할 때 옷이 넘 편해서 이것도 꼭 입어보고 싶어용",
+				"is_private": true,
+				"is_editable": true,
+				"writer_grade_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/common/level5.png",
+				"writer_masking_login_id": "c******",
+				"created_at": "2022-04-21T07:25:11.000000Z",
+				"writer_grade_level": 5
+			}
+		]
+	}
+}

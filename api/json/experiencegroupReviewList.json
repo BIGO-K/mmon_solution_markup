@@ -1,0 +1,49 @@
+{
+    "paginator": {
+        "total": 50,
+        "current_page": 1,
+        "per_page": 20,
+        "data": [
+            {
+                "id": 1,
+                "title": "레푸스 트레이닝 풀집업 체험단 후기",
+                "thumbnail_url": "https://pro-image.mmonstar.co.kr/board/goods-reviews/000/000/000/646/8/image_2.jpg?ut=1675681420",
+                "grade": 5,
+                "writer": "백종원",
+                "recommendation_count": 1000,
+                "view_count": 77777,
+                "created_at": "2022-08-19T09:04:42Z"
+            },
+			{
+				"id": 2,
+				"title": "키즈 GNRL 세일러 가디건 체험 후기",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/board/goods-reviews/000/000/000/646/6/image_1.jpg?ut=1675681417",
+				"grade": 5,
+				"writer": "안진*",
+				"recommendation_count": 0,
+				"view_count": 5,
+				"created_at": "2022-12-12T07:40:10.000000Z"
+			},
+			{
+				"id": 3,
+				"title": "마리떼 프랑소와 저버 어레이드 체험",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/board/goods-reviews/000/000/000/102/7/image_1.jpg?ut=1676514039",
+				"grade": 5,
+				"writer": "안진*",
+				"recommendation_count": 0,
+				"view_count": 5,
+				"created_at": "2022-12-12T07:42:56.000000Z"
+			},
+			{
+				"id": 4,
+				"title": "세일러 가디건~ 체험 후기~",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/board/goods-reviews/000/000/000/646/8/image_1.jpg?ut=1675681420",
+				"grade": 5,
+				"writer": "안진*",
+				"recommendation_count": 0,
+				"view_count": 4,
+				"created_at": "2022-12-12T07:49:53.000000Z"
+			}
+        ]
+    }
+}

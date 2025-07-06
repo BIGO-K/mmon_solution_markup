@@ -1,0 +1,60 @@
+{
+	"wish_goods_folders": [
+		{
+			"id": 0,
+			"name": "기본폴더",
+			"order_seq": 0,
+			"records_count": 23,
+			"recent_goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/20/1.jpg?ut=1661220855"
+		},
+		{
+			"id": 2,
+			"name": "폴더테스트",
+			"order_seq": 1,
+			"records_count": 12,
+			"recent_goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/21/1.jpg?ut=1679074203"
+		},
+		{
+			"id": 20,
+			"name": "999",
+			"order_seq": 2,
+			"records_count": 6,
+			"recent_goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/04/33/95/1.jpg?ut=1661221019"
+		},
+		{
+			"id": 3,
+			"name": "뉴폴더",
+			"order_seq": 3,
+			"records_count": 9,
+			"recent_goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/26/44/1.jpg?ut=1661220921"
+		},
+		{
+			"id": 14,
+			"name": "35",
+			"order_seq": 4,
+			"records_count": 9,
+			"recent_goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/02/1.jpg?ut=1661220856"
+		},
+		{
+			"id": 25,
+			"name": "43141",
+			"order_seq": 12,
+			"records_count": 4,
+			"recent_goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/11/1.jpg?ut=1661220855"
+		},
+		{
+			"id": 27,
+			"name": "내 찜412",
+			"order_seq": 13,
+			"records_count": 4,
+			"recent_goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/83/91/1.jpg?ut=1681694275"
+		},
+		{
+			"id": 114,
+			"name": "ga1",
+			"order_seq": 14,
+			"records_count": 0,
+			"recent_goods_thumbnail_url": null
+		}
+	]
+}

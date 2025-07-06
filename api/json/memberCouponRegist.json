@@ -1,0 +1,13 @@
+{
+    "id": 1,
+    "title": "블랙야크 10% 중복할인 쿠폰블랙야크 10% 중복할인 쿠폰",
+    "apply_range_type": "all / seller / goods / category / brand",
+    "min_sell_price": 0,
+    "is_unlimited": false,
+    "maximum_discount_amount": 10000,
+    "usable_device_labels": [
+        "PC / 모바일앱 / 모바일 웹"
+    ],
+    "dc_type": "rate / KRW",
+    "dc_amount": 10
+}

@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"strict": true,
+		"jsx": "preserve",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"lib": ["ESNext", "DOM"],
+		"skipLibCheck": true,
+		"noEmit": true,
+
+		/* vite create 외 추가 항목 */
+		"baseUrl": ".",
+		// "paths": {
+		// 	"@/*": ["src/*"],
+		// 	"$/*": ["public/*"]
+		// },
+		"typeRoots": [
+			"@types",
+			"node_modules/@types",
+			"node_modules/**/*.d.ts"
+		],
+		// "allowJs": true,
+		"sourceMap": true,
+		"removeComments": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+	},
+	"include": ["**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"],
+	// "references": [{ "path": "./tsconfig.node.json" }]
+}

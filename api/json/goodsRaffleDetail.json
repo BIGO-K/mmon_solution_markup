@@ -1,0 +1,15 @@
+{
+    "start_at": null,
+    "end_at": null,
+    "notice_at": null,
+    "buy_start_at": null,
+    "buy_end_at": null,
+    "limit_winners": 0,
+    "participant_count": 0,
+    "goods_id": 0,
+    "is_entry": false,
+    "is_confirmed_winner": false,
+    "available_device_list": [
+        "M_APP | M_WEB | PC"
+    ]
+}

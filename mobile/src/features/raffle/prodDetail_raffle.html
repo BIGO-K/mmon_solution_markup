@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ko" class="L=lowbtn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- 소셜태그 -->
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<!--// 소셜태그 -->
+
+	<title>"찰리브라운 폭신폭신 슬리퍼 blue" 상품 상세보기 - M.Mon solution</title>
+
+	<!-- 공통 css -->
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 공통 css 변수 -->
+	<style>
+		:root {
+			/* 클라이언트 컬러 */
+			--color_main: #1f1f1f;
+			--color_sub: #f84f34;
+
+			/* 블랙 버전 */
+			--color_variable: var(--color_sub);
+			--color_support: #4457a7;
+
+			/* 유색 버전 */
+			/* --color_variable: var(--color_main);
+			--color_support: #ff8800; */
+
+			/* 등급 컬러 */
+			--color_level5: #9b3da1;
+			--color_level4: #e19c03;
+			--color_level3: #7cbacb;
+			--color_level2: #e68362;
+			--color_level1: #4e8e71;
+
+			/* 상품 비율 */
+			--prod_ratio_base: 1;
+		}
+	</style>
+
+	<!-- (D) 폴리필/라이브러리는 요청을 줄이기 위해 combind + minify를 적용해주세요. -->
+	<!-- 폴리필/라이브러리 스크립트 -->
+	<script src="../js/lib/lodash-4.17.21.min.js"></script>
+	<script src="../js/lib/gsap-3.6.1/gsap.min.js"></script>
+	<script src="../js/lib/axios-0.21.1.min.js"></script>
+	<script src="../js/lib/load-image.all-5.14.0.min.js"></script>
+	<script src="../js/lib/sortable-1.13.0.min.js"></script>
+
+	<!-- 공통 스크립트 -->
+	<script src="../js/app_common.js"></script>
+	<script src="../js/app_page-common.js"></script>
+
+	<!-- (D) 페이지 전용 스크립트는 .mm_page-content 하단에 넣어주세요. -->
+</head>
+<body>
+	<div id="mm_app" class="mm_app">
+		<!-- 스킵 -->
+		<nav class="mm_skip">
+			<ul>
+				<li><a href="#mm_body" data-href="{ '_type': 'anchor' }">본문바로가기</a></li>
+			</ul>
+		</nav>
+		<!-- 스킵 -->
+
+		<!-- 화면 -->
+		<div class="mm_view L=lowbtn">
+			<!-- 헤더 -->
+			<header class="mm_header">
+				<h1 class="mm_ir-blind"><b>상품상세</b></h1>
+				<div class="mm_lside">
+					<a class="btn_back" href="#"><i class="ico_history-back"></i><b class="mm_ir-blind">이전으로</b></a>
+				</div>
+				<div class="mm_rside">
+					<a class="btn_home" href="#"><i class="ico_home"></i><b class="mm_ir-blind">홈</b></a>
+					<a href="_popup_search.html"><i class="ico_search"></i><b class="mm_ir-blind">검색</b></a>
+					<a href="cart.html"><i class="ico_cart"></i><strong class="text_badge">2</strong><b class="mm_ir-blind">장바구니</b></a>
+				</div>
+			</header>
+			<!--// 헤더 -->
+
+			<!-- 내용 -->
+			<div id="mm_body" class="mm_page">
+				<!-- (D) 실제 내용을 추가하는 부분입니다. -->
+
+				<!-- (D) 페이지 하단에 고정버튼이 있는 경우에는 html, mm_view 태그에 'L=lowbtn' 클래스를 추가합니다. -->
+				<div class="mm_scroller">
+					<div class="mm_page-inner">
+						<!-- 본문 -->
+						<div class="mm_page-content">
+							<div class="m_prodetail">
+								<!-- 상품상세 상단 -->
+								<div class="m_prodetail-head">
+									<!-- 래플 타이머 -->
+									<div class="m_prodetail-head-raffle">
+										<p class="text_time"><strong>42<span>:</span>30<span>:</span>17</strong></p>
+										<p class="text_join"><strong>821,000</strong>명 참여중</p>
+									</div>
+									<!--// 래플 타이머  -->
+
+									<!-- 상품정보 -->
+									<div class="m_prodetail-head-product">
+										<!-- 상품이미지 -->
+										<div class="mm_carousel" data-carousel="{ '_effect': 'cover', '_isMoreSide': true, '_isErrorRemove': true }">
+											<div class="mm_carousel-inner">
+												<ul class="mm_carousel-list">
+													<li class="mm_carousel-item"><i class="mm_bg-contain" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }"></i></li>
+													<li class="mm_carousel-item"><i class="mm_bg-contain" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }"></i></li>
+													<li class="mm_carousel-item"><i class="mm_bg-contain" data-lazyload="{ '_src': '../image/_sample/prod_x3_3.png' }"></i></li>
+												</ul>
+											</div>
+											<div class="mm_carousel-pagination">
+												<ol>
+													<li><button type="button" class="btn_carousel-page"><b class="mm_ir-blind">1</b></button></li>
+													<li><button type="button" class="btn_carousel-page"><b class="mm_ir-blind">2</b></button></li>
+													<li><button type="button" class="btn_carousel-page"><b class="mm_ir-blind">3</b></button></li>
+												</ol>
+											</div>
+										</div>
+										<!--// 상품이미지 -->
+										<a class="btn_raffle" href="#"><b>래플 메인 바로가기</b><i class="ico_link"></i></a>
+										<div class="m...product-info">
+											<a class="btn_brand" href="#"><b>엠몬스타</b><i class="ico_link"></i></a>
+											<p class="text_product">찰리브라운 폭신폭신 슬리퍼 3colors(Butter컬러 28일발송) N212UTS906</p>
+											<p class="text_price"><span class="text_sale">10%</span><strong>235,000</strong><del>350,000</del></p>
+										</div>
+									</div>
+									<!--// 상품정보 -->
+									<div class="mm_inner">
+										<!-- 할인정보 -->
+										<div class="m_prodetail-head-benefit">
+											<div class="m...benefit-coupon">
+												<p>M.MON 쇼핑몰 고객을 위한 혜택</p>
+											</div>
+											<div class="mm_dropdown" data-dropdown>
+												<button type="button" class="btn_dropdown mm_flex" title="펼쳐보기"><b>최대 할인가</b><b class="text_price"><strong>208,000</strong></b><i class="ico_dropdown"></i></button>
+												<div class="mm_dropdown-item">
+													<div class="mm_dropdown-item-inner">
+														<div class="m...benefit-detail">
+															<h4><b>비회원가</b></h4>
+															<dl><dt>정가</dt><dd class="text_price"><span>353,000</span></dd></dl>
+															<dl><dt>특가할인</dt><dd class="text_price"><span>- 10,000</span></dd></dl>
+															<dl><dt>판매가</dt><dd class="text_price"><span>343,000</span></dd></dl>
+														</div>
+														<div class="m...benefit-detail">
+															<h4><b>회원가</b></h4>
+															<dl><dt>회원할인</dt><dd class="text_price"><span>- 30,000</span></dd></dl>
+															<dl><dt>쿠폰할인</dt><dd class="text_price"><span>- 22,000</span></dd></dl>
+															<dl><dt>즉시할인</dt><dd class="text_price"><span>- 22,000</span></dd></dl>
+															<dl><dt>심야할인</dt><dd class="text_price"><span>- 22,000</span></dd></dl>
+															<dl><dt>회원 혜택가</dt><dd class="text_price"><span>208,000</span></dd></dl>
+														</div>
+														<div class="mm_note">
+															<ul>
+																<li>현재 최대 할인가의 금액 기준은 할인 혜택이 적용된 금액이며 일부는 회원에게만 적용될 수 있습니다.</li>
+																<li>쿠폰 받기 버튼을 누르셔서 쿠폰을 다운로드하셔야 쿠폰 할인이 가능합니다.</li>
+																<li>즉시 할인의 경우 주문 시 사용하는 쿠폰 및 적립금에 따라 할인금액이 변경될 수 있습니다.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--// 할인정보 -->
+
+										<!-- 배송정보 및 혜택 -->
+										<div class="m_prodetail-head-info">
+											<dl>
+												<dt>배송정보</dt>
+												<dd>무료배송</dd>
+												<dd>도서산간지역 5,000원</dd>
+												<dd>배송기간 5~7일</dd>
+												<dd>주문제작 상품으로 교환/반품 불가</dd>
+											</dl>
+											<dl>
+												<dt>혜택</dt>
+												<dd><a href="_popup_cardBenefit.html"><b>50,000원 이상 결제 시 무이자할부</b><i class="ico_help-fill"></i></a></dd>
+											</dl>
+											<!-- (D) 예약판매 상품인 경우 입력한 예약판매 스케줄을 노출합니다. -->
+											<!-- <dl>
+												<dt>예약배송</dt>
+												<dd><p><span>예약판매 기간</span>2024-00-00 ~ 2024-00-00</p></dd>
+												<dd><p><span>예약배송 기간</span>2024-00-00 ~ 2024-00-00</p></dd>
+											</dl> -->
+											<dl class="m...info-raffle">
+												<dt>래플</dt>
+												<dd>응모기간<br> 04.15(목) ~ 04.20(화) 15:00</dd>
+												<dd>당첨자 발표일<br> 04.21(수)</dd>
+												<dd>당첨자 구매기간<br> 04.21(수) ~ 04.28(수) 00:00</dd>
+												<dd>당첨 예정자 수<br> 5명</dd>
+											</dl>
+										</div>
+										<!--// 배송정보 및 혜택 -->
+									</div>
+									<!-- 찜/공유하기 -->
+									<div class="m_prodetail-head-like">
+										<div class="mm_flex T=equal">
+											<button type="button" class="btn_sns-share"><i class="ico_share"></i><b>공유하기</b></button>
+											<div class="mm_sns">
+												<div class="mm_sns-dim"></div>
+												<div class="mm_sns-list">
+													<ul>
+														<li><button type="button" class="btn_sns-url"><b>URL</b></button></li>
+														<li><a class="btn_sns-kakaotalk" href="#" target="_blank" title="새 창 열림"><i class="ico_sns-kakao"></i><b class="mm_ir-blind">카카오톡 공유</b></a></li>
+													</ul>
+													<button type="button" class="btn_sns-close"><i class="ico_sns-close"></i><b class="mm_ir-blind">공유 모달 닫기</b></button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--// 찜/공유하기 -->
+
+									<!-- 추천 아이템 -->
+									<section class="m_prodetail-head-recommend">
+										<h3 class="m_prodetail-strapline"><b>이런 아이템은 어떠세요?</b></h3>
+										<div class="mm_scroller T=x">
+											<div class="mm_product-list T=card">
+												<ul>
+													<li>
+														<div class="mm_product-item T=pa">
+															<a href="prodDetail_info.html">
+																<figure>
+																	<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }"></i>
+																	<p class="text_product-status">품절임박</p>
+																	<figcaption>
+																		<p class="text_brand">엠몬스타</p>
+																		<p class="text_product">COLLEGE 스웻셔츠 Univ MTM 4Color</p>
+																		<p class="text_sale">45%</p>
+																		<p class="text_price"><strong>48,750</strong></p>
+																	</figcaption>
+																</figure>
+															</a>
+															<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+														</div>
+													</li>
+													<li>
+														<div class="mm_product-item T=pa">
+															<a>
+																<figure>
+																	<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }"></i>
+																	<p class="text_soldout">SOLD OUT</p>
+																	<figcaption>
+																		<p class="text_brand">엠몬스타</p>
+																		<p class="text_product">컬러그라데이션 오버핏 맨투맨 BLUE</p>
+																		<p class="text_sale">34%</p>
+																		<p class="text_price"><strong>58,000</strong></p>
+																	</figcaption>
+																</figure>
+															</a>
+															<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+														</div>
+													</li>
+													<li>
+														<div class="mm_product-item T=pa">
+															<a href="prodDetail_info.html">
+																<figure>
+																	<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_3.png' }"></i>
+																	<figcaption>
+																		<p class="text_brand">엠몬스타</p>
+																		<p class="text_product">EFFXSLOWACID Logo Short-_T</p>
+																		<p class="text_sale">25%</p>
+																		<p class="text_price"><strong>58,000</strong></p>
+																	</figcaption>
+																</figure>
+															</a>
+															<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+														</div>
+													</li>
+													<li>
+														<div class="mm_product-item T=pa">
+															<a href="prodDetail_info.html">
+																<figure>
+																	<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_4.png' }"></i>
+																	<figcaption>
+																		<p class="text_brand">엠몬스타</p>
+																		<p class="text_product">EFFXSLOWACID Logo Short-_T</p>
+																		<p class="text_sale">25%</p>
+																		<p class="text_price"><strong>58,000</strong></p>
+																	</figcaption>
+																</figure>
+															</a>
+															<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+														</div>
+													</li>
+													<li>
+														<div class="mm_product-item T=pa">
+															<a href="prodDetail_info.html">
+																<figure>
+																	<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../error' }"></i>
+																	<figcaption>
+																		<p class="text_brand">엠몬스타</p>
+																		<p class="text_product">COLLEGE 스웻셔츠 Univ MTM 4Color</p>
+																		<p class="text_sale">45%</p>
+																		<p class="text_price"><strong>48,750</strong></p>
+																	</figcaption>
+																</figure>
+															</a>
+															<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+														</div>
+													</li>
+													<li>
+														<div class="mm_product-item T=pa">
+															<a href="prodDetail_info.html">
+																<figure>
+																	<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }"></i>
+																	<figcaption>
+																		<p class="text_brand">엠몬스타</p>
+																		<p class="text_product">프로텍팅 네츄럴 사인 톤업 선쿠션 SET</p>
+																		<p class="text_sale">45%</p>
+																		<p class="text_price"><strong>276,000</strong></p>
+																	</figcaption>
+																</figure>
+															</a>
+															<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</section>
+									<!--// 추천 아이템 -->
+								</div>
+								<!--// 상품상세 상단 -->
+								<div class="m_prodetail-tab">
+									<!-- 상품상세 탭 -->
+									<div class="mm_tab_menu">
+										<!-- (D) 선택된 탭메뉴에 'S=tab-on' 클래스와 '선택됨' 타이틀을 추가합니다. -->
+										<ul class="mm_flex T=equal">
+											<li><button type="button" class="btn_tab S=tab-on" title="선택됨"><b>상세정보</b></button></li>
+											<li><button type="button" class="btn_tab"><b>상품 Q&#38;A</b><small>999</small></button></li>
+											<li><button type="button" class="btn_tab"><b>판매자정보</b></button></li>
+										</ul>
+									</div>
+									<!--// 상품정보 탭 -->
+
+									<!-- 상세정보 -->
+									<div class="m_prodetail-tab-info">
+										<!-- 상품 공통배너 -->
+										<div class="m...info-banner">
+											<ul>
+												<li>
+													<!-- 이미지 등록 방식 -->
+													<i class="image_banner"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-lazyload="{ '_src': '../image/_sample/prodetail_banner_1.png' }" alt="완벽한 여름을 위한 티셔츠 21ss ONLINE EXCLUSIVE"></i>
+												</li>
+												<li>
+													<!-- 에디터 등록 방식 -->
+													<div class="mm_editor">
+														<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-lazyload="{ '_src': '../image/_sample/prodetail_banner_1.png' }" alt="완벽한 여름을 위한 티셔츠 21ss ONLINE EXCLUSIVE"></p>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<!--// 상품 공통배너 -->
+										<div class="mm_inner">
+											<p class="text_code">상품번호<span>2345678</span></p>
+											<!-- 동영상 -->
+											<div class="m...info-media">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/TM6m8TGlQBA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											</div>
+											<!--// 동영상 -->
+
+											<!-- 상품 상세설명 및 이미지 -->
+											<div class="m...info-desc">
+												<p class="text_zoom">상세정보를 확대해서 볼 수 있어요</p>
+												<!-- 상세설명 -->
+												<div class="mm_pinchzoom" data-pinchzoom>
+													<div class="mm_pinchzoom-wrapper">
+														<!-- (D) 에디터로 등록 -->
+														<div class="mm_editor">
+															<p style="text-align:center;">Rosy Bag_3colors</p>
+															<p style="text-align:center;">N212UTS906 오버핏</p>
+															<p style="text-align:center;">Butter컬러 28일발송</p>
+															<br>
+															<p style="text-align:center;"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-lazyload="{ '_src': '../image/_sample/prod_x3_4.png' }" alt=""></p>
+															<br>
+															<p style="text-align:center;"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-lazyload="{ '_src': '../image/_sample/product_detail_1.png' }" alt=""></p>
+															<br>
+															<br>
+															<p style="text-align:center;"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-lazyload="{ '_src': '../image/_sample/product_detail_1.png' }" alt=""></p>
+														</div>
+													</div>
+												</div>
+												<div class="mm_btn_box">
+													<button type="button" class="mm_btn T=line T=primary btn_more" data-switch="{ '_isParent': true, '_parentSelector': '.m\\.\\.\\.info-desc', '_defaultTitle': '상세정보 더보기', '_title': '상세정보 접기' }" title="상세정보 더보기"><b class="mm_ir-blind">상세정보 더보기</b></button>
+												</div>
+												<!--// 상세설명 -->
+											</div>
+											<!--// 상품 상세설명 및 이미지 -->
+										</div>
+										<!-- 상품 공통배너 -->
+										<div class="m...info-banner">
+											<ul>
+												<li>
+													<!-- 이미지 등록 방식 -->
+													<i class="image_banner"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-lazyload="{ '_src': '../image/_sample/prodetail_banner_1.png' }" alt="완벽한 여름을 위한 티셔츠 21ss ONLINE EXCLUSIVE"></i>
+
+													<!-- 에디터 등록 방식 -->
+													<!-- <div class="mm_editor">
+														<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-lazyload="{ '_src': '../image/_sample/prodetail_banner_1.png' }" alt="완벽한 여름을 위한 티셔츠 21ss ONLINE EXCLUSIVE"></p>
+													</div> -->
+												</li>
+											</ul>
+										</div>
+										<!--// 상품 공통배너 -->
+									</div>
+									<!--// 상세정보  -->
+								</div>
+								<div class="m_prodetail-foot">
+									<div class="mm_accordion m_prodetail-info">
+										<ul>
+											<li>
+												<dl class="mm_dropdown" data-dropdown>
+													<dt class="btn_dropdown" tabindex="0" title="펼쳐보기"><p><b>일반 상품 정보</b></p><i class="ico_dropdown"></i></dt>
+													<dd class="mm_dropdown-item">
+														<div class="mm_dropdown-item-inner">
+															<table>
+																<tbody>
+																	<tr>
+																		<th scope="row"><b>상품번호</b></th>
+																		<td>123456</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>상품상태</b></th>
+																		<td>새상품</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>브랜드</b></th>
+																		<td>MMON</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>원산지</b></th>
+																		<td>대한민국</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</dd>
+												</dl>
+											</li>
+											<li>
+												<dl class="mm_dropdown" data-dropdown>
+													<dt class="btn_dropdown" tabindex="0" title="펼쳐보기"><p><b>상품정보고시</b></p><i class="ico_dropdown"></i></dt>
+													<dd class="mm_dropdown-item">
+														<div class="mm_dropdown-item-inner">
+															<table>
+																<tbody>
+																	<tr>
+																		<th scope="row"><b>소재</b></th>
+																		<td>겉감 – 나일론78%<br> 폴리에스터22%<br> 배색-나일론100%<br> 안감-폴리에스터 100%</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>색상</b></th>
+																		<td>MUSTARD_150, MELANGE GREY_932, WINE_503</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>치수</b></th>
+																		<td>090, 095, 100, 105, 110</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>제조자</b></th>
+																		<td>㈜네파/㈜네파</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>제조국</b></th>
+																		<td>베트남</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>세탁방법<br> 및 취급 시<br> 주의사항</b></th>
+																		<td>표백제 및 강력 효소 세제는 절대로 사용하지 마십시오. 드라이를 권장합니다. 손세탁을 하 실 경우 30도 이하의 온도에서 드라이 세제 를 이용하여 세탁하여 주시고, 뜨거운 물에 세탁을 하시면 제품에 이상이 생길 수 있으므로 자제하시기 바랍니다</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>제조연월</b></th>
+																		<td>20140801</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>품질보증<br> 기준</b></th>
+																		<td>본 제품은 공정거래위원회 고시 소비자 분쟁해결기준에 의거, 보상받으실 수 있습니다</td>
+																	</tr>
+																	<tr>
+																		<th scope="row"><b>A/S책임자<br> 및 연락처</b></th>
+																		<td>판매자 고객센터 1599-0403</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 본문 -->
+
+						<!-- 푸터 -->
+						<footer id="mm_footer" class="mm_footer T=fa">
+							<!-- 푸터-메뉴 -->
+							<div class="mm_footer-menu">
+								<ul class="mm_flex T=equal">
+									<li><a href="company.html"><b>회사소개</b></a></li>
+									<li><a href="csMain.html"><b>고객센터</b></a></li>
+									<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+									<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+								</ul>
+							</div>
+							<!--// 푸터-메뉴 -->
+
+							<!-- 푸터-정보 -->
+							<div class="mm_footer-info">
+								<div class="mm_dropdown" data-dropdown>
+									<b>(주)엠몬스타</b>
+									<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+									<div class="mm_dropdown-item">
+										<div class="mm_dropdown-item-inner">
+											<address>
+												<p>대표: 장한필</p>
+												<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+												<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+												<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+												<p>개인정보관리자: 이희승</p>
+												<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+												<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+												<p>팩스번호: 031-8023-9667</p>
+												<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+											</address>
+										</div>
+									</div>
+								</div>
+								<ul class="mm_footer-info-terms">
+									<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+									<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+									<li><a href="#"><b>이용안내</b></a></li>
+									<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+								</ul>
+								<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+							</div>
+							<!--// 푸터-정보 -->
+						</footer>
+						<!--// 푸터 -->
+					</div>
+				</div>
+				<!-- 옵션선택 -->
+				<!--
+					(D) 셀렉트형 옵션 형태에서 옵션1 또는 옵션2를 최초 선택시 '.m_product-option' 요소에 인라인 style height: 75%를 추가하고,
+					선택된 옵션을 모두 삭제하여 선택된 옵션이 없을 경우에는 인라인 style height: 75%를 삭제합니다.
+					(D) 옵션1, 2가 1개의 옵션만 있을 경우 'm_product-option' 요소에 'T=option-single' 클래스를 추가합니다.
+				-->
+				<div class="m_product-option">
+					<button type="button" class="btn_option-close"><i class="ico_toast"></i><b class="mm_ir-blind">옵션선택 닫기</b></button>
+					<a class="btn_size" href="#"><i class="ico_size"></i><b>사이즈 가이드</b><i class="ico_link"></i></a>
+					<!-- 옵션 목록 -->
+					<!--
+						(D) 옵션1 또는 옵션2의 갯수가 6개 이하인 경우 버튼형 옵션을 사용하고, 7개 이상인 경우 셀렉트형 옵션을 사용합니다.
+						(D) 모든 옵션은 옵션의 순서와 무관하게 우선 선택이 가능합니다(예: 옵션2부터 선택가능)
+						(D) 옵션1, 2가 1개의 옵션만 있을 경우 별도의 옵션 선택 동작 없이 옵션이 선택된 상태로 노출되며, 수량 변경만 가능합니다.
+						(D) 옵션1 혹은 옵션2만 등록한 단일옵션의 경우 1개의 옵션만 선택하게 됩니다. 이 때 옵션의 'h6' 요소는 옵션1 또는 옵션2의 명칭이 아닌 '옵션' 명칭을 사용합니다.
+						(D) 셀렉트형 옵션인 경우 옵션선택 레이어 오픈 시 옵션1의 dropdown 요소에 'S=on' 클래스를 추가하여 옵션1을 바로 선택 가능하도록 합니다.
+						(D) 옵션이 선택된 경우 'btn_option' 요소에 S=option-select 클래스와 '선택됨' 타이틀을 추가합니다.
+					-->
+					<div class="m_product-option-select">
+						<!-- (D) 버튼형 옵션 -->
+						<section>
+							<h6 class="mm_strapline"><b>옵션1</b></h6>
+							<div class="mm_scroller T=x">
+								<ul>
+									<li>
+										<span class="btn_option" title="품절">
+											<b>네이비</b>
+											<svg><line x1="0" y1="100%" x2="100%" y2="0" stroke="#cdcdcd" stroke-width="1" /></svg>
+										</span>
+									</li>
+									<li><button type="button" class="btn_option"><b>레드</b></button></li>
+									<li><button type="button" class="btn_option"><b>핑크</b></button></li>
+									<li><button type="button" class="btn_option"><b>화이트</b></button></li>
+								</ul>
+							</div>
+						</section>
+						<section>
+							<h6 class="mm_strapline"><b>옵션2</b></h6>
+							<div class="mm_scroller T=x">
+								<ul>
+									<li><button type="button" class="btn_option"><b>95</b></button></li>
+									<li>
+										<span class="btn_option" title="품절">
+											<b>100</b>
+											<svg><line x1="0" y1="100%" x2="100%" y2="0" stroke="#cdcdcd" stroke-width="1" /></svg>
+										</span>
+									</li>
+									<li><button type="button" class="btn_option"><b>105</b></button></li>
+									<li><button type="button" class="btn_option"><b>110</b></button></li>
+								</ul>
+							</div>
+						</section>
+
+						<!-- (D) 버튼형 옵션 + 단일 옵션(옵션1 또는 옵션2만 등록)인 경우 -->
+						<!-- <section>
+							<h6 class="mm_strapline"><b>옵션</b></h6>
+							<div class="mm_scroller T=x">
+								<ul>
+									<li>
+										<span class="btn_option" title="품절">
+											<b>네이비</b>
+											<svg><line x1="0" y1="100%" x2="100%" y2="0" stroke="#cdcdcd" stroke-width="1" /></svg>
+										</span>
+									</li>
+									<li><button type="button" class="btn_option"><b>레드</b></button></li>
+									<li><button type="button" class="btn_option"><b>핑크</b></button></li>
+									<li><button type="button" class="btn_option"><b>화이트</b></button></li>
+								</ul>
+							</div>
+						</section> -->
+
+						<!-- (D) 셀렉트형 옵션 기본 -->
+						<!-- <section class="mm_dropdown" data-dropdown="{ '_group': 'dev_accrodion-option0' }">
+							<h6 class="mm_strapline"><b>옵션1</b></h6>
+							<button type="button" class="btn_dropdown" title="펼쳐보기"><b>선택하세요</b><i class="ico_dropdown T=bold"></i></button>
+							<div class="mm_dropdown-item">
+								<div class="mm_dropdown-item-inner">
+									<div class="mm_scroller">
+										<ul>
+											<li><span class="btn_option" title="품절"><b>네이비</b><b>(품절)</b></span></li>
+											<li><button type="button" class="btn_option"><b>레드</b></button></li>
+											<li><button type="button" class="btn_option"><b>블랙</b></button></li>
+											<li><button type="button" class="btn_option"><b>화이트</b></button></li>
+											<li><button type="button" class="btn_option"><b>그레이</b></button></li>
+											<li><button type="button" class="btn_option"><b>그린</b></button></li>
+											<li><button type="button" class="btn_option"><b>블루</b></button></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="mm_dropdown" data-dropdown="{ '_group': 'dev_accrodion-option0' }">
+							<h6 class="mm_strapline"><b>옵션2</b></h6>
+							<button type="button" class="btn_dropdown" title="펼쳐보기"><b>선택하세요</b><i class="ico_dropdown T=bold"></i></button>
+							<div class="mm_dropdown-item">
+								<div class="mm_dropdown-item-inner">
+									<div class="mm_scroller">
+										<ul>
+											<li><button type="button" class="btn_option"><b>85</b></button></li>
+											<li><span class="btn_option" title="품절"><b>90</b><b>(품절)</b></span></li>
+											<li><button type="button" class="btn_option"><b>95</b></button></li>
+											<li><button type="button" class="btn_option"><b>100</b><b>(1개)</b></button></li>
+											<li><button type="button" class="btn_option"><b>105</b></button></li>
+											<li><button type="button" class="btn_option"><b>110</b></button></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section> -->
+
+						<!-- (D) 셀렉트형 옵션 + 단일 옵션(옵션1 또는 옵션2만 등록)인 경우 -->
+						<!-- <section class="mm_dropdown" data-dropdown>
+							<h6 class="mm_strapline"><b>옵션</b></h6>
+							<button type="button" class="btn_dropdown" title="펼쳐보기"><b>선택하세요</b><i class="ico_dropdown T=bold"></i></button>
+							<div class="mm_dropdown-item">
+								<div class="mm_dropdown-item-inner">
+									<div class="mm_scroller">
+										<ul>
+											<li><span class="btn_option" title="품절"><b>네이비</b><b>(품절)</b></span></li>
+											<li><button type="button" class="btn_option"><b>레드</b></button></li>
+											<li><button type="button" class="btn_option"><b>블랙</b></button></li>
+											<li><button type="button" class="btn_option"><b>화이트</b></button></li>
+											<li><button type="button" class="btn_option"><b>그레이</b></button></li>
+											<li><button type="button" class="btn_option"><b>그린</b></button></li>
+											<li><button type="button" class="btn_option"><b>블루</b></button></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section> -->
+					</div>
+					<!--// 옵션 목록 -->
+
+					<!-- 선택된 옵션 -->
+					<div class="mm_scroller m_product-option-selected">
+						<ul>
+							<li>
+								<div class="m...selected-info">
+									<p class="text_product">시그니처 엠블럼 티셔츠 SIGNATURE EMBLEM T-SHIRT - 5color 프로텍팅내츄럴</p>
+									<p class="text_option">블랙/95</p>
+									<!-- (D) 구매가능 수량이 5개 이하인 경우에만 'text_stock' 요소를 노출합니다 -->
+									<span class="text_stock">남은 수량 5개</span>
+								</div>
+								<div class="mm_stepper" data-stepper="{ '_max': 99 }">
+									<div class="mm_form-text">
+										<label>
+											<input type="text" class="textfield text_stepper" data-text><i class="bg_text"></i>
+											<span class="mm_ir-blind text_placeholder">수량</span>
+										</label>
+									</div>
+									<button type="button" class="btn_stepper-subtract"><i class="ico_stepper-subtract"></i><b class="mm_ir-blind">수량 빼기</b></button>
+									<button type="button" class="btn_stepper-add"><i class="ico_stepper-add"></i><b class="mm_ir-blind">수량 더하기</b></button>
+								</div>
+								<p class="text_price"><strong>208,000</strong></p>
+								<button type="button" class="btn_option-remove"><i class="ico_option-remove"></i><b class="mm_ir-blind">옵션삭제</b></button>
+							</li>
+						</ul>
+					</div>
+					<!--// 선택된 옵션 -->
+					<div class="m_product-option-foot">
+						<dl>
+							<dt>총 상품 금액</dt>
+							<dd class="text_price"><strong class="mm_text-variable">416,000</strong></dd>
+						</dl>
+						<div class="mm_btn_box">
+							<div class="mm_flex T=equal">
+								<button type="button" class="mm_btn T=line T=dark"><b>장바구니</b></button>
+								<button type="button" class="mm_btn T=primary"><b>구매하기</b></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--// 옵션선택 -->
+
+				<!-- 하단고정버튼 -->
+				<div class="mm_btn_box T=fixed">
+					<div class="mm_flex T=equal">
+						<!-- (D) 래플 당첨 후 구매 가능한 경우에만 '구매하기' 버튼을 노출합니다 -->
+						<!-- <button type="button" class="btn_product-buy"><b>구매하기</b></button> -->
+						<a class="btn_product-raffle" href="_modal_raffleEntry.html"><b>응모하기</b></a>
+						<!-- <b class="btn_product-raffle T=disabled">응모완료</b> -->
+						<!-- <b class="btn_product-raffle">04.03(금) 17:00 당첨자 발표 예정</b> -->
+						<!-- <a class="btn_product-raffle" href="_modal_raffleResult.html"><b>당첨 결과 확인하기</b></a> -->
+						<!-- <b class="btn_product-raffle T=disabled">래플 종료</b> -->
+						<!-- <b class="btn_product-raffle">진행 예정</b> -->
+						<!-- <b class="btn_product-raffle T=disabled">구매 완료</b> -->
+					</div>
+				</div>
+				<!--// 하단고정버튼 -->
+
+				<a class="btn_topmost" href="#mm_app" data-href="{ '_type': 'anchor' }" title="페이지 처음으로"><i class="ico_topmost"></i><b>TOP</b></a>
+				<!-- (D) 최근본 상품이 없을 경우 '.btn_prodetail-recent'요소를 노출하지 않습니다(display none처리가 아닌 요소 삭제) -->
+				<a class="btn_prodetail-recent" href="_popup_prodRecent.html"><i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x1_1.png' }"></i><b class="mm_ir-blind">최근 본 상품</b></a>
+
+				<!-- 현재 페이지 스크립트 -->
+				<script src="../js/app_page-productDetail.js"></script>
+			</div>
+			<!--// 내용 -->
+		</div>
+		<!--// 화면 -->
+	</div>
+</body>
+</html>

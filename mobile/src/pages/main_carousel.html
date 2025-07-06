@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ko" class="L=main">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- 소셜태그 -->
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<!--// 소셜태그 -->
+
+	<title>M.Mon solution</title>
+
+	<!-- 공통 css -->
+	<!-- <link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css"> -->
+	<link rel="stylesheet" lang="scss" href="../scss/common.scss">
+	<link rel="stylesheet" lang="scss" href="../scss/style.scss">
+
+	<!-- 공통 css 변수 -->
+	<style>
+		:root {
+			/* 클라이언트 컬러 */
+			--color_main: #1f1f1f;
+			--color_sub: #f84f34;
+			--color_variable: var(--color_sub);
+
+			/* 등급 컬러 */
+			--color_level5: #9b3da1;
+			--color_level4: #e19c03;
+			--color_level3: #7cbacb;
+			--color_level2: #e68362;
+			--color_level1: #4e8e71;
+
+			/* 상품 비율 */
+			--prod_ratio_base: 1;
+		}
+	</style>
+
+	<script type="module" lang="ts" src="/src/script/app/app.ts"></script>
+
+	<!-- (D) 페이지 전용 스크립트는 .mm_page-content 하단에 넣어주세요. -->
+</head>
+<body>
+	<div id="mm_app" class="mm_app">
+		<!-- 스킵 -->
+		<nav class="mm_skip">
+			<ul>
+				<li><a href="#mm_body" data-href="{ '_type': 'anchor' }">본문바로가기</a></li>
+			</ul>
+		</nav>
+		<!-- 스킵 -->
+
+		<!-- 화면 -->
+		<div class="mm_view L=main">
+			<!-- 헤더 -->
+			<header class="mm_header">
+				<h1><a href="#"><i class="image_logo"></i><b class="mm_ir-blind">M.Mon solution</b></a></h1>
+				<div class="mm_rside">
+					<a href="_popup_search.html"><b class="mm_ir-blind">검색하기</b><i class="ico_search"></i></a>
+					<a href="cart.html"><i class="ico_cart"></i><strong class="text_badge">2</strong><b class="mm_ir-blind">장바구니</b></a>
+				</div>
+			</header>
+			<!--// 헤더 -->
+
+			<!-- 내용 -->
+			<div id="mm_body" class="mm_page">
+				<!-- (D) 실제 내용을 추가하는 부분입니다. -->
+
+				<div class="mm_scroller">
+					<div class="mm_page-inner">
+						<!-- 본문 -->
+						<div class="mm_page-content">
+							<!-- GNB -->
+							<div class="mm_gnb">
+								<!-- (D) 메뉴가 모바일 가로 사이즈보다 적으면 mm_gnb에 'S=flex' 클래스가 추가됩니다. -->
+								<div class="mm_gnb-inner">
+									<div class="mm_scroller T=x">
+										<!-- (D) 현재페이지의 a 요소에 "S=gnb-on" 클래스와 "선택됨" 타이틀을 추가합니다. -->
+										<ul>
+											<li><a href="main.html" class="btn_main-page S=gnb-on" title="선택됨"><b>홈</b></a></li>
+											<li><a href="#" class="btn_main-page"><b>베스트</b></a></li>
+											<li><a href="#" class="btn_main-page"><b>신상품</b></a></li>
+											<li><a href="#" class="btn_main-page"><b>추가메뉴1</b></a></li>
+											<li><a href="#" class="btn_main-page"><b>추가메뉴2</b></a></li>
+											<li><a href="#" class="btn_main-page"><b>추가메뉴3</b></a></li>
+											<li><a href="#" class="btn_main-page"><b>추가메뉴4</b></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--// GNB -->
+
+							<!-- 홈 -->
+							<div class="m_main">
+								<div class="mm_carousel m_main-carousel" data-carousel>
+									<div class="mm_carousel-inner">
+										<ul class="mm_carousel-list">
+											<li class="mm_carousel-item">
+												<div class="mm_scroller">
+													<div class="m_main-carousel-inner">
+														<div class="m_main-carousel-content">
+															<div style="height: 100%; background: #1f1f1f; color: #fff; font-size: 120px;">111<br>sample tag<br>작업 시<br>m_main-carousel-content<br>내용 삭제</div>
+														</div>
+														<!-- 푸터 -->
+														<footer id="mm_footer" class="mm_footer">
+															<!-- 푸터-메뉴 -->
+															<div class="mm_footer-menu">
+																<ul class="mm_flex T=equal">
+																	<li><a href="company.html"><b>회사소개</b></a></li>
+																	<li><a href="csMain.html"><b>고객센터</b></a></li>
+																	<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+																</ul>
+															</div>
+															<!--// 푸터-메뉴 -->
+
+															<!-- 푸터-정보 -->
+															<div class="mm_footer-info">
+																<div class="mm_dropdown" data-dropdown>
+																	<b>(주)엠몬스타</b>
+																	<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+																	<div class="mm_dropdown-item">
+																		<div class="mm_dropdown-item-inner">
+																			<address>
+																				<p>대표: 장한필</p>
+																				<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+																				<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+																				<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+																				<p>개인정보관리자: 이희승</p>
+																				<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+																				<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+																				<p>팩스번호: 031-8023-9667</p>
+																				<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+																			</address>
+																		</div>
+																	</div>
+																</div>
+																<ul class="mm_footer-info-terms">
+																	<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+																	<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+																	<li><a href="#"><b>이용안내</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+																</ul>
+																<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+															</div>
+															<!--// 푸터-정보 -->
+														</footer>
+														<!--// 푸터 -->
+													</div>
+												</div>
+											</li>
+											<li class="mm_carousel-item">
+												<div class="mm_scroller">
+													<div class="m_main-carousel-inner">
+														<div class="m_main-carousel-content">
+															<section class="m_brand-showcase">
+																<h4><b>SHOWCASE</b></h4>
+																<div class="mm_carousel S=ready" data-carousel="{ '_autoDelay': 4, '_isMoreSide': true, '_effect': 'cover', 'onUpdate': 'cardCarouselUpdate', 'onComplete': 'cardCarouselComplete' }">
+																	<div class="mm_carousel-inner">
+																		<ul class="mm_carousel-list">
+																			<li class="mm_carousel-item" style="transform: translateX(100%); display: none;">
+																				<a href="#">
+																					<figure>
+																						<i class="mm_bg-cover image_banner S=loaded" data-lazyload="{ '_src': '../image/_sample/prod_x3_3.png' }" style="background-image: url(&quot;../image/_sample/prod_x3_3.png&quot;);"></i>
+																						<figcaption>
+																							<p class="text_title">BrandNAME 엠몬스타</p>
+																							<p class="text_main">세심한 미니멀룩으로</p>
+																							<p class="text_main">오롯한 나의 취향을 담다</p>
+																						</figcaption>
+																					</figure>
+																				</a>
+																			</li>
+																			<li class="mm_carousel-item" style="transform: translateX(100%); display: none;">
+																				<a href="#">
+																					<figure>
+																						<i class="mm_bg-cover image_banner S=loaded" data-lazyload="{ '_src': '../image/_sample/prod_x3_4.png' }" style="background-image: url(&quot;../image/_sample/prod_x3_4.png&quot;);"></i>
+																						<figcaption>
+																							<p class="text_title">엠몬스타</p>
+																							<p class="text_main">세심한 미니멀룩으로</p>
+																							<p class="text_main">오롯한 나의 취향을 담다</p>
+																						</figcaption>
+																					</figure>
+																				</a>
+																			</li>
+																			<li class="mm_carousel-item S=on" style="transform: translateX(0%); z-index: 2;">
+																				<a href="#">
+																					<figure>
+																						<i class="mm_bg-cover image_banner S=loaded" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }" style="background-image: url(&quot;../image/_sample/prod_x3_1.png&quot;);"></i>
+																						<figcaption>
+																							<p class="text_title">엠몬스타</p>
+																							<p class="text_main">세심한 미니멀룩으로</p>
+																							<p class="text_main">오롯한 나의 취향을 담다</p>
+																						</figcaption>
+																					</figure>
+																				</a>
+																			</li>
+																			<li class="mm_carousel-item" style="transform: translateX(100%);">
+																				<a href="#">
+																					<figure>
+																						<i class="mm_bg-cover image_banner S=loaded" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }" style="background-image: url(&quot;../image/_sample/prod_x3_2.png&quot;);"></i>
+																						<figcaption>
+																							<p class="text_title">BrandNAME 엠몬스타</p>
+																							<p class="text_main">익숙한 곳을 떠나 지친 마음을 되돌며</p>
+																							<p class="text_main">다시, 또 새로운 시작을 함께 할 휴식</p>
+																						</figcaption>
+																					</figure>
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																	<div class="mm_carousel-control">
+																		<button type="button" class="btn_carousel-prev"><i class="ico_control-prev"></i><b class="mm_ir-blind">이전으로</b></button>
+																		<button type="button" class="btn_carousel-next"><i class="ico_control-next"></i><b class="mm_ir-blind">다음으로</b></button>
+																	</div>
+																	<div class="mm_carousel-count">
+																		<strong class="text_carousel-index">3</strong>
+																		<i>/</i>
+																		<span class="text_carousel-total">4</span>
+																	</div>
+																</div>
+															</section>
+															<script type="module" lang="ts">
+																import { Carousel } from '/src/script/ui/sliders.ts';
+
+																Carousel.update(`.m_brand-showcase [data-carousel]`);
+															</script>
+														</div>
+														<!-- 푸터 -->
+														<footer id="mm_footer" class="mm_footer">
+															<!-- 푸터-메뉴 -->
+															<div class="mm_footer-menu">
+																<ul class="mm_flex T=equal">
+																	<li><a href="company.html"><b>회사소개</b></a></li>
+																	<li><a href="csMain.html"><b>고객센터</b></a></li>
+																	<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+																</ul>
+															</div>
+															<!--// 푸터-메뉴 -->
+
+															<!-- 푸터-정보 -->
+															<div class="mm_footer-info">
+																<div class="mm_dropdown" data-dropdown>
+																	<b>(주)엠몬스타</b>
+																	<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+																	<div class="mm_dropdown-item">
+																		<div class="mm_dropdown-item-inner">
+																			<address>
+																				<p>대표: 장한필</p>
+																				<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+																				<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+																				<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+																				<p>개인정보관리자: 이희승</p>
+																				<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+																				<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+																				<p>팩스번호: 031-8023-9667</p>
+																				<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+																			</address>
+																		</div>
+																	</div>
+																</div>
+																<ul class="mm_footer-info-terms">
+																	<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+																	<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+																	<li><a href="#"><b>이용안내</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+																</ul>
+																<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+															</div>
+															<!--// 푸터-정보 -->
+														</footer>
+														<!--// 푸터 -->
+													</div>
+												</div>
+											</li>
+											<li class="mm_carousel-item">
+												<div class="mm_scroller">
+													<div class="m_main-carousel-inner">
+														<div class="m_main-carousel-content">
+															<div class="mm_scroller T=x">
+																<div class="mm_product-list T=card">
+																	<ul>
+																		<li>
+																			<div class="mm_product-item">
+																				<a href="prodDetail_info.html">
+																					<figure>
+																						<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }"></i>
+																						<p class="text_product-status">품절임박</p>
+																						<figcaption>
+																							<p class="text_brand">엠몬스타</p>
+																							<p class="text_product">COLLEGE 스웻셔츠 Univ MTM 4Color</p>
+																							<p class="text_sale">45%</p>
+																							<p class="text_price"><strong>48,750</strong></p>
+																							<div class="mm_tag-list">
+																								<b class="mm_tag T=square T=dark">쿠폰할인</b>
+																								<b class="mm_tag T=square T=dark">무료배송</b>
+																							</div>
+																						</figcaption>
+																					</figure>
+																				</a>
+																				<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="mm_product-item">
+																				<a>
+																					<figure>
+																						<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }"></i>
+																						<p class="text_soldout">SOLD OUT</p>
+																						<figcaption>
+																							<p class="text_brand">엠몬스타</p>
+																							<p class="text_product">컬러그라데이션 오버핏 맨투맨 BLUE</p>
+																							<p class="text_sale">34%</p>
+																							<p class="text_price"><strong>58,000</strong></p>
+																							<div class="mm_tag-list">
+																								<b class="mm_tag T=square T=dark">무료배송</b>
+																							</div>
+																						</figcaption>
+																					</figure>
+																				</a>
+																				<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="mm_product-item">
+																				<a href="prodDetail_info.html">
+																					<figure>
+																						<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_3.png' }"></i>
+																						<figcaption>
+																							<p class="text_brand">엠몬스타</p>
+																							<p class="text_product">EFFXSLOWACID Logo Short-_T</p>
+																							<p class="text_sale">25%</p>
+																							<p class="text_price"><strong>58,000</strong></p>
+																							<div class="mm_tag-list">
+																								<b class="mm_tag T=square T=dark">무료배송</b>
+																							</div>
+																						</figcaption>
+																					</figure>
+																				</a>
+																				<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="mm_product-item">
+																				<a href="prodDetail_info.html">
+																					<figure>
+																						<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_4.png' }"></i>
+																						<figcaption>
+																							<p class="text_brand">엠몬스타</p>
+																							<p class="text_product">EFFXSLOWACID Logo Short-_T</p>
+																							<p class="text_sale">25%</p>
+																							<p class="text_price"><strong>58,000</strong></p>
+																							<div class="mm_tag-list">
+																								<b class="mm_tag T=square T=dark">무료배송</b>
+																							</div>
+																						</figcaption>
+																					</figure>
+																				</a>
+																				<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="mm_product-item">
+																				<a href="prodDetail_info.html">
+																					<figure>
+																						<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../error' }"></i>
+																						<figcaption>
+																							<p class="text_brand">엠몬스타</p>
+																							<p class="text_product">COLLEGE 스웻셔츠 Univ MTM 4Color</p>
+																							<p class="text_sale">45%</p>
+																							<p class="text_price"><strong>48,750</strong></p>
+																							<div class="mm_tag-list">
+																								<b class="mm_tag T=square T=dark">무료배송</b>
+																							</div>
+																						</figcaption>
+																					</figure>
+																				</a>
+																				<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="mm_product-item">
+																				<a href="prodDetail_info.html">
+																					<figure>
+																						<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }"></i>
+																						<figcaption>
+																							<p class="text_brand">엠몬스타</p>
+																							<p class="text_product">프로텍팅 네츄럴 사인 톤업 선쿠션 SET</p>
+																							<p class="text_sale">45%</p>
+																							<p class="text_price"><strong>276,000</strong></p>
+																							<div class="mm_tag-list">
+																								<b class="mm_tag T=square T=dark">무료배송</b>
+																							</div>
+																						</figcaption>
+																					</figure>
+																				</a>
+																				<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+																			</div>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<!-- 푸터 -->
+														<footer id="mm_footer" class="mm_footer">
+															<!-- 푸터-메뉴 -->
+															<div class="mm_footer-menu">
+																<ul class="mm_flex T=equal">
+																	<li><a href="company.html"><b>회사소개</b></a></li>
+																	<li><a href="csMain.html"><b>고객센터</b></a></li>
+																	<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+																</ul>
+															</div>
+															<!--// 푸터-메뉴 -->
+
+															<!-- 푸터-정보 -->
+															<div class="mm_footer-info">
+																<div class="mm_dropdown" data-dropdown>
+																	<b>(주)엠몬스타</b>
+																	<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+																	<div class="mm_dropdown-item">
+																		<div class="mm_dropdown-item-inner">
+																			<address>
+																				<p>대표: 장한필</p>
+																				<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+																				<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+																				<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+																				<p>개인정보관리자: 이희승</p>
+																				<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+																				<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+																				<p>팩스번호: 031-8023-9667</p>
+																				<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+																			</address>
+																		</div>
+																	</div>
+																</div>
+																<ul class="mm_footer-info-terms">
+																	<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+																	<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+																	<li><a href="#"><b>이용안내</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+																</ul>
+																<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+															</div>
+															<!--// 푸터-정보 -->
+														</footer>
+														<!--// 푸터 -->
+													</div>
+												</div>
+											</li>
+											<li class="mm_carousel-item">
+												<div class="mm_scroller">
+													<div class="m_main-carousel-inner">
+														<div class="m_main-carousel-content">
+															<div style="height: 100%; background: #e19c03; color: #fff; font-size: 120px;">444</div>
+														</div>
+														<!-- 푸터 -->
+														<footer id="mm_footer" class="mm_footer">
+															<!-- 푸터-메뉴 -->
+															<div class="mm_footer-menu">
+																<ul class="mm_flex T=equal">
+																	<li><a href="company.html"><b>회사소개</b></a></li>
+																	<li><a href="csMain.html"><b>고객센터</b></a></li>
+																	<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+																</ul>
+															</div>
+															<!--// 푸터-메뉴 -->
+
+															<!-- 푸터-정보 -->
+															<div class="mm_footer-info">
+																<div class="mm_dropdown" data-dropdown>
+																	<b>(주)엠몬스타</b>
+																	<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+																	<div class="mm_dropdown-item">
+																		<div class="mm_dropdown-item-inner">
+																			<address>
+																				<p>대표: 장한필</p>
+																				<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+																				<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+																				<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+																				<p>개인정보관리자: 이희승</p>
+																				<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+																				<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+																				<p>팩스번호: 031-8023-9667</p>
+																				<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+																			</address>
+																		</div>
+																	</div>
+																</div>
+																<ul class="mm_footer-info-terms">
+																	<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+																	<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+																	<li><a href="#"><b>이용안내</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+																</ul>
+																<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+															</div>
+															<!--// 푸터-정보 -->
+														</footer>
+														<!--// 푸터 -->
+													</div>
+												</div>
+											</li>
+											<li class="mm_carousel-item">
+												<div class="mm_scroller">
+													<div class="m_main-carousel-inner">
+														<div class="m_main-carousel-content">
+															<div style="height: 100%; background: #e68362; color: #fff; font-size: 120px;">555</div>
+														</div>
+														<!-- 푸터 -->
+														<footer id="mm_footer" class="mm_footer">
+															<!-- 푸터-메뉴 -->
+															<div class="mm_footer-menu">
+																<ul class="mm_flex T=equal">
+																	<li><a href="company.html"><b>회사소개</b></a></li>
+																	<li><a href="csMain.html"><b>고객센터</b></a></li>
+																	<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+																</ul>
+															</div>
+															<!--// 푸터-메뉴 -->
+
+															<!-- 푸터-정보 -->
+															<div class="mm_footer-info">
+																<div class="mm_dropdown" data-dropdown>
+																	<b>(주)엠몬스타</b>
+																	<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+																	<div class="mm_dropdown-item">
+																		<div class="mm_dropdown-item-inner">
+																			<address>
+																				<p>대표: 장한필</p>
+																				<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+																				<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+																				<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+																				<p>개인정보관리자: 이희승</p>
+																				<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+																				<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+																				<p>팩스번호: 031-8023-9667</p>
+																				<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+																			</address>
+																		</div>
+																	</div>
+																</div>
+																<ul class="mm_footer-info-terms">
+																	<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+																	<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+																	<li><a href="#"><b>이용안내</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+																</ul>
+																<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+															</div>
+															<!--// 푸터-정보 -->
+														</footer>
+														<!--// 푸터 -->
+													</div>
+												</div>
+											</li>
+											<li class="mm_carousel-item">
+												<div class="mm_scroller">
+													<div class="m_main-carousel-inner">
+														<div class="m_main-carousel-content">
+															<div style="height: 100%; background: #7cbacb; color: #fff; font-size: 120px;">666</div>
+														</div>
+														<!-- 푸터 -->
+														<footer id="mm_footer" class="mm_footer">
+															<!-- 푸터-메뉴 -->
+															<div class="mm_footer-menu">
+																<ul class="mm_flex T=equal">
+																	<li><a href="company.html"><b>회사소개</b></a></li>
+																	<li><a href="csMain.html"><b>고객센터</b></a></li>
+																	<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+																</ul>
+															</div>
+															<!--// 푸터-메뉴 -->
+
+															<!-- 푸터-정보 -->
+															<div class="mm_footer-info">
+																<div class="mm_dropdown" data-dropdown>
+																	<b>(주)엠몬스타</b>
+																	<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+																	<div class="mm_dropdown-item">
+																		<div class="mm_dropdown-item-inner">
+																			<address>
+																				<p>대표: 장한필</p>
+																				<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+																				<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+																				<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+																				<p>개인정보관리자: 이희승</p>
+																				<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+																				<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+																				<p>팩스번호: 031-8023-9667</p>
+																				<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+																			</address>
+																		</div>
+																	</div>
+																</div>
+																<ul class="mm_footer-info-terms">
+																	<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+																	<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+																	<li><a href="#"><b>이용안내</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+																</ul>
+																<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+															</div>
+															<!--// 푸터-정보 -->
+														</footer>
+														<!--// 푸터 -->
+													</div>
+												</div>
+											</li>
+											<li class="mm_carousel-item">
+												<div class="mm_scroller">
+													<div class="m_main-carousel-inner">
+														<div class="m_main-carousel-content">
+															<div style="height: 100%; background: #f84f34; color: #fff; font-size: 120px;">777</div>
+														</div>
+														<!-- 푸터 -->
+														<footer id="mm_footer" class="mm_footer">
+															<!-- 푸터-메뉴 -->
+															<div class="mm_footer-menu">
+																<ul class="mm_flex T=equal">
+																	<li><a href="company.html"><b>회사소개</b></a></li>
+																	<li><a href="csMain.html"><b>고객센터</b></a></li>
+																	<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+																</ul>
+															</div>
+															<!--// 푸터-메뉴 -->
+
+															<!-- 푸터-정보 -->
+															<div class="mm_footer-info">
+																<div class="mm_dropdown" data-dropdown>
+																	<b>(주)엠몬스타</b>
+																	<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+																	<div class="mm_dropdown-item">
+																		<div class="mm_dropdown-item-inner">
+																			<address>
+																				<p>대표: 장한필</p>
+																				<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+																				<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+																				<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+																				<p>개인정보관리자: 이희승</p>
+																				<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+																				<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+																				<p>팩스번호: 031-8023-9667</p>
+																				<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+																			</address>
+																		</div>
+																	</div>
+																</div>
+																<ul class="mm_footer-info-terms">
+																	<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+																	<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+																	<li><a href="#"><b>이용안내</b></a></li>
+																	<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+																</ul>
+																<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+															</div>
+															<!--// 푸터-정보 -->
+														</footer>
+														<!--// 푸터 -->
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--// 홈 -->
+						</div>
+						<!--// 본문 -->
+					</div>
+				</div>
+
+				<a class="btn_topmost" href="#mm_app" data-href="{ '_type': 'anchor' }" title="페이지 처음으로"><i class="ico_topmost"></i><b>TOP</b></a>
+
+				<!-- 현재 페이지 스크립트 -->
+				<!-- <script src="../js/.js"></script> -->
+				<script type="module" lang="ts">
+					import Doms from '/src/script/Doms.ts';
+					import { Carousel } from '/src/script/ui/sliders.ts';
+					import { Dropdown } from '/src/script/ui/buttons.ts';
+					import { gsap } from 'gsap';
+
+					/** 메인 캐러셀 */
+					const mainGnbChange = (__package) => {
+
+						const ui = __package.ui;
+
+						const $activePage = ui.$pages[ui.index];
+						const $scroll = $activePage.closest(`.mm_scroller`);
+						const _target = Doms.position($activePage).left - ($scroll.offsetWidth - $activePage.offsetWidth) / 2;
+
+						gsap.to($scroll, { scrollLeft: Math.max(Math.min(_target, $scroll.scrollWidth - $scroll.offsetWidth), 0), duration: 0.25, ease: `sine.out` });
+
+						// ! 헤더가 숨겨있을 때 스와이프하면 헤더 노출 코드 추가
+
+					}
+
+					Carousel.update(`.m_main-carousel`, { _classOn: `S=gnb-on`, pagination: { _isInner: false, _selector: '.btn_main-page' }, onReady: mainGnbChange, onStart: mainGnbChange });
+
+					/** 푸터 사업자정보 */
+					Dropdown.update(`.mm_footer-info [data-dropdown]`);
+				</script>
+			</div>
+			<!--// 내용 -->
+
+			<!-- 툴바 -->
+			<div class="mm_toolbar">
+				<ul class="mm_flex T=equal">
+					<li>
+						<a href="main.html">
+							<i class="ico_home"></i>
+							<b>홈</b>
+						</a>
+					</li>
+					<li>
+						<a href="sidebar_level5.html" onclick="mm.side.open(this.href);return false;">
+							<i class="ico_menu"></i>
+							<b>카테고리</b>
+						</a>
+					</li>
+					<li>
+						<a href="_popup_search.html">
+							<i class="ico_search"></i>
+							<b class="mm_ir-blind">검색</b>
+						</a>
+					</li>
+					<li>
+						<a href="myMain_level5.html">
+							<i class="ico_mypage"></i>
+							<b>마이페이지</b>
+						</a>
+					</li>
+					<li>
+						<a href="_popup_recent.html">
+							<!-- (D) 최근본상품이 있을 때 노출합니다. -->
+							<!-- <i class="mm_bg-cover image_recent" data-lazyload="{ '_src': '../image/_sample/prod_x1_3.png' }"></i> -->
+							<i class="ico_recent"></i>
+							<b>최근본상품</b>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--// 툴바 -->
+		</div>
+		<!--// 화면 -->
+	</div>
+</body>
+</html>

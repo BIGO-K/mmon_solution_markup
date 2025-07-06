@@ -1,0 +1,395 @@
+@charset 'utf-8';
+
+@use '../../assets/scss/common/helper/function';
+@use '../../assets/scss/common/helper/mixin';
+@use '../../assets/scss/common/setting/const';
+@use '../../assets/scss/style/setting/var';
+
+/**
+ * 쇼케이스
+ */
+
+/** 쇼케이스 */
+.m_showcase {
+	> .mm_title {
+		padding-bottom: 30px;
+	}
+
+	// 리스트
+	&-list {
+		padding-top: 27px;
+
+		> ul {
+			margin: -51px 0 0 -14px;
+
+			> li {
+				float: left;
+				position: relative;
+				margin: 78px 0 0 14px;
+				width: 444px;
+
+				> a {
+					display: block;
+				}
+
+				figure {
+					.image_banner {
+						padding-top: 100%;
+						width: 100%;
+					}
+
+					figcaption {
+						margin: 22px 0 0 4px;
+
+						> * {
+							@include mixin.text-ellipsis(1);
+							@include mixin.font(#4a4a4a '1.4rem/2rem');
+						}
+
+						.text_title {
+							margin: 11px 0 5px;
+							@include mixin.font(const.$color_text_base '2.3rem/3.2rem');
+						}
+
+						b {
+							margin-top: 21px;
+							font-size: 1.3rem;
+
+							.ico_link {
+								margin: 6px 0 0 7px;
+
+								&::before {
+									background-color: #4a4a4a;
+								}
+							}
+						}
+					}
+				}
+
+				&:nth-child(1):not(:nth-last-child(-n+3)),
+				&:nth-child(9):not(:last-child) {
+					margin-top: 51px;
+					width: 570px;
+
+					figcaption {
+						position: absolute;
+						bottom: -28px;
+						left: 0;
+						margin: 0;
+						padding: 38px 0 0 22px;
+						width: 343px;
+						background-color: rgba(#fff, 0.94);
+
+						b {
+							margin-top: 20px;
+						}
+					}
+				}
+
+				&:nth-child(9):not(:last-child) {
+					figcaption {
+						right: 0;
+						left: auto;
+
+						&::after {
+							right: auto;
+							left: -5px;
+						}
+					}
+				}
+
+				&:nth-child(2):not(:nth-last-child(-n+2)),
+				&:nth-child(3):not(:last-child),
+				&:nth-child(7):not(:nth-last-child(-n+3)),
+				&:nth-child(8):not(:nth-last-child(-n+2)) {
+					margin-top: 51px;
+					width: 372px;
+					height: 570px;
+				}
+
+				&:nth-child(2):not(:nth-last-child(-n+2)),
+				&:nth-child(9):not(:last-child) {
+					margin-left: 32px;
+				}
+			}
+		}
+
+		&#{function.escape('.T=skeleton')} {
+			li {
+				.image_banner {
+					padding-top: const.$prod_height_base;
+					width: 100%;
+					background-color: var.$skeleton_color_base;
+					background-image: none;
+				}
+
+				> div {
+					p:not(.text_main) {
+						margin-top: 10px;
+						height: 18px;
+						background-color: var.$skeleton_color_base;
+						font-size: 0;
+					}
+				}
+
+				.text_category {
+					width: 30%;
+				}
+
+				.text_title {
+					width: 40%;
+					height: 30px;
+				}
+
+				.text_main {
+					position: relative;
+					margin-top: 10px;
+					height: 46px;
+
+					&::before,
+					&::after {
+						position: absolute;
+						left: 0;
+						width: 90%;
+						height: 18px;
+						background-color: var.$skeleton_color_base;
+						content: '';
+					}
+
+					&::before {
+						top: 0;
+					}
+
+					&::after {
+						bottom: 0;
+					}
+				}
+
+				&:nth-child(1):not(:nth-last-child(-n+3)),
+				&:nth-child(9):not(:last-child) {
+					> div {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	> .mm_pagination {
+		margin-top: 51px;
+	}
+
+	// 쇼케이스 상세
+	&-detail {
+		.mm_title {
+			padding-bottom: 45px;
+		}
+
+		.mm_event-head {
+			.text_date {
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 0 16px;
+				@include mixin.font(#6a6a6a '1.4rem/6.2rem');
+			}
+		}
+
+		.image_banner {
+			width: 100%;
+			text-align: center;
+
+			img {
+				width: auto;
+				max-width: 100%;
+			}
+		}
+
+		.text_detail {
+			margin-top: 37px;
+			padding: 0 20px;
+			@include mixin.font('1.7rem/2.8rem' center);
+
+			+ .m_showcase-detail-product {
+				margin-top: 114px;
+			}
+		}
+
+		// 동영상
+		&-media {
+			position: relative;
+			margin-top: 89px;
+			padding-top: 56.39705%;
+
+			> iframe {
+				position: absolute;
+				inset: 0;
+			}
+
+			+ .m_showcase-detail-product {
+				margin-top: 114px;
+			}
+		}
+
+		// 상품그룹
+		&-product {
+			position: relative;
+			margin-top: 178px;
+
+			.image_banner {
+				margin-top: 0;
+			}
+
+			.mm_slider {
+				margin-top: 64px;
+
+				&#{function.escape('.T=list-full')} {
+					.mm_slider-control {
+						button {
+							margin-top: 9px;
+						}
+					}
+				}
+
+				ul {
+					li {
+						width: 276px;
+					}
+				}
+			}
+		}
+
+		// 브랜드샵
+		&-brand {
+			margin-top: 80px;
+			text-align: center;
+
+			.btn_like {
+				width: 52px;
+				height: 52px;
+				border: 1px solid #dcdcdc;
+				border-radius: 100%;
+
+				&#{function.escape('.S=switch-on')} {
+					.ico_like-brand::before {
+						background-color: var.$color_sub;
+					}
+				}
+
+				.ico_like-brand {
+					margin-top: 4px;
+				}
+			}
+
+			.text_brand {
+				margin-top: 19px;
+				font-size: 2.3rem;
+			}
+
+			.btn_shop {
+				margin-top: 18px;
+
+				.ico_link {
+					margin: 13px 0 0 8px;
+				}
+			}
+		}
+
+		// View More
+		&-more {
+			margin-top: 64px;
+			border-top: 1px solid #4a4a4a;
+
+			h6 {
+				padding: 41px 0 15px;
+				font-size: 2rem;
+			}
+
+			.mm_slider {
+				&-list {
+					margin-left: -1px;
+				}
+
+				&-item {
+					padding-left: 1px;
+					width: 340px;
+
+					> a {
+						display: block;
+					}
+				}
+
+				&-control {
+					button {
+						top: 143px;
+						margin-top: 0;
+						width: 28px;
+						height: 54px;
+						background-color: #fff;
+						text-align: center;
+
+						&:disabled {
+							background-color: rgba(#fff, 0.5);
+
+							> i::before {
+								background-color: const.$color_text_base;
+							}
+						}
+					}
+
+					.btn_slider-prev {
+						left: 0;
+						padding-right: 10px;
+						border-radius: 0 30px 30px 0;
+					}
+
+					.btn_slider-next {
+						right: 0;
+						padding-left: 10px;
+						border-radius: 30px 0 0 30px;
+					}
+				}
+			}
+
+			figure {
+				position: relative;
+
+				.image_banner {
+					margin: 0;
+					padding-top: 100%;
+					width: 100%;
+				}
+
+				figcaption {
+					position: absolute;
+					top: 0;
+					left: 0;
+					padding: 36px 25px;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(#000, 0.5);
+					@include mixin.font(#b8b8b9 '1.4rem');
+
+					.text_title {
+						margin-top: 19px;
+						@include mixin.font('1.7rem/2.4rem');
+					}
+				}
+			}
+		}
+
+		.mm_foot {
+			margin-top: 64px;
+
+			.ico_link {
+				margin: 18px 0 0 8px;
+
+				&::before {
+					width: 8px;
+					height: 9px;
+					background-color: #2b2b2b;
+				}
+			}
+		}
+	}
+}

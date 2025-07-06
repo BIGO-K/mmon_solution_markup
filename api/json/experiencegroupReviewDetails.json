@@ -1,0 +1,30 @@
+{
+    "detail": {
+        "id": 1,
+        "title": "레푸스 트레이닝 풀집업 체험단 후기",
+        "writer": "장태민",
+        "created_at": "2022-08-19T09:04:42Z",
+        "view_count": 1234567,
+        "goods_id": 58816,
+        "goods_name": "슈퍼스타 바게트 원피스1",
+        "goods_thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/16/1.jpg?ut=1661495400",
+        "base_discounted_price": 59400,
+        "brand_name": "예진모바일",
+        "grade": 4,
+        "height": 177,
+        "weight": 83,
+        "shose_size": 275,
+        "contents": "제가 정말 좋아하는 예진모바일의 트레이닝 풀집업 체험단에 당첨되어 정말 기분이 좋고 뽑아주신 예진모바일에게 감사를 표합니다. 1달 째 입고 있는데 다들 어디서 샀냐고 물어보더라구요",
+        "templates": [
+            {
+                "id": 3,
+                "title": "두께",
+                "selected_label": "두꺼워요"
+            }
+        ],
+        "recommendation_count": 7777,
+        "image_url_list": [
+            "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/exhibit/areas/banner-in-goods/100/1/pc.jpg?ut=1659331443"
+        ]
+    }
+}

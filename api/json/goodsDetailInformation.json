@@ -1,0 +1,79 @@
+{
+	"top_banners": [
+		{
+			"contents": "<p><img src='https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prodetail_banner_1.png' alt=''></p>",
+			"image_url": null,
+			"image_alt": "시그니처 2020 여름 콜렉션 비욘드 클로젯 티셔츠",
+			"is_editor_use": true
+		},
+		{
+			"is_editor_use": false,
+			"contents": null,
+			"image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prodetail_banner_1.png",
+			"image_alt": "시그니처 여름 컬렉션"
+		}
+	],
+	"bottom_banners": [
+		{
+			"is_editor_use": false,
+			"contents": null,
+			"image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prodetail_banner_1.png",
+			"image_alt": "시그니처 여름 컬렉션"
+		},
+		{
+			"contents": "<p><img src='https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prodetail_banner_2.png' alt=''></p>",
+			"image_url": null,
+			"image_alt": "시그니처 2020 여름 콜렉션 비욘드 클로젯 티셔츠",
+			"is_editor_use": true
+		}
+	],
+	"video_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/TM6m8TGlQBA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+	"detail_info": "<p style=\"text-align:center;\">Butter컬러 28일발송</p> \t\t\t\t\t\t\t\t\t\t\t<br> \t\t\t\t\t\t\t\t\t\t\t<p style=\"text-align:center;\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\" data-lazyload=\"{ '_src': '../image/_sample/product_thumbnail_1.jpg' }\" alt=\"\"></p>",
+	"mandatory": [
+		{
+			"title": "소재",
+			"content": "겉감: 나일론78%, 폴리에스터22%, 배색: 나일론100%, 안감: 폴리에스터 100%"
+		},
+		{
+			"title": "색상",
+			"content": "네이비, 블랙, 아이보리, 베이지, 카키, 레드"
+		},
+		{
+			"title": "치수",
+			"content": "95, 100, 105, 110, 115"
+		},
+		{
+			"title": "제조자",
+			"content": "EN OR"
+		},
+		{
+			"title": "제조국",
+			"content": "베트남"
+		},
+		{
+			"title": "세탁방법 및 취급시 주의사항",
+			"content": "표백제 및 강력 효소 세제는 절대로 사용하지 마십시오. 드라이를 권장합니다. 손세탁을 하실 경우 30도 이하의 온도에서 드라이 세제를 이용하여 세탁하여 주시고, 뜨거운 물에 세탁을 하시면 제품에 이상이 생길 수 있으므로 자제하시기 바랍니다"
+		},
+		{
+			"title": "제조년월",
+			"content": "2022.07.27"
+		},
+		{
+			"title": "품질보증기준",
+			"content": "본 제품은 공정거래위원회 고시 소비자 분쟁해결기준에 의거하여 보상받으실 수 있습니다"
+		},
+		{
+			"title": "A/S 책임자와 전화번호",
+			"content": "판매자 고객센터 1599-0000"
+		}
+	],
+	"use_state_label": "새상품, 중고",
+	"origin_label": "대한민국",
+    "seller_holiday_message": null,
+    "seller_holiday": {
+        "reason": "휴가",
+        "start_at": "2023-05-01",
+        "end_at": "2023-05-02",
+        "release_at": "2023-05-03"
+    }
+}

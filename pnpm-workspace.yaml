@@ -1,0 +1,5 @@
+packages:
+  - 'pc/**'
+  - 'mobile/**'
+  - 'api/**'
+  - 'library/**'

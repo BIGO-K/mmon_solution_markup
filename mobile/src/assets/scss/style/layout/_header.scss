@@ -1,0 +1,424 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 레이아웃
+ * 헤더
+ */
+
+/** 헤더영역 */
+.mm_header {
+	position: absolute;
+	z-index: const.$zindex_header;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: var.$header_height_base;
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #fff;
+	text-align: center;
+	transition: transform const.$time_fast;
+	@include mixin.clearfix;
+
+	// 스크롤 숨김
+	#{escape('.S=hide')} & {
+		border-bottom: 0;
+		transform: translateY(-100%);
+	}
+
+	h1 {
+		margin-top: 12px;
+		max-width: 100%;
+
+		b:not(.mm_ir-blind) {
+			display: block;
+			padding: 0 87px;
+			font-size: 1.6rem;
+			@include mixin.text-ellipsis(1);
+		}
+
+		// 카테고리 페이지에서만 사용합니다
+		.btn_category {
+			display: grid;
+			grid-template-columns: auto 22px;
+			margin: 0 auto;
+			padding: 0 87px;
+
+			b {
+				padding: 0;
+			}
+
+			.ico_dropdown {
+				margin: 4px 0 0 5px;
+
+				&::before {
+					background-color: var.$color_text_base;
+				}
+			}
+		}
+	}
+
+	.ico_search::before {
+		margin-top: 12px;
+		width: 20px;
+		height: 21px;
+		@include mixin.svg(url('/public/images/common/ico_search.svg'));
+	}
+
+	.mm_lside {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-left: 4px;
+		height: var.$header_height_base;
+		line-height: math.div(var.$header_height_base, const.$font_size_base) * 1rem;
+
+		> * {
+			float: left;
+			position: relative;
+			padding: 0 10px;
+			height: 100%;
+		}
+
+		.btn_back {
+			i {
+				margin-top: 12px;
+			}
+		}
+
+		.ico_search::before {
+			background-color: #b8b8b9;
+		}
+	}
+
+	.mm_rside {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-right: 6px;
+		height: var.$header_height_base;
+
+		> * {
+			float: left;
+			position: relative;
+			padding: 0 10px;
+			height: 100%;
+		}
+
+		.btn_home {
+			margin-right: 4px;
+
+			i {
+				margin-top: 12px;
+
+				&::before {
+					width: 20px;
+					height: 22px;
+					background-color: #4a4a4a;
+				}
+			}
+		}
+
+		.ico_search {
+			margin-right: 2px;
+		}
+
+		.ico_cart {
+			margin-top: 10px;
+
+			+ .text_badge {
+				position: absolute;
+				top: 17px;
+				right: 0;
+				left: 0;
+				@include mixin.font(#f84f34 v_700 '1.2rem/1.6rem' center);
+			}
+		}
+	}
+
+	// 대카테고리 펼침
+	&#{escape('.S=category-on')} {
+		.btn_category {
+			.ico_dropdown {
+				margin-top: 3px;
+
+				&::before {
+					@include mixin.svg(url('/public/images/common/ico_arrow_round_top.svg'));
+				}
+			}
+		}
+
+		.mm_header-category {
+			display: block;
+			z-index: 1;
+			height: 100%;
+
+			.mm_scroller {
+				height: auto;
+			}
+		}
+	}
+
+	// 대카테고리
+	&-category {
+		display: none;
+		position: fixed;
+		z-index: -1;
+		inset: var.$header_height_base + 1px 0 0 0;// + border
+		height: 0;
+
+		&-dim {
+			position: absolute;
+			inset: 0;
+			background-color: rgba(#000, 0.34);
+		}
+
+		.mm_scroller {
+			position: absolute;
+			top: -1px;
+			right: 0;
+			left: 0;
+			max-height: 340px;
+			background-color: #fff;
+		}
+
+		ul {
+			display: grid;
+			grid-template-columns: repeat(3, 33.33333%);
+			padding: 11px 5px 14px;
+		}
+
+		a {
+			@include mixin.text-ellipsis(1);
+
+			display: block;
+			overflow: hidden;
+			height: 44px;
+			@include mixin.font(#2b2b2b '1.4rem/4.3rem');
+
+			> b {
+				display: inline;
+			}
+
+			&#{escape('.S=category-on')} {
+				@include mixin.font(var.$color_main v_700);
+			}
+		}
+	}
+
+	// 앱으로 보기 상단 배너 있을 때
+	#{escape('.L=main')} .m_main-app-view ~ & {
+		padding-top: 50px;
+		height: calc(var.$header_height_main + 50px);
+
+		.mm_lside,
+		.mm_rside {
+			top: 50px;
+		}
+
+		&#{escape('.T=ha')} {
+			.mm_rside {
+				top: 69px;
+			}
+		}
+	}
+}
+
+// 메인
+#{escape('.L=main')} .mm_header {
+	height: var.$header_height_main;
+	background-color: var.$color_header;
+
+	h1 {
+		a {
+			.image_logo {
+				@include mixin.background(url('/public/images/common/logo.svg') '50% 50%/contain' no-repeat);
+			}
+		}
+	}
+
+	// A타입
+	&#{escape('.T=ha')} {
+		border-bottom: 0;
+		text-align: left;
+
+		h1 {
+			margin-top: 20px;
+
+			a {
+				padding: 9px 15px;
+
+				.image_logo {
+					width: 172px;
+					height: 18px;
+				}
+			}
+		}
+
+		.mm_rside {
+			top: 19px;
+			height: 35px;
+
+			.ico_search::before {
+				margin-top: 9px;
+			}
+
+			.ico_cart {
+				margin-top: 6px;
+
+				+ .text_badge {
+					top: 13px;
+				}
+			}
+		}
+
+		~ .mm_page {
+			.mm_gnb {
+				&-inner {
+					background-color: var.$color_header;
+				}
+			}
+		}
+
+		// 텍스트 흰색
+		&#{escape('.T=text-white')} {
+			h1 {
+				a {
+					.image_logo {
+						@include mixin.background(none);
+
+						&::before {
+							width: 150px;
+							height: 15px;
+							@include mixin.svg(#fff url('/public/images/common/logo.svg') '50% 50%/100% auto');
+
+							content: '';
+						}
+					}
+				}
+			}
+
+			.mm_rside {
+				i::before {
+					background-color: #fff;
+				}
+			}
+
+			~ .mm_page {
+				.mm_gnb {
+					&-inner::after {
+						border-bottom-color: var.$color_main;
+					}
+
+					li {
+						color: #fff;
+
+						> a {
+							&#{escape('.S=gnb-on')} {
+								b {
+									color: #fff;
+
+									&::after {
+										border-bottom-color: #fff;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// B타입
+	&#{escape('.T=hb')} {
+		border-bottom: 0;
+		text-align: left;
+
+		h1 {
+			margin-top: 9px;
+
+			a {
+				padding: 9px 11px;
+
+				.image_logo {
+					width: 150px;
+					height: 15px;
+				}
+			}
+		}
+
+		.mm_rside {
+			padding-right: 13px;
+			height: var.$header_height_main;
+
+			> * {
+				padding: 0 8px;
+
+				i::before {
+					margin-top: 16px;
+				}
+			}
+
+			.ico_pushcart {
+				+ .text_badge {
+					position: absolute;
+					top: 13px;
+					right: 4px;
+					padding: 2px 4px 1px 3px;
+					border-radius: 12px;
+					background-color: var.$color_header;
+					@include mixin.font(var.$color_sub v_800 '1rem' center);
+				}
+			}
+		}
+
+		~ .mm_page {
+			.mm_gnb {
+				li {
+					> a {
+						&#{escape('.S=gnb-on')} {
+							b {
+								color: var.$color_main;
+
+								&::after {
+									border-bottom-color: var.$color_main;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// 텍스트 흰색
+		&#{escape('.T=text-white')} {
+			h1 {
+				a {
+					.image_logo {
+						@include mixin.background(none);
+
+						&::before {
+							width: 150px;
+							height: 15px;
+							@include mixin.svg(#fff url('/public/images/common/logo.svg') '50% 50%/100% auto');
+
+							content: '';
+						}
+					}
+				}
+			}
+
+			.mm_rside {
+				i::before {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}

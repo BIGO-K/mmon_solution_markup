@@ -1,0 +1,56 @@
+{
+	"goods": {
+		"name": "커스텀핏 캐시 올스타 슬랙스",
+		"category": {
+			"full_label": "여성 영캐주얼 > 원피스 > 레깅스",
+			"depth1_category_code": "001000000",
+			"depth2_category_code": "001003000",
+			"depth3_category_code": "001003004"
+		},
+		"type": "GN",
+		"brand_id": 29,
+		"brand_name": "엘르 골프",
+		"thumbnail_urls": [
+			"https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/78/2.jpg?ut=1661220855",
+			"https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/78/1.jpg?ut=1661220855"
+		],
+		"is_custom_made": true,
+		"custom_made_delivery_day": 26,
+		"is_oversea_delivery": false,
+		"oversea_delivery_min": null,
+		"oversea_delivery_max": null,
+		"sale_reserve": null,
+		"delivery_info": {
+			"shipping_center_name": "물류센터_루페온33",
+			"shipping_company": "천일 택배",
+			"shipping_price": 3000,
+			"is_free_delivery": false,
+			"is_conditional_free_delivery": true,
+			"conditional_free_price": 25000,
+			"extra_shipping_price": 2500,
+			"is_package_delivery": true,
+			"today_exportable_message": "15시 이전 결제 시 당일 출고됩니다.",
+			"shipping_arrival_probability": {
+				"average_date": "5월 19일(화)",
+				"probability": 90.1
+			}
+		},
+		"return_delivery_info": {
+			"return_shipping_price": 3000,
+			"shipping_company": "천일 택배",
+			"tel": "03188885555",
+			"return_address": "(01132) 12547 Orn TurnpikeBrekkeport, PA 19351-9058 Batz-Schuppe",
+			"company_name": "유지민",
+			"ceo_name": "Emelie Mraz"
+		},
+		"seller_id": 18,
+		"is_only_adult": false,
+		"is_use_seller_shop": true,
+		"giveaways": [],
+		"degree_360_image_urls": [],
+		"headline": null,
+		"is_use_stock_notify": true
+	},
+	"joint_purchase": true,
+	"raffle": null
+}

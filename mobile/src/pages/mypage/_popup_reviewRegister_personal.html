@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko" class="L=popup">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- 소셜태그 -->
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<!--// 소셜태그 -->
+
+	<title>(팝업) 리뷰 쓰기 - M.Mon solution</title>
+
+	<!-- 공통 css -->
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 공통 css 변수 -->
+	<style>
+		:root {
+			/* 클라이언트 컬러 */
+			--color_main: #1f1f1f;
+			--color_sub: #f84f34;
+
+			/* 블랙 버전 */
+			--color_variable: var(--color_sub);
+			--color_support: #4457a7;
+
+			/* 유색 버전 */
+			/* --color_variable: var(--color_main);
+			--color_support: #ff8800; */
+
+			/* 등급 컬러 */
+			--color_level5: #9b3da1;
+			--color_level4: #e19c03;
+			--color_level3: #7cbacb;
+			--color_level2: #e68362;
+			--color_level1: #4e8e71;
+
+			/* 상품 비율 */
+			--prod_ratio_base: 1;
+		}
+	</style>
+
+	<!-- (D) 폴리필/라이브러리는 요청을 줄이기 위해 combind + minify를 적용해주세요. -->
+	<!-- 폴리필/라이브러리 스크립트 -->
+	<script src="../js/lib/lodash-4.17.21.min.js"></script>
+	<script src="../js/lib/gsap-3.6.1/gsap.min.js"></script>
+	<script src="../js/lib/axios-0.21.1.min.js"></script>
+	<script src="../js/lib/load-image.all-5.14.0.min.js"></script>
+	<script src="../js/lib/sortable-1.13.0.min.js"></script>
+
+	<!-- 공통 스크립트 -->
+	<script src="../js/app_common.js"></script>
+	<script src="../js/app_page-common.js"></script>
+
+	<!-- (D) 페이지 전용 스크립트는 .mm_page-content 하단에 넣어주세요. -->
+</head>
+<body>
+	<div id="mm_app" class="mm_app">
+		<!-- 스킵 -->
+		<nav class="mm_skip">
+			<ul>
+				<li><a href="#mm_body" data-href="{ '_type': 'anchor' }">본문바로가기</a></li>
+			</ul>
+		</nav>
+		<!-- 스킵 -->
+
+		<!-- 화면 -->
+		<div class="mm_view L=popup">
+			<!-- 헤더 -->
+			<header class="mm_header">
+				<h1><b>리뷰 쓰기</b></h1>
+				<div class="mm_lside">
+					<a class="btn_back" href="#"><i class="ico_history-back"></i><b class="mm_ir-blind">이전으로</b></a>
+				</div>
+				<div class="mm_rside">
+					<button type="button" class="btn_popup-close"><i class="ico_popup-close"></i><b class="mm_ir-blind">팝업 닫기</b></button>
+				</div>
+			</header>
+			<!--// 헤더 -->
+
+			<!-- 내용 -->
+			<div id="mm_body" class="mm_page">
+				<!-- (D) 실제 내용을 추가하는 부분입니다. -->
+
+				<!-- (D) 팝업은 html, mm_view 태그에 'L=popup' 클래스를 추가합니다. -->
+				<div class="mm_scroller">
+					<div class="mm_page-inner">
+						<!-- 본문 -->
+						<div class="mm_page-content">
+							<div class="m_popup-myreview">
+								<!-- 상품정보 : 선택형 -->
+								<div class="m_popup-myreview-product">
+									<div class="m...product-point">
+										<p><i class="ico_review-photo"></i>포토 리뷰 등록 시 최대<b><strong>5,000</strong><sub>원</sub></b>적립!</p>
+										<div class="m...product-point-inner">
+											<dl><dt>텍스트 리뷰</dt><dd><strong>1,000</strong><sub>원</sub></dd></dl>
+											<dl><dt>포토 리뷰</dt><dd><strong>5,000</strong><sub>원</sub></dd></dl>
+										</div>
+									</div>
+									<div class="mm_product-select">
+										<div class="mm_dropdown" data-dropdown>
+											<button type="button" class="btn_dropdown" title="펼쳐보기"><b>상품을 선택해주세요</b><i class="ico_dropdown T=bold"></i></button>
+											<div class="mm_dropdown-item">
+												<div class="mm_dropdown-item-inner">
+													<div class="mm_scroller">
+														<div class="mm_product-list T=xs">
+															<ul>
+																<li>
+																	<div class="mm_product-item T=single-xs">
+																		<a>
+																			<figure>
+																				<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x1_2.png' }"></i>
+																				<figcaption>
+																					<p class="text_product">시스루스트라이프셔츠</p>
+																					<p class="text_option">화이트 FREE</p>
+																				</figcaption>
+																			</figure>
+																		</a>
+																	</div>
+																</li>
+																<li>
+																	<div class="mm_product-item T=single-xs">
+																		<a>
+																			<figure>
+																				<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x1_2.png' }"></i>
+																				<figcaption>
+																					<p class="text_product">[매긴나잇브릿지]플리츠 디테일 드레스_MJM1OP3140드레스_MJM1OP3140</p>
+																					<p class="text_option">화이트 FREE</p>
+																				</figcaption>
+																			</figure>
+																		</a>
+																	</div>
+																</li>
+																<li>
+																	<div class="mm_product-item T=single-xs">
+																		<a>
+																			<figure>
+																				<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x1_2.png' }"></i>
+																				<figcaption>
+																					<p class="text_product">시스루스트라이프셔츠</p>
+																					<p class="text_option">화이트 FREE</p>
+																				</figcaption>
+																			</figure>
+																		</a>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- (D) 선택된 상품이 노출됩니다. -->
+										<div class="mm_product-select-complete"></div>
+									</div>
+								</div>
+								<!--// 상품정보 : 선택형 -->
+								<hr class="mm_line">
+								<!-- 별점 -->
+								<section>
+									<h6><b>상품은 만족하셨나요?</b></h6>
+									<!--
+										(D) 별점이 선택된 상태일 때는 m_popup-myreview-starscore 태그에 'S=starscore-choice' 클래스가 추가됩니다.
+										선택된 별점의 li에 'S=starscore-on' 클래스와 button에 '선택됨' 타이틀이 추가되며, input hidden의 value값에 점수가 입력됩니다. (0 선택안됨)
+									-->
+									<div class="m_popup-myreview-starscore">
+										<ul>
+											<li><button type="button"><i class="ico_star-fill"></i><b class="mm_ir-blind">5점 만점에 1점</b></button></li>
+											<li><button type="button"><i class="ico_star-fill"></i><b class="mm_ir-blind">5점 만점에 2점</b></button></li>
+											<li><button type="button"><i class="ico_star-fill"></i><b class="mm_ir-blind">5점 만점에 3점</b></button></li>
+											<li><button type="button"><i class="ico_star-fill"></i><b class="mm_ir-blind">5점 만점에 4점</b></button></li>
+											<li><button type="button"><i class="ico_star-fill"></i><b class="mm_ir-blind">5점 만점에 5점</b></button></li>
+										</ul>
+										<input type="hidden" value="0">
+									</div>
+								</section>
+								<!--// 별점 -->
+
+								<!-- 사이즈 -->
+								<section>
+									<h6><b>사이즈는 어떤가요?</b></h6>
+									<div class="mm_radio-list">
+										<ul class="mm_flex T=equal">
+											<li>
+												<label class="mm_form-radio">
+													<input type="radio" name="dev_radio-size" data-radio>
+													<b class="mm_block">
+														<i class="ico_form-radio"></i>
+														<span class="text_label">작아요</span>
+													</b>
+												</label>
+											</li>
+											<li>
+												<label class="mm_form-radio">
+													<input type="radio" name="dev_radio-size" data-radio>
+													<b class="mm_block">
+														<i class="ico_form-radio"></i>
+														<span class="text_label">정사이즈예요</span>
+													</b>
+												</label>
+											</li>
+											<li>
+												<label class="mm_form-radio">
+													<input type="radio" name="dev_radio-size" data-radio>
+													<b class="mm_block">
+														<i class="ico_form-radio"></i>
+														<span class="text_label">생각보다 커요</span>
+													</b>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</section>
+								<!--// 사이즈 -->
+
+								<!-- 색상 -->
+								<section>
+									<h6><b>색상은 어떤가요?</b></h6>
+									<div class="mm_radio-list">
+										<ul class="mm_flex T=equal">
+											<li>
+												<label class="mm_form-radio">
+													<input type="radio" name="dev_radio-color" data-radio>
+													<b class="mm_block">
+														<i class="ico_form-radio"></i>
+														<span class="text_label">화면보다 밝아요</span>
+													</b>
+												</label>
+											</li>
+											<li>
+												<label class="mm_form-radio">
+													<input type="radio" name="dev_radio-color" data-radio>
+													<b class="mm_block">
+														<i class="ico_form-radio"></i>
+														<span class="text_label">화면과 같아요</span>
+													</b>
+												</label>
+											</li>
+											<li>
+												<label class="mm_form-radio">
+													<input type="radio" name="dev_radio-color" data-radio>
+													<b class="mm_block">
+														<i class="ico_form-radio"></i>
+														<span class="text_label">화면보다 어두워요</span>
+													</b>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</section>
+								<!--// 색상 -->
+
+								<!-- 핏 -->
+								<section>
+									<h6><b>핏은 어떤가요?</b></h6>
+									<div class="mm_radio-list">
+										<ul class="mm_flex T=equal">
+											<li>
+												<label class="mm_form-radio">
+													<input type="radio" name="dev_radio-fit" data-radio>
+													<b class="mm_block">
+														<i class="ico_form-radio"></i>
+														<span class="text_label">슬림해요</span>
+													</b>
+												</label>
+											</li>
+											<li>
+												<label class="mm_form-radio">
+													<input type="radio" name="dev_radio-fit" data-radio>
+													<b class="mm_block">
+														<i class="ico_form-radio"></i>
+														<span class="text_label">적당해요</span>
+													</b>
+												</label>
+											</li>
+											<li>
+												<label class="mm_form-radio">
+													<input type="radio" name="dev_radio-fit" data-radio>
+													<b class="mm_block">
+														<i class="ico_form-radio"></i>
+														<span class="text_label">오버핏이에요</span>
+													</b>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</section>
+								<!--// 핏 -->
+								<div class="mm_inner">
+									<h6 class="mm_text-label"><b>신체 정보 입력</b><strong class="mm_text-variable">(선택)</strong></h6>
+									<div class="mm_flex T=equal">
+										<div class="mm_form_mix-linked">
+											<div class="mm_form-text">
+												<button type="button" class="btn_text-clear"><i class="ico_form-clear"></i><b class="mm_ir-blind">지우기</b></button>
+												<label>
+													<input type="number" class="textfield" data-text><i class="bg_text"></i>
+													<span class="text_placeholder">키</span>
+												</label>
+											</div>
+											<span class="text_linked">cm</span>
+										</div>
+										<div class="mm_form_mix-linked">
+											<div class="mm_form-text">
+												<button type="button" class="btn_text-clear"><i class="ico_form-clear"></i><b class="mm_ir-blind">지우기</b></button>
+												<label>
+													<input type="number" class="textfield" data-text><i class="bg_text"></i>
+													<span class="text_placeholder">몸무게</span>
+												</label>
+											</div>
+											<span class="text_linked">kg</span>
+										</div>
+										<div class="mm_form_mix-linked">
+											<div class="mm_form-select">
+												<label>
+													<select data-select>
+														<option>발 사이즈</option>
+													</select>
+													<b class="text_selected"></b>
+													<i class="ico_form-select"></i>
+												</label>
+											</div>
+											<span class="text_linked">mm</span>
+										</div>
+									</div>
+									<div class="mm_note">
+										<ul>
+											<li>해당 정보는 다른 분들의 사이즈 참고용으로만 사용되고 개인식별정보는 공개되지 않습니다</li>
+										</ul>
+									</div>
+									<h6 class="mm_text-label"><b>리뷰 내용</b></h6>
+									<div class="mm_form-textarea">
+										<button type="button" class="btn_text-clear"><i class="ico_form-clear"></i><b class="mm_ir-blind">지우기</b></button>
+										<label>
+											<textarea class="textfield" data-text="{ '_byte': 2000 }"></textarea><i class="bg_text"></i>
+											<span class="text_placeholder">최소 10자 이상 입력하세요</span>
+										</label>
+									</div>
+									<div class="mm_form-multiple">
+										<ul class="mm_flex T=equal">
+											<li>
+												<div class="mm_form-image">
+													<button type="button" class="btn_remove-file"><i class="ico_image-remove"></i><b class="mm_ir-blind">파일삭제</b></button>
+													<div class="mm_form-image-preview"></div>
+													<label>
+														<input type="file" accept="image/*" data-file="{ '_imageSize': 'cover' }">
+														<b class="mm_form-image-box"><i class="ico_upload"></i><span class="mm_ir-blind">사진 첨부하기</span></b>
+													</label>
+												</div>
+											</li>
+										</ul>
+										<label class="mm_btn T=line T=variable btn_select-multiple">
+											<input type="file" accept="image/*" data-multiple="{ '_max': 3, '_isMax': true, '_isAuto': false }" multiple>
+											<b>한번에 여러장 선택하기</b>
+										</label>
+									</div>
+									<div class="mm_note">
+										<ul>
+											<li>사진은 jpg, png 파일로 3개까지 업로드 가능합니다.</li>
+											<li>첫번째 등록한 사진이 리뷰 대표 이미지로 설정됩니다.</li>
+											<li>입력하신 리뷰 위에 등록한 이미지가 노출됩니다.</li>
+											<li>동일한 문자 또는 자음/모음은 4회 이상 연속 입력할 수 없습니다.</li>
+											<li>소중한 고객님의 개인 정보 보호를 위해 주민번호, 전화번호 등 개 인 정보는 절대 입력하지 않도록 주의해주세요.</li>
+											<li>저작권 침해/음란/욕설/비방 글, 개인 정보 유출(전화번호, 주민 번호, 이름, 아이디 등), 판매/광고/홍보성 글을 등록한 경우 임의 로 삭제될 수 있습니다.</li>
+										</ul>
+									</div>
+									<div class="mm_foot">
+										<div class="mm_btn_box">
+											<button type="button" class="mm_btn T=primary"><b>등록하기</b></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 본문 -->
+					</div>
+				</div>
+
+				<a class="btn_topmost" href="#mm_app" data-href="{ '_type': 'anchor' }" title="페이지 처음으로"><i class="ico_topmost"></i><b>TOP</b></a>
+
+				<!-- 현재 페이지 스크립트 -->
+				<script>
+					(function () {
+
+						//< 별점 선택
+						var $starscore = mm.find('.m_popup-myreview-starscore');
+						var $star = mm.find('li', $starscore);
+
+						mm.event.on($star, 'click', function (__e) {
+
+							$starscore[0].classList.add('S=starscore-choice');
+
+							var _currentIndex = mm.element.index(mm.find('li', $starscore), __e.currentTarget);
+
+							_.each($star, function (__element, __index) {
+								if (__index > _currentIndex) {
+									__element.classList.remove('S=starscore-on');
+									__element.children[0].removeAttribute('title');
+								}
+								else {
+									__element.classList.add('S=starscore-on');
+									__element.children[0].setAttribute('title', '선택됨');
+								}
+							});
+
+							mm.find('input[type=hidden]', $starscore)[0].value = _currentIndex + 1;
+
+						});
+						//> 별점 선택
+
+						// 리뷰 상품 선택시 포인트 안내 노출
+						var $prodSelect = mm.find('.mm_product-select')[0];
+						var $selectComplete = mm.find('.mm_product-select-complete', $prodSelect)[0];
+						mm.event.on(mm.find('.mm_product-item', $prodSelect), 'click', function (__e) {
+
+							var $reviewPoint = mm.find('.m\\.\\.\\.product-point')[0];
+							var _classOn = 'S=point-on';
+
+							if ($reviewPoint.classList.contains(_classOn)) return;
+
+							$reviewPoint.classList.add(_classOn);
+
+							mm.delegate.on($selectComplete, '.btn_remove', 'click', function (__e) {
+
+								$reviewPoint.classList.remove(_classOn);
+
+							});
+
+						});
+
+					})();
+				</script>
+			</div>
+			<!--// 내용 -->
+		</div>
+		<!--// 화면 -->
+	</div>
+</body>
+</html>

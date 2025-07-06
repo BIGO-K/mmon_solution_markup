@@ -1,0 +1,106 @@
+{
+    "paginator": {
+        "per_page": 100,
+        "current_page": 1,
+        "data": [
+            {
+                "id": 58745,
+                "name": "스터드 에스파 HOT 백팩1스터드 에스파 HOT 백팩스터드 에스파 HOT 백팩스터드 에스파",
+                "price": 165900,
+                "headline": null,
+                "base_discounted_price": 18200,
+                "sale_rate": 89,
+                "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?ut=1671462005",
+                "mouse_over_image_url": null,
+                "stock": 0,
+                "is_only_adult": true,
+                "is_soldout": true,
+                "brand_id": 18,
+                "brand_name": "Azure",
+                "icon": {
+                    "label": "CUSTOM",
+                    "background_color_code": "#4DD0E2",
+                    "font_color_code": "#FFFFFF"
+                },
+                "badges": [
+					"무료배송",
+                    "쿠폰할인"
+                ],
+                "wish_count": 8,
+                "review_count": 14,
+                "review_score_average": 4
+            },
+			{
+                "id": 4235,
+                "name": "남녀공용 블랙 숏 라이너 리버시블 점퍼 블랙 숏 라이너 리버시블 점퍼",
+                "price": 99000,
+                "headline": "[단독]",
+                "base_discounted_price": 118800,
+                "sale_rate": 20,
+                "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?ut=1671462005",
+                "mouse_over_image_url": null,
+                "stock": 3,
+                "is_only_adult": false,
+                "is_soldout": false,
+                "brand_id": 18,
+                "brand_name": "MMONSTAR",
+                "icon": null,
+                "badges": [
+					"무료배송",
+                    "쿠폰할인"
+                ],
+                "wish_count": 8,
+                "review_count": 14,
+                "review_score_average": 4
+            },
+			{
+                "id": 4255,
+                "name": "남녀공용 블랙 숏 라이너 리버시블 점퍼 블랙 숏 라이너 리버시블 점퍼",
+                "price": 99000,
+                "headline": "[단독]",
+                "base_discounted_price": 118800,
+                "sale_rate": 20,
+                "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?ut=1671462005",
+                "mouse_over_image_url": null,
+                "stock": 10,
+                "is_only_adult": false,
+                "is_soldout": false,
+                "brand_id": 50,
+                "brand_name": "MMON",
+                "icon": {
+                    "label": "NEW",
+                    "background_color_code": "#2986e2",
+                    "font_color_code": "#fff"
+                },
+                "badges": [
+                    "쿠폰할인"
+                ],
+                "wish_count": 8,
+                "review_count": 14,
+                "review_score_average": 4
+            },
+			{
+                "id": 3255,
+                "name": "남녀공용 블랙 숏 라이너 리버시블 점퍼 블랙 숏 라이너 리버시블 점퍼",
+                "price": 99000,
+                "headline": null,
+                "base_discounted_price": 118800,
+                "sale_rate": 20,
+                "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?ut=1671462005",
+                "mouse_over_image_url": null,
+                "stock": 10,
+                "is_only_adult": true,
+                "is_soldout": false,
+                "brand_id": 50,
+                "brand_name": "MMON",
+                "icon": null,
+                "badges": [
+                    "쿠폰할인"
+                ],
+                "wish_count": 10,
+                "review_count": 20,
+                "review_score_average": 9
+            }
+        ]
+    }
+}

@@ -1,0 +1,300 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 컴포넌트
+ * 그리드
+ */
+
+:root,
+body {
+	min-width: var.$min_width_base;// var.$minWidth_extend;// pc 좌/우 날개배너 포함
+}
+
+body {
+	background-color: #fff;
+}
+
+/** 스킵 네비게이션 */
+.mm_skip {
+	position: absolute;
+	z-index: const.$zindex_skip;
+	top: 0;
+	left: 0;
+	@include mixin.font('0/1');
+
+	a:focus {
+		padding: 10px;
+		background-color: var.$color_main;
+		@include mixin.font(#fff v_700 '1.2rem');
+	}
+}
+
+/** 전체 영역 */
+.mm_app {
+	// 스테이지
+	> .image_stage {
+		display: block;
+		height: 100%;
+		@include mixin.background(transparent '50% 50%/35%' no-repeat);
+	}
+}
+
+/** 페이지 */
+.mm_page {
+	> .mm_scroller {
+		padding-top: var.$header_height_base;
+		padding-bottom: var.$toolbar_height_base;// 툴바없는 페이지 에러로(css변수이슈) padding-bottom 따로 뺌
+
+		#{escape('.S=noscroll')} & {
+			overflow: hidden;
+		}
+	}
+
+	&-inner {
+		display: grid;
+		grid-template-rows: 1fr auto;
+		grid-template-columns: 100%;
+		min-height: 100%;
+		background-color: #fff;
+	}
+
+	// 페이지 본문
+	&-content {
+		position: relative;
+
+		// 첫번 째 블록에 타이틀이 있을 경우
+		> .mm_mui:first-child {
+			[data-mui] {
+				> .mui_title {
+					margin-top: 21px;
+				}
+			}
+		}
+	}
+
+	.btn_side-kakao {
+		position: fixed;
+		z-index: const.$zindex_floating;
+		right: 14px;
+
+		// bottom: 10px + var.$toolbar_height_base;// 여백 + topmost 버튼 높이 + 툴바높이
+		bottom: calc(24px + 46px + var.$toolbar_height_base);// 여백 + topmost 버튼 높이 + 툴바높이
+		width: 46px;
+		height: 46px;
+		opacity: 0;
+		transition: opacity const.$time_fast, bottom const.$time_fast;
+		pointer-events: none;
+		@include mixin.background(url('/public/images/common/side_kakaoplus.svg') '0 0/contain' no-repeat);
+
+		#{escape('.L=popup')} & {
+			display: none;
+
+			// bottom: 10px;
+		}
+
+		// 메인제외 아이프레임
+		#{escape('.L=frame')}:not(#{escape('.L=main')}) & {
+			bottom: 18px;// 여백 + topmost 버튼 높이
+		}
+
+		#{escape('.L=lowbtn')} & {
+			// display: none;
+			bottom: 18px + var.$lowbtn_height_base;
+			opacity: 1;
+			pointer-events: none;
+		}
+
+		// 하단고정버튼 제외 메인
+		// #{escape('.L=main')}:not(#{escape('.L=lowbtn')}) & {
+		// 	bottom: 18px;
+		// }
+	}
+
+	.btn_topmost {
+		position: fixed;
+		z-index: const.$zindex_floating;
+		right: 14px;
+		bottom: calc(18px + var.$toolbar_height_base);
+		padding-top: 9px;
+		width: 46px;
+		height: 46px;
+		border-radius: 100%;
+		background-color: rgba(#101010, 0.7);
+		@include mixin.font(#fff '1.5rem' center);
+
+		opacity: 0;
+		transition: opacity const.$time_fast;
+		pointer-events: none;
+
+		b {
+			display: block;
+			margin-top: -4px;
+		}
+
+		#{escape('.L=popup')} & {
+			bottom: 10px;
+		}
+
+		// 메인제외 아이프레임
+		#{escape('.L=frame')}:not(#{escape('.L=main')}) & {
+			bottom: 18px;
+		}
+
+		#{escape('.L=lowbtn')} & {
+			bottom: 18px + var.$lowbtn_height_base;
+		}
+
+		// 하단고정버튼 제외 메인
+		// #{escape('.L=main')}:not(#{escape('.L=lowbtn')}) & {
+		// 	bottom: 18px;
+		// }
+
+		&#{escape('.S=btn-on')} {
+			opacity: 1;
+			pointer-events: none;
+
+			+ .btn_side-kakao {
+				// bottom: 25px + 46px + var.$toolbar_height_base;// 여백 + topmost 버튼 높이 + 툴바높이
+
+				opacity: 1;
+				pointer-events: none;
+
+				#{escape('.L=popup')} & {
+					bottom: 18px + 46px;
+				}
+
+				#{escape('.L=frame')}:not(#{escape('.L=main')}) & {
+					bottom: 25px + 46px;// 여백 + topmost 버튼 높이
+				}
+
+				#{escape('.L=lowbtn')} & {
+					bottom: var.$lowbtn_height_base + 71px;
+				}
+
+				// 하단고정버튼 제외 메인
+				// #{escape('.L=main')}:not(#{escape('.L=lowbtn')}) & {
+				// 	bottom: 25px + 46px;
+				// }
+			}
+		}
+	}
+}
+
+/** 메인 페이지 */
+#{escape('.L=main')} {
+	.mm_page {
+		> .mm_scroller {
+			padding-top: var.$header_height_main;
+
+			// padding-top: 0;// 헤더 숨김을 위해 메인 프레임 내부에서 적용
+		}
+
+		// 앱으로 보기 상단 배너 있을 때
+		@include mixin.context-before('.m_main-app-view ~') {
+			> .mm_scroller {
+				padding-top: calc(var.$header_height_main + 50px);
+			}
+		}
+	}
+
+	// 메인 프레임
+	&#{escape('.L=frame')} {
+		.mm_page {
+			> .mm_scroller {
+				padding-top: calc(var.$header_height_main + var.$gnb_height_base);
+
+				// 상단 GNB만큼 올리기
+				#{escape('.T=main-lift')} {
+					margin-top: -(var.$gnb_height_base);
+				}
+			}
+		}
+	}
+
+	// 툴바 hide
+	&#{escape('.S=toolbar-hide')} {
+		.mm_page {
+			>.mm_scroller {
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+/** 하단버튼고정 페이지 */
+#{escape('.L=lowbtn')},
+#{escape('.L=popup')}#{escape('.L=lowbtn')} {
+	.mm_page {
+		> .mm_scroller {
+			padding-bottom: var.$lowbtn_height_base;
+		}
+	}
+
+	.btn_topmost {
+		bottom: 15px + var.$lowbtn_height_base;
+	}
+}
+
+/** 아이프레임 페이지(modal, popup 제외) */
+#{escape('.L=frame')} {
+	&:not(#{escape('.L=main')}) {
+		overflow-y: visible;
+
+		body {
+			overflow: visible;
+		}
+	}
+
+	.mm_page {
+		> .mm_scroller {
+			padding: 0;
+		}
+	}
+}
+
+// 메인 하단 버튼 고정
+#{escape('.L=main')}#{escape('.L=lowbtn')} {
+	.mm_page {
+		> .mm_scroller {
+			padding: var.$header_height_main 0 calc(var.$toolbar_height_base + var.$lowbtn_height_base);
+		}
+	}
+
+	.mm_btn_box#{escape('.T=fixed')} {
+		bottom: var.$toolbar_height_base;
+	}
+
+	.btn_topmost {
+		bottom: 15px + var.$lowbtn_height_base + var.$lowbtn_height_base;
+	}
+}
+
+/** 외부링크 페이지 */
+#{escape('.L=external')} {
+	overflow: visible;
+
+	body {
+		overflow: visible;
+		position: absolute !important;
+		top: var.$header_height_base;
+		bottom: 0;
+		height: auto;
+		min-height: 0;
+		transform: translate(0, 0);
+	}
+
+	.mm_app {
+		height: auto;
+	}
+
+	.mm_header {
+		z-index: 9999999999;
+		top: -#{var.$header_height_base};
+	}
+}

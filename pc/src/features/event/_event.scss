@@ -1,0 +1,112 @@
+@charset 'utf-8';
+
+@use '../../assets/scss/common/helper/function';
+@use '../../assets/scss/common/helper/mixin';
+@use '../../assets/scss/style/setting/var';
+
+/**
+ * 게시판 > 갤러리형 (유료)
+ * 이벤트
+ */
+
+/** 이벤트 */
+.m_event {
+	.mm_tab_menu {
+		margin-top: -8px;
+	}
+
+	&-list {
+		display: grid;
+		grid-template-columns: repeat(3, 440px);
+		grid-gap: 48px 20px;
+		margin-top: 44px;
+
+		li {
+			a {
+				display: block;
+			}
+		}
+
+		figure {
+			.image_banner {
+				position: relative;
+				padding-top: 100%;
+				width: 100%;
+			}
+
+			figcaption {
+				margin-top: 16px;
+				padding: 0 2px;
+				@include mixin.font('1.4rem/2.2rem');
+
+				.text_main {
+					@include mixin.text-ellipsis(1);
+					@include mixin.font('1.7rem/2rem');
+				}
+
+				.text_sub {
+					@include mixin.text-ellipsis(2);
+
+					margin-top: 7px;
+					height: 44px;
+					color: #6a6a6a;
+				}
+
+				.text_period {
+					margin-top: 7px;
+				}
+			}
+		}
+
+		&#{function.escape('.T=skeleton')} {
+			p {
+				background-color: var.$skeleton_color_base;
+				font-size: 0;
+			}
+
+			.image_banner {
+				padding-top: 100%;
+				width: 100%;
+				background-color: var.$skeleton_color_base;
+			}
+
+			.text_main {
+				margin-top: 16px;
+				width: 60%;
+				height: 20px;
+			}
+
+			.text_sub {
+				position: relative;
+				margin-top: 7px;
+				height: 44px;
+				background-color: transparent;
+
+				&::before,
+				&::after {
+					position: absolute;
+					top: 0;
+					right: 0;
+					left: 0;
+					height: 18px;
+					background-color: var.$skeleton_color_base;
+					content: '';
+				}
+
+				&::after {
+					top: 24px;
+				}
+			}
+
+			.text_period {
+				margin-top: 7px;
+				width: 40%;
+				height: 18px;
+			}
+		}
+
+		+ .mm_pagination {
+			margin-top: 10px;
+		}
+	}
+}

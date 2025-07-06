@@ -1,0 +1,122 @@
+{
+    "top_pc_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/27/1.jpg?ut=1656428404",
+    "top_mobile_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/27/1.jpg?ut=1656428404",
+    "main_text": "이스트쿤스트",
+    "sub_text": "이스트쿤스트는 독일어로 '예술'을 뜻하며 'Wir sind alle Kunstler'(우리는 모두 예술가)라는 슬로건으로 시작해 고유의 아이덴티티를 유지하며, 캐주얼한 디자인으로 폭넓은 제품들을 선보이는 브랜드입니다.",
+    "brand_name": "ISTKUNST",
+    "curations": [
+        {
+            "brand_name": "엠몬브랜드",
+            "brand_id": 1,
+            "id": 1,
+            "name": "남녀공용 블랙 숏 라이너 리버시블 점 퍼 블랙 숏 라이너 리버시블 점퍼",
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/28/1.jpg?ut=1656428404",
+            "sale_rate": 10,
+            "base_discounted_price": 5000,
+            "price": 5500,
+            "stock": 15,
+            "is_only_adult": false,
+            "is_soldout": false,
+            "badges": [
+                "무료배송"
+            ],
+            "wish_count": 1200,
+            "review_count": 1000,
+            "review_score_average": 4.5
+        },
+		{
+            "brand_name": "엠몬브랜드",
+            "brand_id": 1,
+            "id": 2,
+            "name": "1111남녀공용 블랙 숏 라이너 리버시블 점 퍼 블랙 숏 라이너 리버시블 점퍼",
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/26/2.jpg?ut=1656428404",
+            "sale_rate": 10,
+            "base_discounted_price": 5000,
+            "price": 5500,
+            "stock": 15,
+            "is_only_adult": false,
+            "is_soldout": false,
+            "badges": [
+                "무료배송",
+				"쿠폰할인"
+            ],
+            "wish_count": 0,
+            "review_count": 1000,
+            "review_score_average": 4.5
+        },
+		{
+            "brand_name": "엠몬브랜드",
+            "brand_id": 1,
+            "id": 3,
+            "name": "남녀공용 블랙 숏 라이너 리버시블 점 퍼 블랙 숏 라이너 리버시블 점퍼",
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/27/1.jpg?ut=1656428404",
+            "sale_rate": 10,
+            "base_discounted_price": 9900,
+            "price": 5500,
+            "stock": 15,
+            "is_only_adult": false,
+            "is_soldout": false,
+            "badges": [
+                "무료배송"
+            ],
+            "wish_count": 1200,
+            "review_count": 1000,
+            "review_score_average": 4.5
+        },
+		{
+            "brand_name": "엠몬브랜드",
+            "brand_id": 1,
+            "id": 4,
+            "name": "남녀공용 블랙 숏 라이너 리버시블 점 퍼 블랙 숏 라이너 리버시블 점퍼",
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/27/2.jpg?ut=1656428404",
+            "sale_rate": 10,
+            "base_discounted_price": 5000,
+            "price": 5500,
+            "stock": 15,
+            "is_only_adult": false,
+            "is_soldout": false,
+            "badges": "",
+            "wish_count": 120,
+            "review_count": 10,
+            "review_score_average": 1
+        },
+		{
+            "brand_name": "엠몬브랜드",
+            "brand_id": 1,
+            "id": 4,
+            "name": "남녀공용 블랙 숏 라이너 리버시블 점 퍼 블랙 숏 라이너 리버시블 점퍼",
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/27/3.jpg?ut=1656428404",
+            "sale_rate": 10,
+            "base_discounted_price": 5000,
+            "price": 5500,
+            "stock": 15,
+            "is_only_adult": false,
+            "is_soldout": true,
+            "badges": [
+                "무료배송"
+            ],
+            "wish_count": 1200,
+            "review_count": 1000,
+            "review_score_average": 4.5
+        }
+    ],
+    "brand_contents": [
+        {
+            "id": 0,
+            "title": "엠몬스타 SHOWCASE",
+            "image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/27/3.jpg",
+            "image_alt": "엠몬스타 SHOWCASE",
+            "main_text_1": "세심한 미니멀룩으로",
+            "main_text_2": "오롯한 나의 취향을 담다"
+        },
+		{
+            "id": 1,
+            "title": "WEEKLY SPOTLIGHT",
+            "image_url": null,
+            "image_alt": "WEEKLY SPOTLIGHT",
+            "main_text_1": "익숙한 곳을 떠나 지친 마음을 되돌며",
+            "main_text_2": "다시, 또 새로운 시작을 함께 할 휴식"
+        }
+    ],
+    "is_use_recommended_goods": false
+}

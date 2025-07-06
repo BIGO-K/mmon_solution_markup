@@ -1,0 +1,63 @@
+@charset 'utf-8';
+
+@use '../../common/helper/function';
+
+/**
+ * 개인화 추천 리뷰
+ * 마이페이지, 상품상세(리뷰)
+ */
+
+/** 공통 */
+
+/** 마이페이지 - 리뷰관리 */
+.m_my-review {
+	&-item {
+		// 리뷰 펼침
+		&#{function.escape('.S=switch-on')} {
+			.mm_satisfy {
+				display: block;
+				margin-left: 1px;
+
+				+ #{function.escape('.m...item-image')} {
+					margin-top: 18px;
+				}
+			}
+		}
+
+		.mm_satisfy {
+			display: none;
+		}
+	}
+}
+
+// *---------- 모달 ----------*
+
+/** 포토리뷰, 베스트리뷰 상세 */
+.m_modal-prodetail-review {
+	#{function.escape('.m...review-item')} {
+		.text_info {
+			span {
+				float: right;
+			}
+		}
+
+		.mm_satisfy {
+			margin: 18px 0 -1px 6px;
+
+			dl {
+				display: block;
+
+				&:nth-of-type(n+2) {
+					margin: 4px 0 0;
+				}
+			}
+
+			+ .text_date {
+				position: absolute;
+				right: 0;
+				bottom: 4px;
+				margin-top: 0;
+			}
+		}
+	}
+}

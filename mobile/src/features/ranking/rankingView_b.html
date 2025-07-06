@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko" class="L=main">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- 소셜태그 -->
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<!--// 소셜태그 -->
+
+	<title>View 랭킹 &#60; 랭킹 - M.Mon solution</title>
+
+	<!-- 공통 css -->
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 공통 css 변수 -->
+	<style>
+		:root {
+			/* 클라이언트 컬러 */
+			--color_main: #1f1f1f;
+			--color_sub: #f84f34;
+
+			/* 블랙 버전 */
+			--color_variable: var(--color_sub);
+			--color_support: #4457a7;
+
+			/* 유색 버전 */
+			/* --color_variable: var(--color_main);
+			--color_support: #ff8800; */
+
+			/* 등급 컬러 */
+			--color_level5: #9b3da1;
+			--color_level4: #e19c03;
+			--color_level3: #7cbacb;
+			--color_level2: #e68362;
+			--color_level1: #4e8e71;
+
+			/* 상품 비율 */
+			--prod_ratio_base: 1;
+		}
+	</style>
+
+	<!-- (D) 폴리필/라이브러리는 요청을 줄이기 위해 combind + minify를 적용해주세요. -->
+	<!-- 폴리필/라이브러리 스크립트 -->
+	<script src="../js/lib/lodash-4.17.21.min.js"></script>
+	<script src="../js/lib/gsap-3.6.1/gsap.min.js"></script>
+	<script src="../js/lib/axios-0.21.1.min.js"></script>
+	<script src="../js/lib/load-image.all-5.14.0.min.js"></script>
+	<script src="../js/lib/sortable-1.13.0.min.js"></script>
+
+	<!-- 공통 스크립트 -->
+	<script src="../js/app_common.js"></script>
+	<script src="../js/app_page-common.js"></script>
+
+	<!-- (D) 페이지 전용 스크립트는 .mm_page-content 하단에 넣어주세요. -->
+</head>
+<body>
+	<div id="mm_app" class="mm_app">
+		<!-- 스킵 -->
+		<nav class="mm_skip">
+			<ul>
+				<li><a href="#mm_body" data-href="{ '_type': 'anchor' }">본문바로가기</a></li>
+			</ul>
+		</nav>
+		<!-- 스킵 -->
+
+		<!-- 화면 -->
+		<div class="mm_view L=main">
+			<!-- 앱으로 보기 상단 배너 -->
+			<div class="m_main-app-view">
+				<a href="#" target="blank"><b>앱으로 더 편리하게 쇼핑해보세요</b><i>앱으로 보기</i></a>
+			</div>
+			<!--// 앱으로 보기 상단 배너 -->
+
+			<!-- 헤더 -->
+			<!-- (D) 텍스트 흰색을 선택한다면 mm_header에 T=text-white 클래스를 추가합니다. -->
+			<header class="mm_header T=ha">
+				<style>
+					:root {
+						--header_height_main: 56px;
+						--color_header: #fff; /* 배경 흰색 버전 */
+						/* --color_header: var(--color_main); /* 배경 컬러 버전 */
+					}
+				</style>
+				<h1><a href="#"><i class="image_logo"></i><b class="mm_ir-blind">M.Mon solution</b></a></h1>
+				<div class="mm_rside">
+					<a href="_popup_search.html"><b class="mm_ir-blind">검색하기</b><i class="ico_search"></i></a>
+					<a href="cart.html"><i class="ico_cart"></i><strong class="text_badge">2</strong><b class="mm_ir-blind">장바구니</b></a>
+				</div>
+			</header>
+			<!--// 헤더 -->
+
+			<!-- 내용 -->
+			<div id="mm_body" class="mm_page">
+				<!-- (D) 실제 내용을 추가하는 부분입니다. -->
+
+				<div class="mm_scroller">
+					<div class="mm_page-inner">
+						<!-- 본문 -->
+						<div class="mm_page-content">
+							<!-- GNB -->
+							<div class="mm_gnb">
+								<!-- (D) 메뉴가 모바일 가로 사이즈보다 적으면 mm_gnb에 'S=flex' 클래스가 추가됩니다. -->
+								<div class="mm_gnb-inner">
+									<div class="mm_scroller T=x">
+										<!-- (D) 현재페이지의 a 요소에 "S=gnb-on" 클래스와 "선택됨" 타이틀을 추가합니다. -->
+										<ul>
+											<li><a href="main.html" class="S=gnb-on" title="선택됨"><b>홈</b></a></li>
+											<li><a href="#"><b>베스트</b></a></li>
+											<li><a href="#"><b>신상품</b></a></li>
+											<li><a href="#"><b>추가메뉴1</b></a></li>
+											<li><a href="#"><b>추가메뉴2</b></a></li>
+											<li><a href="#"><b>추가메뉴3</b></a></li>
+											<li><a href="#"><b>추가메뉴4</b></a></li>
+											<li><a href="#"><b>추가메뉴5</b></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--// GNB -->
+							<div class="m_ranking T=rb">
+								<h2><b>Ranking</b></h2>
+								<!-- 랭킹gnb -->
+								<div class="m_ranking-gnb">
+									<div class="m_ranking-gnb-inner">
+										<!-- (D) 선택된 메뉴에 'S=gnb-on' 클래스와 '선택됨' 타이틀을 추가합니다. -->
+										<ul>
+											<li><a href="mainRanking_b.html"><i class="ico_ranking-home"></i><b class="mm_ir-blind">메인</b></a></li>
+											<li><a href="rankingItem_b.html" ><b>아이템</b></a></li>
+											<li><a href="rankingBrand_b.html"><b>브랜드</b></a></li>
+											<li><a class="S=gnb-on" href="rankingView_b.html" title="선택됨"><b>View</b></a></li>
+											<li><a href="rankingLike_b.html"><b>찜</b></a></li>
+										</ul>
+									</div>
+								</div>
+								<!--// 랭킹gnb -->
+
+								<!-- 랭킹 카테고리 -->
+								<div class="m_ranking-category">
+									<div class="m_ranking-category-inner">
+										<div class="mm_scroller T=x">
+											<ul>
+												<li><button type="button" class="S=category-on"><b>ALL</b></button></li>
+												<li><button type="button"><b>여성</b></button></li>
+												<li><button type="button"><b>남성</b></button></li>
+												<li><button type="button"><b>뷰티&케어</b></button></li>
+												<li><button type="button"><b>키즈</b></button></li>
+												<li><button type="button"><b>테크</b></button></li>
+												<li><button type="button"><b>리빙</b></button></li>
+												<li><button type="button"><b>캠핑</b></button></li>
+												<li><button type="button"><b>캐리어</b></button></li>
+												<li><button type="button"><b>아울렛</b></button></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--// 랭킹 카테고리 -->
+
+								<!-- view 랭킹 -->
+								<div class="mm_inner m_ranking-view">
+									<div class="m_ranking-head">
+										<!-- (D) btn_help 클릭시 .m_ranking-head-update에 'S=switch-on' 클래스가 추가되고 .m...update-tooltip 요소가 노출됩니다. -->
+										<div class="m_ranking-head-update">
+											<p class="text_update"><span>2023.00.00</span>기준</p>
+											<button type="button" class="btn_help" data-switch="{ '_isParent': true }" title="선택됨"><i class="ico_tooltip"></i></button>
+											<div class="m...update-tooltip">
+												<p>전일 기준으로 랭킹 산정(매일 0시 기준, 일 1회 집계)</p>
+												<p>산정기간: 2021.12.26. 00:00~23:59</p>
+												<button type="button" class="btn_close" onclick="this.parentElement.previousElementSibling.click();"><i class="ico_close"></i><b class="mm_ir-blind">닫기</b></button>
+											</div>
+										</div>
+										<!-- (D) 현재 페이지에 맞는 정렬 button에 'S=on' 클래스와 '선택됨' 타이틀을 추가합니다. -->
+										<div class="m_ranking-head-sort">
+											<div class="mm_form-select">
+												<label>
+													<select data-select>
+														<option>일간</option>
+														<option>주간</option>
+														<option>월간</option>
+													</select>
+													<b class="text_selected">일간</b>
+													<i class="ico_form-select T=sm"></i>
+												</label>
+											</div>
+										</div>
+									</div>
+									<!-- 상품리스트 -->
+									<div class="mm_product-list T=card">
+										<!--
+											(D) 찜한 아이템의 .btn_like 버튼에 'S=switch-on' 클래스와 '선택됨' 타이틀이 추가됩니다.
+											data-switch 속성에 onChange(1번째 파라미터로 true/false 전달) 값으로 콜백을 설정할 수 있습니다.
+										-->
+										<ol>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-up"><i class="ico_rank-up" title="상승"></i>2</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }"></i>
+															<figcaption>
+																<p class="text_product">남녀공용 블랙 숏 라이너 리버시블 점퍼</p>
+															</figcaption>
+														</figure>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-down"><i class="ico_rank-down" title="하락"></i>1</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }"></i>
+															<figcaption>
+																<p class="text_product">프로텍팅 네츄럴 사인 톤업 선쿠션 SET</p>
+															</figcaption>
+														</figure>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><i class="ico_rank-new" title="신규"></i></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_3.png' }"></i>
+															<figcaption>
+																<p class="text_product">찰리브라운 폭신폭신 슬리퍼 blue</p>
+															</figcaption>
+														</figure>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><i class="ico_rank-unchanged" title="변동없음"></i></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_4.png' }"></i>
+															<figcaption>
+																<p class="text_product">프로텍팅 네츄럴 사인 톤업 선쿠션 SET</p>
+															</figcaption>
+														</figure>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><i class="ico_rank-unchanged" title="변동없음"></i></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../error' }"></i>
+															<figcaption>
+																<p class="text_product">JE Asymmetry Wrap Skirt_GR</p>
+															</figcaption>
+														</figure>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-up"><i class="ico_rank-up" title="상승"></i>2</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }"></i>
+															<figcaption>
+																<p class="text_product">프로텍팅 네츄럴 사인 톤업 선쿠션 SET</p>
+															</figcaption>
+														</figure>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-up"><i class="ico_rank-up" title="상승"></i>2</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }"></i>
+															<figcaption>
+																<p class="text_product">남녀공용 블랙 숏 라이너 리버시블 점퍼</p>
+															</figcaption>
+														</figure>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-up"><i class="ico_rank-up" title="상승"></i>2</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }"></i>
+															<p class="text_product-status">품절임박</p>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">남녀공용 블랙 숏 라이너 리버시블 점퍼</p>
+																<p class="text_sale">25%</p>
+																<p class="text_price"><strong>99,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-down"><i class="ico_rank-down" title="하락"></i>1</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }"></i>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">프로텍팅 네츄럴 사인 톤업 선쿠션 SET</p>
+																<p class="text_sale">45%</p>
+																<p class="text_price"><strong>276,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><i class="ico_rank-new" title="신규"></i></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_3.png' }"></i>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">찰리브라운 폭신폭신 슬리퍼 blue</p>
+																<p class="text_sale">25%</p>
+																<p class="text_price"><strong>38,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><i class="ico_rank-unchanged" title="변동없음"></i></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../error' }"></i>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">JE Asymmetry Wrap Skirt_GR</p>
+																<p class="text_sale">7%</p>
+																<p class="text_price"><strong>9,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-up"><i class="ico_rank-up" title="상승"></i>2</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }"></i>
+															<p class="text_adult"><b class="mm_ir-blind">미성년자 구매불가</b><i class="ico_adult"></i></p>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">프로텍팅 네츄럴 사인 톤업 선쿠션 SET</p>
+																<p class="text_sale">45%</p>
+																<p class="text_price"><strong>276,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-up"><i class="ico_rank-up" title="상승"></i>2</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_1.png' }"></i>
+															<p class="text_product-status">품절임박</p>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">남녀공용 블랙 숏 라이너 리버시블 점퍼</p>
+																<p class="text_sale">25%</p>
+																<p class="text_price"><strong>99,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-down"><i class="ico_rank-down" title="하락"></i>1</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }"></i>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">프로텍팅 네츄럴 사인 톤업 선쿠션 SET</p>
+																<p class="text_sale">45%</p>
+																<p class="text_price"><strong>276,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><i class="ico_rank-new" title="신규"></i></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_3.png' }"></i>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">찰리브라운 폭신폭신 슬리퍼 blue</p>
+																<p class="text_sale">25%</p>
+																<p class="text_price"><strong>38,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><i class="ico_rank-unchanged" title="변동없음"></i></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../error' }"></i>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">JE Asymmetry Wrap Skirt_GR</p>
+																<p class="text_sale">7%</p>
+																<p class="text_price"><strong>9,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+											<li>
+												<div class="mm_product-item T=pa">
+													<a href="prodDetail_info.html">
+														<p class="text_rank"><span class="text_rank-up"><i class="ico_rank-up" title="상승"></i>2</span></p>
+														<figure>
+															<i class="mm_bg-cover image_product" data-lazyload="{ '_src': '../image/_sample/prod_x3_2.png' }"></i>
+															<p class="text_adult"><b class="mm_ir-blind">미성년자 구매불가</b><i class="ico_adult"></i></p>
+															<figcaption>
+																<p class="text_brand">엠몬스타</p>
+																<p class="text_product">프로텍팅 네츄럴 사인 톤업 선쿠션 SET</p>
+																<p class="text_sale">45%</p>
+																<p class="text_price"><strong>276,000</strong></p>
+															</figcaption>
+														</figure>
+													</a>
+													<button type="button" class="btn_like" data-switch><i class="ico_like"></i><b class="mm_ir-blind">찜한 아이템에 추가하기</b></button>
+												</div>
+											</li>
+										</ol>
+									</div>
+									<!--// 상품리스트 -->
+								</div>
+								<!--// view 랭킹 -->
+							</div>
+						</div>
+						<!--// 본문 -->
+
+						<!-- 푸터 -->
+						<footer id="mm_footer" class="mm_footer T=fa">
+							<!-- 푸터-메뉴 -->
+							<div class="mm_footer-menu">
+								<ul class="mm_flex T=equal">
+									<li><a href="company.html"><b>회사소개</b></a></li>
+									<li><a href="csMain.html"><b>고객센터</b></a></li>
+									<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+									<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+								</ul>
+							</div>
+							<!--// 푸터-메뉴 -->
+
+							<!-- 푸터-정보 -->
+							<div class="mm_footer-info">
+								<div class="mm_dropdown" data-dropdown>
+									<b>(주)엠몬스타</b>
+									<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+									<div class="mm_dropdown-item">
+										<div class="mm_dropdown-item-inner">
+											<address>
+												<p>대표: 장한필</p>
+												<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+												<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+												<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+												<p>개인정보관리자: 이희승</p>
+												<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+												<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+												<p>팩스번호: 031-8023-9667</p>
+												<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+											</address>
+										</div>
+									</div>
+								</div>
+								<ul class="mm_footer-info-terms">
+									<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+									<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+									<li><a href="#"><b>이용안내</b></a></li>
+									<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+								</ul>
+								<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+							</div>
+							<!--// 푸터-정보 -->
+						</footer>
+						<!--// 푸터 -->
+					</div>
+				</div>
+
+				<a class="btn_topmost" href="#mm_app" data-href="{ '_type': 'anchor' }" title="페이지 처음으로"><i class="ico_topmost"></i><b>TOP</b></a>
+
+				<!-- 현재 페이지 스크립트 -->
+				<!-- <script src="../js/.js"></script> -->
+				<script>
+					// 랭킹 GNB, 카테고리 Sticky
+					(function (__$ranking) {
+
+						if (!__$ranking) return;
+
+						var $header = mm.find('.mm_header')[0];
+						var $gnb = mm.find('.mm_gnb')[0];
+
+						var $rankGnb = mm.find('.m_ranking-gnb', __$ranking)[0];
+						var $rankCate = mm.find('.m_ranking-category', __$ranking)[0];
+
+						var _classStickyGnb = 'S=gnb-sticky';
+						var _classStickyCate = 'S=category-sticky';
+						var _classStickySub = 'S=sticky-cate';
+
+						mm.event.on(mm.scroll.el, 'load scroll', function (__e) {
+
+							if ($rankGnb) {
+								var _offsetTop = mm.element.position($header).top + $header.offsetHeight + $gnb.offsetHeight;
+								var _position = $rankGnb.getBoundingClientRect().top + $rankGnb.offsetHeight;
+
+								if (_position < _offsetTop) $rankGnb.classList.add(_classStickyGnb);
+								else $rankGnb.classList.remove(_classStickyGnb);
+							}
+
+							if ($rankCate) {
+								var $rankGnbInner = mm.find('.m_ranking-gnb-inner', __$ranking)[0];
+
+								var _offsetTop = mm.element.position($header).top + $header.offsetHeight + $gnb.offsetHeight + $rankGnbInner.offsetHeight;
+								var _position = $rankCate.getBoundingClientRect().top + $rankCate.offsetHeight;
+
+								if (_position < _offsetTop) {
+									$rankCate.classList.add(_classStickyCate);
+									$rankGnb.classList.add(_classStickySub);
+								}
+								else {
+									$rankCate.classList.remove(_classStickyCate);
+									$rankGnb.classList.remove(_classStickySub);
+								}
+							}
+
+						});
+
+					})(mm.find('.m_ranking')[0]);
+				</script>
+			</div>
+			<!--// 내용 -->
+
+			<!-- 툴바 -->
+			<div class="mm_toolbar T=ta">
+				<style>
+					:root {
+						--toolbar_height_base: 51px;
+					}
+				</style>
+				<ul class="mm_flex T=equal">
+					<li>
+						<a href="main.html">
+							<i class="ico_home"></i>
+							<b>홈</b>
+						</a>
+					</li>
+					<li>
+						<a href="sidebar_level5.html" onclick="mm.side.open(this.href);return false;">
+							<i class="ico_menu"></i>
+							<b>카테고리</b>
+						</a>
+					</li>
+					<li>
+						<a href="_popup_search.html">
+							<i class="ico_search"></i>
+							<b class="mm_ir-blind">검색</b>
+						</a>
+					</li>
+					<li>
+						<a href="myMain_level5.html">
+							<i class="ico_mypage"></i>
+							<b>마이페이지</b>
+						</a>
+					</li>
+					<li>
+						<a href="_popup_recent.html">
+							<!-- (D) 최근본상품이 있을 때 노출합니다. -->
+							<!-- <i class="mm_bg-cover image_recent" data-lazyload="{ '_src': '../image/_sample/prod_x1_3.png' }"></i> -->
+							<i class="ico_recent"></i>
+							<b>최근본상품</b>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--// 툴바 -->
+		</div>
+		<!--// 화면 -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "review_template_list": [
+        {
+            "id": 1,
+            "title": "두께",
+            "subdivision_list": [
+                {
+                    "id": 7,
+                    "label": "두꺼워요",
+                    "selected_count": 100,
+                    "selected_rate": "10",
+                    "is_highest": false
+                }
+            ]
+        }
+    ]
+}

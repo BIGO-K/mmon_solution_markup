@@ -1,0 +1,49 @@
+{
+    "recent_view_goods": [
+        {
+            "id": 1,
+            "name": "버닝카포테 SS20 LOGO T-SHIRT 화이트",
+            "brand_name": "4XR",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/thenature/shop_2021/pc/image/_sample/prod_x1_1.png",
+            "base_discounted_price": 66000,
+            "sale_rate": 0,
+            "is_soldout": false
+        },
+		{
+            "id": 2,
+            "name": "다이브 플러스 V2 슬리퍼 다이브 플러스",
+            "brand_name": "M.Mon 엠몬스타",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/thenature/shop_2021/pc/image/_sample/prod_x1_1.png",
+            "base_discounted_price": 66000,
+            "sale_rate": 0,
+            "is_soldout": false
+        },
+		{
+            "id": 3,
+            "name": "위클리특가 Wood land 헌팅자켓",
+            "brand_name": "M.Mon 엠몬스타",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/thenature/shop_2021/pc/image/_sample/prod_x1_1.png",
+            "base_discounted_price": 68120,
+            "sale_rate": 0,
+            "is_soldout": true
+        },
+		{
+            "id": 4,
+            "name": "프로텍팅 네츄럴 사인 톤업 선쿠션",
+            "brand_name": "WME",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/thenature/shop_2021/pc/image/_sample/prod_x1_1.png",
+            "base_discounted_price": 33180,
+            "sale_rate": 10,
+            "is_soldout": false
+        },
+		{
+            "id": 5,
+            "name": "크링클 오버 셔츠_베이지",
+            "brand_name": "M.Mon 엠몬스타",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/thenature/shop_2021/pc/image/_sample/prod_x1_1.png",
+            "base_discounted_price": 139000,
+            "sale_rate": 0,
+            "is_soldout": false
+        }
+    ]
+}

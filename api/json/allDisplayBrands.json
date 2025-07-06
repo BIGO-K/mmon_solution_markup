@@ -1,0 +1,285 @@
+{
+    "brands": [
+		{
+			"id": 1,
+			"eng_name": "Nike",
+			"kor_name": "나이키",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 2,
+			"eng_name": "ADIDAS",
+			"kor_name": "아디다스",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 3,
+			"eng_name": "New Balance",
+			"kor_name": "뉴발란스",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 4,
+			"eng_name": "Under Armour",
+			"kor_name": "언더아머",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 5,
+			"eng_name": "earpearp",
+			"kor_name": "어프어프",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 6,
+			"eng_name": "NERDY",
+			"kor_name": "널디",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 7,
+			"eng_name": "Benefit",
+			"kor_name": "베네피트",
+			"brand_category_ids": [
+				3,
+				1
+		]
+		},
+		{
+			"id": 8,
+			"eng_name": "FIBRENO",
+			"kor_name": "피브레노",
+			"brand_category_ids": [
+				3
+			]
+		},
+		{
+			"id": 9,
+			"eng_name": "THEOPEN PRODUCT",
+			"kor_name": "더오픈프로덕트",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 10,
+			"eng_name": "rolarola",
+			"kor_name": "로라로라",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 11,
+			"eng_name": "MARITHE FRANCOIS GIRBAUD",
+			"kor_name": "마리떼 프랑소와 저버",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 12,
+			"eng_name": "NIKE1",
+			"kor_name": "나이키1",
+			"brand_category_ids": [
+				5
+			]
+		},
+		{
+			"id": 13,
+			"eng_name": "ADIDAS1",
+			"kor_name": "아디다스1",
+			"brand_category_ids": [
+				4
+			]
+		},
+		{
+			"id": 14,
+			"eng_name": "simplyworks",
+			"kor_name": "심플리웍스",
+			"brand_category_ids": [
+				6
+			]
+		},
+		{
+			"id": 15,
+			"eng_name": "AROMATICA",
+			"kor_name": "아로마티카",
+			"brand_category_ids": [
+				6
+			]
+		},
+		{
+			"id": 16,
+			"eng_name": "MELIXIR",
+			"kor_name": "멜릭서",
+			"brand_category_ids": [
+				6
+			]
+		},
+		{
+			"id": 17,
+			"eng_name": "YUNJAC",
+			"kor_name": "연작",
+			"brand_category_ids": [
+				6
+			]
+		},
+		{
+			"id": 18,
+			"eng_name": "ST.Dufont",
+			"kor_name": "에스티듀퐁",
+			"brand_category_ids": [
+				3
+			]
+		},
+		{
+			"id": 19,
+			"eng_name": "bamboobebe",
+			"kor_name": "밤부베베",
+			"brand_category_ids": [
+				7
+			]
+		},
+		{
+			"id": 20,
+			"eng_name": "acaciabongbong",
+			"kor_name": "아카시아봉봉",
+			"brand_category_ids": [
+				7
+			]
+		},
+		{
+			"id": 21,
+			"eng_name": "dailylike",
+			"kor_name": "데일리라이크",
+			"brand_category_ids": [
+				7
+			]
+		},
+		{
+			"id": 22,
+			"eng_name": "maatila",
+			"kor_name": "마틸라",
+			"brand_category_ids": [
+				7
+			]
+		},
+		{
+			"id": 23,
+			"eng_name": "SWATCH",
+			"kor_name": "스와치",
+			"brand_category_ids": [
+				3
+			]
+		},
+		{
+			"id": 24,
+			"eng_name": "lumir",
+			"kor_name": "루미르",
+			"brand_category_ids": [
+				2
+			]
+		},
+		{
+			"id": 25,
+			"eng_name": "epok",
+			"kor_name": "에포크",
+			"brand_category_ids": [
+				2
+			]
+		},
+		{
+			"id": 26,
+			"eng_name": "rareraw",
+			"kor_name": "레어로우",
+			"brand_category_ids": [
+				2
+			]
+		},
+		{
+			"id": 27,
+			"eng_name": "tambourinehouse",
+			"kor_name": "탬버린하우스",
+			"brand_category_ids": [
+				2
+			]
+		},
+		{
+			"id": 28,
+			"eng_name": "LEGO",
+			"kor_name": "레고",
+			"brand_category_ids": [
+				7
+			]
+		},
+		{
+			"id": 29,
+			"eng_name": "jestina",
+			"kor_name": "제이에스티나",
+			"brand_category_ids": [
+				3
+			]
+		},
+		{
+			"id": 30,
+			"eng_name": "sweetch",
+			"kor_name": "스윗치",
+			"brand_category_ids": [
+				3
+			]
+		},
+		{
+			"id": 31,
+			"eng_name": "zerostreet_",
+			"kor_name": "제로스트리트",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 32,
+			"eng_name": "kodak",
+			"kor_name": "코닥",
+			"brand_category_ids": [
+				4
+			]
+		},
+		{
+			"id": 33,
+			"eng_name": "jooyontech",
+			"kor_name": "주연테크",
+			"brand_category_ids": [
+				4
+			]
+		},
+		{
+			"id": 34,
+			"eng_name": "ourhope",
+			"kor_name": "아워홉",
+			"brand_category_ids": [
+				1
+			]
+		},
+		{
+			"id": 35,
+			"eng_name": "VOCAVACA",
+			"kor_name": "보카바카",
+			"brand_category_ids": [
+				1
+			]
+		}
+	]
+}

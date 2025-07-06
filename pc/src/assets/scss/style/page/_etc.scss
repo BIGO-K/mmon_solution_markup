@@ -1,0 +1,139 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 앱전용화면, 입점문의, 기타
+ */
+
+/** 제휴 및 입점문의 */
+.m_partnership {
+	padding-top: 79px;
+
+	.mm_heading {
+		padding: 0 0 5px 2px;
+		border-bottom: 0;
+
+		+ p {
+			padding: 0 0 27px 2px;
+			border-bottom: 1px solid #888;
+			@include mixin.font('1.5rem/2.4rem');
+		}
+	}
+
+	&-form {
+		padding: 51px 0 43px;
+		font-size: 0;
+		@include mixin.clearfix;
+
+		.mm_lside,
+		.mm_rside {
+			width: 660px;
+		}
+
+		h6 {
+			.ico_required {
+				margin: -3px 0 0 1px;
+				width: 4px;
+				height: 4px;
+				border-radius: 4px;
+				background-color: #f84f34;
+			}
+		}
+
+		.mm_radio-list {
+			> ul {
+				> li {
+					padding: 21px 13px;
+					border: 1px solid #cdcdcd;
+					border-radius: 3px;
+
+					&:nth-child(n+2) {
+						margin-top: 10px;
+					}
+				}
+			}
+
+			.mm_form-radio {
+				.text_label {
+					vertical-align: 0;
+				}
+
+				small {
+					margin-left: 7px;
+					vertical-align: 0;
+					@include mixin.font(#767676 '1.3rem');
+				}
+			}
+		}
+
+		.mm_syncer-partnership {
+			margin: 20px -13px -2px;
+			padding: 20px 15px 0;
+			border-top: 1px solid #eee;
+
+			> p {
+				padding-left: 2px;
+				font-size: 1.4rem;
+			}
+
+			.mm_check-list {
+				margin-top: 21px;
+
+				ul {
+					li {
+						display: inline-block;
+						margin-top: 0;
+						width: 50%;
+
+						&:nth-child(n+3) {
+							margin-top: 10px;
+						}
+
+						&:nth-child(2n) {
+							padding-left: 16px;
+						}
+					}
+				}
+			}
+		}
+
+		.mm_form-textarea {
+			textarea {
+				min-height: 163px;
+			}
+		}
+	}
+
+	&-agree {
+		text-align: center;
+
+		.btn_detail {
+			padding: 3px 8px;
+			@include mixin.font(#8c8c8c '1.2rem/1.4rem');
+
+			b {
+				position: relative;
+
+				&::before {
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					border-bottom: 1px solid #8c8c8c;
+					content: '';
+				}
+			}
+		}
+	}
+}
+
+// *---------- 팝업 ----------*
+
+// *---------- 모달 ----------*
+
+// *---------- 레이어 ----------*

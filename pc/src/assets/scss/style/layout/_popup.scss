@@ -1,0 +1,228 @@
+@charset 'utf-8';
+
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+
+/**
+ * 레이아웃
+ * 팝업
+ */
+
+/** 팝업 페이지 */
+#{function.escape('.L=popup')} {
+	min-width: 0;
+
+	body {
+		min-width: 0;
+	}
+
+	.mm_view {
+		padding: 0;
+	}
+
+	.mm_page {
+		display: block;
+		padding-bottom: 0;
+		height: 100%;
+
+		&-content {
+			flex: none;
+			align-self: auto;
+			padding: 0;
+		}
+
+		// 기본사이즈만 60으로 적용해야 함
+		// .mm_btn:not(#{function.escape('.T=')}) {
+		// 	padding: 0 60px;
+		// }
+	}
+}
+
+/** 메일 */
+// 청약 철회 안내
+.m_mail-withdrawal {
+	margin: 0 auto;
+	width: 700px;
+
+	h2 {
+		padding: 43px 0 31px;
+		@include mixin.font('2.3rem' center);
+
+		> b {
+			margin-left: -10px;
+		}
+	}
+
+	&-info {
+		padding: 0 60px 0 32px;
+
+		> ul {
+			> li {
+				position: relative;
+				margin-top: 14px;
+				padding-left: 17px;
+				@include mixin.font('1.4rem/2.2rem');
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				span {
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+
+				ul {
+					margin-top: 7px;
+
+					li {
+						position: relative;
+						padding-left: 10px;
+						color: #4a4a4a;
+
+						&::before {
+							position: absolute;
+							top: 0;
+							left: 2px;
+							content: '·';
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-form {
+		margin-top: 31px;
+		padding: 0 32px 100px;
+
+		table {
+			margin-bottom: 38px;
+			border-top: 1px solid #4a4a4a;
+			border-bottom: 1px solid #d5d5d5;
+
+			tr {
+				&:first-child {
+					> * {
+						border-top: 0;
+					}
+				}
+
+				> * {
+					height: 55px;
+					border-top: 1px solid #e6e6e6;
+				}
+
+				th {
+					padding-left: 24px;
+					background-color: #fafafa;
+					@include mixin.font(#6a6a6a '1.4rem' left);
+				}
+			}
+		}
+
+		> p {
+			margin-top: 34px;
+			@include mixin.font('1.4rem' center);
+
+			span {
+				display: inline-block;
+				width: 84px;
+
+				&.text_sign {
+					margin: 0 2px 0 132px;
+				}
+			}
+		}
+	}
+
+	&-foot {
+		position: relative;
+		height: 73px;
+		border-top: 1px solid #dcdcdc;
+		background-color: #fafafa;
+
+		.ico_logo {
+			margin: 27px 0 0 21px;
+
+			&::before {
+				width: 202px;
+				height: 21px;
+				@include mixin.svg(#c9c8c8 url('/public/images/common/logo.svg'));
+			}
+		}
+
+		.image_logo {
+			position: absolute;
+			top: 28px;
+			left: 20px;
+			width: 168px;
+			height: 18px;
+			opacity: 0.2;
+		}
+
+		.btn_print {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+	}
+
+	// 인쇄시
+	@media print {
+		.btn_print {
+			display: none;
+		}
+	}
+}
+
+// 광고메일 수신 거부
+.m_mail-rejection {
+	margin: 0 auto;
+	width: 700px;
+	text-align: center;
+
+	h2 {
+		padding: 78px 0 52px;
+		@include mixin.font(v_700 '2.3rem');
+
+		.ico_rejection {
+			margin-bottom: 15px;
+
+			&::before {
+				width: 48px;
+				height: 40px;
+				@include mixin.background(url('/public/images/content/ico_rejection.svg') '/100% auto' no-repeat);
+			}
+		}
+
+		b {
+			display: block;
+		}
+	}
+
+	> strong {
+		font-size: 1.7rem;
+	}
+
+	> p {
+		margin-top: 13px;
+		@include mixin.font(#4a4a4a '1.4rem/2rem');
+	}
+
+	.mm_btn_box {
+		margin-top: 52px;
+
+		.mm_btn {
+			width: 160px;
+		}
+	}
+
+	.mm_note {
+		margin-top: 100px;
+		padding: 21px 50px 20px 22px;
+		border-top: 1px solid #dcdcdc;
+		text-align: left;
+	}
+}

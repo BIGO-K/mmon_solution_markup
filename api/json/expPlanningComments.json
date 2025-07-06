@@ -1,0 +1,59 @@
+{
+	"paginator": {
+		"total": 5,
+		"current_page": 1,
+		"per_page": 15,
+		"data": [
+			{
+				"id": 1,
+				"contents": "@@@지속가능성에 대해 고민하다가 엠몬스타를 찾아보게 되었습니다.<br>평소 미술활동과 운동때문에 편한 옷을 좋아해서 여름 티셔츠를 둘러 보기위해 홈페이지에 들어왔다가,<br>봄에 입기좋은 트레이닝복이 눈에 띄어 이렇게 기획전에 참여합니다. 곧 한국입국 예정이라 날짜도 딱 좋네요:) 소재도 흥미롭고요. 이 기획전를 통해 제가 앞으로 엠몬스타 다큐뿐만이 아니라 의류에도 지속적인 관심을 이어나갈 수 있으면 좋겠습니다.",
+				"is_private": false,
+				"is_editable": false,
+				"writer_grade_image_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/common/level5.png",
+				"writer_masking_login_id": "c******",
+				"created_at": "2022-04-21T07:25:11.000000Z",
+				"writer_grade_level": 5
+			},
+			{
+				"id": 174,
+				"contents": "댓글추가3",
+				"is_private": false,
+				"is_editable": false,
+				"writer_grade_level": 1,
+				"writer_grade_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/1.png?ut=1670824438",
+				"writer_masking_login_id": "tes*****",
+				"created_at": "2022-11-09T00:13:24.000000Z"
+			},
+			{
+				"id": 173,
+				"contents": "가나다라마바사",
+				"is_private": true,
+				"is_editable": false,
+				"writer_grade_level": 1,
+				"writer_grade_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/1.png?ut=1670824438",
+				"writer_masking_login_id": "tes*****",
+				"created_at": "2022-11-09T00:13:09.000000Z"
+			},
+			{
+				"id": 172,
+				"contents": "댓글추가1",
+				"is_private": false,
+				"is_editable": false,
+				"writer_grade_level": 1,
+				"writer_grade_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/1.png?ut=1670824438",
+				"writer_masking_login_id": "tes*****",
+				"created_at": "2022-11-09T00:13:09.000000Z"
+			},
+			{
+				"id": 171,
+				"contents": "안녕하세요",
+				"is_private": true,
+				"is_editable": true,
+				"writer_grade_level": 1,
+				"writer_grade_image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/1.png?ut=1670824438",
+				"writer_masking_login_id": "hhh*****",
+				"created_at": "2022-11-09T00:13:09.000000Z"
+			}
+		]
+	}
+}

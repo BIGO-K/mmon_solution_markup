@@ -1,0 +1,60 @@
+{
+	"paginator": {
+		"total": 1,
+		"per_page": 6,
+		"current_page": 1,
+		"data": [
+			{
+				"id": 5,
+				"goods_id": 735,
+				"goods_name": "폭스퍼 후드 구스다운_Group buying",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/35/1.jpg?ut=1670312347",
+				"brand_id": 2,
+				"brand_name": "아디다스",
+				"logo_image_url": "https://pro-image.mmonstar.co.kr/brands/2/logo.png?ut=1670569184",
+				"price": 350000,
+				"joint_purchase_price": 11000,
+				"target_count": 20,
+				"participant_count": 2,
+				"is_target_achieve": false,
+				"target_at": "2099-12-30 00:00:59",
+				"target_achieve_rate": 10,
+				"is_only_adult": false
+			},
+			{
+				"id": 6,
+				"goods_id": 1235,
+				"goods_name": "ProductNAME [굿프라이스][22SPRING][기은세, 뷰티펄진주 착용][1차: OATMEAL 4/8, 2차: LIGHT GREY 4/14,3차: OATMEAL 4/14 예약배송] Basic Printed T-shirt NW2SWE288",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/35/1.jpg?ut=1670312347",
+				"brand_id": 3,
+				"brand_name": "MMONSATR",
+				"logo_image_url": "https://pro-image.mmonstar.co.kr/brands/2/logo.png?ut=1670569184",
+				"price": 350000,
+				"joint_purchase_price": 11000,
+				"target_count": 1256,
+				"participant_count": 1000,
+				"is_target_achieve": false,
+				"target_at": "2030-12-30 00:00:59",
+				"target_achieve_rate": 100,
+				"is_only_adult": false
+			},
+			{
+				"id": 7,
+				"goods_id": 2235,
+				"goods_name": "ProductNAME [굿프라이스][22SPRING][기은세, 뷰티펄진주 착용][1차: OATMEAL 4/8, 2차: LIGHT GREY 4/14,3차: OATMEAL 4/14 예약배송] Basic Printed T-shirt NW2SWE288",
+				"thumbnail_url": "https://pro-image.mmonstar.co.kr/goods/00/00/00/00/07/35/1.jpg?ut=1670312347",
+				"brand_id": 3,
+				"brand_name": "MMONSATR",
+				"logo_image_url": "https://pro-image.mmonstar.co.kr/brands/2/logo.png?ut=1670569184",
+				"price": 135300,
+				"joint_purchase_price": 125600,
+				"target_count": 125,
+				"participant_count": 100,
+				"is_target_achieve": false,
+				"target_at": "2030-12-30 00:00:59",
+				"target_achieve_rate": 80,
+				"is_only_adult": true
+			}
+		]
+	}
+}

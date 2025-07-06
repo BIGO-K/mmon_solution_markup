@@ -1,0 +1,44 @@
+{
+    "coupon": [
+		{
+			"id": 169,
+			"name": "test2",
+			"expiration_date_message": "발행일로부터 20일간 사용 가능",
+			"downloadable": true,
+			"usable_device_labels": [
+				"PC",
+				"모바일웹",
+				"모바일앱"
+			]
+		},
+		{
+			"id": 170,
+			"name": "coupon",
+			"expiration_date_message": "발행일로부터 20일간 사용 가능",
+			"downloadable": false,
+			"usable_device_labels": [
+				"PC",
+				"모바일웹"
+			]
+		},
+		{
+			"id": 171,
+			"name": "coupon2",
+			"expiration_date_message": "발행일로부터 3일간 사용 가능",
+			"downloadable": true,
+			"usable_device_labels": [
+				"PC"
+			]
+		},
+		{
+			"id": 172,
+			"name": "서프라이즈 THE NATURE SHOP 쿠폰 30% 할인",
+			"expiration_date_message": "발행일로부터 3일간 사용 가능",
+			"downloadable": true,
+			"usable_device_labels": [
+				"모바일웹",
+				"모바일앱"
+			]
+		}
+	]
+}

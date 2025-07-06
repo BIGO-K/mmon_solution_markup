@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"strict": true,
+		"jsx": "preserve",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"lib": ["ESNext", "DOM"],
+		"skipLibCheck": true,
+		"noEmit": true,
+
+		/* vite create 외 추가 항목 */
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@mui/*": ["./src/components/mui/*"],
+			"@style/*": ["./src/assets/scss/*"],
+			"$/*": ["./public/*"]
+		},
+		"typeRoots": ["node_modules/@types", "src/@types"],
+		"allowJs": true,
+		"sourceMap": true,
+		"removeComments": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitAny": true,
+		// "noUnusedLocals": true,// lint로 대체
+		// "noUnusedParameters": true,// lint로 대체
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true
+	},
+	"include": ["../env.d.ts", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "../library/mui/**/*.d.ts"],
+	"exclude": ["node_modules", "src/**/__tests__/*"],
+	"references": [{ "path": "tsconfig.node.json" }]
+}

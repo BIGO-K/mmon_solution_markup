@@ -1,0 +1,20 @@
+{
+    "duplicate_users": [
+        {
+            "platform_type": "naver",
+            "masking_id": "abc****@naver.com"
+        },
+		{
+            "platform_type": "kakao",
+            "masking_id": "abc****@kakao.com"
+        },
+		{
+            "platform_type": "apple",
+            "masking_id": "abc****@icloud.com"
+        },
+		{
+            "platform_type": "payco",
+            "masking_id": "abc****@gmail.com"
+        }
+    ]
+}

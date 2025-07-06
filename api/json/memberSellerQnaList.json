@@ -1,0 +1,168 @@
+{
+	"paginator": {
+		"total": 29,
+		"per_page": 10,
+		"current_page": 1,
+		"data": [
+			{
+				"id": 237,
+				"title": "asdfasdf",
+				"contents": "asdfasdfasdfsadf222111",
+				"is_private": false,
+				"goods": {
+					"id": 58745,
+					"name": "스터드 에스파 HOT 백팩1스터드 에스파 HOT 백팩스터드 에스파 HOT 백팩스터드 에스파",
+					"brand_name": "꼼빠니아",
+					"option_name": null,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?ut=1681830003"
+				},
+				"answer": null,
+				"created_at": "2023-03-14T02:35:59.000000Z"
+			},
+			{
+				"id": 236,
+				"title": "오렌지컬러 있나요??",
+				"contents": "없으면 만들어주세요",
+				"is_private": true,
+				"goods": {
+					"id": 58064,
+					"name": "커스텀핏 반팔 숏패딩1",
+					"brand_name": "크레송",
+					"option_name": null,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/80/64/1.jpg?ut=1680796803"
+				},
+				"answer": null,
+				"created_at": "2023-03-14T02:10:02.000000Z"
+			},
+			{
+				"id": 233,
+				"title": "어..이거",
+				"contents": "아에요\n아닙니다\n\nㅁㄴㅇㄹㄴㅁㅇㄹㄴㅁㄹㅁㅇㄹㄴㅁㄹㄴㅇㅁㄹㄴㅇㄹ",
+				"is_private": false,
+				"goods": {
+					"id": 58560,
+					"name": "와이드 에스파 라이트 원피스",
+					"brand_name": "엘르",
+					"option_name": "DarkGoldenRod / FREE",
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/85/60/1.jpg?ut=1675817022"
+				},
+				"answer": null,
+				"created_at": "2023-03-03T02:34:44.000000Z"
+			},
+			{
+				"id": 232,
+				"title": "배송문의",
+				"contents": "문ㅢ문의\n자개문의무늬",
+				"is_private": true,
+				"goods": {
+					"id": 58730,
+					"name": "와이드 롱 오블룽 에바 블랙",
+					"brand_name": "마코",
+					"option_name": "OldLace / S",
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/30/1.jpg?ut=1677131371"
+				},
+				"answer": null,
+				"created_at": "2023-03-03T02:21:58.000000Z"
+			},
+			{
+				"id": 222,
+				"title": "test",
+				"contents": "test12312321313",
+				"is_private": false,
+				"goods": {
+					"id": 59230,
+					"name": "3000009930000099",
+					"brand_name": "BYC",
+					"option_name": null,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/30/1.jpg?ut=1675919718"
+				},
+				"answer": {
+					"contents": "1",
+					"created_at": "2023-02-13T01:37:08.000000Z"
+				},
+				"created_at": "2023-02-13T01:15:56.000000Z"
+			},
+			{
+				"id": 200,
+				"title": "20230106 기타 문의 테스트",
+				"contents": "20230106 기타 문의 테스트",
+				"is_private": true,
+				"goods": {
+					"id": 47968,
+					"name": "애프터 슬리브 셔츠",
+					"brand_name": "톨비스트",
+					"option_name": null,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/04/79/68/1.jpg?ut=1679978652"
+				},
+				"answer": null,
+				"created_at": "2023-01-06T01:59:19.000000Z"
+			},
+			{
+				"id": 197,
+				"title": "와 할인율이 71%???",
+				"contents": "우왕 너무 너무 갖고 싶어요\n돈 모아올 때까지 할인율 그대로였으면 좋겠습니당",
+				"is_private": true,
+				"goods": {
+					"id": 32551,
+					"name": "커스텀핏 미니 맨투맨",
+					"brand_name": "울시골프",
+					"option_name": null,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/03/25/51/1.jpg?ut=1669820409"
+				},
+				"answer": {
+					"contents": "그럴 수 없지 후후후 이번주까지입니다!!!!!",
+					"created_at": "2022-12-02T05:28:41.000000Z"
+				},
+				"created_at": "2022-12-02T05:25:19.000000Z"
+			},
+			{
+				"id": 194,
+				"title": "신발이 이름이 어떻게 샤이니 파스텔",
+				"contents": "저는 쨍한 색이 좋으니 취소하겠습니다 ㅡㅡ",
+				"is_private": false,
+				"goods": {
+					"id": 58921,
+					"name": "샤이니 파스텔 여성 런닝화",
+					"brand_name": "포커스",
+					"option_name": "블랙 / XL",
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/89/21/1.jpg?ut=1678759203"
+				},
+				"answer": {
+					"contents": "그럼 주문하면 안되셨죠 !!!\r\n블랙리스트에 올리겠습니다 !!!!!!\r\n줄바꿈을 해서 답변을 길게 써보이기!!!!!\r\n테스트테스트테스트",
+					"created_at": "2022-12-01T03:18:25.000000Z"
+				},
+				"created_at": "2022-12-01T03:02:17.000000Z"
+			},
+			{
+				"id": 172,
+				"title": "배송 언제와요??현기증난단말이에요",
+				"contents": "글쎄 옆집 철수는 공부를 그렇게도 잘 한다더라",
+				"is_private": false,
+				"goods": {
+					"id": 58763,
+					"name": "와이드 롱 자켓1",
+					"brand_name": "BNS",
+					"option_name": "YellowGreen / M",
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/63/1.jpg?ut=1667746803"
+				},
+				"answer": null,
+				"created_at": "2022-10-31T05:33:53.000000Z"
+			},
+			{
+				"id": 167,
+				"title": "테스2232332",
+				"contents": "테스그르르어어아아아어",
+				"is_private": false,
+				"goods": {
+					"id": 58745,
+					"name": "스터드 에스파 HOT 백팩1스터드 에스파 HOT 백팩스터드 에스파 HOT 백팩스터드 에스파",
+					"brand_name": "꼼빠니아",
+					"option_name": null,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?ut=1681830003"
+				},
+				"answer": null,
+				"created_at": "2022-10-26T00:10:12.000000Z"
+			}
+		]
+	}
+}

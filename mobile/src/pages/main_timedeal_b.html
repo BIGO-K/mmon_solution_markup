@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko" class="L=main">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- 소셜태그 -->
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<!--// 소셜태그 -->
+
+	<title>M.Mon solution</title>
+
+	<!-- 공통 css -->
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 공통 css 변수 -->
+	<style>
+		:root {
+			/* 클라이언트 컬러 */
+			--color_main: #1f1f1f;
+			--color_sub: #f84f34;
+
+			/* 블랙 버전 */
+			--color_variable: var(--color_sub);
+			--color_support: #4457a7;
+
+			/* 유색 버전 */
+			/* --color_variable: var(--color_main);
+			--color_support: #ff8800; */
+
+			/* 등급 컬러 */
+			--color_level5: #9b3da1;
+			--color_level4: #e19c03;
+			--color_level3: #7cbacb;
+			--color_level2: #e68362;
+			--color_level1: #4e8e71;
+
+			/* 상품 비율 */
+			--prod_ratio_base: 1;
+		}
+	</style>
+
+	<!-- (D) 폴리필/라이브러리는 요청을 줄이기 위해 combind + minify를 적용해주세요. -->
+	<!-- 폴리필/라이브러리 스크립트 -->
+	<script src="../js/lib/lodash-4.17.21.min.js"></script>
+	<script src="../js/lib/gsap-3.6.1/gsap.min.js"></script>
+	<script src="../js/lib/axios-0.21.1.min.js"></script>
+	<script src="../js/lib/load-image.all-5.14.0.min.js"></script>
+	<script src="../js/lib/sortable-1.13.0.min.js"></script>
+
+	<!-- 공통 스크립트 -->
+	<script src="../js/app_common.js"></script>
+	<script src="../js/app_page-common.js"></script>
+
+	<!-- (D) 페이지 전용 스크립트는 .mm_page-content 하단에 넣어주세요. -->
+</head>
+<body>
+	<div id="mm_app" class="mm_app">
+		<!-- 스킵 -->
+		<nav class="mm_skip">
+			<ul>
+				<li><a href="#mm_body" data-href="{ '_type': 'anchor' }">본문바로가기</a></li>
+			</ul>
+		</nav>
+		<!-- 스킵 -->
+
+		<!-- 화면 -->
+		<div class="mm_view L=main">
+			<!-- 앱으로 보기 상단 배너 -->
+			<div class="m_main-app-view">
+				<a href="#" target="blank"><b>앱으로 더 편리하게 쇼핑해보세요</b><i>앱으로 보기</i></a>
+			</div>
+			<!--// 앱으로 보기 상단 배너 -->
+
+			<!-- 헤더 -->
+			<header class="mm_header T=ha">
+				<style>
+					:root {
+						--header_height_main: 56px;
+						--color_header: #fff;
+					}
+				</style>
+				<h1><a href="#"><i class="image_logo"></i><b class="mm_ir-blind">M.Mon solution</b></a></h1>
+				<div class="mm_rside">
+					<a href="_popup_search.html"><b class="mm_ir-blind">검색하기</b><i class="ico_search"></i></a>
+					<a href="cart.html"><i class="ico_cart"></i><strong class="text_badge">2</strong><b class="mm_ir-blind">장바구니</b></a>
+				</div>
+			</header>
+			<!--// 헤더 -->
+
+			<!-- 내용 -->
+			<div id="mm_body" class="mm_page">
+				<!-- (D) 실제 내용을 추가하는 부분입니다. -->
+
+				<div class="mm_scroller">
+					<div class="mm_page-inner">
+						<!-- 본문 -->
+						<div class="mm_page-content">
+							<!-- GNB -->
+							<div class="mm_gnb">
+								<!-- (D) 메뉴가 모바일 가로 사이즈보다 적으면 mm_gnb에 'S=flex' 클래스가 추가됩니다. -->
+								<div class="mm_gnb-inner">
+									<div class="mm_scroller T=x">
+										<!-- (D) 현재페이지의 a 요소에 "S=gnb-on" 클래스와 "선택됨" 타이틀을 추가합니다. -->
+										<ul>
+											<li><a href="main.html" class="S=gnb-on" title="선택됨"><b>홈</b></a></li>
+											<li><a href="#"><b>베스트</b></a></li>
+											<li><a href="#"><b>신상품</b></a></li>
+											<li><a href="#"><b>추가메뉴1</b></a></li>
+											<li><a href="#"><b>추가메뉴2</b></a></li>
+											<li><a href="#"><b>추가메뉴3</b></a></li>
+											<li><a href="#"><b>추가메뉴4</b></a></li>
+											<li><a href="#"><b>추가메뉴5</b></a></li>
+											<li><a href="#"><b>스팟성 테마관</b></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--// GNB -->
+
+							<!-- 홈 -->
+							<div class="m_main">
+								<!-- 블록 -->
+								<!-- <div class="mm_mui"></div> -->
+								<!--// 블록 -->
+
+								<!-- 인기검색어 -->
+								<!-- (D) 첫 번째 블록 바로 다음 위치로 고정합니다. -->
+								<section class="m_main-popular">
+									<div class="m_main-popular-inner">
+										<div class="m_main-popular-head">
+											<h3><b>인기검색어</b></h3>
+											<p class="text_date">2022.01.01 15:04 기준</p>
+											<button type="button" data-switch="{ '_isParent': true, '_parentSelector': '.m_main-popular-inner', '_defaultTitle': '펼쳐보기', '_title': '접어놓기', 'onChange': 'searchPopularChange' }" title="펼쳐보기"><i class="ico_more"></i></button>
+										</div>
+										<ol>
+											<li><a href="#"><b>엠몬스타</b><i class="ico_rank-up" title="상승"></i><b class="text_rank">2</b></a></li>
+											<li><a href="#"><b>후드티</b><i class="ico_rank-down" title="하락"></i><b class="text_rank">1</b></a></li>
+											<li><a href="#"><b>원피스</b><i class="ico_rank-down" title="하락"></i><b class="text_rank">1</b></a></li>
+											<li><a href="#"><b>첼시부츠</b><i class="ico_rank-new" title="신규"></i></a></li>
+											<li><a href="#"><b>가디건</b><i class="ico_rank-unchanged" title="변동없음"></i></a></li>
+											<li><a href="#"><b>맨투맨</b><i class="ico_rank-up" title="상승"></i><b class="text_rank">8</b></a></li>
+											<li><a href="#"><b>셔츠</b><i class="ico_rank-unchanged" title="변동없음"></i></a></li>
+											<li><a href="#"><b>자켓</b><i class="ico_rank-down" title="하락"></i><b class="text_rank">3</b></a></li>
+											<li><a href="#"><b>양말</b><i class="ico_rank-new" title="신규"></i></a></li>
+											<li><a href="#"><b>데님</b><i class="ico_rank-up" title="상승"></i><b class="text_rank">122</b></a></li>
+										</ol>
+									</div>
+								</section>
+								<!--// 인기검색어 -->
+
+								<!-- 블록 -->
+								<!-- <div class="mm_mui"></div> -->
+								<!--// 블록 -->
+
+								<!-- 블록 -->
+								<!-- <div class="mm_mui"></div> -->
+								<!--// 블록 -->
+							</div>
+							<!--// 홈 -->
+						</div>
+						<!--// 본문 -->
+
+						<!-- 푸터 -->
+						<footer id="mm_footer" class="mm_footer T=fa">
+							<!-- 푸터-메뉴 -->
+							<div class="mm_footer-menu">
+								<ul class="mm_flex T=equal">
+									<li><a href="company.html"><b>회사소개</b></a></li>
+									<li><a href="csMain.html"><b>고객센터</b></a></li>
+									<li><a href="_popup_csInquiry.html"><b>문의하기</b></a></li>
+									<li><a href="#" target="_blank" title="새 창 열림"><b>PC버전</b></a></li>
+								</ul>
+							</div>
+							<!--// 푸터-메뉴 -->
+
+							<!-- 푸터-정보 -->
+							<div class="mm_footer-info">
+								<div class="mm_dropdown" data-dropdown>
+									<b>(주)엠몬스타</b>
+									<button type="button" class="btn_dropdown" title="펼쳐보기"><b>사업자 정보</b><i class="ico_dropdown T=sm"></i></button>
+									<div class="mm_dropdown-item">
+										<div class="mm_dropdown-item-inner">
+											<address>
+												<p>대표: 장한필</p>
+												<p>경기도 성남시 판교동 금토로 80번길 11 판교이노베이션랩 601~604호</p>
+												<p>사업자등록번호: 792-81-00850 <a href="#" target="_blank" title="새 창 열림"><b>사업자정보 확인</b></a></p>
+												<p>통신판매업 신고번호: 제2023-경기성남-01234호</p>
+												<p>개인정보관리자: 이희승</p>
+												<p class="text_cs">대표전화: <a href="tel:1588-0000" title="전화연결"><b>1588-0000</b></a> / AM 10:00 ~ PM 05:00 (월-금)</p>
+												<p>점심시간 12:30~13:30 / 주말 및 공휴일 휴무</p>
+												<p>팩스번호: 031-8023-9667</p>
+												<p class="text_email">이메일: <a href="mailto:mmonstar@mmonstar.co.kr" title="새 창 열림"><b>mmonstar@mmonstar.co.kr</b></a></p>
+											</address>
+										</div>
+									</div>
+								</div>
+								<ul class="mm_footer-info-terms">
+									<li><a href="_popup_termsUse.html"><b>서비스이용약관</b></a></li>
+									<li><a href="_popup_termsPrivacy.html"><strong>개인정보처리방침</strong></a></li>
+									<li><a href="#"><b>이용안내</b></a></li>
+									<li><a href="#" target="_blank" title="새 창 열림"><b>구매안전서비스 가입사실확인</b></a></li>
+								</ul>
+								<p class="text_copyright">&#169;M.MONSTAR. All rights reserved.</p>
+							</div>
+							<!--// 푸터-정보 -->
+						</footer>
+						<!--// 푸터 -->
+					</div>
+				</div>
+				<!-- 타임특가 -->
+				<div class="mm_timedeal T=tb">
+					<div class="mm_toast" data-toast>
+						<a class="btn_toast" title="펼쳐보기">
+							<!-- <b class="text_state T=state-schedule"><i class="ico_clock"></i>진행예정</b>
+							<p><b class="text_state"><i class="ico_clock"></i>진행중</b><span class="text_hour">43</span>:<span class="text_min">50</span>:<span class="text_sec">03</span></p> -->
+						</a>
+						<div class="mm_toast-inner">
+							<div class="mm_timedeal-content">
+								<div class=" mm_carousel" data-carousel="{ '_isMoreSide': true, '_isAutoHeight': true, 'onReady': 'timeCarouselChange', 'onStart': 'timeCarouselChange' }">
+									<div class="mm_carousel-inner">
+										<!-- (D) li.mm_carousel-item 요소에 data-value로 _isIng(진행중 여부), _time(남은 시간:초), _id(고유 값)를 적용합니다.
+										링크는 진행중인 요소에만 적용합니다. -->
+										<ul class="mm_carousel-list">
+											<li class="mm_carousel-item" data-value="{ '_isIng': true, '_time': 330940, '_id': '고유값' }">
+												<a href="prodDetail.html">
+													<i class="mm_bg-cover image_banner" data-lazyload="{ '_src': '../image/_sample/main_timedeal_01.jpg' }"></i>
+													<p class="mm_ir-blind">최대 80% 세일 Brand Day 봄맞이 프로모션</p>
+												</a>
+											</li>
+											<li class="mm_carousel-item" data-value="{ '_isIng': false, '_time': 60, '_id': '고유값2' }">
+												<!-- (D) 진행예정인 타임딜 배너 클릭시 alert 노출('0월 00일 00시에 시작되는\n타임특가 상품입니다.') -->
+												<a>
+													<i class="mm_bg-cover image_banner" data-lazyload="{ '_src': '../image/_sample/main_timedeal_02.jpg' }"></i>
+													<p class="mm_ir-blind">자연이 담긴 힐링 에너지 48h 타임특가 Hair & Body care</p>
+												</a>
+											</li>
+											<li class="mm_carousel-item" data-value="{ '_isIng': true, '_time': 330940, '_id': '고유값' }">
+												<a href="prodDetail.html">
+													<i class="mm_bg-cover image_banner" data-lazyload="{ '_src': '../image/_sample/main_timedeal_01.jpg' }"></i>
+													<p class="text_adult"><b class="mm_ir-blind">미성년자 구매불가</b><i class="ico_adult"></i></p>
+													<p class="mm_ir-blind">최대 80% 세일 Brand Day 봄맞이 프로모션</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="mm_carousel-pagination">
+										<ol>
+											<li><button type="button" class="btn_carousel-page"><span class="mm_ir-blind">1</span></button></li>
+											<li><button type="button" class="btn_carousel-page"><span class="mm_ir-blind">2</span></button></li>
+											<li><button type="button" class="btn_carousel-page"><span class="mm_ir-blind">3</span></button></li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					// 타임특가 시간 변경
+					function timeCarouselChange(__isChange) {
+
+						if (__isChange === false) return;
+
+						var data = mm.data.get(this).carousel;
+						mm.observer.dispatch('TIME_ITEM_CHANGE', { _isLocal: true, data: { $item: data.__.$items[data._index] } });
+
+					}
+
+					(function (__$time) {
+
+						// 타임특가 (상태변경, 인터벌)
+						var $time = __$time;
+						var $timeHead = mm.find('.btn_toast:not(.text_title)', $time)[0];
+						var _classSchedule = 'T=state-schedule';
+						var _classReady = 'S=timedeal-ready';
+						var $item;
+						var itemData;
+
+						function setTime() {
+
+							var _time = itemData._time - window.performance.now() / 1000;
+							if (_time < 1) _time = 0;
+							var _hour = Math.floor(_time / 60 / 60);
+							var _min = Math.floor(_time / 60 % 60);
+							var _sec = Math.floor(_time % 60 % 60);
+
+							mm.find('.text_hour', $timeHead)[0].textContent = String(_hour).padStart(2, '0');
+							mm.find('.text_min', $timeHead)[0].textContent = String(_min).padStart(2, '0');
+							mm.find('.text_sec', $timeHead)[0].textContent = String(_sec).padStart(2, '0');
+
+							if (_time === 0) {
+								var $a = mm.find('> a', $item)[0];
+
+								// 진행 중
+								if (itemData._isIng === true) {
+									mm.element.attribute($a, { 'href': '', 'data-href': '' });
+									var $strong = mm.find('strong', $timeHead)[0];
+									$strong.textContent = '진행종료';
+									$strong.parentElement.classList.add(_classSchedule);
+								}
+								// 진행 예정
+								else {
+									$a.classList.add(_classReady);
+									mm.element.attribute($a, { 'tabindex': 0, 'onclick': '' });
+									mm.class.remove(mm.find(mm.selector(_classSchedule, '.'), $timeHead)[0], _classSchedule);
+								}
+							}
+
+						}
+
+						mm.observer.on($time, 'TIME_ITEM_CHANGE', function (__e) {
+
+							if (!__e.detail.$item || !$timeHead) return;
+
+							$item = __e.detail.$item;
+							itemData = mm.data.get($item, 'data-value', true);
+
+							$timeHead.innerHTML = mm.string.template('<p><b class="text_state ${CLASS}"><i class="ico_clock"></i>${STATE}</b><span class="text_hour"></span>:<span class="text_min"></span>:<span class="text_sec"></span></p>', {
+								CLASS: (itemData._isIng === true) ? '' : _classSchedule,
+								STATE: (itemData._isIng === true) ? '진행중': '진행예정',
+							});
+
+							setTime();
+
+						});
+
+						// 타임특가 인터벌
+						setInterval(function () {
+
+							if (!$item) return;
+
+							setTime();
+
+						}, 1000);
+
+						// 타임특가 진행예정 실행
+						mm.delegate.on($time, mm.selector(_classReady, '.'), 'click', function () {
+
+							var $this = this;
+
+							// 고유값 유효성 검사 경로 지정
+							mm.ajax.load('../json/main_timedeal.json', {
+								configs: {
+									responseType: 'json',
+									params: {
+										id: itemData._id
+									}
+								},
+								onComplete: function (__data) {
+
+									// ? __data._is:boolean - true(링크 이동), false(불가)
+									// ? __data._url:boolean - 상품 경로
+
+									// 링크 이동 후 새로고침
+									if (__data._is === true && __data._url.trim().length > 0) {
+										mm.link(__data._url, { openEl: $this, _type: 'link' });
+										location.replace(location.href.split('#')[0]);
+									}
+									// 오류
+									else mm.bom.alert('잘못된 접근입니다.', function () {
+
+										location.replace(location.href.split('#')[0]);
+
+									});
+
+								},
+							});
+
+						});
+
+					})(mm.find('.mm_timedeal')[0]);
+				</script>
+				<!--// 타임특가 -->
+				<a class="btn_topmost" href="#mm_app" data-href="{ '_type': 'anchor' }" title="페이지 처음으로"><i class="ico_topmost"></i><b>TOP</b></a>
+
+				<!-- 현재 페이지 스크립트 -->
+				<!-- <script src="../js/.js"></script> -->
+				<script>
+					// 인기검색어 스위칭
+					function searchPopularChange(__is) {
+
+						mm.observer.dispatch('SEARCH_POPULAR_CHANGE', { _isLocal: true, data: { _is: __is } });
+
+					}
+
+					(function () {
+
+						// 인기검색어 롤링
+						var $popular = mm.find('.m_main-popular')[0];
+						var $popularItems = mm.find('ol > li', $popular);
+						var _index = 0;
+						var popularInterval;
+
+						function popularAutoPlay() {
+
+							popularInterval = setInterval(function() {
+
+								gsap.fromTo($popularItems[_index], { y: '0%' }, { y: '-100%', duration: 0.3, ease: 'sine.inOut' });
+
+								_index = (_index === $popularItems.length - 1) ? 0 : _index + 1;
+								gsap.fromTo($popularItems[_index], { y: '100%' }, { y: '0', duration: 0.3, ease: 'sine.inOut' });
+
+							}, 4000);
+
+						}
+
+						popularAutoPlay();
+
+						mm.observer.on($popular, 'SEARCH_POPULAR_CHANGE', function(__e) {
+
+							if (__e.detail._is) {
+								gsap.killTweensOf($popularItems);
+								clearInterval(popularInterval);
+								mm.element.style($popularItems, { 'transform': '' });
+							}
+							else {
+								_index = 0;
+								popularAutoPlay();
+							}
+
+						});
+
+					})();
+				</script>
+			</div>
+			<!--// 내용 -->
+
+			<!-- 툴바 -->
+			<div class="mm_toolbar T=ta">
+				<style>
+					:root {
+						--toolbar_height_base: 51px;
+					}
+				</style>
+				<ul class="mm_flex T=equal">
+					<li>
+						<a href="main.html">
+							<i class="ico_home"></i>
+							<b>홈</b>
+						</a>
+					</li>
+					<li>
+						<a href="sidebar_level5.html" onclick="mm.side.open(this.href);return false;">
+							<i class="ico_menu"></i>
+							<b>카테고리</b>
+						</a>
+					</li>
+					<li>
+						<a href="_popup_search.html">
+							<i class="ico_search"></i>
+							<b class="mm_ir-blind">검색</b>
+						</a>
+					</li>
+					<li>
+						<a href="myMain_level5.html">
+							<i class="ico_mypage"></i>
+							<b>마이페이지</b>
+						</a>
+					</li>
+					<li>
+						<a href="_popup_recent.html">
+							<!-- (D) 최근본상품이 있을 때 노출합니다. -->
+							<!-- <i class="mm_bg-cover image_recent" data-lazyload="{ '_src': '../image/_sample/prod_x1_3.png' }"></i> -->
+							<i class="ico_recent"></i>
+							<b>최근본상품</b>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--// 툴바 -->
+		</div>
+		<!--// 화면 -->
+	</div>
+</body>
+</html>

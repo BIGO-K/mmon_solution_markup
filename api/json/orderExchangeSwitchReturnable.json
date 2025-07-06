@@ -1,0 +1,123 @@
+{
+	"switch_returnable_order": {
+		"order_id": "2302211128154602492",
+		"ordered_at": "2023-02-21T02:28:43.000000Z",
+		"payment_method_label": "토스페이",
+		"shipping_address": {
+			"name": "test",
+			"tel": "01022332233",
+			"zip_code": "06096",
+			"base_address": "서울특별시 강남구 삼성로115길 37-4(삼성동, 힐스테이트5차)",
+			"detail_address": "z"
+		},
+		"packs": [
+			{
+				"shipping_rule_id": 28,
+				"paid_shipping_price": 0,
+				"order_items": [
+					{
+						"id": 9561,
+						"order_status_label": "상품 도착",
+						"order_status_code": 560,
+						"paid_price": 8600,
+						"point_used": 0,
+						"used_coupon_title": "오랜만 자동발행쿠폰",
+						"seller_name": "노승민",
+						"goods": {
+							"id": 54844,
+							"name": "윈터 에스파 WASHED 가디건",
+							"brand_name": "Azure",
+							"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+							"option_id": 772941,
+							"option_name": "DarkGray / L",
+							"is_soldout": false
+						},
+						"exchange_target_id": 187
+					},
+					{
+						"id": 9562,
+						"order_status_label": "상품 도착",
+						"order_status_code": 560,
+						"paid_price": 8600,
+						"point_used": 0,
+						"used_coupon_title": "오랜만 자동발행쿠폰",
+						"seller_name": "노승민",
+						"goods": {
+							"id": 54844,
+							"name": "윈터 에스파 WASHED 가디건",
+							"brand_name": "Azure",
+							"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+							"option_id": 772934,
+							"option_name": "CadetBlue / M",
+							"is_soldout": false
+						},
+						"exchange_target_id": 188
+					},
+					{
+						"id": 9563,
+						"order_status_label": "상품 도착",
+						"order_status_code": 560,
+						"paid_price": 8600,
+						"point_used": 0,
+						"used_coupon_title": "오랜만 자동발행쿠폰",
+						"seller_name": "노승민",
+						"goods": {
+							"id": 54844,
+							"name": "윈터 에스파 WASHED 가디건",
+							"brand_name": "Azure",
+							"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+							"option_id": 772934,
+							"option_name": "CadetBlue / M",
+							"is_soldout": false
+						},
+						"exchange_target_id": 189
+					},
+					{
+						"id": 9564,
+						"order_status_label": "상품 도착",
+						"order_status_code": 560,
+						"paid_price": 8600,
+						"point_used": 0,
+						"used_coupon_title": "오랜만 자동발행쿠폰",
+						"seller_name": "노승민",
+						"goods": {
+							"id": 54844,
+							"name": "윈터 에스파 WASHED 가디건",
+							"brand_name": "Azure",
+							"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+							"option_id": 772934,
+							"option_name": "CadetBlue / M",
+							"is_soldout": false
+						},
+						"exchange_target_id": 190
+					},
+					{
+						"id": 9565,
+						"order_status_label": "상품 도착",
+						"order_status_code": 560,
+						"paid_price": 8600,
+						"point_used": 0,
+						"used_coupon_title": "오랜만 자동발행쿠폰",
+						"seller_name": "노승민",
+						"goods": {
+							"id": 54844,
+							"name": "윈터 에스파 WASHED 가디건",
+							"brand_name": "Azure",
+							"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?",
+							"option_id": 772934,
+							"option_name": "CadetBlue / M",
+							"is_soldout": false
+						},
+						"exchange_target_id": 191
+					}
+				]
+			}
+		]
+	},
+	"chosen_exchange_reason": {
+		"code": 51001,
+		"label": "마음이 변했어요",
+		"eng_label": "change_mind",
+		"detail": null
+	}
+}

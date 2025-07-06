@@ -1,0 +1,104 @@
+{
+	"grades": [
+		{
+			"id": 1,
+			"name": "FAMILY",
+			"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/1.png?ut=1670824438",
+			"order_seq": 0,
+			"grade_up_sell_price_condition": 0,
+			"grade_up_sell_amount_condition": 0,
+			"is_default": true,
+			"purchase_benefit_rate": "6.1",
+			"coupons": [
+				{
+					"id": 13,
+					"discount_amount": 14,
+					"discount_type": "rate",
+					"download_limit": 0,
+					"is_unlimited": true
+				},
+				{
+					"id": 26,
+					"discount_amount": 13,
+					"discount_type": "rate",
+					"download_limit": 11,
+					"is_unlimited": false
+				},
+				{
+					"id": 71,
+					"discount_amount": 111,
+					"discount_type": "KRW",
+					"download_limit": 0,
+					"is_unlimited": true
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "BRONZE",
+			"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/2.png?ut=1679296172",
+			"order_seq": 1,
+			"grade_up_sell_price_condition": 200000,
+			"grade_up_sell_amount_condition": 3,
+			"is_default": false,
+			"purchase_benefit_rate": "2.0",
+			"coupons": null
+		},
+		{
+			"id": 3,
+			"name": "SILVER",
+			"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/3.png?ut=1661320568",
+			"order_seq": 2,
+			"grade_up_sell_price_condition": 500000,
+			"grade_up_sell_amount_condition": 6,
+			"is_default": false,
+			"purchase_benefit_rate": "3.0",
+			"coupons": null
+		},
+		{
+			"id": 4,
+			"name": "GOLD",
+			"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/4.png?ut=1661320558",
+			"order_seq": 3,
+			"grade_up_sell_price_condition": 1000000,
+			"grade_up_sell_amount_condition": 9,
+			"is_default": false,
+			"purchase_benefit_rate": "4.0",
+			"coupons": [
+				{
+					"id": 2,
+					"discount_amount": 14,
+					"discount_type": "rate",
+					"download_limit": 0,
+					"is_unlimited": true
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "VIP",
+			"image_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/assets/member-grades/5.png?ut=1674004216",
+			"order_seq": 4,
+			"grade_up_sell_price_condition": 2000000,
+			"grade_up_sell_amount_condition": 12,
+			"is_default": false,
+			"purchase_benefit_rate": "5.0",
+			"coupons": [
+				{
+					"id": 3,
+					"discount_amount": 2691,
+					"discount_type": "KRW",
+					"download_limit": 0,
+					"is_unlimited": true
+				},
+				{
+					"id": 5,
+					"discount_amount": 5179,
+					"discount_type": "KRW",
+					"download_limit": 5,
+					"is_unlimited": false
+				}
+			]
+		}
+	]
+}

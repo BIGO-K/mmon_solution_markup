@@ -1,0 +1,207 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+@use '../../style/setting/var';
+
+/**
+ * 헬퍼
+ * 상속 확장 클래스
+ */
+
+/** 찜아이템담기 (마이페이지 > MY찜 > 찜한 아이템 > (모달) 폴더 수정하기, (모달) 찜아이템담기 사용) */
+%likeFolder {
+	position: relative;
+	margin: -22px -22px 0;
+
+	.btn_add-folder {
+		padding: 0 23px;
+		width: 100%;
+		@include mixin.font(var.$color_variable '1.5rem/6.4rem' left);
+
+		.ico_add {
+			margin: 22px 10px 0 0;
+
+			&::before {
+				width: 12px;
+				height: 20px;
+				background-color: var.$color_variable;
+			}
+		}
+	}
+
+	li {
+		position: relative;
+		border-bottom: 1px solid #eee;
+		font-size: 1.4rem;
+
+		.image_product,
+		.ico_like {
+			position: relative;
+			width: 37px;
+			height: 37px;
+			background-color: #f5f5f5;
+
+			// 이미지 오류
+			&#{function.escape('.S=error')}::before {
+				width: 13px;
+				@include mixin.svg(#cdcdcd url('/public/images/common/ico_heart.svg'));
+			}
+		}
+
+		.ico_like::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 13px;
+			background-color: #cdcdcd;
+			transform: translate(-50%, -50%);
+		}
+
+		.text_folder {
+			text-align: left;
+
+			small {
+				display: inline-block;
+				margin: 1px 0 0 8px;
+				@include mixin.font(#7b7b7b v_400 '1.3rem', 0);
+			}
+		}
+	}
+}
+
+/** 리뷰 작성 ((모달) 마이페이지 > MY리뷰 작성, 체험단후기 작성에 사용) */
+%reviewWrite {
+	[class*='-value'] {
+		margin: 22px -22px 0;
+
+		&::before {
+			display: block;
+			border-top: 1px solid #eee;
+			border-bottom: 5px solid #f5f5f5;
+			content: '';
+		}
+	}
+
+	// 상품 평가
+	section {
+		padding: 26px 22px 25px;
+		border-bottom: 1px solid #eee;
+		text-align: center;
+
+		h5 {
+			padding-bottom: 11px;
+			font-size: 1.5rem;
+		}
+
+		// 별점
+		#{function.escape('.m...value-starscore')} {
+			@include mixin.font(#e6e6e6 '3rem');
+
+			ul {
+				display: inline-block;
+
+				li {
+					float: left;
+
+					&:nth-child(n+2) {
+						margin-left: 3px;
+					}
+
+					.ico_star::before {
+						width: 30px;
+						height: 30px;
+						background-color: #e6e6e6;
+					}
+
+					&#{function.escape('.S=starscore-on')} .ico_star::before {
+						background-color: #f2953a;
+					}
+				}
+			}
+		}
+
+		// 후기선택
+		.mm_radio-list {
+			margin: 1px auto -6px;
+			width: 312px;
+
+			ul {
+				li {
+					position: relative;
+					text-align: center;
+
+					&::before {
+						position: absolute;
+						top: 19px;
+						left: 0;
+						width: 100%;
+						border-top: 1px solid #e6e6e6;
+						content: '';
+					}
+
+					&:nth-child(n+2) {
+						margin-top: 0;
+					}
+
+					&:first-child::before {
+						right: 0;
+						left: auto;
+						width: 50%;
+					}
+
+					&:last-child::before {
+						width: 50%;
+					}
+				}
+			}
+
+			.mm_form-radio {
+				padding: 48px 0 0;
+				min-width: 60px;
+
+				.ico_form-radio {
+					left: 50%;
+					width: 40px;
+					height: 40px;
+					border-color: #e6e6e6;
+					transform: translateX(-50%);
+
+					&::before {
+						top: 50%;
+						left: 50%;
+						width: 24px;
+						height: 24px;
+						background-color: #e6e6e6;
+						transform: translate(-50%, -50%);
+					}
+				}
+
+				.text_label {
+					margin: 1px 0 0;
+					@include mixin.font(#4a4a4a '1.3rem/1');
+				}
+			}
+		}
+	}
+
+	[class*='-info'] {
+		padding-top: 5px;
+
+		.mm_text-label {
+			margin-top: 18px;
+		}
+
+		.mm_form_mix-linked {
+			.mm_form-text,
+			.mm_form-select {
+				max-width: 121px;
+			}
+
+			+ .mm_note {
+				margin-top: 4px;
+			}
+		}
+	}
+}

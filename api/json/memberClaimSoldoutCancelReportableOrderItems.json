@@ -1,0 +1,42 @@
+{
+	"paginator": {
+		"total": 1,
+		"per_page": 10,
+		"current_page": 1,
+		"data": [
+			{
+				"order_id": "2304181711105112952",
+				"paid_at": "2023-04-18T08:13:29.000000Z",
+				"payment_method_label": "토스페이",
+				"packs": [
+					{
+						"shipping_rule_id": 60,
+						"paid_shipping_price": 0,
+						"sellers": [
+							{
+								"id": 50,
+								"name": "김민정",
+								"tel": "02042175763",
+								"order_items": [
+									{
+										"id": 10237,
+										"order_status_label": "취소 완료",
+										"paid_price": 100,
+										"goods": {
+											"id": 58789,
+											"name": "[대박세일] 인트레치아토 캐시 에바 블랙.",
+											"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/89/1.jpg?",
+											"brand_name": "빌트모아",
+											"option_name": "Black / S"
+										},
+										"point_used": 0
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

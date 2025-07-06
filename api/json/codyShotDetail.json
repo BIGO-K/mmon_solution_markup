@@ -1,0 +1,128 @@
+{
+	"cody_shot": {
+		"id": 2,
+		"title": "SS블루종 발매기념! 머리부터 발끝까지 완벽한 블루종 SS코디룩을 만나보세요",
+		"sub_title": "당신을 위한 맞춤 패셔너블 레시피",
+		"brand_name": "MMONSATR",
+		"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/exhibit/codishots/100/2/image.jpg?ut=1663081477",
+		"alt": "벚꽃",
+		"pointers": [
+			{
+				"order_seq": 0,
+				"x": 68.25,
+				"y": 78.36,
+				"goods": {
+					"id": 58816,
+					"name": "슈퍼스타 바게트 원피스1",
+					"price": 81500,
+					"headline": null,
+					"base_discounted_price": 59400,
+					"sale_rate": 27,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/16/1.jpg?ut=1672276065",
+					"mouse_over_image_url": "",
+					"stock": 154,
+					"is_only_adult": true,
+					"is_soldout": false,
+					"brand_id": 6,
+					"brand_name": "예진모바일",
+					"icon": null,
+					"badges": [
+						"무료배송",
+						"쿠폰할인"
+					],
+					"wish_count": 1,
+					"review_count": 1,
+					"review_score_average": 4,
+					"is_use_stock_notify": false
+				}
+			},
+			{
+				"order_seq": 1,
+				"x": 95.5,
+				"y": 42.54,
+				"goods": {
+					"id": 58391,
+					"name": "자수 런닝 원피스",
+					"price": 105000,
+					"headline": null,
+					"base_discounted_price": 57700,
+					"sale_rate": 45,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/83/91/1.jpg?ut=1669940152",
+					"mouse_over_image_url": "",
+					"stock": 118,
+					"is_only_adult": false,
+					"is_soldout": false,
+					"brand_id": 1,
+					"brand_name": "현주보험",
+					"icon": null,
+					"badges": [
+						"쿠폰할인"
+					],
+					"wish_count": 3,
+					"review_count": 0,
+					"review_score_average": 0,
+					"is_use_stock_notify": false
+				}
+			},
+			{
+				"order_seq": 2,
+				"x": 34.25,
+				"y": 5.47,
+				"goods": {
+					"id": 56819,
+					"name": "윈터 런닝 맨투맨",
+					"price": 132400,
+					"headline": null,
+					"base_discounted_price": 15800,
+					"sale_rate": 88,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/68/19/1.jpg?ut=1661220876",
+					"mouse_over_image_url": "",
+					"stock": 270,
+					"is_only_adult": false,
+					"is_soldout": false,
+					"brand_id": 31,
+					"brand_name": "MediumSeaGreen",
+					"icon": null,
+					"badges": [
+						"무료배송",
+						"쿠폰할인"
+					],
+					"wish_count": 0,
+					"review_count": 0,
+					"review_score_average": 0,
+					"is_use_stock_notify": false
+				}
+			},
+			{
+				"order_seq": 3,
+				"x": 45,
+				"y": 77,
+				"goods": {
+					"id": 46819,
+					"name": "남녀공용 블랙 숏 라이너 리버시블 점퍼 블랙 숏 라이너 리버시블 점퍼",
+					"price": 99000,
+					"headline": null,
+					"base_discounted_price": 120000,
+					"sale_rate": 10,
+					"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/68/19/1.jpg?ut=1661220876",
+					"mouse_over_image_url": "",
+					"stock": 1,
+					"is_only_adult": false,
+					"is_soldout": false,
+					"brand_id": 15,
+					"brand_name": "MMONSTAR",
+					"icon": null,
+					"badges": [
+						"무료배송",
+						"쿠폰할인"
+					],
+					"wish_count": 99,
+					"review_count": 0,
+					"review_score_average": 0,
+					"is_use_stock_notify": false
+				}
+			}
+		],
+		"created_at": "2023-01-25T12:56:24.000000Z"
+	}
+}

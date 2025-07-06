@@ -1,0 +1,109 @@
+@charset 'utf-8';
+
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+
+/**
+ * 간편결제(유료)
+ * 고객센터
+ */
+
+/** 고객센터 - 이용안내 */
+.m_cs-info-easypay {
+	#{function.escape('.m...easypay-head')} {
+		position: relative;
+		padding: 53px 0 48px 166px;
+		background-color: #fafafa;
+		font-size: 1.4rem;
+
+		h4 {
+			padding-bottom: 9px;
+			font-size: 2rem;
+
+			[class*='ico_cs'] {
+				position: absolute;
+				top: 44px;
+				left: 80px;
+
+				&::before {
+					content: none;
+				}
+			}
+		}
+
+		// 간편결제
+		$payments: kakaopay, naverpay, payco, toss;
+		@each $payment in $payments {
+			.ico_cs-#{$payment} {
+				width: 62px;
+				height: 62px;
+				@if $payment == 'payco' { // 페이코 svg가 맥 또는 일부 윈도우에서 svg의 텍스트가 깨져서 나오는 이슈로 png 이미지로 대체
+					@include mixin.background(url('/public/images/content/ico_cs_#{$payment}.png') '50% 50%' no-repeat);
+				}
+				@else {
+					@include mixin.background(url('/public/images/content/ico_cs_#{$payment}.svg') '50% 50%' no-repeat);
+				}
+			}
+		}
+	}
+
+	> section {
+		margin-top: 54px;
+
+		> h5 {
+			font-size: 2rem;
+
+			small {
+				margin-left: 12px;
+				vertical-align: 2px;
+				@include mixin.font(#6a6a6a '1.3rem');
+			}
+		}
+	}
+
+	ol {
+		position: relative;
+		margin: 22px 0 0 12px;
+		counter-reset: listIndex;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 17px;
+			border-left: 1px solid #dcdcdc;
+			content: '';
+		}
+
+		li {
+			position: relative;
+			padding-left: 54px;
+			@include mixin.font(#5c5c5c '1.4rem/3.4rem');
+
+			&:nth-child(n+2) {
+				margin-top: 12px;
+			}
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				padding-left: 1px;
+				width: 34px;
+				height: 34px;
+				border: 1px solid #dcdcdc;
+				border-radius: 100%;
+				background-color: #fff;
+				@include mixin.font(#3d3d3d '1.5rem/3.4rem' center, 0);
+
+				counter-increment: listIndex;
+				content: counter(listIndex);
+			}
+
+			strong {
+				color: const.$color_text_base;
+			}
+		}
+	}
+}

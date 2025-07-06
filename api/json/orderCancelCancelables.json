@@ -1,0 +1,34 @@
+{
+	"cancelable_order": {
+		"order_id": "2304271636265720102",
+		"ordered_at": "2023-04-27T07:36:42.000000Z",
+		"is_paid": false,
+		"payment_method_label": "무통장입금",
+		"packs": [
+			{
+				"shipping_rule_id": 16,
+				"paid_shipping_price": 0,
+				"order_items": [
+					{
+						"id": 10329,
+						"order_status_label": "입금 대기",
+						"order_status_code": 200,
+						"paid_price": 20224,
+						"point_used": 0,
+						"used_coupon_title": "test2",
+						"seller_name": "명성민",
+						"goods": {
+							"id": 4,
+							"name": "F역에서 Orchid et consequatur",
+							"brand_name": "밍크뮤",
+							"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/04/1.jpg?",
+							"option_id": 51,
+							"option_name": "CornflowerBlue / S",
+							"is_soldout": false
+						}
+					}
+				]
+			}
+		]
+	}
+}

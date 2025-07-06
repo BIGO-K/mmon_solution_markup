@@ -1,0 +1,53 @@
+{
+    "filters": {
+        "categories": [
+            {
+                "code": "1000000",
+                "name": "남성",
+                "goods_count": "50",
+                "child_categories": [
+                    {
+                        "code": "1001000",
+                        "name": "아우터",
+                        "full_label": "남성 > 아우터",
+                        "goods_count": "50",
+                        "child_categories": [
+                            {
+                                "code": "1001001",
+                                "name": "셔츠",
+                                "full_label": "남성 > 아우터 > 셔츠",
+                                "goods_count": "50"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "brands": [
+            {
+                "id": 1,
+                "name": "엠몬 브랜드",
+                "goods_count": 50
+            }
+        ],
+        "fit_sizes": [
+            {
+                "label": "S,L",
+                "id": 0
+            }
+        ],
+        "shoes_sizes": [
+            {
+                "label": "220이하 , 225 , 300 이상",
+                "id": 0
+            }
+        ],
+        "colors": [
+            {
+                "label": "화이트,블루",
+                "code": "#1r324",
+                "id": 0
+            }
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+
+// font-face (마지막 파라미터 기본 값은 woff2 woff 입니다.)
+
+/** Pretendard */
+@include mixin.font-face('PretendardVariable', const.$fontpath + 'PretendardVariable', 500, woff2);
+
+// @include mixin.font-face('Pretendard', const.$fontpath + 'Pretendard-Regular', 400);
+// @include mixin.font-face('Pretendard', const.$fontpath + 'Pretendard-Light', 300);
+// @include mixin.font-face('Pretendard', const.$fontpath + 'Pretendard-Medium', 500);
+// @include mixin.font-face('Pretendard', const.$fontpath + 'Pretendard-Bold', 700);
+
+// @include mixin.font-face('Pretendard', const.$fontpath + 'Pretendard-Thin', 100);
+// @include mixin.font-face('Pretendard', const.$fontpath + 'Pretendard-ExtraLight', 100);
+// @include mixin.font-face('Pretendard', const.$fontpath + 'Pretendard-SemiBold', 000);
+// @include mixin.font-face('Pretendard', const.$fontpath + 'Pretendard-ExtraBold', 900);
+// @include mixin.font-face('Pretendard', const.$fontpath + 'Pretendard-Black', 900);
+
+/** roboto */
+// @include mixin.font-face('Roboto', const.$fontpath + 'Roboto-Regular', 400);
+// @include mixin.font-face('Roboto', const.$fontpath + 'Roboto-Thin', 100);
+// @include mixin.font-face('Roboto', const.$fontpath + 'Roboto-Light', 300);
+// @include mixin.font-face('Roboto', const.$fontpath + 'Roboto-Medium', 500);
+// @include mixin.font-face('Roboto', const.$fontpath + 'Roboto-Bold', 700);
+// @include mixin.font-face('Roboto', const.$fontpath + 'Roboto-Black', 900);

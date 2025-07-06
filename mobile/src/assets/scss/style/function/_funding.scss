@@ -1,0 +1,746 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 펀딩
+ * 상품상세, 펀딩 메인
+ */
+
+/** 펀딩 */
+.m_funding {
+	// 펀딩 배너
+	&-hero {
+		position: relative;
+
+		.image_banner {
+			padding-top: 110.63829%;
+			width: 100%;
+
+			&#{escape('.S=error')} {
+				background-color: #b8b8b9;
+			}
+		}
+
+		&-explan {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			left: 0;
+			padding-top: 27px;
+			text-align: center;
+			transform: translateY(-50%);
+
+			h2 {
+				padding-bottom: 32px;
+				@include mixin.font(#ffecdc v_200 '3rem', 7px);
+			}
+
+			> p {
+				@include mixin.font(#ebe1d9 '1.4rem/2rem');
+
+				+ p {
+					margin-top: 15px;
+				}
+			}
+
+			ol {
+				margin-top: 32px;
+				font-size: 0;
+
+				li {
+					display: inline-block;
+					position: relative;
+					padding-top: 12px;
+					width: 54px;
+					height: 54px;
+					border-radius: 100%;
+					background-color: rgba(#eee2d8, 0);
+					@include mixin.font(#fff '1.2rem/1.5rem' center);
+
+					transition: opacity const.$time_fast;
+
+					&::before {
+						position: absolute;
+						inset: 0;
+						border: 1px solid #eee2d8;
+						border-radius: 100%;
+						content: '';
+					}
+
+					&:nth-child(n+2) {
+						margin-left: 12px;
+						padding-top: 0;
+						line-height: 5.4rem;
+
+						&::after {
+							position: absolute;
+							top: 27px;
+							left: -21px;
+							width: 30px;
+							border-top: 1px solid #eee2d8;
+							transform: rotate(232deg);
+							content: '';
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-title {
+		@include mixin.font('2.2rem' center);
+
+		strong {
+			font-variation-settings: 'wght' 700;
+		}
+	}
+
+	// 펀딩 리스트
+	&-list {
+		ul {
+			li:nth-child(n+2) {
+				margin-top: 34px;
+			}
+		}
+
+		.mm_product-item {
+			.text_save {
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				left: 0;
+				margin-top: 100%;
+				padding: 22px 18px;
+				@include mixin.font(#fff v_400 '1.7rem');
+
+				transform: translateY(-100%);
+
+				strong {
+					display: block;
+					margin-bottom: 2px;
+					@include mixin.font(v_700 '4rem');
+				}
+			}
+
+			.image_product {
+				position: relative;
+				padding-top: 100%;
+				width: 100%;
+
+				&::after {
+					position: absolute;
+					inset: 0;
+					background-color: rgba(#000, 0.1);
+					content: '';
+				}
+			}
+
+			figcaption {
+				margin-top: 18px;
+				padding: 0 20px 0 2px;
+				font-size: 0;
+
+				.text_brand {
+					@include mixin.font(var.$color_main v_700 '1.5rem');
+				}
+
+				.text_product {
+					display: block;
+					@include mixin.text-ellipsis(1);
+
+					margin-top: 6px;
+					height: auto;
+					@include mixin.font(var.$color_text_base '1.5rem');
+
+					+ [class*='text_main'] {
+						margin-top: 2px;
+					}
+				}
+
+				[class*='text_main'] {
+					@include mixin.text-ellipsis(1);
+					@include mixin.font(#4a4a4a '1.3rem/1.9rem');
+				}
+
+				.text_price {
+					display: inline-block;
+					overflow: hidden;
+					margin-top: 13px;
+					font-size: 0;
+
+					strong {
+						display: inline-block;
+						font-size: 2rem;
+
+						&::after {
+							font-size: 1.4rem;
+						}
+					}
+
+					del {
+						display: inline-block;
+						margin-right: 10px;
+						vertical-align: 1px;
+						@include mixin.font(v_300 '1.4rem');
+
+						&::after {
+							@include mixin.font(v_400 '1.2rem');
+
+							vertical-align: 1px;
+						}
+					}
+				}
+
+				.text_sale {
+					display: inline-block;
+					position: static;
+					margin: 13px 0 0 10px;
+					@include mixin.font(v_400 '2rem');
+				}
+
+				.text_day {
+					position: absolute;
+					right: 13px;
+					bottom: 4px;
+					font-size: 1.7rem;
+				}
+			}
+		}
+
+		&#{escape('.T=skeleton')} {
+			.image_product {
+				background-color: #eee;
+
+				&::after {
+					display: none;
+				}
+			}
+
+			.mm_product-item-info {
+				padding: 20px 15px 0 0;
+
+				> p {
+					height: 13px;
+					background-color: var.$skeleton_color_base;
+					font-size: 0;
+				}
+
+				.text_brand {
+					width: 77%;
+				}
+
+				.text_product {
+					margin-top: 12px;
+					height: 18px;
+					background-color: #eee;
+
+					&::before,
+					&::after {
+						display: none;
+					}
+
+					+ .text_main {
+						margin-top: 8px;
+					}
+				}
+
+				.text_main {
+					margin-top: 6px;
+				}
+
+				.text_price {
+					margin-top: 18px;
+					height: 20px;
+				}
+			}
+		}
+	}
+
+	// 펀딩 on
+	&-on {
+		padding: 34px 0 54px;
+
+		.mm_tab_menu {
+			margin-top: 11px;
+		}
+
+		.m_funding-list {
+			margin-top: 13px;
+		}
+
+		.mm_text-none {
+			padding: 73px 0 65px;
+		}
+	}
+
+	// 펀딩 off
+	&-off {
+		padding: 46px 0 54px;
+		background-color: #f5f5f5;
+
+		.m_funding-title {
+			padding-bottom: 24px;
+		}
+
+		.mm_product-item {
+			.image_product::after {
+				background-color: rgba(#000, 0.36);
+			}
+		}
+
+		.mm_text-none {
+			padding: 110px 0 65px;
+		}
+
+		+ .mm_note {
+			margin-top: 15px;
+			padding: 0 15px;
+		}
+	}
+}
+
+/** 상품상세 */
+.m_prodetail {
+	&-head {
+		#{escape('.m...product-funding')} {
+			margin: 22px 14px 0;
+			border-bottom: 1px solid #e6e6e6;
+
+			.text_state {
+				font-size: 0;
+
+				> strong {
+					display: inline-block;
+					padding: 0 12px;
+					background-color: #3d3d3d;
+					@include mixin.font(#ffad31 '1.5rem/3.4rem');
+				}
+
+				> b {
+					flex: 1;
+					padding: 0 15px;
+					min-width: 0;
+					height: 34px;
+					border: 1px solid #d5d5d5;
+					border-width: 1px 1px 1px 0;
+					@include mixin.font(v_300 '2rem/3rem');
+
+					> span {
+						display: inline-block;
+						margin: 0 1px 0 2px;
+						vertical-align: 0;
+					}
+
+					strong {
+						margin-left: 12px;
+						font-variation-settings: 'wght' 600;
+
+						span {
+							margin: 0 3px;
+							vertical-align: 2px;
+							font-size: 1.7rem;
+						}
+					}
+				}
+			}
+
+			&-progress {
+				margin: 23px 0 22px;
+				padding: 0 10px;
+
+				.text_goal {
+					font-size: 1.3rem;
+
+					> b {
+						display: block;
+						margin-top: 5px;
+						vertical-align: 0;
+						@include mixin.font('1.5rem/2rem');
+
+						strong {
+							vertical-align: -1px;
+							@include mixin.font(v_700 '2rem');
+
+							sub {
+								vertical-align: 1px;
+								font-size: 1.7rem;
+							}
+						}
+
+						> span {
+							display: inline-block;
+							margin: 0 7px;
+							font-size: 1.7rem;
+						}
+					}
+				}
+
+				#{escape('.m...progress-bar')} {
+					position: relative;
+					margin-top: 13px;
+					width: 100%;
+					height: 10px;
+
+					i {
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						height: 100%;
+						background-color: #f59426;
+					}
+
+					&::before {
+						position: absolute;
+						inset: 0;
+						border: 1px solid #b8b8b9;
+						content: '';
+					}
+
+					&::after {
+						position: absolute;
+						top: -39px;
+						right: 0;
+						width: 64px;
+						height: 40px;
+						@include mixin.background(url('/public/images/content/funding_goal.svg') '0 0/cover' no-repeat);
+
+						content: '';
+					}
+				}
+			}
+
+			+ #{escape('.m...product-info')} {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	&-tab-info {
+		#{escape('.m...info-funding')} {
+			padding-top: 34px;
+
+			h4 {
+				padding-bottom: 13px;
+				@include mixin.font('1.7rem/2.4rem');
+			}
+
+			&-schedule {
+				li {
+					position: relative;
+					margin-bottom: 26px;
+					border-radius: 46px;
+					@include mixin.font(#fff v_400 '1.5rem/4.6rem');
+
+					strong {
+						margin-right: 19px;
+						@include mixin.font(v_500 '2rem');
+
+						span {
+							display: inline-block;
+							margin: 0 4px;
+							@include mixin.font(v_400 '1.7rem');
+						}
+					}
+
+					&::after {
+						position: absolute;
+						bottom: -11px;
+						left: 50%;
+						margin-left: -1px;
+						height: 11px;
+						border-left: 1px solid #aeaeae;
+						content: '';
+					}
+
+					&::before {
+						position: absolute;
+						bottom: -19px;
+						left: 50%;
+						margin-left: -5px;
+						content: '';
+						@include mixin.triangle(#aeaeae, bottom, 5px, 8px);
+					}
+
+					&:first-child {
+						background-color: #7c89c1;
+					}
+
+					&:nth-child(2) {
+						background-color: #6979b9;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+						background-color: var.$color_support;
+
+						&::before,
+						&::after {
+							content: none;
+						}
+					}
+				}
+			}
+
+			.text_note {
+				margin-top: 18px;
+				@include mixin.font(#3d3d3d '1.3rem/2rem');
+
+				.ico_alert-triangle {
+					margin: 3px 4px 0 0;
+				}
+
+				strong {
+					color: #f84f34;
+				}
+			}
+
+			> section {
+				margin-top: 37px;
+				padding: 32px 20px 35px;
+				background-color: #f5f5f5;
+
+				h5 {
+					padding-bottom: 11px;
+					@include mixin.font(#3d3d3d '1.5rem' left);
+				}
+			}
+
+			// 생산원가
+			&-cost {
+				ul {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					grid-gap: 4px;
+
+					li {
+						position: relative;
+						height: 100px;
+						border: 1px solid #eee;
+						background-color: #fff;
+
+						&:not(:nth-child(3n+1)) {
+							&::after {
+								position: absolute;
+								top: 50%;
+								left: 0;
+								margin: -9px 0 0 -12px;
+								width: 18px;
+								height: 18px;
+								border-radius: 100%;
+								background-color: #dcdcdc;
+								content: '+';
+								@include mixin.font(#fff '1.3rem/1.8rem' center);
+							}
+						}
+
+						&:last-child {
+							grid-column: 2/4;
+							border-color: var.$color_support;
+
+							.text_price {
+								margin-top: 41px;
+
+								strong {
+									@include mixin.font(var.$color_support v_700 '1.7rem');
+
+									&::after {
+										font-size: 1.3rem;
+									}
+								}
+							}
+
+							&::after {
+								background-color: var.$color_support;
+								content: '=';
+							}
+						}
+					}
+
+					&::after {
+						content: none;
+					}
+				}
+
+				dl {
+					padding-top: 31px;
+
+					dt {
+						@include mixin.font(#767676 '1.3rem');
+					}
+
+					dd {
+						margin-top: 8px;
+
+						strong {
+							@include mixin.font(v_600 '1.5rem');
+
+							&::after {
+								font-size: 1.2rem;
+							}
+						}
+					}
+				}
+
+				+ #{escape('.m...info-funding-price')} {
+					margin-top: 32px;
+				}
+			}
+
+			// 펀딩 가격
+			&-price {
+				.mm_flex {
+					overflow: hidden;
+
+					.text_price {
+						flex: 1;
+						padding: 21px 0 0 24px;
+						min-width: 0;
+						height: 78px;
+						background-color: #101010;
+						@include mixin.font(#fff '1.3rem' left);
+
+						strong {
+							display: block;
+							margin-top: 6px;
+							@include mixin.font(v_600 '1.7rem');
+
+							&::after {
+								font-size: 1.3rem;
+							}
+						}
+
+						+ .text_price {
+							position: relative;
+							padding: 21px 20px 0 0;
+							max-width: 135px;
+							border: 1px dashed #101010;
+							background-color: #fff;
+							@include mixin.font(var.$color_text_base right);
+
+							strong {
+								margin: 0 0 5px;
+							}
+
+							&::before {
+								position: absolute;
+								top: -1px;
+								left: -1px;
+								@include mixin.triangle(#101010, right, 78px, 25px);
+
+								content: '';
+							}
+						}
+					}
+				}
+
+				> p {
+					margin-top: 14px;
+					@include mixin.font('1.3rem/2rem' left);
+
+					+ p {
+						margin-top: 19px;
+					}
+				}
+			}
+
+			// 과거 펀딩 달성율
+			&-progress {
+				margin-top: 97px;
+
+				ul {
+					border-bottom: 1px solid #e6e6e6;
+
+					li {
+						padding: 36px 0;
+						border-top: 1px solid #e6e6e6;
+						@include mixin.font('0' center);
+
+						.text_funding {
+							margin-bottom: 22px;
+							font-size: 1.7rem;
+
+							strong {
+								display: block;
+								margin: 0 auto 18px;
+								width: 64px;
+								height: 64px;
+								border-radius: 100%;
+								background-color: #e6e6e6;
+								@include mixin.font(v_600 '1.5rem/6.8rem');
+							}
+						}
+
+						dl {
+							display: inline-block;
+							position: relative;
+
+							&:nth-of-type(n+2) {
+								margin-left: 22px;
+
+								&::before {
+									position: absolute;
+									top: 50%;
+									left: 0;
+									margin-left: -14px;
+									transform: translateY(-50%);
+									@include mixin.font(#767676 '1.4rem');
+
+									content: '-';
+								}
+							}
+
+							dt {
+								float: right;
+								margin-left: 5px;
+								@include mixin.font(#767676 '1.2rem/2.4rem');
+							}
+
+							dd {
+								float: left;
+								@include mixin.font(v_600 '1.5rem/2.4rem');
+							}
+						}
+
+						.text_progress {
+							margin-top: 24px;
+							font-size: 1.3rem;
+						}
+
+						#{escape('.m...progress-bar')} {
+							display: block;
+							overflow: hidden;
+							position: relative;
+							margin: 10px 24px 0;
+							height: 10px;
+							border-radius: 5px;
+							text-align: left;
+
+							&::before {
+								position: absolute;
+								inset: 0;
+								border: 1px solid #d5d5d5;
+								border-radius: 5px;
+								content: '';
+							}
+
+							i {
+								position: absolute;
+								z-index: 1;
+								top: 0;
+								bottom: 0;
+								left: 0;
+								background-color: var.$color_main;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

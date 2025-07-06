@@ -1,0 +1,16 @@
+{
+    "token": "234234jdgjadg.arewkrewrwr.asdflk33r2342234",
+    "user": {
+        "login_id": "test@mmonstar.co.kr",
+        "name": "테스터",
+        "grade": {
+            "id": 4,
+            "name": "골드",
+            "image_url": "https://img.nstationmall.com/mall//grade/4.png?ut=2022-03-11%2014:44:09"
+        }
+    },
+    "is_awaked": false,
+    "is_need_update_password": false,
+    "is_certificated": false,
+    "is_verify_age": false
+}

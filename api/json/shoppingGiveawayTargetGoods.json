@@ -1,0 +1,35 @@
+{
+    "total": 4,
+    "per_page": 5,
+    "current_page": 1,
+    "data": [
+        {
+            "id": 53438,
+            "name": "자수 반팔 티셔츠",
+            "headline": null,
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/34/38/1.jpg?ut=1661220913",
+            "brand_name": "울시골프"
+        },
+        {
+            "id": 55375,
+            "name": "아크 릴렉스 슬랙스",
+            "headline": null,
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/53/75/1.jpg?ut=1666796406",
+            "brand_name": "BNS"
+        },
+        {
+            "id": 58745,
+            "name": "스터드 에스파 HOT 백팩1스터드 에스파 HOT 백팩스터드 에스파 HOT 백팩스터드 에스파",
+            "headline": null,
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/45/1.jpg?ut=1685721604",
+            "brand_name": "꼼빠니아"
+        },
+        {
+            "id": 58789,
+            "name": "[대박세일] 인트레치아토 캐시 에바 블랙.",
+            "headline": null,
+            "thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/87/89/1.jpg?ut=1686292490",
+            "brand_name": "빌트모아"
+        }
+    ]
+}

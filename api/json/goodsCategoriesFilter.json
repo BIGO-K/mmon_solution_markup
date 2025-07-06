@@ -1,0 +1,190 @@
+{
+    "filters": {
+        "brands": [
+			{
+				"id": 11,
+				"name": "마리떼 프랑소와 저버",
+				"goods_count": 50
+			},
+			{
+				"id": 23,
+				"name": "스와치",
+				"goods_count": 7
+			},
+			{
+				"id": 30,
+				"name": "sweetch",
+				"goods_count": 4
+			},
+			{
+				"id": 34,
+				"name": "ourhope",
+				"goods_count": 4
+			},
+			{
+				"id": 1,
+				"name": "나이키",
+				"goods_count": 3
+			},
+			{
+				"id": 2,
+				"name": "아디다스",
+				"goods_count": 3
+			},
+			{
+				"id": 3,
+				"name": "뉴발란스",
+				"goods_count": 2
+			},
+			{
+				"id": 4,
+				"name": "언더아머",
+				"goods_count": 2
+			},
+			{
+				"id": 18,
+				"name": "에스티듀퐁",
+				"goods_count": 1
+			}
+		],
+        "fit_sizes": [
+			{
+				"id": 1,
+				"label": "XS 이하"
+			},
+			{
+				"id": 2,
+				"label": "S ~ XL"
+			},
+			{
+				"id": 3,
+				"label": "XXL 이상"
+			}
+		],
+        "shoes_sizes": [
+			{
+				"id": 4,
+				"label": "210 이하"
+			},
+			{
+				"id": 5,
+				"label": "215"
+			},
+			{
+				"id": 6,
+				"label": "220"
+			},
+			{
+				"id": 7,
+				"label": "225"
+			},
+			{
+				"id": 8,
+				"label": "230"
+			},
+			{
+				"id": 9,
+				"label": "235"
+			},
+			{
+				"id": 10,
+				"label": "240"
+			},
+			{
+				"id": 11,
+				"label": "245"
+			},
+			{
+				"id": 12,
+				"label": "250"
+			},
+			{
+				"id": 13,
+				"label": "255"
+			},
+			{
+				"id": 14,
+				"label": "260"
+			},
+			{
+				"id": 15,
+				"label": "265"
+			},
+			{
+				"id": 16,
+				"label": "270"
+			},
+			{
+				"id": 17,
+				"label": "275"
+			},
+			{
+				"id": 18,
+				"label": "280"
+			},
+			{
+				"id": 19,
+				"label": "285"
+			},
+			{
+				"id": 20,
+				"label": "290"
+			},
+			{
+				"id": 21,
+				"label": "295"
+			},
+			{
+				"id": 22,
+				"label": "300 이상"
+			}
+		],
+        "colors": [
+			{
+				"id": 11,
+				"code": "#FFFFFF",
+				"label": "흰색"
+			},
+			{
+				"id": 12,
+				"code": "#C5C5C6",
+				"label": "연한 회색"
+			},
+			{
+				"id": 14,
+				"code": "#191919",
+				"label": "검정색"
+			},
+			{
+				"id": 2,
+				"code": "#E91818",
+				"label": "빨강"
+			},
+			{
+				"id": 16,
+				"code": "#3030F8",
+				"label": "파란색"
+			},
+			{
+				"id": 9,
+				"code": "#1E2C89",
+				"label": "남색"
+			},
+			{
+				"id": 8,
+				"code": "#97D0E8",
+				"label": "하늘색"
+			},
+			{
+				"id": 13,
+				"code": "#8C8C8C",
+				"label": "회색"
+			},
+			{
+				"id": 3,
+				"code": "#F4AA24",
+				"label": "연한 주황"
+			}
+		]
+    }
+}

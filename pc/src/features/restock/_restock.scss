@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+@use '../../assets/scss/style/setting/var';
+
+/**
+ * 재입고 알림
+ */
+
+// *---------- 모달 ----------*
+
+/** 재입고 알림 신청 */
+.m_modal-restock {
+	.mm_modal-item-inner {
+		width: var.$modal_width_sm;
+	}
+
+	.m_product-option-select {
+		padding-top: 4px;
+
+		.mm_dropdown {
+			h6 {
+				padding-bottom: 9px;
+			}
+
+			&-item {
+				top: 74px;
+
+				.mm_scroller {
+					max-height: 206px;
+				}
+			}
+
+			+ .mm_dropdown {
+				margin-top: 22px;
+			}
+		}
+	}
+
+	.mm_foot {
+		margin-top: 142px;
+	}
+}

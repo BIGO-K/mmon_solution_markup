@@ -1,0 +1,18 @@
+{
+    "price": 143900,
+    "sell_price": 33000,
+    "base_discounted_price": 33000,
+    "sale_rate": 77,
+    "night_sale_amount": 0,
+    "is_downloadable_coupon": true,
+    "highest_downloadable_coupon_amount": 3960,
+    "immediately_sale_amount": 0,
+    "time_sale_amount": 0,
+    "max_discounted_price": 29040,
+    "purchasable": true,
+    "event_info": {
+        "price": 0,
+        "amount_type": null,
+        "amount": 0
+    }
+}

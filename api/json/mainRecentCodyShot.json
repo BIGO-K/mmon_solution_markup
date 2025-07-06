@@ -1,0 +1,39 @@
+{
+    "recent_cody_shots": [
+        {
+            "id": 5,
+            "title": "[단독] 남녀공용 블랙 숏 라이너 리버시블 점 퍼 블랙 숏 라이너 리버시블 점퍼",
+            "brand_name": "아디다스",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_1.png",
+            "alt": "벚꽃"
+        },
+        {
+            "id": 4,
+            "title": "머리부터 발끝까지 완벽한 라운딩 룩을 만나보세요",
+            "brand_name": "brand A",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_2.png",
+            "alt": "벚꽃"
+        },
+        {
+            "id": 3,
+            "title": "머리부터 발끝까지 완벽한 라운딩 룩을 만나보세요",
+            "brand_name": "brand B",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_3.png",
+            "alt": "벚꽃"
+        },
+        {
+            "id": 2,
+            "title": "남녀공용 블랙 숏 라이너 리버시블 점 퍼 블랙 숏 라이너 리버시블 점퍼",
+            "brand_name": "brand C",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_4.png",
+            "alt": "벚꽃"
+        },
+        {
+            "id": 1,
+            "title": "남녀공용 블랙 숏 라이너 리버시블 점 퍼 블랙 숏 라이너 리버시블 점퍼",
+            "brand_name": "brand A",
+            "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_5.png",
+            "alt": "벚꽃"
+        }
+    ]
+}

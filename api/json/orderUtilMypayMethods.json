@@ -1,0 +1,13 @@
+{
+	"registed_pays": [
+		{
+			"display_name": "국민은행",
+			"nick_name": "-",
+			"virtual_id": "B920D56C1F56997DE217E5F3BCDF3B09597A989A",
+			"masked_code": "20150212312***",
+			"image_url": "https://testapi.easypay.co.kr/easypay/img/img_bank_ci_004.png",
+			"card_code": 29,
+			"bank_code": 0
+		}
+	]
+}

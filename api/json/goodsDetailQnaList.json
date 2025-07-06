@@ -1,0 +1,63 @@
+{
+    "total": 2,
+    "current_page": 1,
+    "per_page": 20,
+    "data": [
+        {
+            "id": 4,
+            "title": "너무 오래걸려요 취소 처리해주세요",
+            "created_at": "2022.05.01",
+            "contents": "7월 25일에 주문했는데요 자꾸 입고 딜레이되고 안내문자도 안와서 조금 짜증나네요.... 배송은 언제쯤 올런지...",
+            "is_editable": true,
+            "is_reply": true,
+            "is_private": false,
+            "answer": {
+                "created_at": "2022.05.03",
+                "contents": "고객님께 불편을 드려 죄송합니다. 빠른시일내로 취소처리 완료해드리겠습니다"
+            },
+            "is_readable": false
+        },
+        {
+            "id": 3,
+            "title": "배송 전에 블랙으로 색 변경이요",
+            "created_at": "2022.05.01",
+            "contents": "제가 7월28일날 주문했는데 아직 배송준비중이길래요 돈은 국민은으로 입금했고 화이트 색상 구매했어요 배송전에 그냥 블랙으로 색깔 바꿔서 보내주세요! 제가 7월28일날 주문했는데 아직 배송준비중이길래요 돈은 국민은행으로 입금했고 화이트 색상 구매했어요 배송전에 그냥 블랙으로 색깔 바꿔서 보내주세요! 아 사이즈는 똑같이요",
+            "is_editable": false,
+            "is_reply": true,
+            "is_private": false,
+            "answer": {
+                "created_at": "2022.05.03",
+                "contents": "고객님께 불편을 드려 죄송합니다. 빠른시일내로 취소처리 완료해드리겠습니다"
+            },
+            "is_readable": false
+        },
+        {
+            "id": 3,
+            "title": "배송 전에 블랙으로 색 변경이요",
+            "created_at": "2022.05.01",
+            "contents": "제가 7월28일날 주문했는데 아직 배송준비중이길래요 돈은 국민은으로 입금했고 화이트 색상 구매했어요 배송전에 그냥 블랙으로 색깔 바꿔서 보내주세요! 제가 7월28일날 주문했는데 아직 배송준비중이길래요 돈은 국민은행으로 입금했고 화이트 색상 구매했어요 배송전에 그냥 블랙으로 색깔 바꿔서 보내주세요! 아 사이즈는 똑같이요",
+            "is_editable": false,
+            "is_reply": false,
+            "is_private": true,
+            "answer": {
+                "created_at": null,
+                "contents": null
+            },
+            "is_readable": true
+        },
+        {
+            "id": 3,
+            "title": "배송 전에 블랙으로 색 변경이요",
+            "created_at": "2022.05.01",
+            "contents": "제가 7월28일날 주문했는데 아직 배송준비중이길래요 돈은 국민은으로 입금했고 화이트 색상 구매했어요 배송전에 그냥 블랙으로 색깔 바꿔서 보내주세요! 제가 7월28일날 주문했는데 아직 배송준비중이길래요 돈은 국민은행으로 입금했고 화이트 색상 구매했어요 배송전에 그냥 블랙으로 색깔 바꿔서 보내주세요! 아 사이즈는 똑같이요",
+            "is_editable": false,
+            "is_reply": false,
+            "is_private": false,
+            "answer": {
+                "created_at": null,
+                "contents": null
+            },
+            "is_readable": false
+        }
+    ]
+}

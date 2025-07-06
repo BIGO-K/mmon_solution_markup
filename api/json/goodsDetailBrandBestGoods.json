@@ -1,0 +1,27 @@
+{
+    "brand_best_goods": [
+        {
+            "brand_name": "엠몬스타",
+            "id": 4556,
+            "name": "BEST 특가 패딩/다운/코트/가디건 추가쿠폰864",
+            "thumbnail_url": "https://image.stylecrew.co.kr/mall/dev/goods/000/000/000/004/1.jpg?updated_at=20220504163716",
+            "base_discounted_price": 16200,
+            "is_soldout": false,
+            "sale_rate": 10,
+            "stock": 99,
+            "is_only_adult": false
+        },
+		{
+			"id": 54844,
+			"name": "윈터 에스파 WASHED 가디건",
+			"brand_name": "꼼빠니아",
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/48/44/1.jpg?ut=1679447761",
+			"base_discounted_price": 11100,
+			"sell_price": 11100,
+			"sale_rate": 40,
+			"stock": 71,
+			"is_soldout": false,
+			"is_only_adult": false
+		}
+    ]
+}

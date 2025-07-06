@@ -1,0 +1,15 @@
+{
+	"additional_payments": {
+		"total_price": 2000,
+		"calculate_details": [
+			{
+				"label": "일반 배송비",
+				"amount": 0
+			},
+			{
+				"label": "교환 배송비",
+				"amount": 2000
+			}
+		]
+	}
+}

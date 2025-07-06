@@ -1,0 +1,16 @@
+{
+    "sort_list": [
+        {
+            "id": 3,
+            "name": "MMON"
+        },
+		{
+			"id": 2,
+			"name": "ISSUE"
+		},
+		{
+			"id": 1,
+			"name": "BRAND"
+		}
+    ]
+}

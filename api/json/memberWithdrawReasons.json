@@ -1,0 +1,9 @@
+{
+    "withdraw_reasons": [
+        {
+            "code": 1,
+            "label": "상품품질 불만",
+            "detail_reason_required": false
+        }
+    ]
+}

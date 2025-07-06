@@ -1,0 +1,79 @@
+{
+    "paginator": {
+        "total": 50,
+        "current_page": 1,
+        "per_page": 10,
+        "data": [
+            {
+                "id": 10,
+                "title": "머리부터 발끝까지 완벽한 라운딩 룩을 만나보세요",
+                "brand_name": "BRAND A",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_2.png",
+                "alt": "벚꽃"
+            },
+            {
+                "id": 9,
+                "title": "베스트룩 컬렉션",
+                "brand_name": "BRAND B",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_1.png",
+                "alt": "벚꽃"
+            },
+            {
+                "id": 8,
+                "title": "새로운 시작! 오피스룩의 모든것",
+                "brand_name": "M.MONSTAR",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_3.png",
+                "alt": "벚꽃"
+            },
+            {
+                "id": 7,
+                "title": "꾸준히 사랑받는 로맨틱하면서 여성스러운",
+                "brand_name": "M.MONSTAR",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_5.png",
+                "alt": "벚꽃"
+            },
+            {
+                "id": 6,
+                "title": "한 번에 완성하는 봄 스타일링",
+                "brand_name": "M.MONSTAR",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_4.png",
+                "alt": "벚꽃"
+            },
+            {
+                "id": 5,
+                "title": "머리부터 발끝까지 완벽한 라운딩 룩을 만나보세요",
+                "brand_name": "BRAND A",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_1.png",
+                "alt": "벚꽃"
+            },
+            {
+                "id": 4,
+                "title": "베스트룩 컬렉션",
+                "brand_name": "BRAND B",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_6.png",
+                "alt": "벚꽃"
+            },
+            {
+                "id": 3,
+                "title": "새로운 시작! 오피스룩의 모든것",
+                "brand_name": "M.MONSTAR",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_7.png",
+                "alt": "벚꽃"
+            },
+            {
+                "id": 2,
+                "title": "꾸준히 사랑받는 로맨틱하면서 여성스러운",
+                "brand_name": "M.MONSTAR",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_8.png",
+                "alt": "벚꽃"
+            },
+            {
+                "id": 1,
+                "title": "한 번에 완성하는 봄 스타일링",
+                "brand_name": "M.MONSTAR",
+                "thumbnail_url": "https://publish.mmonstar.co.kr/solution/ver2/pc/image/_sample/prod_x2_4.png",
+                "alt": "벚꽃"
+            }
+        ]
+    }
+}

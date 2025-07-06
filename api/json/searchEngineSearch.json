@@ -1,0 +1,348 @@
+{
+	"brand": {
+		"id": 0,
+		"name": "KITTY",
+		"kor_name": null,
+		"eng_name": null
+	},
+	"paginator": {
+		"total": 1,
+		"current_page": "1",
+		"per_page": "100",
+		"data": [
+			{
+				"id": 30,
+				"name": "[단독세일] KITTY WOOL KINT TOP",
+				"price": 120000,
+				"headline": "EXCLUSIVE",
+				"base_discounted_price": 105000,
+				"sale_rate": 13,
+				"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/00/00/30/1.jpg?ut=1670252400",
+				"mouse_over_image_url": null,
+				"stock": 122,
+				"is_only_adult": false,
+				"is_soldout": false,
+				"brand_id": 10,
+				"brand_name": "로라로라",
+				"icon": {
+					"label": null,
+					"background_color_code": null,
+					"font_color_code": null
+				},
+				"badges": [
+					"심야할인"
+				],
+				"wish_count": 0,
+				"review_count": 0,
+				"review_score_average": 0,
+				"is_use_stock_notify": false
+			}
+		]
+	},
+	"filters": {
+		"categories": [
+			{
+				"code": "002000000",
+				"name": "여성",
+				"full_label": "여성",
+				"goods_count": 2,
+				"child_categories": [
+					{
+						"code": "002002000",
+						"name": "티셔츠",
+						"full_label": "여성 > 티셔츠",
+						"goods_count": 1,
+						"child_categories": [
+							{
+								"code": "002002003",
+								"name": "긴팔티셔츠",
+								"full_label": "여성 > 티셔츠 > 긴팔티셔츠",
+								"goods_count": 1,
+								"child_categories": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"brands": [
+			{
+				"id": 10,
+				"name": "로라로라",
+				"goods_count": 2
+			}
+		],
+		"fit_sizes": [
+			{
+				"id": 1,
+				"label": "XS 이하"
+			}
+		],
+		"shoes_sizes": [],
+		"colors": [
+			{
+				"id": 16,
+				"code": "#e9d8b8",
+				"label": "베이지색"
+			}
+		]
+	},
+	"best_goods": [
+		{
+			"id": 59235,
+			"name": "MMONTOPARTNER_007",
+			"price": 1000,
+			"headline": null,
+			"base_discounted_price": 1000,
+			"sale_rate": 0,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/35/1.jpg?ut=1678287604",
+			"mouse_over_image_url": "",
+			"stock": 6983,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 53,
+			"brand_name": "ROME",
+			"icon": {
+				"label": "CUSTOM",
+				"background_color_code": "#4DD0E2",
+				"font_color_code": "#FFFFFF"
+			},
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 3,
+			"review_count": 0,
+			"review_score_average": 0,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 59246,
+			"name": "MMONTOPARTNER_015",
+			"price": 3000,
+			"headline": null,
+			"base_discounted_price": 1500,
+			"sale_rate": 50,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/46/1.jpg?ut=1677468687",
+			"mouse_over_image_url": "",
+			"stock": 776,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 51,
+			"brand_name": "나이스",
+			"icon": {
+				"label": "CUSTOM",
+				"background_color_code": "#4DD0E2",
+				"font_color_code": "#FFFFFF"
+			},
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 1,
+			"review_count": 0,
+			"review_score_average": 0,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 59251,
+			"name": "MMONTOPARTNER_018",
+			"price": 3000,
+			"headline": null,
+			"base_discounted_price": 1500,
+			"sale_rate": 50,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/51/1.jpg?ut=1677468687",
+			"mouse_over_image_url": "",
+			"stock": 384,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 51,
+			"brand_name": "나이스",
+			"icon": {
+				"label": "CUSTOM",
+				"background_color_code": "#4DD0E2",
+				"font_color_code": "#FFFFFF"
+			},
+			"badges": [
+				"무료배송",
+				"쿠폰할인"
+			],
+			"wish_count": 0,
+			"review_count": 0,
+			"review_score_average": 0,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 59247,
+			"name": "MMONTOPARTNER_016",
+			"price": 3000,
+			"headline": null,
+			"base_discounted_price": 1500,
+			"sale_rate": 50,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/47/1.jpg?ut=1679291640",
+			"mouse_over_image_url": "",
+			"stock": 589,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 61,
+			"brand_name": "테스트 브랜드 ❤",
+			"icon": null,
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 0,
+			"review_count": 0,
+			"review_score_average": 0,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 47517,
+			"name": "리앤 펠트 릴렉스 유틸리티 더블니트",
+			"price": 5800,
+			"headline": null,
+			"base_discounted_price": 1200,
+			"sale_rate": 79,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/04/75/17/1.jpg?ut=1679074203",
+			"mouse_over_image_url": "",
+			"stock": 214,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 17,
+			"brand_name": "나루스튜디오",
+			"icon": null,
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 1,
+			"review_count": 2,
+			"review_score_average": 5,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 58068,
+			"name": "와이드 바게트 블루밍 더블니트",
+			"price": 153500,
+			"headline": null,
+			"base_discounted_price": 15300,
+			"sale_rate": 90,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/80/68/1.jpg?ut=1678238593",
+			"mouse_over_image_url": "",
+			"stock": 17,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 40,
+			"brand_name": "수빈수산",
+			"icon": null,
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 0,
+			"review_count": 0,
+			"review_score_average": 0,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 59252,
+			"name": "MMONTOPARTNER_019",
+			"price": 3000,
+			"headline": null,
+			"base_discounted_price": 1500,
+			"sale_rate": 50,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/52/1.jpg?ut=1678201204",
+			"mouse_over_image_url": "",
+			"stock": 200,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 51,
+			"brand_name": "나이스",
+			"icon": {
+				"label": "CUSTOM",
+				"background_color_code": "#4DD0E2",
+				"font_color_code": "#FFFFFF"
+			},
+			"badges": [
+				"무료배송",
+				"쿠폰할인"
+			],
+			"wish_count": 0,
+			"review_count": 0,
+			"review_score_average": 0,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 58064,
+			"name": "커스텀핏 반팔 숏패딩1",
+			"price": 53400,
+			"headline": null,
+			"base_discounted_price": 36800,
+			"sale_rate": 31,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/80/64/1.jpg?ut=1679074203",
+			"mouse_over_image_url": "",
+			"stock": 185,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 38,
+			"brand_name": "용태스튜디오",
+			"icon": null,
+			"badges": [
+				"무료배송",
+				"즉시할인"
+			],
+			"wish_count": 4,
+			"review_count": 4,
+			"review_score_average": 4,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 58833,
+			"name": "텟텟텟2",
+			"price": 184100,
+			"headline": null,
+			"base_discounted_price": 29400,
+			"sale_rate": 84,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/88/33/1.jpg?ut=1678892404",
+			"mouse_over_image_url": "",
+			"stock": 194,
+			"is_only_adult": false,
+			"is_soldout": false,
+			"brand_id": 21,
+			"brand_name": "예원인터넷",
+			"icon": null,
+			"badges": [
+				"쿠폰할인"
+			],
+			"wish_count": 1,
+			"review_count": 0,
+			"review_score_average": 0,
+			"is_use_stock_notify": false
+		},
+		{
+			"id": 59236,
+			"name": "MMONTOPARTNER_008",
+			"price": 1000,
+			"headline": null,
+			"base_discounted_price": 1000,
+			"sale_rate": 0,
+			"thumbnail_url": "https://image.mmonstar.co.kr/ftp-data/mmonv2/mmon_v2_mall_shop/develop/goods/00/00/00/05/92/36/1.jpg?ut=1677218110",
+			"mouse_over_image_url": "",
+			"stock": 0,
+			"is_only_adult": false,
+			"is_soldout": true,
+			"brand_id": 54,
+			"brand_name": "테스트_브랜드_1",
+			"icon": null,
+			"badges": [
+				"무료배송",
+				"쿠폰할인"
+			],
+			"wish_count": 1,
+			"review_count": 0,
+			"review_score_average": 0,
+			"is_use_stock_notify": true
+		}
+	],
+	"is_corrected": true,
+	"corrected_keyword": "바지",
+	"origin_keyword": "버지",
+	"related_keywords": [
+		"엠몬 토트백", "엠몬 크로스백", "엠몬 가방", "엠몬 원피스", "엠몬 가방", "엠몬 살레아", "엠몬 스트링백", "엠몬 지갑", "엠몬 자켓", "엠몬 미니백", "엠몬 스커트", "엠몬 팬츠", "엠몬 네프", "엠몬 셋업", "엠몬 조거팬츠"
+	]
+}

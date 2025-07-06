@@ -1,0 +1,102 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function';
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 에러
+ */
+
+/** 에러 */
+#{function.escape('.L=error')} {
+	.mm_view {
+		height: 100%;
+	}
+
+	.mm_page {
+		min-height: 100%;
+
+		&-content {
+			padding: 0;
+		}
+	}
+}
+
+.m_error {
+	padding: 50px 0;
+	height: 100%;
+	@include mixin.font(#4a4a4a '1.4rem/2rem' center);
+
+	.image_error {
+		display: block;
+		height: 110px;
+
+		&#{function.escape('.T=lg')} {
+			height: 138px;
+
+			+ h1 {
+				margin-top: 59px;
+			}
+		}
+
+		&#{function.escape('.T=xl')} {
+			padding-left: 2px;
+			height: 155px;
+
+			+ h1 {
+				margin-top: 51px;
+			}
+		}
+
+		&#{function.escape('.T=2xl')} {
+			padding-left: 4px;
+			height: 168px;
+
+			+ h1 {
+				margin-top: 42px;
+			}
+		}
+
+		img {
+			width: auto;
+			max-width: 100%;
+			height: 100%;
+		}
+	}
+
+	h1 {
+		margin-top: 72px;
+		@include mixin.font(const.$color_text_base '2.6rem/1');
+	}
+
+	p {
+		margin-top: 14px;
+	}
+
+	.text_period {
+		margin: 28px auto 0;
+		padding: 32px 0 30px;
+		width: 640px;
+		border: 1px solid #eee;
+		background-color: #fafafa;
+		@include mixin.font(const.$color_text_base '1.5rem/2.1rem');
+
+		strong {
+			display: block;
+			color: var.$color_sub;
+		}
+	}
+
+	.mm_foot {
+		margin-top: 28px;
+	}
+}
+
+// *---------- 팝업 ----------*
+
+// *---------- 모달 ----------*
+
+// *---------- 레이어 ----------*
